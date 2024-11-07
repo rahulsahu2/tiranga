@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex,nofollow">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
-    <title>Tiranga</title>
+    <title>19club</title>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
@@ -330,38 +330,38 @@
         </div>
     </div>
     <!---->
-    
+
     </div>
     <%- include('../nav') -%>
-    </div>
-    </div>
+        </div>
+        </div>
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/qr.js"></script>
-    <script src="/js/client.js"></script>
-    
-    
-    
-    
-    
-    
-    <script>
-        function RosesRender(datas) {
-            let html = datas.map((e) => {
-                let html = '';
-                return html += `<div data-v-7c8bbbf4="" class="bd van-row">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/js/qr.js"></script>
+        <script src="/js/client.js"></script>
+
+
+
+
+
+
+        <script>
+            function RosesRender(datas) {
+                let html = datas.map((e) => {
+                    let html = '';
+                    return html += `<div data-v-7c8bbbf4="" class="bd van-row">
                         <div data-v-7c8bbbf4="" class="c-tc van-ellipsis van-col van-col--6">Lvl ${e.level}</div>
                         <div data-v-7c8bbbf4="" class="c-tc van-col van-col--4">${e.f1}%</div>
                         <div data-v-7c8bbbf4="" class="c-tc van-col van-col--4">${e.f2}%</div>
                         <div data-v-7c8bbbf4="" class="c-tc van-col van-col--5">${e.f3}%</div>
                         <div data-v-7c8bbbf4="" class="c-tc van-col van-col--5">${e.f4}%</div>
                     </div>`;
-            });
-            $('.table:eq(1) .box').append(html);
+                });
+                $('.table:eq(1) .box').append(html);
 
-            $('.table:eq(1) .box').append(`
+                $('.table:eq(1) .box').append(`
                 <div data-v-7c8bbbf4="" class="bd van-row">
                     <div data-v-7c8bbbf4="" class="c-tc fw van-col van-col--6">...</div>
                     <div data-v-7c8bbbf4="" class="c-tc fw van-col van-col--4">...</div>
@@ -370,54 +370,54 @@
                     <div data-v-7c8bbbf4="" class="c-tc fw van-col van-col--5">...</div>
                 </div>
                 `);
-        }
-        $.ajax({
-            type: "POST",
-            url: "/api/webapi/promotion",
-            data: {
-
-            },
-            dataType: "json",
-            success: function (response) {
-                $('.Loading').fadeOut(0);
-                $('#f1').text(response.invite.f1);
-                $('#f1_today').text(response.invite.f1_today);
-                const f1Count =response.invite.f1_today;
-                console.log(f1Count);
-                $('#f_all_today').text(response.invite.f_all_today);
-                $('#f_total').text(response.invite.total_f);
-
-                $('#roses_f1').text("Direct Commission: " + response.invite.roses_f1);
-                $('#roses_f').text("Team Commission: " + response.invite.roses_f);
-                $('#roses_all').text(response.invite.roses_all);
-                $('#roses_today').text(response.invite.roses_today);
-                $('#invite_code').text(window.location.hostname + `/register?r_code=${response.info[0].code}`);
-
-                if (response.status === false) return location.href = '/home';
-                RosesRender(response.level);
-                $('.btn-box .btn:eq(0)').attr('data-clipboard-text', response.info[0].code);
-                $('.btn-box .btn:eq(1)').attr('data-clipboard-text', window.location.hostname + `/register?r_code=${response.info[0].code}`);
-                var qrcode = new QRCode("qrcode");
-                $('#qrcode').attr('title', window.location.hostname + `/register?r_code=${response.info[0].code}`)
-                function makeCode() {
-                    qrcode.makeCode(window.location.hostname + `/register?r_code=${response.info[0].code}`);
-                }
-
-                makeCode();
             }
-        });
+            $.ajax({
+                type: "POST",
+                url: "/api/webapi/promotion",
+                data: {
 
-        function copy(selector) {
-            var $temp = $("<div>");
-            $("body").append($temp);
-            $temp.attr("contenteditable", true)
-                .html($(selector).html()).select()
-                .on("focus", function () { document.execCommand('selectAll', false, null); })
-                .focus();
-            document.execCommand("copy");
-            $temp.remove();
-        }
-    </script>
+                },
+                dataType: "json",
+                success: function (response) {
+                    $('.Loading').fadeOut(0);
+                    $('#f1').text(response.invite.f1);
+                    $('#f1_today').text(response.invite.f1_today);
+                    const f1Count = response.invite.f1_today;
+                    console.log(f1Count);
+                    $('#f_all_today').text(response.invite.f_all_today);
+                    $('#f_total').text(response.invite.total_f);
+
+                    $('#roses_f1').text("Direct Commission: " + response.invite.roses_f1);
+                    $('#roses_f').text("Team Commission: " + response.invite.roses_f);
+                    $('#roses_all').text(response.invite.roses_all);
+                    $('#roses_today').text(response.invite.roses_today);
+                    $('#invite_code').text(window.location.hostname + `/register?r_code=${response.info[0].code}`);
+
+                    if (response.status === false) return location.href = '/home';
+                    RosesRender(response.level);
+                    $('.btn-box .btn:eq(0)').attr('data-clipboard-text', response.info[0].code);
+                    $('.btn-box .btn:eq(1)').attr('data-clipboard-text', window.location.hostname + `/register?r_code=${response.info[0].code}`);
+                    var qrcode = new QRCode("qrcode");
+                    $('#qrcode').attr('title', window.location.hostname + `/register?r_code=${response.info[0].code}`)
+                    function makeCode() {
+                        qrcode.makeCode(window.location.hostname + `/register?r_code=${response.info[0].code}`);
+                    }
+
+                    makeCode();
+                }
+            });
+
+            function copy(selector) {
+                var $temp = $("<div>");
+                $("body").append($temp);
+                $temp.attr("contenteditable", true)
+                    .html($(selector).html()).select()
+                    .on("focus", function () { document.execCommand('selectAll', false, null); })
+                    .focus();
+                document.execCommand("copy");
+                $temp.remove();
+            }
+        </script>
 </body>
 
 </html>

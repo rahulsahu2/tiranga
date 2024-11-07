@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex,nofollow">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
-    <title>Tiranga</title>
+    <title>19club</title>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
@@ -49,10 +49,10 @@
         }
 
         .mian .box .list .item[data-v-4e585e69] {
-    padding: 0.26667rem 0.4rem;
-    border: 2px solid;
-    border-radius: 15px;
-}
+            padding: 0.26667rem 0.4rem;
+            border: 2px solid;
+            border-radius: 15px;
+        }
 
         .mian .box .list .item[data-v-3966082f] {
             padding: .26667rem .4rem
@@ -131,17 +131,13 @@
         }
 
         .navbar[data-v-106b99c8] {
-        background: linear-gradient(90deg, rgb(43, 50, 112) 0%, rgb(43, 50, 112) 100%) !important;
+            background: linear-gradient(90deg, rgb(43, 50, 112) 0%, rgb(43, 50, 112) 100%) !important;
         }
-        
+
         .item.c-row.c-row-between.m-b-10 {
-        border: 1px solid;
-        border-radius: 15px;
+            border: 1px solid;
+            border-radius: 15px;
         }
-        
-        
-        
-        
     </style>
 </head>
 
@@ -163,12 +159,12 @@
                         <div class="lisys">
 
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <div data-v-3966082f="" class="box">
                 <div data-v-3966082f="" class="list m-b-20">
                     <div data-v-3966082f="" role="feed" class="van-list">
@@ -181,52 +177,52 @@
                     </div>
                 </div>
             </div>
-            
-         
-         
-            
-            
-    <!-- Add jQuery or any other necessary scripts -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/client.js"></script>
-    <script>
-    $(document).ready(function () {
-        function formateT(params) {
-            let result = (params < 10) ? "0" + params : params;
-            return result;
-        }
 
-        function timerJoin(params = '', addHours = 0) {
-            let date = '';
-            if (params) {
-                date = new Date(Number(params));
-            } else {
-                date = new Date();
-            }
 
-            date.setHours(date.getHours() + addHours);
 
-            let years = formateT(date.getFullYear());
-            let months = formateT(date.getMonth() + 1);
-            let days = formateT(date.getDate());
 
-            let hours = date.getHours() % 12;
-            hours = hours === 0 ? 12 : hours;
-            let ampm = date.getHours() < 12 ? "AM" : "PM";
+            <!-- Add jQuery or any other necessary scripts -->
 
-            let minutes = formateT(date.getMinutes());
-            let seconds = formateT(date.getSeconds());
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="/js/client.js"></script>
+            <script>
+                $(document).ready(function () {
+                    function formateT(params) {
+                        let result = (params < 10) ? "0" + params : params;
+                        return result;
+                    }
 
-            return years + '-' + months + '-' + days + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
-        }
+                    function timerJoin(params = '', addHours = 0) {
+                        let date = '';
+                        if (params) {
+                            date = new Date(Number(params));
+                        } else {
+                            date = new Date();
+                        }
 
-         function loadsRecharge(datas) {
-                // Filter only successful recharge transactions
-                let successfulRecharges = datas.filter(data => data.status === 1);
-                
-                let html = successfulRecharges.map((data) => {
-                return `
+                        date.setHours(date.getHours() + addHours);
+
+                        let years = formateT(date.getFullYear());
+                        let months = formateT(date.getMonth() + 1);
+                        let days = formateT(date.getDate());
+
+                        let hours = date.getHours() % 12;
+                        hours = hours === 0 ? 12 : hours;
+                        let ampm = date.getHours() < 12 ? "AM" : "PM";
+
+                        let minutes = formateT(date.getMinutes());
+                        let seconds = formateT(date.getSeconds());
+
+                        return years + '-' + months + '-' + days + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+                    }
+
+                    function loadsRecharge(datas) {
+                        // Filter only successful recharge transactions
+                        let successfulRecharges = datas.filter(data => data.status === 1);
+
+                        let html = successfulRecharges.map((data) => {
+                            return `
                     <div data-v-3966082f="" class="item c-row c-row-between m-b-10">
                     
                         <div data-v-3966082f="">
@@ -252,13 +248,13 @@
                         </div>
                     </div>
                 `;
-            }).join("");
-            $('.box:eq(0) .lisys').html(html);
-        }
+                        }).join("");
+                        $('.box:eq(0) .lisys').html(html);
+                    }
 
-        function loadsWithdrawal(datas) {
-            let html = datas.map((data) => {
-                return `
+                    function loadsWithdrawal(datas) {
+                        let html = datas.map((data) => {
+                            return `
                     <div data-v-4e585e69="" class="item">
                             <div data-v-4e585e69="">
                             <span style="color:#2cff2c" >Withdraw</span>
@@ -292,39 +288,39 @@
                     </div>
                     <br>
                 `;
-            }).join("");
-            $('.box:eq(1) .lisys').html(html);
-        }
+                        }).join("");
+                        $('.box:eq(1) .lisys').html(html);
+                    }
 
-        // Load recharge records
-        $.ajax({
-            type: "GET",
-            url: "/api/webapi/recharge/list",
-            dataType: "json",
-            success: function (response) {
-                if (response.datas.length > 0) {
-                    loadsRecharge(response.datas);
-                }
-            }
-        });
+                    // Load recharge records
+                    $.ajax({
+                        type: "GET",
+                        url: "/api/webapi/recharge/list",
+                        dataType: "json",
+                        success: function (response) {
+                            if (response.datas.length > 0) {
+                                loadsRecharge(response.datas);
+                            }
+                        }
+                    });
 
-        // Load withdrawal records
-        $.ajax({
-            type: "GET",
-            url: "/api/webapi/withdraw/list",
-            dataType: "json",
-            success: function (response) {
-                if (response.datas.length > 0) {
-                    loadsWithdrawal(response.datas);
-                }
-            }
-        });
+                    // Load withdrawal records
+                    $.ajax({
+                        type: "GET",
+                        url: "/api/webapi/withdraw/list",
+                        dataType: "json",
+                        success: function (response) {
+                            if (response.datas.length > 0) {
+                                loadsWithdrawal(response.datas);
+                            }
+                        }
+                    });
 
-        // Other functions like clipboard and alertMess can remain unchanged
-    });
-</script>
-    
-    
+                    // Other functions like clipboard and alertMess can remain unchanged
+                });
+            </script>
+
+
 </body>
 
 
