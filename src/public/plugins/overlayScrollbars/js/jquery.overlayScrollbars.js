@@ -15,9 +15,9 @@
     if (typeof define === 'function' && define.amd)
         define(['jquery'], function (framework) { return factory(global, global.document, undefined, framework); });
     else if (typeof module === 'object' && typeof module.exports === 'object')
-        module.exports = factory(global, global.document, undefined, require('jquery'));
+        export defaultfactory(global, global.document, undefined, require('jquery'));
     else
-        factory(global, global.document, undefined, global.jQuery);
+    factory(global, global.document, undefined, global.jQuery);
 }(typeof window !== 'undefined' ? window : this,
     function (window, document, undefined, framework) {
         'use strict';
@@ -1266,12 +1266,12 @@
                     }
                     else {
                         for (; i < events[LEXICON.l]; i++) {
-                            if(_supportPassiveEvents) {
+                            if (_supportPassiveEvents) {
                                 element[0][method](events[i], listener, nativeParam);
                             }
                             else {
                                 element[onOff](events[i], listener);
-                            }     
+                            }
                         }
                     }
                 }
@@ -3508,11 +3508,11 @@
                             [_strMouseTouchMoveEvent, _strMouseTouchUpEvent, _strKeyDownEvent, _strKeyUpEvent, _strSelectStartEvent],
                             [documentDragMove, documentMouseTouchUp, documentKeyDown, documentKeyUp, documentOnSelectStart],
                             true);
-                        COMPATIBILITY.rAF()(function() {
+                        COMPATIBILITY.rAF()(function () {
                             setupResponsiveEventListener(_documentElement, strClickEvent, stopClickEventPropagation, true, { _capture: true });
                         });
-                        
-                            
+
+
                         if (_scrollbarsHandlesDefineScrollPos)
                             refreshScrollbarHandleOffset(isHorizontal, true);
 
@@ -3567,10 +3567,10 @@
                         setupResponsiveEventListener(_documentElement,
                             [_strMouseTouchMoveEvent, _strMouseTouchUpEvent, _strSelectStartEvent],
                             [documentDragMove, documentMouseTouchUp, documentOnSelectStart]);
-                        COMPATIBILITY.rAF()(function() {
+                        COMPATIBILITY.rAF()(function () {
                             setupResponsiveEventListener(_documentElement, strClickEvent, stopClickEventPropagation, false, { _capture: true });
                         });
-                        
+
 
                         if (_msieVersion || !_documentMixed)
                             COMPATIBILITY.prvD(event);

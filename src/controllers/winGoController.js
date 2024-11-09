@@ -1,8 +1,9 @@
-import connection from "../config/connectDB";
+import connection from "../config/connectDB.js";
 // import jwt from 'jsonwebtoken'
 // import md5 from "md5";
 // import e from "express";
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 const winGoPage = async (req, res) => {
@@ -832,7 +833,7 @@ const handlingWinGo1P = async (typeid) => {
     }
 }
 
-module.exports = {
+export default {
     winGoPage,
     betWinGo,
     listOrderOld,

@@ -1,6 +1,7 @@
 import e from "express";
-import connection from "../config/connectDB";
-require('dotenv').config();
+import connection from "../config/connectDB.js";
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 const K5DPage = async (req, res) => {
@@ -576,7 +577,7 @@ const handling5D = async(typeid) => {
 }
 
 
-module.exports = {
+export default{
     K5DPage,
     K5DPage3,
     K5DPage5,

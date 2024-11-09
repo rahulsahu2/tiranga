@@ -1,10 +1,11 @@
 import e from "express";
-import connection from "../config/connectDB";
-require('dotenv').config();
+import connection from "../config/connectDB.js";
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 const K5DPage = async (req, res) => {
-    return res.render("bet/5d/5d.ejs"); 
+    return res.render("bet/5d/5d.ejs");
 }
 
 const K5DPage3 = async (req, res) => {
@@ -28,31 +29,31 @@ const isNumber = (params) => {
 function formateT(params) {
     let result = (params < 10) ? "0" + params : params;
     return result;
-    }
-    
+}
+
 function timerJoin(params = '', addHours = 0) {
-        let date = '';
-        if (params) {
-            date = new Date(Number(params));
-        } else {
-            date = new Date();
-        }
-    
-        date.setHours(date.getHours() + addHours);
-    
-        let years = formateT(date.getFullYear());
-        let months = formateT(date.getMonth() + 1);
-        let days = formateT(date.getDate());
-    
-        let hours = date.getHours() % 12;
-        hours = hours === 0 ? 12 : hours;
-        let ampm = date.getHours() < 12 ? "AM" : "PM";
-    
-        let minutes = formateT(date.getMinutes());
-        let seconds = formateT(date.getSeconds());
-    
-        return years + '-' + months + '-' + days + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+    let date = '';
+    if (params) {
+        date = new Date(Number(params));
+    } else {
+        date = new Date();
     }
+
+    date.setHours(date.getHours() + addHours);
+
+    let years = formateT(date.getFullYear());
+    let months = formateT(date.getMonth() + 1);
+    let days = formateT(date.getDate());
+
+    let hours = date.getHours() % 12;
+    hours = hours === 0 ? 12 : hours;
+    let ampm = date.getHours() < 12 ? "AM" : "PM";
+
+    let minutes = formateT(date.getMinutes());
+    let seconds = formateT(date.getSeconds());
+
+    return years + '-' + months + '-' + days + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+}
 
 const rosesPlus = async (auth, money) => {
     const [level] = await connection.query('SELECT * FROM level ');
@@ -313,10 +314,10 @@ function makeid(length) {
     return result;
 }
 
-const add5D = async(game) => {
+const add5D = async (game) => {
     try {
         let join = '';
-        if (game == 1) join = 'k5d'; 
+        if (game == 1) join = 'k5d';
         if (game == 3) join = 'k5d3';
         if (game == 5) join = 'k5d5';
         if (game == 10) join = 'k5d10';
@@ -358,7 +359,7 @@ const add5D = async(game) => {
         if (game == 1) join = 'k5d';
         if (game == 3) join = 'k5d3';
         if (game == 5) join = 'k5d5';
-        if (game == 10) join = 'k5d10'; 
+        if (game == 10) join = 'k5d10';
 
         await connection.execute(`UPDATE admin SET ${join} = ?`, [newArr]);
     } catch (error) {
@@ -371,7 +372,7 @@ const add5D = async(game) => {
 async function funHanding(game) {
     const [k5d] = await connection.query(`SELECT * FROM 5d WHERE status != 0 AND game = ${game} ORDER BY id DESC LIMIT 1 `);
     let k5dInfo = k5d[0];
- 
+
     // update ket qua
     await connection.execute(`UPDATE result_5d SET result = ? WHERE status = 0 AND game = ${game}`, [k5dInfo.result]);
     let result = String(k5dInfo.result).split('');
@@ -398,19 +399,19 @@ async function funHanding(game) {
                 await connection.execute(`UPDATE result_5d SET status = 2 WHERE id = ? `, [info.id]);
             }
         }
-        
+
     }
     if (lengthA > 0) {
-        if(a == '0' || a == '1' || a == '2' || a == '3' || a == '4') {
+        if (a == '0' || a == '1' || a == '2' || a == '3' || a == '4') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'a' AND bet = 'b' `)
         };
-        if(a == '5' || a == '6' || a == '7' || a == '8' || a == '9') {
+        if (a == '5' || a == '6' || a == '7' || a == '8' || a == '9') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'a' AND bet = 's' `)
         };
-        if(Number(a) % 2 == 0) {
+        if (Number(a) % 2 == 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'a' AND bet = 'l' `)
         };
-        if(Number(a) % 2 != 0) {
+        if (Number(a) % 2 != 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'a' AND bet = 'c' `)
         };
     }
@@ -428,19 +429,19 @@ async function funHanding(game) {
                 await connection.execute(`UPDATE result_5d SET status = 2 WHERE id = ? `, [info.id]);
             }
         }
-        
+
     }
     if (lengthB > 0) {
-        if(b == '0' || b == '1' || b == '2' || b == '3' || b == '4') {
+        if (b == '0' || b == '1' || b == '2' || b == '3' || b == '4') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'b' AND bet = 'b' `);
         };
-        if(b == '5' || b == '6' || b == '7' || b == '8' || b == '9') {
+        if (b == '5' || b == '6' || b == '7' || b == '8' || b == '9') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'b' AND bet = 's' `);
         };
-        if(Number(b) % 2 == 0) {
+        if (Number(b) % 2 == 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'b' AND bet = 'l' `);
         };
-        if(Number(b) % 2 != 0) {
+        if (Number(b) % 2 != 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'b' AND bet = 'c' `);
         };
     }
@@ -458,23 +459,23 @@ async function funHanding(game) {
                 await connection.execute(`UPDATE result_5d SET status = 2 WHERE id = ? `, [info.id]);
             }
         }
-        
+
     }
     if (lengthC > 0) {
-        if(c == '0' || c == '1' || c == '2' || c == '3' || c == '4') {
+        if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'c' AND bet = 'b' `);
         };
-        if(c == '5' || c == '6' || c == '7' || c == '8' || c == '9') {
+        if (c == '5' || c == '6' || c == '7' || c == '8' || c == '9') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'c' AND bet = 's' `);
         };
-        if(Number(c) % 2 == 0) {
+        if (Number(c) % 2 == 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'c' AND bet = 'l' `);
         };
-        if(Number(c) % 2 != 0) {
+        if (Number(c) % 2 != 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'c' AND bet = 'c' `);
         };
     }
-    
+
     // xử lý game d
     const [joinD] = await connection.execute(`SELECT id, bet FROM result_5d WHERE status = 0 AND game = ${game} AND join_bet = 'd' `);
     let lengthD = joinD.length;
@@ -488,19 +489,19 @@ async function funHanding(game) {
                 await connection.execute(`UPDATE result_5d SET status = 2 WHERE id = ? `, [info.id]);
             }
         }
-        
+
     }
     if (lengthD > 0) {
-        if(d == '0' || d == '1' || d == '2' || d == '3' || d == '4') {
+        if (d == '0' || d == '1' || d == '2' || d == '3' || d == '4') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'd' AND bet = 'b' `);
         };
-        if(d == '5' || d == '6' || d == '7' || d == '8' || d == '9') {
+        if (d == '5' || d == '6' || d == '7' || d == '8' || d == '9') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'd' AND bet = 's' `);
         };
-        if(Number(d) % 2 == 0) {
+        if (Number(d) % 2 == 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'd' AND bet = 'l' `);
         };
-        if(Number(d) % 2 != 0) {
+        if (Number(d) % 2 != 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'd' AND bet = 'c' `);
         };
     }
@@ -518,19 +519,19 @@ async function funHanding(game) {
                 await connection.execute(`UPDATE result_5d SET status = 2 WHERE id = ? `, [info.id]);
             }
         }
-        
+
     }
     if (lengthE > 0) {
-        if(e == '0' || e == '1' || e == '2' || e == '3' || e == '4') {
+        if (e == '0' || e == '1' || e == '2' || e == '3' || e == '4') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'e' AND bet = 'b' `);
         };
-        if(e == '5' || e == '6' || e == '7' || e == '8' || e == '9') {
+        if (e == '5' || e == '6' || e == '7' || e == '8' || e == '9') {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'e' AND bet = 's' `);
         };
-        if(Number(e) % 2 == 0) {
+        if (Number(e) % 2 == 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'e' AND bet = 'l' `);
         };
-        if(Number(e) % 2 != 0) {
+        if (Number(e) % 2 != 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'e' AND bet = 'c' `);
         };
     }
@@ -538,22 +539,22 @@ async function funHanding(game) {
     // xử lý game e
     const [joinTotal] = await connection.execute(`SELECT id, bet FROM result_5d WHERE status = 0 AND game = ${game} AND join_bet = 'total' `);
     if (joinTotal.length > 0) {
-        if(total <= 22) {
+        if (total <= 22) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'total' AND bet = 'b' `);
         };
-        if(total > 22) {
+        if (total > 22) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'total' AND bet = 's' `);
         };
-        if(total % 2 == 0) {
+        if (total % 2 == 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'total' AND bet = 'l' `);
         };
-        if(total % 2 != 0) {
+        if (total % 2 != 0) {
             await connection.execute(`UPDATE result_5d SET status = 2 WHERE join_bet = 'total' AND bet = 'c' `);
         };
     }
 }
 
-const handling5D = async(typeid) => {
+const handling5D = async (typeid) => {
 
     let game = Number(typeid);
 
@@ -565,7 +566,7 @@ const handling5D = async(typeid) => {
         let id = orders.id;
         let phone = orders.phone;
         let nhan_duoc = 0;
-        let check = isNumber(orders.bet); 
+        let check = isNumber(orders.bet);
         if (check) {
             let arr = orders.bet.split('');
             let total = (orders.money / arr.length / orders.amount);
@@ -583,7 +584,7 @@ const handling5D = async(typeid) => {
 }
 
 
-module.exports = {
+export default {
     K5DPage,
     K5DPage3,
     K5DPage5,

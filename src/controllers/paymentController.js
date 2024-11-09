@@ -1,4 +1,4 @@
-import connection from "../config/connectDB";
+import connection from "../config/connectDB.js";
 import axios from 'axios';
 import moment from "moment";
 import crypto from "crypto";
@@ -710,7 +710,7 @@ const rechargeTable = {
             `INSERT INTO recharge SET id_order = ?, transaction_id = ?, phone = ?, money = ?, type = ?, status = ?, today = ?, url = ?, time = ?, utr = ?`,
             [newRecharge.orderId, newRecharge.transactionId, newRecharge.phone, newRecharge.money, newRecharge.type, newRecharge.status, newRecharge.today, newRecharge.url, newRecharge.time, newRecharge?.utr || "NULL"]
         );
-        
+
 
         const [recharge] = await connection.query('SELECT * FROM recharge WHERE id_order = ?', [newRecharge.orderId]);
 
@@ -727,7 +727,7 @@ const rechargeTable = {
 
 
 
-module.exports = {
+export default {
     initiateUPIPayment,
     verifyUPIPayment,
     initiateWowPayPayment,

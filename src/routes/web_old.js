@@ -1,13 +1,13 @@
 import express from 'express';
-import accountController from '../controllers/accountController';
-import homeController from '../controllers/homeController';
-import winGoController from '../controllers/winGoController';
-import userController from '../controllers/userController';
-import middlewareController from '../controllers/middlewareController';
-import adminController from '../controllers/adminController';
-import dailyController from '../controllers/dailyController';
-import k5Controller from '../controllers/k5Controller';
-import k3Controller from '../controllers/k3Controller';
+import accountController from '../controllers/accountController.js';
+import homeController from '../controllers/homeController.js';
+import winGoController from '../controllers/winGoController.js';
+import userController from '../controllers/userController.js';
+import middlewareController from '../controllers/middlewareController.js';
+import adminController from '../controllers/adminController.js';
+import dailyController from '../controllers/dailyController.js';
+import k5Controller from '../controllers/k5Controller.js';
+import k3Controller from '../controllers/k3Controller.js';
 let router = express.Router();
 
 const initWebRouter = (app) => {
@@ -24,7 +24,7 @@ const initWebRouter = (app) => {
         return res.redirect('/home');
     });
     router.get('/home', homeController.homePage);
-    
+
     router.get('/checkIn', middlewareController, homeController.checkInPage);
     router.get('/checkDes', middlewareController, homeController.checkDes);
     router.get('/checkRecord', middlewareController, homeController.checkRecord);
@@ -52,7 +52,7 @@ const initWebRouter = (app) => {
     router.get('/newtutorial', homeController.newtutorial);
     router.get('/about/privacyPolicy', middlewareController, homeController.privacyPolicy);
     router.get('/about/riskAgreement', middlewareController, homeController.riskAgreement);
-    
+
     router.get('/myProfile', middlewareController, homeController.myProfilePage);
 
 
@@ -80,8 +80,8 @@ const initWebRouter = (app) => {
     router.post('/api/webapi/login', accountController.login); // login
     router.post('/api/webapi/register', accountController.register); // register
     router.get('/api/webapi/GetUserInfo', middlewareController, userController.userInfo); // get info account
-    router.put('/api/webapi/change/userInfo',middlewareController, userController.changeUser); // get info account
-    router.put('/api/webapi/change/pass',middlewareController, userController.changePassword); // get info account
+    router.put('/api/webapi/change/userInfo', middlewareController, userController.changeUser); // get info account
+    router.put('/api/webapi/change/pass', middlewareController, userController.changePassword); // get info account
 
     // bet wingo
     router.post('/api/webapi/action/join', middlewareController, winGoController.betWinGo); // register
@@ -201,10 +201,10 @@ const initWebRouter = (app) => {
     router.post('/api/webapi/admin/k3/listOrders', adminController.middlewareAdminController, adminController.listOrderOldK3); // get info account
     router.post('/api/webapi/admin/5d/editResult', adminController.middlewareAdminController, adminController.editResult); // get info account
     router.post('/api/webapi/admin/k3/editResult', adminController.middlewareAdminController, adminController.editResult2); // get info account
-    
-    return app.use('/', router); 
+
+    return app.use('/', router);
 }
 
-module.exports = {
+export default {
     initWebRouter,
 };

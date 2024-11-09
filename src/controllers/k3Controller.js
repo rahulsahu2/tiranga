@@ -1,5 +1,6 @@
-import connection from "../config/connectDB";
-require('dotenv').config();
+import connection from "../config/connectDB.js";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const K3Page = async (req, res) => {
     return res.render("bet/k3/k3.ejs");
@@ -17,27 +18,27 @@ function formateT(params) {
 
 function timerJoin(params = '', addHours = 0) {
     let date = '';
-        if (params) {
-            date = new Date(Number(params));
-        } else {
-            date = new Date();
-        }
-    
-        date.setHours(date.getHours() + addHours);
-    
-        let years = formateT(date.getFullYear());
-        let months = formateT(date.getMonth() + 1);
-        let days = formateT(date.getDate());
-    
-        let hours = date.getHours() % 12;
-        hours = hours === 0 ? 12 : hours;
-        let ampm = date.getHours() < 12 ? "AM" : "PM";
-    
-        let minutes = formateT(date.getMinutes());
-        let seconds = formateT(date.getSeconds());
-    
-        return years + '-' + months + '-' + days + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+    if (params) {
+        date = new Date(Number(params));
+    } else {
+        date = new Date();
     }
+
+    date.setHours(date.getHours() + addHours);
+
+    let years = formateT(date.getFullYear());
+    let months = formateT(date.getMonth() + 1);
+    let days = formateT(date.getDate());
+
+    let hours = date.getHours() % 12;
+    hours = hours === 0 ? 12 : hours;
+    let ampm = date.getHours() < 12 ? "AM" : "PM";
+
+    let minutes = formateT(date.getMinutes());
+    let seconds = formateT(date.getSeconds());
+
+    return years + '-' + months + '-' + days + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+}
 
 const rosesPlus = async (auth, money) => {
     const [level] = await connection.query('SELECT * FROM level ');
@@ -338,7 +339,7 @@ async function funHanding(game) {
         // if (!result) {
         //     await connection.execute(`UPDATE result_k3 SET status = 2 WHERE id = ? `, [totalNumber[i].id]);
         // }
-        let lengWin = sult.filter(function(age) {
+        let lengWin = sult.filter(function (age) {
             return age == total;
         });
 
@@ -687,7 +688,7 @@ async function funHanding(game) {
             if (check1) {
                 await connection.execute(`UPDATE result_k3 SET status = 2 WHERE id = ? `, [id]);
             }
-        }   
+        }
     }
 }
 
@@ -747,12 +748,12 @@ async function plusMoney(game) {
             let total = (orders.money / arr.length / orders.amount);
             let fee = total * 0.02;
             let price = total - fee;
-            
-            let lengWin = arr.filter(function(age) {
+
+            let lengWin = arr.filter(function (age) {
                 return age == totalResult2;
             });
 
-            let lengWin2 = arr.filter(function(age) {
+            let lengWin2 = arr.filter(function (age) {
                 return !isNumber(age);
             });
 
@@ -771,7 +772,7 @@ async function plusMoney(game) {
             if (totalResult2 >= 3 && totalResult2 <= 11 && lengWin2.includes('s')) {
                 nhan_duoc += price * 1.92;
             }
-            
+
             let get = 0;
             switch (lengWin[0]) {
                 case '3':
@@ -838,7 +839,7 @@ async function plusMoney(game) {
             let arr2 = array[1];
             let arr3 = array[1].split('&');
             for (let i = 0; i < arr1.length; i++) {
-                if(arr1[i] != "") {
+                if (arr1[i] != "") {
                     let check1 = arr1[i].includes(kq1);
                     let check2 = arr1[i].includes(kq2);
                     if (check1 || check2) {
@@ -860,7 +861,7 @@ async function plusMoney(game) {
             }
             arr2 = array[1];
             for (let i = 0; i < arr3.length; i++) {
-                if(arr3[i] != "") {
+                if (arr3[i] != "") {
                     let files = arr3[i].split('|');
                     let check1 = files[0].includes(kq1);
                     let check2 = files[0].includes(kq2);
@@ -900,7 +901,7 @@ async function plusMoney(game) {
             let array = orders.bet.split('@');
             let arr1 = array[0].split(',');
             let arr2 = array[1];
-            
+
             for (let i = 0; i < arr1.length; i++) {
                 if (arr1[i] != "") {
                     let check1 = arr1[i].includes(kq);
@@ -936,7 +937,7 @@ async function plusMoney(game) {
             let arr1 = array[0].split(',');
             let arr2 = array[1];
             let arr3 = array[2].split(',');
-            
+
             for (let i = 0; i < arr1.length; i++) {
                 if (arr1[i] != "") {
                     let check1 = kq.includes(arr1[i]);
@@ -1117,7 +1118,7 @@ const GetMyEmerdList = async (req, res) => {
 }
 
 
-module.exports = {
+export default {
     K3Page,
     betK3,
     addK3,

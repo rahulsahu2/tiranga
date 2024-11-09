@@ -10,7 +10,7 @@
     }
     else if (typeof exports === 'object') {
         // CommonJS
-        module.exports = function (root, $) {
+        export defaultfunction(root, $) {
             if (!root) {
                 root = window;
             }

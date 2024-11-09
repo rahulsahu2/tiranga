@@ -1,5 +1,6 @@
-import connection from '../config/connectDB';
-require('dotenv').config();
+import connection from '../config/connectDB.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const sendMessageAdmin = (io) => {
     io.on('connection', (socket) => {
@@ -19,7 +20,7 @@ const sendMessageAdmin = (io) => {
         // console.log('a user disconnect ' + socket.id);
         // });
     });
-} 
-module.exports = {
+}
+export default {
     sendMessageAdmin,
 }

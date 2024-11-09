@@ -1,10 +1,11 @@
-import connection from "../config/connectDB";
-require('dotenv').config();
+import connection from "../config/connectDB.js";
+import dotenv from 'dotenv';
+dotenv.config();
 
 let timeNow = Date.now();
 
-const CreateWingo = async(req, res) => {
-    
+const CreateWingo = async (req, res) => {
+
     // Reset DataBase Wingo
     await connection.execute('DELETE FROM wingo');
 
@@ -18,8 +19,8 @@ const CreateWingo = async(req, res) => {
     }
     console.log("Create Success Database Wingo.");
 }
-const Create5D = async(req, res) => {
-    
+const Create5D = async (req, res) => {
+
     // Reset DataBase 5D
     await connection.execute('DELETE FROM 5d');
 
@@ -34,8 +35,8 @@ const Create5D = async(req, res) => {
     console.log("Create Success Database 5D.");
 }
 
-const CreateK3 = async(req, res) => {
-    
+const CreateK3 = async (req, res) => {
+
     // Reset DataBase K3
     await connection.execute('DELETE FROM k3');
 
@@ -51,8 +52,8 @@ const CreateK3 = async(req, res) => {
     console.log("Please press ctrl + C and enter npm start to run the server.");
 }
 
-const Level = async(req, res) => {
-    
+const Level = async (req, res) => {
+
     // Reset DataBase Level
     await connection.execute('DELETE FROM level');
 
@@ -65,16 +66,16 @@ const Level = async(req, res) => {
     await connection.execute("INSERT INTO level SET id = 1, level = 0, f1 = 0.6, f2 = 0.18, f3 = 0.054, f4 = 0.0162");
 }
 
-const NapRut = async(req, res) => {
-    
+const NapRut = async (req, res) => {
+
     // Reset DataBase Level
     await connection.execute('DELETE FROM bank_recharge');
     await connection.execute("INSERT INTO `bank_recharge` (`id`, `name_bank`, `name_user`, `stk`, `type`, `time`) VALUES (NULL, 'MB BANK', 'NGUYEN NHAT LONG', '0800103725300', 'bank', '1655689155500')");
     await connection.execute("INSERT INTO `bank_recharge` (`id`, `name_bank`, `name_user`, `stk`, `type`, `time`) VALUES (NULL, 'MOMO', 'NGUYEN NHAT LONG', '387633464', 'momo', '1655689155500')");
 }
 
-const Admin = async(req, res) => {
-    
+const Admin = async (req, res) => {
+
     // Reset DataBase Level
     await connection.execute('DELETE FROM admin');
     await connection.execute("INSERT INTO `admin` (`id`, `wingo1`, `wingo3`, `wingo5`, `wingo10`, `k5d`, `k5d3`, `k5d5`, `k5d10`, `win_rate`, `telegram`, `cskh`, `app`) VALUES (NULL, '-1', '-1', '-1', '-1', '-1', '-1', '-1', '-1', '80', 'https://t.me/dreamsister', 'https://t.me/ChenQiaoYing', '#')");

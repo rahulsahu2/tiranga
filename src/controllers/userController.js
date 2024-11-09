@@ -1,9 +1,9 @@
-import connection from "../config/connectDB";
+import connection from "../config/connectDB.js";
 import jwt from 'jsonwebtoken'
 import md5 from "md5";
 import request from 'request';
 
-const axios = require('axios');
+import axios from 'axios';
 let timeNow = Date.now();
 
 const randomNumber = (min, max) => {
@@ -920,10 +920,10 @@ const addBank = async (req, res) => {
     let email = req.body.email;
     let sdt = req.body.sdt;
     let tinh = req.body.tinh;
-   
+
     let time = new Date().getTime();
 
-    if (!auth || !name_bank || !name_user || !stk || !email || !stk || !tinh ) {
+    if (!auth || !name_bank || !name_user || !stk || !email || !stk || !tinh) {
         return res.status(200).json({
             message: 'Failed',
             status: false,
@@ -1836,7 +1836,7 @@ const updateRecharge = async (req, res) => {
 }
 
 
-module.exports = {
+export default {
     userInfo,
     changeUser,
     promotion,

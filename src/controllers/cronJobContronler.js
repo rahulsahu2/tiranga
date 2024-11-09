@@ -1,11 +1,11 @@
-import connection from "../config/connectDB";
-import winGoController from "./winGoController";
-import k5Controller from "./k5Controller";
-import k3Controller from "./k3Controller";
+import connection from "../config/connectDB.js";
+import winGoController from "./winGoController.js";
+import k5Controller from "./k5Controller.js";
+import k3Controller from "./k3Controller.js";
 import cron from 'node-cron';
 
 const cronJobGame1p = (io) => {
-    cron.schedule('*/1 * * * *', async() => {
+    cron.schedule('*/1 * * * *', async () => {
         await winGoController.addWinGo(1);
         await winGoController.handlingWinGo1P(1);
         const [winGo1] = await connection.execute('SELECT * FROM `wingo` WHERE `game` = "wingo" ORDER BY `id` DESC LIMIT 2 ', []);
@@ -25,7 +25,7 @@ const cronJobGame1p = (io) => {
         io.emit('data-server-k3', { data: data3, 'game': '1' });
     });
 
-    cron.schedule('*/3 * * * *', async() => {
+    cron.schedule('*/3 * * * *', async () => {
         await winGoController.addWinGo(3);
         await winGoController.handlingWinGo1P(3);
         const [winGo1] = await connection.execute('SELECT * FROM `wingo` WHERE `game` = "wingo3" ORDER BY `id` DESC LIMIT 2 ', []);
@@ -45,7 +45,7 @@ const cronJobGame1p = (io) => {
         io.emit('data-server-k3', { data: data3, 'game': '3' });
     });
 
-    cron.schedule('*/5 * * * *', async() => {
+    cron.schedule('*/5 * * * *', async () => {
         await winGoController.addWinGo(5);
         await winGoController.handlingWinGo1P(5);
         const [winGo1] = await connection.execute('SELECT * FROM `wingo` WHERE `game` = "wingo5" ORDER BY `id` DESC LIMIT 2 ', []);
@@ -64,15 +64,15 @@ const cronJobGame1p = (io) => {
         const data3 = k3; // Cầu mới chưa có kết quả
         io.emit('data-server-k3', { data: data3, 'game': '5' });
     });
-    
-    cron.schedule('*/10 * * * *', async() => {
+
+    cron.schedule('*/10 * * * *', async () => {
         await winGoController.addWinGo(10);
         await winGoController.handlingWinGo1P(10);
         const [winGo1] = await connection.execute('SELECT * FROM `wingo` WHERE `game` = "wingo10" ORDER BY `id` DESC LIMIT 2 ', []);
         const data = winGo1; // Cầu mới chưa có kết quả
         io.emit('data-server', { data: data });
 
-        
+
         await k5Controller.add5D(10);
         await k5Controller.handling5D(10);
         const [k5D] = await connection.execute('SELECT * FROM 5d WHERE `game` = 10 ORDER BY `id` DESC LIMIT 2 ', []);
@@ -86,13 +86,13 @@ const cronJobGame1p = (io) => {
         io.emit('data-server-k3', { data: data3, 'game': '10' });
     });
 
-    cron.schedule('0 1 * * *', async() => {
+    cron.schedule('0 1 * * *', async () => {
         await connection.execute('UPDATE users SET roses_today = ?', [0]);
         await connection.execute('UPDATE point_list SET money = ?', [0]);
         await connection.execute('UPDATE turn_over SET daily_turn_over = ?', [0]);
     });
 }
 
-module.exports = {
+export default {
     cronJobGame1p
 };
