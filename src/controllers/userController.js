@@ -3,7 +3,27 @@ import jwt from 'jsonwebtoken'
 import md5 from "md5";
 import request from 'request';
 
+import crypto from 'crypto';
+
+var encryptionMethod = 'AES-256-CBC';
+var secret = "My32charPasswordAndInitVectorStr"; //must be 32 char length
+var iv = secret.substr(0, 16);
+
+// Encrypt Function
+function encrypt(text) {
+    var encryptor = crypto.createCipheriv(encryptionMethod, secret, iv);
+    return encryptor.update(text, 'utf8', 'base64') + encryptor.final('base64');
+}
+
+// Decrypt Function
+function decrypt(encryptedText) {
+    var decryptor = crypto.createDecipheriv(encryptionMethod, secret, iv);
+    return decryptor.update(encryptedText, 'base64', 'utf8') + decryptor.final('utf8');
+}
+
+
 import axios from 'axios';
+import e from "express";
 let timeNow = Date.now();
 
 const randomNumber = (min, max) => {
@@ -49,8 +69,10 @@ const verifyCode = async (req, res) => {
 
 const aviator = async (req, res) => {
     let auth = req.cookies.auth;
-    res.redirect(`https://247cashwin.cloud/theninja/src/api/userapi.php?action=loginandregisterbyauth&token=${auth}`);
-    //res.redirect(`https://jetx.asia/#/jet/loginbyauth/${auth}`);
+    if (!auth) return res.redirect("/login");
+    let user = await connection.query('SELECT * FROM users WHERE `token` = ? ', [auth]);
+    let data = JSON.stringify(user[0]);
+    res.redirect(`https://aviator19.live/auth/remote-login?token=${data}`);
 }
 
 const userInfo = async (req, res) => {
