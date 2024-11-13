@@ -15,6 +15,8 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
+app.set('trust proxy', true);
+
 const port = process.env.PORT || 3000;
 
 app.use(cookieParser());
