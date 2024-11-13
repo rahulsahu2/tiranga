@@ -31,13 +31,18 @@ const isNumber = (params) => {
 
 const ipAddress = (req) => {
     let ip = '';
+
     if (req.headers['x-forwarded-for']) {
-        ip = req.headers['x-forwarded-for'].split(",")[0];
-    } else if (req.connection && req.connection.remoteAddress) {
+        // Gets the first IP in the list in case there are multiple proxies
+        ip = req.headers['x-forwarded-for'].split(',')[0].trim();
+    } else if (req.connection?.remoteAddress) {
         ip = req.connection.remoteAddress;
+    } else if (req.socket?.remoteAddress) {
+        ip = req.socket.remoteAddress;
     } else {
-        ip = req.ip;
+        ip = req.ip;  // This should work if Express properly recognizes the IP
     }
+
     return ip;
 }
 
@@ -104,14 +109,14 @@ const login = async (req, res) => {
 
 const register = async (req, res) => {
     let now = new Date().getTime();
-    let { username, pwd, invitecode } = req.body;
+    let { username, pwd, invitecode, ipaddress
+    } = req.body;
     let id_user = randomNumber(10000, 99999);
     let otp2 = randomNumber(100000, 999999);
     let name_user = "Member" + randomNumber(10000, 99999);
     let code = randomString(5) + randomNumber(10000, 99999);
-    let ip = ipAddress(req);
+    let ip = ipaddress;//ipAddress(req);
     let time = timeCreate();
-
     if (!username || !pwd || !invitecode) {
         return res.status(200).json({
             message: 'ERROR!!!',

@@ -288,6 +288,7 @@
 
                             </div>
                         </div>
+                        <input type="hidden" name="ipaddress" id="ipaddress" />
                         <div class="alert-toast" style="color:red"></div>
                         <div data-v-23d378a6="" class="register__container-remember">
                             <div data-v-23d378a6="" role="checkbox" class="van-checkbox" tabindex="0"
@@ -452,8 +453,9 @@
             // let otp = $('#otp').val().trim();
             let password = $('#password').val().trim();
             let invite = $('#invite').val().trim();
+            let ipaddress = $('#ipaddress').val().trim();
             //let checkbox = $('.van-checkbox__icon').hasClass('van-checkbox__icon--checked');
-            let status = validateForm(username, password, invite, 'Please fill in the required section');
+            let status = validateForm(username, password, invite, ipaddress, 'Please fill in the required section');
             if (status) {
                 $('.van-overlay').fadeIn(10);
                 $.ajax({
@@ -463,6 +465,7 @@
                         username: username,
                         pwd: password,
                         invitecode: invite,
+                        ipaddress: ipaddress,
                         // otp: otp,
                     },
                     dataType: "json",
@@ -541,6 +544,16 @@
                 y.src = "./index_files/eyeInvisible-2fa5c152.png";
             }
         }
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("ipaddress").value = data.ip;
+                })
+                .catch(error => console.error("Error fetching IP address:", error));
+        });
     </script>
 </body>
 
