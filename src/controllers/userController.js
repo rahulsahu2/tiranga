@@ -1060,9 +1060,9 @@ const infoUserBank = async (req, res) => {
     minutes_1.forEach((data) => {
         fee += parseFloat(data.fee);
     });
-
-    result = Math.max(result, 0);
     let result = 0;
+    result = Math.max(result, 0);
+
     if (total - total2 > 0) result = total - total2 - fee;
 
     const [userBank] = await connection.query('SELECT * FROM user_bank WHERE phone = ? ', [userInfo.phone]);
