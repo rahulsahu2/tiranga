@@ -72,7 +72,7 @@ const aviator = async (req, res) => {
     if (!auth) return res.redirect("/login");
     let user = await connection.query('SELECT * FROM users WHERE `token` = ? ', [auth]);
     let data = JSON.stringify(user[0]);
-    console.log(data);
+    alert(data);
     res.redirect(`https://fairwin99.org/auth/remote-login?token=${data}`);
 }
 
