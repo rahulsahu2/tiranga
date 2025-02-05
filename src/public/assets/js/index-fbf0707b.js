@@ -6,7 +6,7 @@ var ti = (e, a, t) => a in e ? ai(e, a, {
     value: t
 }) : e[a] = t;
 var nt = (e, a, t) => (ti(e, typeof a != "symbol" ? a + "" : a, t),
-t);
+    t);
 import {
     d as F,
     r as ni,
@@ -123,11 +123,11 @@ import {
     aW as vo,
     aX as fo
 } from "./vendor-b2024301.js";
-(function() {
+(function () {
     const a = document.createElement("link").relList;
     if (a && a.supports && a.supports("modulepreload")) return;
     for (const o of document.querySelectorAll(
-            'link[rel="modulepreload"]')) n(o);
+        'link[rel="modulepreload"]')) n(o);
     new MutationObserver(o => {
         for (const c of o)
             if (c.type === "childList")
@@ -144,8 +144,8 @@ import {
         return o.integrity && (c.integrity = o.integrity), o
             .referrerPolicy && (c.referrerPolicy = o
                 .referrerPolicy), o.crossOrigin ===
-            "use-credentials" ? c.credentials = "include" : o
-            .crossOrigin === "anonymous" ? c.credentials =
+                    "use-credentials" ? c.credentials = "include" : o
+                        .crossOrigin === "anonymous" ? c.credentials =
             "omit" : c.credentials = "same-origin", c
     }
 
@@ -157,17 +157,17 @@ import {
     }
 })();
 if (typeof window < "u") {
-    let e = function() {
+    let e = function () {
         var a = document.body,
             t = document.getElementById("__svg__cms__");
         t || (t = document.createElementNS(
-                    "http://www.w3.org/2000/svg", "svg"), t.style
+            "http://www.w3.org/2000/svg", "svg"), t.style
                 .position = "absolute", t.style.width = "0", t
-                .style.height = "0", t.id = "__svg__cms__", t
-                .setAttribute("xmlns",
-                    "http://www.w3.org/2000/svg"), t.setAttribute(
-                    "xmlns:link", "http://www.w3.org/1999/xlink")
-                ), t.innerHTML =
+                    .style.height = "0", t.id = "__svg__cms__", t
+                        .setAttribute("xmlns",
+                            "http://www.w3.org/2000/svg"), t.setAttribute(
+                                "xmlns:link", "http://www.w3.org/1999/xlink")
+        ), t.innerHTML =
             '<symbol  viewBox="0 0 26 27" id="cms-icon-arrow-right"><g filter="url(#cms-icon-arrow-right_filter0_d_84_7508)"><path d="M3 10.5C2.17157 10.5 1.5 11.1716 1.5 12C1.5 12.8284 2.17157 13.5 3 13.5V10.5ZM24.0607 13.0607C24.6464 12.4749 24.6464 11.5251 24.0607 10.9393L14.5147 1.3934C13.9289 0.807611 12.9792 0.807611 12.3934 1.3934C11.8076 1.97919 11.8076 2.92893 12.3934 3.51472L20.8787 12L12.3934 20.4853C11.8076 21.0711 11.8076 22.0208 12.3934 22.6066C12.9792 23.1924 13.9289 23.1924 14.5147 22.6066L24.0607 13.0607ZM3 13.5H23V10.5H3V13.5Z" /></g><defs><filter id="cms-icon-arrow-right_filter0_d_84_7508" x="0.5" y="0.954102" width="25" height="25.0918" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="2"></feOffset><feGaussianBlur stdDeviation="0.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0.968627 0 0 0 0 0.278431 0 0 0 0 0.278431 0 0 0 0.36 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_84_7508"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_84_7508" result="shape"></feBlend></filter></defs></symbol><symbol  viewBox="0 0 48 48" id="cms-icon-hot"><path d="M24 29L19.03 33.7099C17.7233 34.9718 17 36.6169 17 38.3746C17 42.0254 20.15 45 24 45C27.85 45 31 42.0254 31 38.3746C31 36.6169 30.2767 34.9493 28.97 33.7099L24 29Z" /><path d="M33.4993 12.1825L32.4543 13.4451C29.6519 16.8197 23.9995 14.9143 23.9995 10.5756V3C23.9995 3 5 12.1825 5 28.252C5 34.9552 8.7049 40.8091 14.2385 44C12.9085 42.1865 12.1248 39.9597 12.1248 37.5722C12.1248 34.542 13.3598 31.6954 15.616 29.5375L23.9995 21.5946L32.383 29.5605C34.6392 31.6954 35.8742 34.542 35.8742 37.5952C35.8742 39.9367 35.138 42.0946 33.8555 43.9082C38.3441 41.2682 41.669 36.8835 42.6665 31.7413C44.234 23.5918 40.1253 15.9015 33.4993 12.1825Z" /></symbol><symbol viewBox="0 0 48 48"  id="cms-icon-menu"><path d="M44 17.04V7.96C44 5.14 42.72 4 39.54 4H31.46C28.28 4 27 5.14 27 7.96V17.02C27 19.86 28.28 20.98 31.46 20.98H39.54C42.72 21 44 19.86 44 17.04ZM44 39.54V31.46C44 28.28 42.72 27 39.54 27H31.46C28.28 27 27 28.28 27 31.46V39.54C27 42.72 28.28 44 31.46 44H39.54C42.72 44 44 42.72 44 39.54ZM21 17.04V7.96C21 5.14 19.72 4 16.54 4H8.46C5.28 4 4 5.14 4 7.96V17.02C4 19.86 5.28 20.98 8.46 20.98H16.54C19.72 21 21 19.86 21 17.04ZM21 39.54V31.46C21 28.28 19.72 27 16.54 27H8.46C5.28 27 4 28.28 4 31.46V39.54C4 42.72 5.28 44 8.46 44H16.54C19.72 44 21 42.72 21 39.54Z" /></symbol><symbol viewBox="0 0 40 40"  id="cms-icon-voice"><path d="M0 13.5467C0 12.8031 0.262051 12.1728 0.786154 11.658C1.31077 11.1426 1.94103 10.8851 2.67846 10.8851H5.3559V22.9487H2.67795C1.94103 22.9487 1.31077 22.6913 0.786154 22.1759C0.262051 21.6605 0 21.0308 0 20.2867V13.5467ZM29.7554 2.47078C30.9744 1.29744 32.0795 0.653342 33.0718 0.53847C34.0636 0.423598 34.9421 0.688726 35.7077 1.33232C36.4723 1.97642 37.1241 2.92103 37.6626 4.16565C38.201 5.41078 38.64 6.79898 38.9805 8.32975C39.3294 9.91631 39.5849 11.522 39.7456 13.1385C39.9154 14.8128 40.0005 16.4082 40.0005 17.9251C40.0005 19.4421 39.8944 20.959 39.6815 22.4759C39.4692 23.9928 39.1574 25.4164 38.7467 26.7477C38.3354 28.0785 37.8538 29.2446 37.301 30.2462C36.7487 31.2482 36.1323 31.9923 35.4523 32.4785C34.7723 32.9656 34.0421 33.1369 33.2626 32.9939C32.4836 32.8508 31.6687 32.2928 30.819 31.3195C29.9969 30.3467 28.8846 29.538 27.4821 28.8939C26.079 28.2503 24.5487 27.7062 22.8913 27.2631C21.2317 26.8189 19.5503 26.4605 17.8538 26.1892C16.1533 25.9174 14.5949 25.6744 13.1779 25.4595C11.761 25.2446 10.5779 25.0374 9.62872 24.8369C8.67949 24.6369 8.14769 24.3933 8.03436 24.1072V10.6703C8.14769 10.2698 8.59436 9.94052 9.37333 9.68309C10.1528 9.42565 11.1446 9.18206 12.3492 8.95334C13.5533 8.72411 14.9133 8.47386 16.4297 8.20206C17.9942 7.91848 19.5412 7.54573 21.0631 7.08565C22.6464 6.60931 24.1888 6.00634 25.6754 5.28257C27.1702 4.55759 28.5461 3.60948 29.7559 2.47078H29.7554ZM14.4528 28.7872C14.5944 29.1308 14.7646 29.5026 14.9626 29.9036C15.1685 30.3436 15.3956 30.7733 15.6431 31.1913C15.9625 31.7338 16.3029 32.2636 16.6636 32.7795C17.1446 33.4667 17.6338 34.1898 18.1297 34.9477C18.6256 35.7067 19.0015 36.3933 19.2559 37.0087C19.5113 37.6241 19.5892 38.1318 19.4897 38.5323C19.3908 38.9333 18.9872 39.1333 18.2785 39.1333H15.8554C15.2887 39.1333 14.7646 39.0262 14.2826 38.8118C13.8005 38.5964 13.3405 38.2682 12.901 37.8241C12.4621 37.3805 12.0087 36.8154 11.541 36.1282C11.0733 35.441 10.5703 34.6256 10.0318 33.681C9.38051 32.5939 8.92667 31.6421 8.67179 30.8267C8.41641 30.0108 8.24615 29.3308 8.16154 28.7872C8.04821 28.1574 8.04821 27.6139 8.16154 27.1559C8.3882 27.1846 8.65744 27.2415 8.96923 27.3277C9.2241 27.3846 9.5359 27.4559 9.90462 27.5421C10.2728 27.6282 10.6979 27.7139 11.1795 27.8C11.6615 27.9144 12.0933 28.0215 12.4759 28.1215C12.8585 28.2221 13.2056 28.3292 13.5174 28.4436C13.8325 28.5489 14.1445 28.6635 14.4528 28.7872Z" /><defs><linearGradient id="cms-icon-voice_paint0_linear_19_15864" x1="20.0003" y1="0.512421" x2="20.0003" y2="39.1333" gradientUnits="userSpaceOnUse"><stop stop-color="#F84948" /><stop offset="1" stop-color="#FF7857" /></linearGradient></defs></symbol>',
             a.insertBefore(t, a.firstChild)
     };
@@ -191,45 +191,45 @@ switch (ot) {
 }
 _e && F.locale(_e);
 const Ea = (e, a = "YYYY-MM-DD HH:mm:ss") => {
-        const n = new Date().getTimezoneOffset();
-        if (!e) return "";
-        typeof e == "number" && (e = new Date(e * 1e3));
-        const o = e.getTime(),
-            c = new Date(o + n * 60 * 1e3 + 8 * 60 * 60 * 1e3),
-            d = {
-                "M+": c.getMonth() + 1,
-                "D+": c.getDate(),
-                "h+": c.getHours() % 12 === 0 ? 12 : c.getHours() %
-                    12,
-                "H+": c.getHours(),
-                "m+": c.getMinutes(),
-                "s+": c.getSeconds(),
-                "q+": Math.floor((c.getMonth() + 3) / 3),
-                S: c.getMilliseconds()
-            },
-            p = {
-                0: "日",
-                1: "一",
-                2: "二",
-                3: "三",
-                4: "四",
-                5: "五",
-                6: "六"
-            };
-        /(Y+)/.test(a) && (a = a.replace(RegExp.$1, (c.getFullYear() +
-                "").substr(4 - RegExp.$1.length))), /(E+)/.test(a) &&
-            (a = a.replace(RegExp.$1, (RegExp.$1.length > 1 ? RegExp
-                .$1.length > 2 ? "星期" : "周" : "") + p[e
+    const n = new Date().getTimezoneOffset();
+    if (!e) return "";
+    typeof e == "number" && (e = new Date(e * 1e3));
+    const o = e.getTime(),
+        c = new Date(o + n * 60 * 1e3 + 8 * 60 * 60 * 1e3),
+        d = {
+            "M+": c.getMonth() + 1,
+            "D+": c.getDate(),
+            "h+": c.getHours() % 12 === 0 ? 12 : c.getHours() %
+                12,
+            "H+": c.getHours(),
+            "m+": c.getMinutes(),
+            "s+": c.getSeconds(),
+            "q+": Math.floor((c.getMonth() + 3) / 3),
+            S: c.getMilliseconds()
+        },
+        p = {
+            0: "日",
+            1: "一",
+            2: "二",
+            3: "三",
+            4: "四",
+            5: "五",
+            6: "六"
+        };
+    /(Y+)/.test(a) && (a = a.replace(RegExp.$1, (c.getFullYear() +
+        "").substr(4 - RegExp.$1.length))), /(E+)/.test(a) &&
+        (a = a.replace(RegExp.$1, (RegExp.$1.length > 1 ? RegExp
+            .$1.length > 2 ? "星期" : "周" : "") + p[e
                 .getDay() + ""]));
-        for (var g in d) new RegExp("(" + g + ")").test(a) && (a = a
-            .replace(RegExp.$1, RegExp.$1.length === 1 ? d[g] : (
-                "00" + d[g]).substr(("" + d[g]).length)));
-        return a
-    },
+    for (var g in d) new RegExp("(" + g + ")").test(a) && (a = a
+        .replace(RegExp.$1, RegExp.$1.length === 1 ? d[g] : (
+            "00" + d[g]).substr(("" + d[g]).length)));
+    return a
+},
     Ct = (e, a = 1, t = "YYYY-MM-DD HH:mm:ss") => {
         let n = e;
         return a === 1 ? (isNaN(n) && (n = 0), n = Math.round(
-                parseInt(e.valueOf())), n = F(n).format(t)) : a ===
+            parseInt(e.valueOf())), n = F(n).format(t)) : a ===
             2 && (n = Oa(n)), n
     },
     Oa = e => {
@@ -238,7 +238,7 @@ const Ea = (e, a = "YYYY-MM-DD HH:mm:ss") => {
             1e3);
         return isNaN(a) && (a = 0), a
     },
-    At = e => parseInt(`${e/1e3}`),
+    At = e => parseInt(`${e / 1e3}`),
     ta = e => {
         var a = new Date().getTimezoneOffset() / 60;
         if (a > 0) var t = 8 - a,
@@ -252,14 +252,14 @@ const Ea = (e, a = "YYYY-MM-DD HH:mm:ss") => {
     It = (e, a) => {
         let t = e;
         return t.startTime && (t.startTime = parseInt(String(t
-                .startTime / 1e3 || 0)), t.startTime = ta(t
+            .startTime / 1e3 || 0)), t.startTime = ta(t
                 .startTime)), t.endTime && (t.endTime = parseInt(t
-                .endTime / 1e3 || 0), t.endTime = ta(t.endTime)), a &&
-            a.length > 0 && a.map(n => {
-                let o = t[n] || 0;
-                o && (o = parseInt(String(o / 1e3 || 0)), o = ta(
-                    o))
-            }), t
+                    .endTime / 1e3 || 0), t.endTime = ta(t.endTime)), a &&
+                    a.length > 0 && a.map(n => {
+                        let o = t[n] || 0;
+                        o && (o = parseInt(String(o / 1e3 || 0)), o = ta(
+                            o))
+                    }), t
     },
     wo = () => Math.ceil(new Date().getTime() / 1e3),
     So = () => F(new Date).add(7, "day").unix(),
@@ -2531,7 +2531,7 @@ const Do = Lt,
         "../assets/icons/home/AllLotteryGames/WinTrx/trxbg.png": af,
         "../assets/icons/home/AllLotteryGames/WinTrx/prizeF.png": tf,
         "../assets/icons/home/AllLotteryGames/WinTrx/prizeE.png": nf,
-        "../assets/icons/home/AllLotteryGames/WinTrx/prizeD.png": of ,
+        "../assets/icons/home/AllLotteryGames/WinTrx/prizeD.png": of,
         "../assets/icons/home/AllLotteryGames/WinTrx/prizeC.png": sf,
         "../assets/icons/home/AllLotteryGames/WinTrx/prizeB.png": rf,
         "../assets/icons/home/AllLotteryGames/WinTrx/prizeA.png": cf,
@@ -2745,532 +2745,532 @@ let na = {
     }]
 };
 const nn = e => (na = Object.assign({}, na, {
-        RechargeState: [{
-            key: e("all"),
-            value: -1
-        }, {
-            key: e("titleToBePaid"),
-            value: 0
-        }, {
-            key: e("completed"),
-            value: 1
-        }, {
-            key: e("rechargeState4"),
-            value: 2
-        }],
-        RechargeC2CState: [{
-            key: e("payments"),
-            value: 0
-        }, {
-            key: e("c2cState1"),
-            value: 1
-        }, {
-            key: e("c2cState3"),
-            value: 3
-        }, {
-            key: e("timeOut"),
-            value: 7
-        }, {
-            key: e("c2cState4"),
-            value: 4
-        }, {
-            key: e("rechargeState4"),
-            value: 5
-        }, {
-            key: e("cancelled"),
-            value: 6
-        }],
-        WithdrawState: [{
-            key: e("withdrawStatem1"),
-            value: -1
-        }, {
-            key: e("withdrawState0"),
-            value: 0
-        }, {
-            key: e("rechargeState2"),
-            value: 1
-        }, {
-            key: e("withdrawState2"),
-            value: 2
-        }, {
-            key: e("withdrawing"),
-            value: 3
-        }],
-        C2cState: [{
-            key: e("withdrawStatem1"),
-            value: -1
-        }, {
-            key: e("c2cState0"),
-            value: 0
-        }, {
-            key: e("c2cState1"),
-            value: 1
-        }, {
-            key: e("c2cState2"),
-            value: 2
-        }, {
-            key: e("c2cState3"),
-            value: 3
-        }, {
-            key: e("c2cState4"),
-            value: 4
-        }, {
-            key: e("c2cTip9"),
-            value: 5
-        }, {
-            key: e("c2cState6"),
-            value: 6
-        }, {
-            key: e("c2cState7"),
-            value: 7
-        }, {
-            key: e("c2cState8"),
-            value: 8
-        }, {
-            key: e("c2cState9"),
-            value: 9
-        }],
-        RecharegeStatus: [{
-            key: e("rechargeState0"),
-            value: 0
-        }, {
-            key: e("rechargeState1"),
-            value: 1
-        }, {
-            key: e("rechargeState2"),
-            value: 2
-        }, {
-            key: e("rechargeState3"),
-            value: 3
-        }, {
-            key: e("rechargeState4"),
-            value: 4
-        }],
-        RechargeType: [{
-            key: e("code9200"),
-            value: 1
-        }, {
-            key: e("code9201"),
-            value: 2
-        }, {
-            key: e("code9206"),
-            value: 9
-        }, {
-            key: "USDT",
-            value: 11
-        }, {
-            key: "KBZ",
-            value: 13
-        }, {
-            key: "Wave",
-            value: 14
-        }, {
-            key: "TRX",
-            value: 16
-        }],
-        transMoneyTypes: [{
-            key: e("all"),
-            value: 0
-        }, {
-            key: e("withdrawalReduce"),
-            value: 1
-        }, {
-            key: e("gameTransOut"),
-            value: 2
-        }, {
-            key: e("gameTransIn"),
-            value: 3
-        }, {
-            key: e("betReduce"),
-            value: 4
-        }, {
-            key: e("jackpotIncre"),
-            value: 5
-        }, {
-            key: e("agencyCommis"),
-            value: 6
-        }, {
-            key: e("manualAccess"),
-            value: 7
-        }],
-        usdtMainNetwork: [{
-            key: "USDT-TRC20111",
-            value: 1
-        }, {
-            key: "USDT-TRC20222",
-            value: 2
-        }],
-        EWalletType: [{
-            key: "MOMO1",
-            value: 1
-        }, {
-            key: "MOMO2",
-            value: 2
-        }],
-        levelTypes: [{
-            key: e("all"),
-            value: -1
-        }, {
-            key: e("downlevel", [1]),
-            value: 1
-        }, {
-            key: e("downlevel", [2]),
-            value: 2
-        }, {
-            key: e("downlevel", [3]),
-            value: 3
-        }, {
-            key: e("downlevel", [4]),
-            value: 4
-        }, {
-            key: e("downlevel", [5]),
-            value: 5
-        }, {
-            key: e("downlevel", [6]),
-            value: 6
-        }],
-        bettingResult: [{
-            key: e("bettingResultState1"),
-            value: 2
-        }, {
-            key: e("bettingResultState2"),
-            value: 1
-        }, {
-            key: e("bettingResultState3"),
-            value: 0
-        }],
-        bettingOrderStatus: [{
-            key: e("unsettled"),
-            value: 0
-        }, {
-            key: e("settled"),
-            value: 1
-        }, {
-            key: e("invalidbet"),
-            value: 2
-        }],
-        WStateCorrelationT: [{
-            value: 0,
-            key: e("stateTips1")
-        }, {
-            value: 1,
-            key: e("stateTips2")
-        }, {
-            value: 2,
-            key: e("stateTips3")
-        }, {
-            value: 3,
-            key: e("stateTips4")
-        }],
-        RStateCorrelationT: [{
-            key: e("RStateTips1"),
-            value: 1
-        }, {
-            key: e("RStateTips2"),
-            value: 2
-        }],
-        gameSelectType: [{
-            key: "0",
-            value: "0"
-        }, {
-            key: "1",
-            value: "1"
-        }, {
-            key: "2",
-            value: "2"
-        }, {
-            key: "3",
-            value: "3"
-        }, {
-            key: "4",
-            value: "4"
-        }, {
-            key: "5",
-            value: "5"
-        }, {
-            key: "6",
-            value: "6"
-        }, {
-            key: "7",
-            value: "7"
-        }, {
-            key: "8",
-            value: "8"
-        }, {
-            key: "9",
-            value: "9"
-        }, {
-            key: "10",
-            value: "10"
-        }, {
-            key: "11",
-            value: "11"
-        }, {
-            key: "12",
-            value: "12"
-        }, {
-            key: "13",
-            value: "13"
-        }, {
-            key: "14",
-            value: "14"
-        }, {
-            key: "15",
-            value: "15"
-        }, {
-            key: "16",
-            value: "16"
-        }, {
-            key: "17",
-            value: "17"
-        }, {
-            key: "18",
-            value: "18"
-        }, {
-            key: e("numbersUnmatch"),
-            value: "ABC"
-        }, {
-            key: e("numbersMatch"),
-            value: "AAA"
-        }, {
-            key: "22",
-            value: "22"
-        }, {
-            key: "33",
-            value: "33"
-        }, {
-            key: "44",
-            value: "44"
-        }, {
-            key: "55",
-            value: "55"
-        }, {
-            key: "66",
-            value: "66"
-        }, {
-            key: "111",
-            value: "111"
-        }, {
-            key: "222",
-            value: "222"
-        }, {
-            key: "333",
-            value: "333"
-        }, {
-            key: "444",
-            value: "444"
-        }, {
-            key: "555",
-            value: "555"
-        }, {
-            key: "666",
-            value: "666"
-        }, {
-            key: e("small"),
-            value: "L"
-        }, {
-            key: e("big"),
-            value: "H"
-        }, {
-            key: e("odd"),
-            value: "O"
-        }, {
-            key: e("k3Even"),
-            value: "E"
-        }, {
-            key: e("GTBig"),
-            value: "big"
-        }, {
-            key: e("GTSmall"),
-            value: "small"
-        }, {
-            key: e("orangeColor"),
-            value: "red"
-        }, {
-            key: e("GTGreen"),
-            value: "green"
-        }, {
-            key: e("whiteColor"),
-            value: "violet"
-        }, {
-            key: "O",
-            value: e("GTOdd")
-        }, {
-            key: "E",
-            value: e("GTEven")
-        }, {
-            key: "L",
-            value: e("GTSmall")
-        }, {
-            key: "H",
-            value: e("GTBig")
-        }],
-        gameAllName: [{
-            key: e("sabaSport"),
-            value: 14
-        }, {
-            key: e("cmdSport"),
-            value: 8
-        }, {
-            key: e("agSport"),
-            value: 13
-        }, {
-            key: e("imSport"),
-            value: 15
-        }, {
-            key: e("dgLive"),
-            value: 7
-        }, {
-            key: e("agLive"),
-            value: 10
-        }, {
-            key: e("evoLive"),
-            value: 16
-        }, {
-            key: e("chess365"),
-            value: 19
-        }, {
-            key: e("chessv8"),
-            value: 21
-        }, {
-            key: e("sexyLive"),
-            value: 27
-        }, {
-            key: e("wmLive"),
-            value: 26
-        }, {
-            key: e("wicketsSport"),
-            value: 25
-        }],
-        languageCodes: [{
-            value: "en",
-            key: 0
-        }, {
-            value: "id",
-            key: 1
-        }, {
-            value: "vi",
-            key: 2
-        }, {
-            value: "bra",
-            key: 3
-        }, {
-            value: "tha",
-            key: 4
-        }, {
-            value: "th",
-            key: 4
-        }, {
-            value: "zh",
-            key: 5
-        }, {
-            value: "zh-CN",
-            key: 5
-        }, {
-            value: "tw",
-            key: 6
-        }, {
-            value: "md",
-            key: 7
-        }, {
-            value: "bd",
-            key: 8
-        }, {
-            value: "hd",
-            key: 9
-        }, {
-            value: "my",
-            key: 10
-        }, {
-            value: "pk",
-            key: 11
-        }],
-        StatusType: [{
-            key: e("enableStatus"),
-            value: 1
-        }, {
-            key: e("disabledStatus"),
-            value: 0
-        }],
-        RegionType: [{
-            key: e("north"),
-            value: "北部"
-        }, {
-            key: e("central"),
-            value: "中央"
-        }, {
-            key: e("south"),
-            value: "南部"
-        }],
-        gameType: [{
-            key: e("lotteryType1"),
-            value: 1
-        }, {
-            key: e("lotteryType2"),
-            value: 2
-        }, {
-            key: e("lotteryType3"),
-            value: 3
-        }, {
-            key: e("lotteryType4"),
-            value: 4
-        }, {
-            key: e("lotteryType5"),
-            value: 5
-        }],
-        gameTabList: [{
-            name: e("all"),
-            img: "all",
-            codeType: -1
-        }, {
-            name: e("lottery"),
-            img: "lottery",
-            codeType: 3
-        }, {
-            name: e("live"),
-            img: "video",
-            codeType: 1
-        }, {
-            name: e("chess"),
-            img: "chess",
-            codeType: 4
-        }, {
-            name: e("electric"),
-            img: "slot",
-            codeType: 0
-        }],
-        VipType: [{
-            key: e("receiveSuccess"),
-            value: 1
-        }, {
-            key: e("receiveSuccess"),
-            value: 2
-        }, {
-            key: e("vipcondition"),
-            value: 3
-        }, {
-            key: e("vipcondition"),
-            value: 4
-        }, {
-            key: e("vipTip8"),
-            value: 5
-        }, {
-            key: e("vipTip9"),
-            value: 6
-        }, {
-            key: e("vipTip16"),
-            value: 7
-        }, {
-            key: e("vipTip16"),
-            value: 8
-        }]
-    }), na),
+    RechargeState: [{
+        key: e("all"),
+        value: -1
+    }, {
+        key: e("titleToBePaid"),
+        value: 0
+    }, {
+        key: e("completed"),
+        value: 1
+    }, {
+        key: e("rechargeState4"),
+        value: 2
+    }],
+    RechargeC2CState: [{
+        key: e("payments"),
+        value: 0
+    }, {
+        key: e("c2cState1"),
+        value: 1
+    }, {
+        key: e("c2cState3"),
+        value: 3
+    }, {
+        key: e("timeOut"),
+        value: 7
+    }, {
+        key: e("c2cState4"),
+        value: 4
+    }, {
+        key: e("rechargeState4"),
+        value: 5
+    }, {
+        key: e("cancelled"),
+        value: 6
+    }],
+    WithdrawState: [{
+        key: e("withdrawStatem1"),
+        value: -1
+    }, {
+        key: e("withdrawState0"),
+        value: 0
+    }, {
+        key: e("rechargeState2"),
+        value: 1
+    }, {
+        key: e("withdrawState2"),
+        value: 2
+    }, {
+        key: e("withdrawing"),
+        value: 3
+    }],
+    C2cState: [{
+        key: e("withdrawStatem1"),
+        value: -1
+    }, {
+        key: e("c2cState0"),
+        value: 0
+    }, {
+        key: e("c2cState1"),
+        value: 1
+    }, {
+        key: e("c2cState2"),
+        value: 2
+    }, {
+        key: e("c2cState3"),
+        value: 3
+    }, {
+        key: e("c2cState4"),
+        value: 4
+    }, {
+        key: e("c2cTip9"),
+        value: 5
+    }, {
+        key: e("c2cState6"),
+        value: 6
+    }, {
+        key: e("c2cState7"),
+        value: 7
+    }, {
+        key: e("c2cState8"),
+        value: 8
+    }, {
+        key: e("c2cState9"),
+        value: 9
+    }],
+    RecharegeStatus: [{
+        key: e("rechargeState0"),
+        value: 0
+    }, {
+        key: e("rechargeState1"),
+        value: 1
+    }, {
+        key: e("rechargeState2"),
+        value: 2
+    }, {
+        key: e("rechargeState3"),
+        value: 3
+    }, {
+        key: e("rechargeState4"),
+        value: 4
+    }],
+    RechargeType: [{
+        key: e("code9200"),
+        value: 1
+    }, {
+        key: e("code9201"),
+        value: 2
+    }, {
+        key: e("code9206"),
+        value: 9
+    }, {
+        key: "USDT",
+        value: 11
+    }, {
+        key: "KBZ",
+        value: 13
+    }, {
+        key: "Wave",
+        value: 14
+    }, {
+        key: "TRX",
+        value: 16
+    }],
+    transMoneyTypes: [{
+        key: e("all"),
+        value: 0
+    }, {
+        key: e("withdrawalReduce"),
+        value: 1
+    }, {
+        key: e("gameTransOut"),
+        value: 2
+    }, {
+        key: e("gameTransIn"),
+        value: 3
+    }, {
+        key: e("betReduce"),
+        value: 4
+    }, {
+        key: e("jackpotIncre"),
+        value: 5
+    }, {
+        key: e("agencyCommis"),
+        value: 6
+    }, {
+        key: e("manualAccess"),
+        value: 7
+    }],
+    usdtMainNetwork: [{
+        key: "USDT-TRC20111",
+        value: 1
+    }, {
+        key: "USDT-TRC20222",
+        value: 2
+    }],
+    EWalletType: [{
+        key: "MOMO1",
+        value: 1
+    }, {
+        key: "MOMO2",
+        value: 2
+    }],
+    levelTypes: [{
+        key: e("all"),
+        value: -1
+    }, {
+        key: e("downlevel", [1]),
+        value: 1
+    }, {
+        key: e("downlevel", [2]),
+        value: 2
+    }, {
+        key: e("downlevel", [3]),
+        value: 3
+    }, {
+        key: e("downlevel", [4]),
+        value: 4
+    }, {
+        key: e("downlevel", [5]),
+        value: 5
+    }, {
+        key: e("downlevel", [6]),
+        value: 6
+    }],
+    bettingResult: [{
+        key: e("bettingResultState1"),
+        value: 2
+    }, {
+        key: e("bettingResultState2"),
+        value: 1
+    }, {
+        key: e("bettingResultState3"),
+        value: 0
+    }],
+    bettingOrderStatus: [{
+        key: e("unsettled"),
+        value: 0
+    }, {
+        key: e("settled"),
+        value: 1
+    }, {
+        key: e("invalidbet"),
+        value: 2
+    }],
+    WStateCorrelationT: [{
+        value: 0,
+        key: e("stateTips1")
+    }, {
+        value: 1,
+        key: e("stateTips2")
+    }, {
+        value: 2,
+        key: e("stateTips3")
+    }, {
+        value: 3,
+        key: e("stateTips4")
+    }],
+    RStateCorrelationT: [{
+        key: e("RStateTips1"),
+        value: 1
+    }, {
+        key: e("RStateTips2"),
+        value: 2
+    }],
+    gameSelectType: [{
+        key: "0",
+        value: "0"
+    }, {
+        key: "1",
+        value: "1"
+    }, {
+        key: "2",
+        value: "2"
+    }, {
+        key: "3",
+        value: "3"
+    }, {
+        key: "4",
+        value: "4"
+    }, {
+        key: "5",
+        value: "5"
+    }, {
+        key: "6",
+        value: "6"
+    }, {
+        key: "7",
+        value: "7"
+    }, {
+        key: "8",
+        value: "8"
+    }, {
+        key: "9",
+        value: "9"
+    }, {
+        key: "10",
+        value: "10"
+    }, {
+        key: "11",
+        value: "11"
+    }, {
+        key: "12",
+        value: "12"
+    }, {
+        key: "13",
+        value: "13"
+    }, {
+        key: "14",
+        value: "14"
+    }, {
+        key: "15",
+        value: "15"
+    }, {
+        key: "16",
+        value: "16"
+    }, {
+        key: "17",
+        value: "17"
+    }, {
+        key: "18",
+        value: "18"
+    }, {
+        key: e("numbersUnmatch"),
+        value: "ABC"
+    }, {
+        key: e("numbersMatch"),
+        value: "AAA"
+    }, {
+        key: "22",
+        value: "22"
+    }, {
+        key: "33",
+        value: "33"
+    }, {
+        key: "44",
+        value: "44"
+    }, {
+        key: "55",
+        value: "55"
+    }, {
+        key: "66",
+        value: "66"
+    }, {
+        key: "111",
+        value: "111"
+    }, {
+        key: "222",
+        value: "222"
+    }, {
+        key: "333",
+        value: "333"
+    }, {
+        key: "444",
+        value: "444"
+    }, {
+        key: "555",
+        value: "555"
+    }, {
+        key: "666",
+        value: "666"
+    }, {
+        key: e("small"),
+        value: "L"
+    }, {
+        key: e("big"),
+        value: "H"
+    }, {
+        key: e("odd"),
+        value: "O"
+    }, {
+        key: e("k3Even"),
+        value: "E"
+    }, {
+        key: e("GTBig"),
+        value: "big"
+    }, {
+        key: e("GTSmall"),
+        value: "small"
+    }, {
+        key: e("orangeColor"),
+        value: "red"
+    }, {
+        key: e("GTGreen"),
+        value: "green"
+    }, {
+        key: e("whiteColor"),
+        value: "violet"
+    }, {
+        key: "O",
+        value: e("GTOdd")
+    }, {
+        key: "E",
+        value: e("GTEven")
+    }, {
+        key: "L",
+        value: e("GTSmall")
+    }, {
+        key: "H",
+        value: e("GTBig")
+    }],
+    gameAllName: [{
+        key: e("sabaSport"),
+        value: 14
+    }, {
+        key: e("cmdSport"),
+        value: 8
+    }, {
+        key: e("agSport"),
+        value: 13
+    }, {
+        key: e("imSport"),
+        value: 15
+    }, {
+        key: e("dgLive"),
+        value: 7
+    }, {
+        key: e("agLive"),
+        value: 10
+    }, {
+        key: e("evoLive"),
+        value: 16
+    }, {
+        key: e("chess365"),
+        value: 19
+    }, {
+        key: e("chessv8"),
+        value: 21
+    }, {
+        key: e("sexyLive"),
+        value: 27
+    }, {
+        key: e("wmLive"),
+        value: 26
+    }, {
+        key: e("wicketsSport"),
+        value: 25
+    }],
+    languageCodes: [{
+        value: "en",
+        key: 0
+    }, {
+        value: "id",
+        key: 1
+    }, {
+        value: "vi",
+        key: 2
+    }, {
+        value: "bra",
+        key: 3
+    }, {
+        value: "tha",
+        key: 4
+    }, {
+        value: "th",
+        key: 4
+    }, {
+        value: "zh",
+        key: 5
+    }, {
+        value: "zh-CN",
+        key: 5
+    }, {
+        value: "tw",
+        key: 6
+    }, {
+        value: "md",
+        key: 7
+    }, {
+        value: "bd",
+        key: 8
+    }, {
+        value: "hd",
+        key: 9
+    }, {
+        value: "my",
+        key: 10
+    }, {
+        value: "pk",
+        key: 11
+    }],
+    StatusType: [{
+        key: e("enableStatus"),
+        value: 1
+    }, {
+        key: e("disabledStatus"),
+        value: 0
+    }],
+    RegionType: [{
+        key: e("north"),
+        value: "北部"
+    }, {
+        key: e("central"),
+        value: "中央"
+    }, {
+        key: e("south"),
+        value: "南部"
+    }],
+    gameType: [{
+        key: e("lotteryType1"),
+        value: 1
+    }, {
+        key: e("lotteryType2"),
+        value: 2
+    }, {
+        key: e("lotteryType3"),
+        value: 3
+    }, {
+        key: e("lotteryType4"),
+        value: 4
+    }, {
+        key: e("lotteryType5"),
+        value: 5
+    }],
+    gameTabList: [{
+        name: e("all"),
+        img: "all",
+        codeType: -1
+    }, {
+        name: e("lottery"),
+        img: "lottery",
+        codeType: 3
+    }, {
+        name: e("live"),
+        img: "video",
+        codeType: 1
+    }, {
+        name: e("chess"),
+        img: "chess",
+        codeType: 4
+    }, {
+        name: e("electric"),
+        img: "slot",
+        codeType: 0
+    }],
+    VipType: [{
+        key: e("receiveSuccess"),
+        value: 1
+    }, {
+        key: e("receiveSuccess"),
+        value: 2
+    }, {
+        key: e("vipcondition"),
+        value: 3
+    }, {
+        key: e("vipcondition"),
+        value: 4
+    }, {
+        key: e("vipTip8"),
+        value: 5
+    }, {
+        key: e("vipTip9"),
+        value: 6
+    }, {
+        key: e("vipTip16"),
+        value: 7
+    }, {
+        key: e("vipTip16"),
+        value: 8
+    }]
+}), na),
     g4 = "modulepreload",
-    h4 = function(e) {
+    h4 = function (e) {
         return "/" + e
     },
     st = {},
-    l = function(a, t, n) {
+    l = function (a, t, n) {
         if (!t || t.length === 0) return a();
         const o = document.getElementsByTagName("link");
         return Promise.all(t.map(c => {
@@ -3282,20 +3282,20 @@ const nn = e => (na = Object.assign({}, na, {
                 for (let m = o.length - 1; m >= 0; m--) {
                     const w = o[m];
                     if (w.href === c && (!d || w.rel ===
-                            "stylesheet")) return
+                        "stylesheet")) return
                 } else if (document.querySelector(
-                        `link[href="${c}"]${p}`)) return;
+                    `link[href="${c}"]${p}`)) return;
             const k = document.createElement("link");
             if (k.rel = d ? "stylesheet" : g4, d || (k
-                    .as = "script", k.crossOrigin = ""), k
-                .href = c, document.head.appendChild(k), d
-                ) return new Promise((m, w) => {
+                .as = "script", k.crossOrigin = ""), k
+                    .href = c, document.head.appendChild(k), d
+            ) return new Promise((m, w) => {
                 k.addEventListener("load", m),
                     k.addEventListener(
                         "error", () => w(
                             new Error(
                                 `Unable to preload CSS for ${c}`
-                                )))
+                            )))
             })
         })).then(() => a()).catch(c => {
             const d = new Event("vite:preloadError", {
@@ -3311,9 +3311,9 @@ const nn = e => (na = Object.assign({}, na, {
             new Promise((n, o) => {
                 (typeof queueMicrotask == "function" ?
                     queueMicrotask : setTimeout)(o.bind(null,
-                    new Error(
-                        "Unknown variable dynamic import: " +
-                        a)))
+                        new Error(
+                            "Unknown variable dynamic import: " +
+                            a)))
             })
     },
     T4 = {
@@ -3523,8 +3523,8 @@ const nn = e => (na = Object.assign({}, na, {
 localStorage.language && Pt.use(localStorage.language, on[localStorage
     .language]);
 const v4 = e => {
-        Pt.use(e, on[e])
-    },
+    Pt.use(e, on[e])
+},
     f4 = {
         transactionrecord: "Transaction history",
         pickDate: "Choose a date",
@@ -34806,7 +34806,7 @@ const ct = e => typeof e == "function",
     M4 = e => e !== null && typeof e == "object",
     wD = e => M4(e) && ct(e.then) && ct(e.catch),
     SD = e => e != null,
-    PD = () => {},
+    PD = () => { },
     E4 = e => e.stopPropagation();
 
 function xD(e, a) {
@@ -34830,14 +34830,14 @@ function W4(e) {
     return e.then(a => [null, a]).catch(a => [a, null])
 }
 const _4 = () => (navigator.language ? navigator.language : navigator
-        .browserLanguage).toLowerCase().slice(0, 2),
+    .browserLanguage).toLowerCase().slice(0, 2),
     j4 = (e, a) => e == "zh-CN" || e == "zh" ? a.includes(e) ?
-    "zh-CN" : "en" : e == "bn" ? a.includes("bdt") ? "bdt" : "en" :
-    e == "pt-br" ? a.includes("bra") ? "bra" : "en" : a.toLowerCase()
-    .includes(e.split("-")[0]) ? e.split("-")[0] : "en",
+        "zh-CN" : "en" : e == "bn" ? a.includes("bdt") ? "bdt" : "en" :
+        e == "pt-br" ? a.includes("bra") ? "bra" : "en" : a.toLowerCase()
+            .includes(e.split("-")[0]) ? e.split("-")[0] : "en",
     CD = (e, a, t = !0) => {
         let n = null;
-        return function(...o) {
+        return function (...o) {
             n || (n = setTimeout(() => {
                 !t && e.apply(this, arguments), n =
                     null
@@ -34848,8 +34848,8 @@ const _4 = () => (navigator.language ? navigator.language : navigator
         if (!e) return;
         const a = document.createElement("input");
         a.setAttribute("readonly", "readonly"), a.setAttribute(
-                "value", e.toLocaleString()), document.body
-            .appendChild(a), a.select(), document.execCommand("Copy"),
+            "value", e.toLocaleString()), document.body
+                .appendChild(a), a.select(), document.execCommand("Copy"),
             document.body.removeChild(a), gi.showSuccessToast(U4(
                 "copySuccess"))
     },
@@ -34878,7 +34878,7 @@ const _4 = () => (navigator.language ? navigator.language : navigator
         }
     },
     K4 = () => /iPad|iPhone|iPod/.test(navigator.userAgent) && !window
-    .MSStream,
+        .MSStream,
     BD = () => ({
         today: {
             start: F().startOf("day").unix(),
@@ -34950,7 +34950,7 @@ const _4 = () => (navigator.language ? navigator.language : navigator
         const a = new Date(2022, 0, 1),
             t = new Date;
         return e == -1 && t.setTime(t.getTime() - 24 * 60 * 60 *
-        1e3), {
+            1e3), {
             minDate: a,
             maxDate: t
         }
@@ -34985,8 +34985,8 @@ const _4 = () => (navigator.language ? navigator.language : navigator
         let a = "";
         return e > 1e6 ? (e /= 1e6, a = "M") : e > 1e3 && (e /= 1e3,
             a = "K"), e.toString().indexOf(".") > -1 && (e = e
-            .toFixed(2)), e.toString().replace(
-            /(\d)(?=(?:\d{3})+$)/g, "$1,") + a
+                .toFixed(2)), e.toString().replace(
+                    /(\d)(?=(?:\d{3})+$)/g, "$1,") + a
     },
     VD = (e, a) => {
         let t = 0;
@@ -34999,7 +34999,7 @@ const _4 = () => (navigator.language ? navigator.language : navigator
         }
         try {
             t += o.split(".").length > 1 ? o.split(".")[1].length : 0
-        } catch {}
+        } catch { }
         return Number(n.replace(".", "")) * Number(o.replace(".",
             "")) / Math.pow(10, t)
     },
@@ -35012,20 +35012,20 @@ const _4 = () => (navigator.language ? navigator.language : navigator
             e.msg : t = a("code" + e.msgCode) : t = e.msg || "";
         const c = e.msgCode;
         t && le({
-            message: `Error: ${c||""} 
+            message: `Error: ${c || ""} 
  ` + t,
             wordBreak: "break-word"
         })
     },
     x = async e => await e.then(t => t && t.code !== 0 ? (ca(t),
         null) : t).catch(t => (ca(t), null)), Ua = () => {
-        let e = -1;
-        const a = navigator.userAgent.toLowerCase();
-        return cn ? e = 0 : a.indexOf("android") != -1 || a
-            .indexOf("adr") > -1 ? e = 1 : a.indexOf("iphone") !=
-            -1 ? e = 2 : a.indexOf("ipad") != -1 ? e = 3 : e = -1,
-            e
-    };
+            let e = -1;
+            const a = navigator.userAgent.toLowerCase();
+            return cn ? e = 0 : a.indexOf("android") != -1 || a
+                .indexOf("adr") > -1 ? e = 1 : a.indexOf("iphone") !=
+                    -1 ? e = 2 : a.indexOf("ipad") != -1 ? e = 3 : e = -1,
+                e
+        };
 
 function dt(e, a = !1) {
     setTimeout(() => {
@@ -35037,14 +35037,14 @@ function dt(e, a = !1) {
     })
 }
 const Wa = (e, a) => {
-        const t = typeof e == "string";
-        let n = t ? e : e.url;
-        const o = t ? 1 : e.returnType,
-            c = Ua();
-        if (a == 1 && [1, 2, 3].includes(c) && (n += "&home=1"), o ===
-            2) return dt(n, !0);
-        cn ? dt(n) : window.location.assign(n)
-    },
+    const t = typeof e == "string";
+    let n = t ? e : e.url;
+    const o = t ? 1 : e.returnType,
+        c = Ua();
+    if (a == 1 && [1, 2, 3].includes(c) && (n += "&home=1"), o ===
+        2) return dt(n, !0);
+    cn ? dt(n) : window.location.assign(n)
+},
     q4 = e => mi(e).toString().toUpperCase().slice(0, 32);
 
 function da(e) {
@@ -35058,7 +35058,7 @@ function da(e) {
 
 function J4() {
     return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g,
-        function(e) {
+        function (e) {
             var a = Math.random() * 16 | 0,
                 t = e === "x" ? a : a & 3 | 8;
             return t.toString(16)
@@ -35081,7 +35081,7 @@ function UD(e, a) {
         null ? void 0 : c.len;
     if ((o == null ? void 0 : o.indexOf("-")) != -1) {
         const d = (o == null ? void 0 : o.toString().split("-")) ||
-    [];
+            [];
         return (d == null ? void 0 : d.length) == 2 ? !(a < d[0] ||
             a > d[1]) : !0
     }
@@ -35113,7 +35113,7 @@ const Q4 = () => "tiranga",
         const c = t === "even";
         for (let d = e; d <= a; d++) d % 2 === 0 ? c && o.push(d
             .toString().padStart(n, "0")) : c || o.push(d
-            .toString().padStart(n, "0"));
+                .toString().padStart(n, "0"));
         return o
     },
     HD = (e, a) => {
@@ -35127,7 +35127,7 @@ const Q4 = () => "tiranga",
             d = Math.floor((a + e) / 2);
         for (let p = e; p <= a; p++) c ? p > d && o.push(p.toString()
             .padStart(n, "0")) : p <= d && o.push(p.toString()
-            .padStart(n, "0"));
+                .padStart(n, "0"));
         return o
     },
     KD = e => {
@@ -35142,7 +35142,7 @@ const Q4 = () => "tiranga",
         if (navigator.userAgent.includes("Safari") && !navigator
             .userAgent.includes("Chrome")) {
             for (var e = document.querySelectorAll("input, textarea"),
-                    a = 0; a < e.length; a++) e[a].blur();
+                a = 0; a < e.length; a++) e[a].blur();
             return !0
         }
         return !1
@@ -35213,7 +35213,7 @@ const Q4 = () => "tiranga",
         };
         return e.toLowerCase().replace(
             /[áàảãạắằẳẵặấầẩẫậéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵđ]/g,
-            function(t) {
+            function (t) {
                 return a[t] || t
             })
     },
@@ -35230,7 +35230,7 @@ const Q4 = () => "tiranga",
 
 function $4(e) {
     for (var a = e + "=", t = decodeURIComponent(document.cookie), n =
-            t.split(";"), o = 0; o < n.length; o++) {
+        t.split(";"), o = 0; o < n.length; o++) {
         for (var c = n[o]; c.charAt(0) === " ";) c = c.substring(1);
         if (c.indexOf(a) === 0) return c.substring(a.length, c.length)
     }
@@ -35248,27 +35248,27 @@ const Pe = ue.global.t,
             k = t.getSeconds(),
             m = [Pe("sunday"), Pe("monday"), Pe("tuesday"), Pe(
                 "wednesday"), Pe("thursday"), Pe("friday"), Pe(
-                "saturday")];
+                    "saturday")];
         return a.replace("yyyy", n.toString()).replace("MM", o
-                .toString().padStart(2, "0")).replace("M", o
-            .toString()).replace("dd", d.toString().padStart(2, "0"))
+            .toString().padStart(2, "0")).replace("M", o
+                .toString()).replace("dd", d.toString().padStart(2, "0"))
             .replace("hh", p.toString().padStart(2, "0")).replace(
                 "mm", g.toString().padStart(2, "0")).replace("ss", k
-                .toString().padStart(2, "0")).replace("w", m[c])
+                    .toString().padStart(2, "0")).replace("w", m[c])
     },
     JD = (e, a) => e.length > a ? e.slice(0, a) + "..." : e
-    .toUpperCase(),
+        .toUpperCase(),
     je = (e, a = "", t = 2) => {
         const n = /(\d{3})(?=\d)/g;
         if (e = parseFloat(e), !isFinite(e) || !e && e !== 0)
-        return "";
+            return "";
         a = a || sessionStorage.getItem("dollarSign") || "", t = t ??
             2;
         const o = Math.abs(e).toFixed(t),
             c = t ? o.slice(0, -1 - t) : o,
             d = c.length % 3,
             p = d > 0 ? c.slice(0, d) + (c.length > 3 ? "," : "") :
-            "",
+                "",
             g = t ? o.slice(-1 - t) : "",
             k = e < 0 ? "-" : "";
         return ln() == "2" ? k + p + c.slice(d).replace(n, "$1,") +
@@ -35280,14 +35280,14 @@ const Pe = ue.global.t,
             n = e || t + a;
         return n ? n.length > 9 ? "+" + n.replace(
             /^(\d{5})\d+(\d{4})$/, "$1****$2") : "+" + n.replace(
-            /^(\d{4})\d+(\d{2})$/, "$1****$2") : ""
+                /^(\d{4})\d+(\d{2})$/, "$1****$2") : ""
     },
     QD = e => e.replace(
         /^([\w]{0,4})[\w\d]*@([\w\d]{0,15}[\w\d\.]*)$/, (a, t, n) => {
             const o = t.length,
                 c = n.length,
                 d = c > 15 ? n.substring(c - 15) : n;
-            return `${o>4?t.substring(0,4)+"****":t+"****"}${c>15?"":"@"}${d}`
+            return `${o > 4 ? t.substring(0, 4) + "****" : t + "****"}${c > 15 ? "" : "@"}${d}`
         });
 
 function un(e) {
@@ -35602,85 +35602,85 @@ const lt = Ro,
     }),
     pt = Object.assign({
         "../views/activity/ActivityDetail/index.vue": () => l(
-        () => import("./index-6bc6cb94.js"), [
-                "assets/js/index-6bc6cb94.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-8e98e7ca.css"
-            ]),
+            () => import("./index-6bc6cb94.js"), [
+            "assets/js/index-6bc6cb94.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-8e98e7ca.css"
+        ]),
         "../views/activity/Championship/index.vue": () => l(() =>
             import("./index-a4b210be.js"), [
-                "assets/js/index-a4b210be.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/card-c7815e0d.js",
-                "assets/css/card-9ffcc1a6.css",
-                "assets/js/ListSimply-2915e80f.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/ListSimply-80e596e5.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-e8d749ed.css"
-            ]),
+            "assets/js/index-a4b210be.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/card-c7815e0d.js",
+            "assets/css/card-9ffcc1a6.css",
+            "assets/js/ListSimply-2915e80f.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/ListSimply-80e596e5.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-e8d749ed.css"
+        ]),
         "../views/activity/DailySignIn/index.vue": () => l(() =>
             import("./index-40f5f155.js"), [
-                "assets/js/index-40f5f155.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-b5633e35.css"
-            ]),
+            "assets/js/index-40f5f155.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-b5633e35.css"
+        ]),
         "../views/activity/DailyTasks/index.vue": () => l(() =>
             import("./index-d04b9514.js"), [
-                "assets/js/index-d04b9514.js",
-                "assets/js/index-2ab94830.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/css/index-ebaa77ec.css"
-            ]),
+            "assets/js/index-d04b9514.js",
+            "assets/js/index-2ab94830.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/css/index-ebaa77ec.css"
+        ]),
         "../views/activity/FirstRecharge/index.vue": () => l(() =>
             import("./index-4d906d10.js"), [
-                "assets/js/index-4d906d10.js",
-                "assets/js/Rule-38217d84.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/Rule-837a012a.css",
-                "assets/css/index-e2e0883b.css"
-            ]),
+            "assets/js/index-4d906d10.js",
+            "assets/js/Rule-38217d84.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/Rule-837a012a.css",
+            "assets/css/index-e2e0883b.css"
+        ]),
         "../views/activity/MemberPackage/index.vue": () => l(() =>
             import("./index-657f3129.js"), [
-                "assets/js/index-657f3129.js",
-                "assets/js/Rule-38217d84.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/Rule-837a012a.css",
-                "assets/js/usePackage.hook-dcf91bf5.js",
-                "assets/css/index-09c555e0.css"
-            ]),
+            "assets/js/index-657f3129.js",
+            "assets/js/Rule-38217d84.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/Rule-837a012a.css",
+            "assets/js/usePackage.hook-dcf91bf5.js",
+            "assets/css/index-09c555e0.css"
+        ]),
         "../views/activity/PointMall/index.vue": () => l(() =>
             import("./index-19fa524e.js"), [
-                "assets/js/index-19fa524e.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/js/Treasure-9a2f2502.js",
-                "assets/css/Treasure-d362e4c4.css",
-                "assets/js/usePointLottery.hook-a4495a75.js",
-                "assets/css/index-a18f3b63.css"
-            ]),
+            "assets/js/index-19fa524e.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/js/Treasure-9a2f2502.js",
+            "assets/css/Treasure-d362e4c4.css",
+            "assets/js/usePointLottery.hook-a4495a75.js",
+            "assets/css/index-a18f3b63.css"
+        ]),
         "../views/activity/Turntable/index.vue": () => l(() =>
             import("./index-ddaa74ce.js"), [
-                "assets/js/index-ddaa74ce.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/useTurntable.hook-6a755149.js",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-7ea7c67a.css"
-            ]),
+            "assets/js/index-ddaa74ce.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/useTurntable.hook-6a755149.js",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-7ea7c67a.css"
+        ]),
         "../views/home/AllGames/index.vue": () => l(() => import(
             "./index-04cb3aee.js"), [
             "assets/js/index-04cb3aee.js",
@@ -35691,18 +35691,18 @@ const lt = Ro,
         ]),
         "../views/home/AllLotteryGames/index.vue": () => l(() =>
             import("./index-3ba981d2.js"), [
-                "assets/js/index-3ba981d2.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-df3737cc.css"
-            ]),
+            "assets/js/index-3ba981d2.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-df3737cc.css"
+        ]),
         "../views/home/AllOnlineGames/index.vue": () => l(() =>
             import("./index-f949ce2c.js"), [
-                "assets/js/index-f949ce2c.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
-                "assets/css/NavBar-c40aa6d4.css",
-                "assets/css/index-dc81589f.css"
-            ]),
+            "assets/js/index-f949ce2c.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
+            "assets/css/NavBar-c40aa6d4.css",
+            "assets/css/index-dc81589f.css"
+        ]),
         "../views/home/Messages/index.vue": () => l(() => import(
             "./index-9f7a1808.js"), [
             "assets/js/index-9f7a1808.js",
@@ -35734,29 +35734,29 @@ const lt = Ro,
         ]),
         "../views/main/BetRecords/index.vue": () => l(() =>
             import("./index-afd083e4.js"), [
-                "assets/js/index-afd083e4.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
-                "assets/css/NavBar-c40aa6d4.css",
-                "assets/js/lotteryGame-573e11c1.js",
-                "assets/js/useBinguoCount-33c83587.js",
-                "assets/js/bingo-c4f8cc18.js",
-                "assets/css/index-af1853b9.css"
-            ]),
+            "assets/js/index-afd083e4.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
+            "assets/css/NavBar-c40aa6d4.css",
+            "assets/js/lotteryGame-573e11c1.js",
+            "assets/js/useBinguoCount-33c83587.js",
+            "assets/js/bingo-c4f8cc18.js",
+            "assets/css/index-af1853b9.css"
+        ]),
         "../views/main/CustomerService/index.vue": () => l(() =>
             import("./index-1b4eaefa.js"), [
-                "assets/js/index-1b4eaefa.js",
-                "assets/js/useServe.hook-bd58a391.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/promotion-11cfd70c.js",
-                "assets/css/useServe-04bdee8e.css",
-                "assets/css/index-12912bb9.css"
-            ]),
+            "assets/js/index-1b4eaefa.js",
+            "assets/js/useServe.hook-bd58a391.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/promotion-11cfd70c.js",
+            "assets/css/useServe-04bdee8e.css",
+            "assets/css/index-12912bb9.css"
+        ]),
         "../views/main/Feedback/index.vue": () => l(() => import(
             "./index-c327da72.js"), [
             "assets/js/index-c327da72.js",
@@ -35773,15 +35773,15 @@ const lt = Ro,
         ]),
         "../views/main/GoogleVerify/index.vue": () => l(() =>
             import("./index-a97ea3be.js"), [
-                "assets/js/index-a97ea3be.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/VerifyInput-776957e7.js",
-                "assets/css/VerifyInput-ba9a4f32.css",
-                "assets/js/DiaLogOther-a610920e.js",
-                "assets/css/DiaLogOther-42c2c0fb.css",
-                "assets/js/useCode.hook-56068ce8.js",
-                "assets/css/index-fe59997f.css"
-            ]),
+            "assets/js/index-a97ea3be.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/VerifyInput-776957e7.js",
+            "assets/css/VerifyInput-ba9a4f32.css",
+            "assets/js/DiaLogOther-a610920e.js",
+            "assets/css/DiaLogOther-42c2c0fb.css",
+            "assets/js/useCode.hook-56068ce8.js",
+            "assets/css/index-fe59997f.css"
+        ]),
         "../views/main/Guide/index.vue": () => l(() => import(
             "./index-ff9d739b.js"), [
             "assets/js/index-ff9d739b.js",
@@ -35790,10 +35790,10 @@ const lt = Ro,
         ]),
         "../views/main/InvitationBonus/index.vue": () => l(() =>
             import("./index-0f636a37.js"), [
-                "assets/js/index-0f636a37.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-189dac53.css"
-            ]),
+            "assets/js/index-0f636a37.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-189dac53.css"
+        ]),
         "../views/main/Language/index.vue": () => l(() => import(
             "./index-703017e9.js"), [
             "assets/js/index-703017e9.js",
@@ -35833,46 +35833,46 @@ const lt = Ro,
         ]),
         "../views/main/Notification/index.vue": () => l(() =>
             import("./index-2b060d74.js"), [
-                "assets/js/index-2b060d74.js",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/css/index-a4ba45da.css"
-            ]),
+            "assets/js/index-2b060d74.js",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/css/index-a4ba45da.css"
+        ]),
         "../views/main/PointDetail/index.vue": () => l(() =>
             import("./index-11f869f2.js"), [
-                "assets/js/index-11f869f2.js",
-                "assets/js/vendor-b2024301.js"
-            ]),
+            "assets/js/index-11f869f2.js",
+            "assets/js/vendor-b2024301.js"
+        ]),
         "../views/main/RedeemGift/index.vue": () => l(() =>
             import("./index-212613ea.js"), [
-                "assets/js/index-212613ea.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/css/index-a4ded689.css"
-            ]),
+            "assets/js/index-212613ea.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/css/index-a4ded689.css"
+        ]),
         "../views/main/SettingCenter/index.vue": () => l(() =>
             import("./index-37b5d372.js"), [
-                "assets/js/index-37b5d372.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-1389a3e4.js",
-                "assets/css/index-21e3ce8a.css",
-                "assets/js/index-f3abbead.js",
-                "assets/js/DiaLogOther-a610920e.js",
-                "assets/css/DiaLogOther-42c2c0fb.css",
-                "assets/js/vip-4b032763.js",
-                "assets/css/index-d590f64c.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-642183a1.css"
-            ]),
+            "assets/js/index-37b5d372.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-1389a3e4.js",
+            "assets/css/index-21e3ce8a.css",
+            "assets/js/index-f3abbead.js",
+            "assets/js/DiaLogOther-a610920e.js",
+            "assets/css/DiaLogOther-42c2c0fb.css",
+            "assets/js/vip-4b032763.js",
+            "assets/css/index-d590f64c.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-642183a1.css"
+        ]),
         "../views/main/StrongBox/index.vue": () => l(() => import(
             "./index-c4c79c24.js"), [
             "assets/js/index-c4c79c24.js",
@@ -35885,18 +35885,18 @@ const lt = Ro,
         ]),
         "../views/main/SuperJackpot/index.vue": () => l(() =>
             import("./index-fe03f0e2.js"), [
-                "assets/js/index-fe03f0e2.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/ListSimply-2915e80f.js",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/ListSimply-80e596e5.css",
-                "assets/js/useJackpot.hook-4e2a06b8.js",
-                "assets/css/index-15ea461a.css"
-            ]),
+            "assets/js/index-fe03f0e2.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/ListSimply-2915e80f.js",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/ListSimply-80e596e5.css",
+            "assets/js/useJackpot.hook-4e2a06b8.js",
+            "assets/css/index-15ea461a.css"
+        ]),
         "../views/main/withdraw/index.vue": () => l(() => import(
             "./index-5814db79.js"), [
             "assets/js/index-5814db79.js",
@@ -35904,215 +35904,215 @@ const lt = Ro,
             "assets/css/index-13bd8023.css"
         ]),
         "../views/promotion/CommissionDetail/index.vue": () => l(
-        () => import("./index-5d9a22a2.js"), [
+            () => import("./index-5d9a22a2.js"), [
             "assets/js/index-5d9a22a2.js",
             "assets/js/vendor-b2024301.js",
             "assets/css/index-a946f452.css"
         ]),
         "../views/promotion/MyCommission/index.vue": () => l(() =>
             import("./index-e02cbc87.js"), [
-                "assets/js/index-e02cbc87.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/promotion-11cfd70c.js",
-                "assets/css/index-e23a00f0.css"
-            ]),
+            "assets/js/index-e02cbc87.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/promotion-11cfd70c.js",
+            "assets/css/index-e23a00f0.css"
+        ]),
         "../views/promotion/MyInvitation/index.vue": () => l(() =>
             import("./index-882ff727.js"), [
-                "assets/js/index-882ff727.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-f6068774.js",
-                "assets/css/index-32878a74.css",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/js/promotion-11cfd70c.js",
-                "assets/js/common-4cf89963.js",
-                "assets/css/index-a36e3e78.css"
-            ]),
+            "assets/js/index-882ff727.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-f6068774.js",
+            "assets/css/index-32878a74.css",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/js/promotion-11cfd70c.js",
+            "assets/js/common-4cf89963.js",
+            "assets/css/index-a36e3e78.css"
+        ]),
         "../views/promotion/MyReceive/index.vue": () => l(() =>
             import("./index-21ebb5e1.js"), [
-                "assets/js/index-21ebb5e1.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-836e2020.css"
-            ]),
+            "assets/js/index-21ebb5e1.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-836e2020.css"
+        ]),
         "../views/promotion/PromotionRule/index.vue": () => l(
-        () => import("./index-46a20884.js"), [
-                "assets/js/index-46a20884.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/promotion-11cfd70c.js",
-                "assets/css/index-eabf268b.css"
-            ]),
+            () => import("./index-46a20884.js"), [
+            "assets/js/index-46a20884.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/promotion-11cfd70c.js",
+            "assets/css/index-eabf268b.css"
+        ]),
         "../views/promotion/PromotionShare/index.vue": () => l(
-        () => import("./index-1c33ccda.js"), [
-                "assets/js/index-1c33ccda.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/swiper.min-bd19bf79.js",
-                "assets/css/swiper-20baf52c.css",
-                "assets/js/useQrcode.hook-f48008f1.js",
-                "assets/css/index-e5a70088.css"
-            ]),
+            () => import("./index-1c33ccda.js"), [
+            "assets/js/index-1c33ccda.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/swiper.min-bd19bf79.js",
+            "assets/css/swiper-20baf52c.css",
+            "assets/js/useQrcode.hook-f48008f1.js",
+            "assets/css/index-e5a70088.css"
+        ]),
         "../views/promotion/RebateRatio/index.vue": () => l(() =>
             import("./index-47598c89.js"), [
-                "assets/js/index-47598c89.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
-                "assets/css/NavBar-c40aa6d4.css",
-                "assets/js/promotion-11cfd70c.js",
-                "assets/css/index-6647b691.css"
-            ]),
+            "assets/js/index-47598c89.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
+            "assets/css/NavBar-c40aa6d4.css",
+            "assets/js/promotion-11cfd70c.js",
+            "assets/css/index-6647b691.css"
+        ]),
         "../views/promotion/Server/index.vue": () => l(() =>
             import("./index-0cc587e9.js"), [
-                "assets/js/index-0cc587e9.js",
-                "assets/js/useServe.hook-bd58a391.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/promotion-11cfd70c.js",
-                "assets/css/useServe-04bdee8e.css",
-                "assets/css/index-0a21fcf3.css"
-            ]),
+            "assets/js/index-0cc587e9.js",
+            "assets/js/useServe.hook-bd58a391.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/promotion-11cfd70c.js",
+            "assets/css/useServe-04bdee8e.css",
+            "assets/css/index-0a21fcf3.css"
+        ]),
         "../views/promotion/Subordinate/index.vue": () => l(() =>
             import("./index-18515365.js"), [
-                "assets/js/index-18515365.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/promotion-11cfd70c.js",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/css/index-39611422.css"
-            ]),
+            "assets/js/index-18515365.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/promotion-11cfd70c.js",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/css/index-39611422.css"
+        ]),
         "../views/promotion/TeamPartner/index.vue": () => l(() =>
             import("./index-725122fd.js"), [
-                "assets/js/index-725122fd.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/useAgent.hook-0f34369b.js",
-                "assets/js/promotion-11cfd70c.js",
-                "assets/css/index-1e2058eb.css"
-            ]),
+            "assets/js/index-725122fd.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/useAgent.hook-0f34369b.js",
+            "assets/js/promotion-11cfd70c.js",
+            "assets/css/index-1e2058eb.css"
+        ]),
         "../views/promotion/TeamReport/index.vue": () => l(() =>
             import("./index-64c79e43.js"), [
-                "assets/js/index-64c79e43.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/promotion-11cfd70c.js",
-                "assets/js/ListSimply-2915e80f.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/ListSimply-80e596e5.css",
-                "assets/js/index-f6068774.js",
-                "assets/css/index-32878a74.css",
-                "assets/js/useKeepPage-75e6b6ec.js",
-                "assets/css/index-42d29e24.css"
-            ]),
+            "assets/js/index-64c79e43.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/promotion-11cfd70c.js",
+            "assets/js/ListSimply-2915e80f.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/ListSimply-80e596e5.css",
+            "assets/js/index-f6068774.js",
+            "assets/css/index-32878a74.css",
+            "assets/js/useKeepPage-75e6b6ec.js",
+            "assets/css/index-42d29e24.css"
+        ]),
         "../views/vip/RebateDetails/index.vue": () => l(() =>
             import("./index-7fd94554.js"), [
-                "assets/js/index-7fd94554.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/vip-4b032763.js",
-                "assets/css/index-b6aa5548.css"
-            ]),
+            "assets/js/index-7fd94554.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/vip-4b032763.js",
+            "assets/css/index-b6aa5548.css"
+        ]),
         "../views/vip/RecordVsruleHistory/index.vue": () => l(
-        () => import("./index-b296616d.js"), [
-                "assets/js/index-b296616d.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/vip-4b032763.js",
-                "assets/js/ListSimply-2915e80f.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/ListSimply-80e596e5.css",
-                "assets/css/index-2ad3799b.css"
-            ]),
+            () => import("./index-b296616d.js"), [
+            "assets/js/index-b296616d.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/vip-4b032763.js",
+            "assets/js/ListSimply-2915e80f.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/ListSimply-80e596e5.css",
+            "assets/css/index-2ad3799b.css"
+        ]),
         "../views/wallet/BankStatus/index.vue": () => l(() =>
             import("./index-a10877e9.js"), [
-                "assets/js/index-a10877e9.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-808a8659.css"
-            ]),
+            "assets/js/index-a10877e9.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-808a8659.css"
+        ]),
         "../views/wallet/CancelRecharge/index.vue": () => l(() =>
             import("./index-6e4e0924.js"), [
-                "assets/js/index-6e4e0924.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-44af755b.css"
-            ]),
+            "assets/js/index-6e4e0924.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-44af755b.css"
+        ]),
         "../views/wallet/OrderCancel/index.vue": () => l(() =>
             import("./index-79059f64.js"), [
-                "assets/js/index-79059f64.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-830dfe47.css"
-            ]),
+            "assets/js/index-79059f64.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-830dfe47.css"
+        ]),
         "../views/wallet/OtherPay/index.vue": () => l(() =>
             import("./index-3ce0c666.js"), [
-                "assets/js/index-3ce0c666.js",
-                "assets/js/Instructions-7cb34fe8.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/Instructions-171cc2e8.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/js/common-4cf89963.js",
-                "assets/js/useQrcode.hook-f48008f1.js",
-                "assets/js/PayState-545f54ee.js",
-                "assets/css/PayState-9502b6fe.css",
-                "assets/css/index-b62c41bd.css"
-            ]),
+            "assets/js/index-3ce0c666.js",
+            "assets/js/Instructions-7cb34fe8.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/Instructions-171cc2e8.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/js/common-4cf89963.js",
+            "assets/js/useQrcode.hook-f48008f1.js",
+            "assets/js/PayState-545f54ee.js",
+            "assets/css/PayState-9502b6fe.css",
+            "assets/css/index-b62c41bd.css"
+        ]),
         "../views/wallet/Recharge/index.vue": () => l(() =>
             import("./index-36afd40c.js"), [
-                "assets/js/index-36afd40c.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Instructions-7cb34fe8.js",
-                "assets/css/Instructions-171cc2e8.css",
-                "assets/js/noActivate-2ba2f34f.js",
-                "assets/css/noActivate-77a119d3.css",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/CountDownTimer-f369f0b7.js",
-                "assets/css/CountDownTimer-e791faee.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-7cb00ae8.css"
-            ]),
+            "assets/js/index-36afd40c.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Instructions-7cb34fe8.js",
+            "assets/css/Instructions-171cc2e8.css",
+            "assets/js/noActivate-2ba2f34f.js",
+            "assets/css/noActivate-77a119d3.css",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/CountDownTimer-f369f0b7.js",
+            "assets/css/CountDownTimer-e791faee.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-7cb00ae8.css"
+        ]),
         "../views/wallet/RechargeDetail/index.vue": () => l(() =>
             import("./index-1e1939eb.js"), [
-                "assets/js/index-1e1939eb.js",
-                "assets/js/Instructions-7cb34fe8.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/Instructions-171cc2e8.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-7d5ed62f.css"
-            ]),
+            "assets/js/index-1e1939eb.js",
+            "assets/js/Instructions-7cb34fe8.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/Instructions-171cc2e8.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-7d5ed62f.css"
+        ]),
         "../views/wallet/RechargeHistory/index.vue": () => l(() =>
             import("./index-0b0dd8e1.js"), [
-                "assets/js/index-0b0dd8e1.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Calendar.vue_vue_type_style_index_0_lang-3b34fb01.js",
-                "assets/css/Calendar-4abfb991.css",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/js/CountDownTimer-f369f0b7.js",
-                "assets/css/CountDownTimer-e791faee.css",
-                "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
-                "assets/css/NavBar-c40aa6d4.css",
-                "assets/css/index-6c7b312f.css"
-            ]),
+            "assets/js/index-0b0dd8e1.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Calendar.vue_vue_type_style_index_0_lang-3b34fb01.js",
+            "assets/css/Calendar-4abfb991.css",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/js/CountDownTimer-f369f0b7.js",
+            "assets/css/CountDownTimer-e791faee.css",
+            "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
+            "assets/css/NavBar-c40aa6d4.css",
+            "assets/css/index-6c7b312f.css"
+        ]),
         "../views/wallet/RechargeUsdt/index.vue": () => l(() =>
             import("./index-5f64ba6b.js"), [
-                "assets/js/index-5f64ba6b.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Instructions-7cb34fe8.js",
-                "assets/css/Instructions-171cc2e8.css",
-                "assets/js/useQrcode.hook-f48008f1.js",
-                "assets/css/index-1438f388.css"
-            ]),
+            "assets/js/index-5f64ba6b.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Instructions-7cb34fe8.js",
+            "assets/css/Instructions-171cc2e8.css",
+            "assets/js/useQrcode.hook-f48008f1.js",
+            "assets/css/index-1438f388.css"
+        ]),
         "../views/wallet/TobePay/index.vue": () => l(() => import(
             "./index-0b5b353c.js"), [
             "assets/js/index-0b5b353c.js",
@@ -36123,51 +36123,51 @@ const lt = Ro,
         ]),
         "../views/wallet/TransAction/index.vue": () => l(() =>
             import("./index-c21f6171.js"), [
-                "assets/js/index-c21f6171.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/css/index-466131bb.css"
-            ]),
+            "assets/js/index-c21f6171.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/css/index-466131bb.css"
+        ]),
         "../views/wallet/Withdraw/index.vue": () => l(() =>
             import("./index-f729bf44.js"), [
-                "assets/js/index-f729bf44.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/PasswordInput-31e16272.js",
-                "assets/css/PasswordInput-39e32c58.css",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/AddWithdrawType-e9b23a4b.js",
-                "assets/css/AddWithdrawType-42e054f4.css",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/js/c2cRecordList-5e45aa50.js",
-                "assets/css/c2cRecordList-a6faf04d.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/js/noActivate-2ba2f34f.js",
-                "assets/css/noActivate-77a119d3.css",
-                "assets/css/index-289f5998.css"
-            ]),
+            "assets/js/index-f729bf44.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/PasswordInput-31e16272.js",
+            "assets/css/PasswordInput-39e32c58.css",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/AddWithdrawType-e9b23a4b.js",
+            "assets/css/AddWithdrawType-42e054f4.css",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/js/c2cRecordList-5e45aa50.js",
+            "assets/css/c2cRecordList-a6faf04d.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/js/noActivate-2ba2f34f.js",
+            "assets/css/noActivate-77a119d3.css",
+            "assets/css/index-289f5998.css"
+        ]),
         "../views/wallet/WithdrawHistory/index.vue": () => l(() =>
             import("./index-2f6317a6.js"), [
-                "assets/js/index-2f6317a6.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/c2cRecordList-5e45aa50.js",
-                "assets/css/c2cRecordList-a6faf04d.css",
-                "assets/js/Calendar.vue_vue_type_style_index_0_lang-3b34fb01.js",
-                "assets/css/Calendar-4abfb991.css",
-                "assets/js/ListSimply-2915e80f.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/ListSimply-80e596e5.css",
-                "assets/css/index-5b4466ef.css"
-            ])
+            "assets/js/index-2f6317a6.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/c2cRecordList-5e45aa50.js",
+            "assets/css/c2cRecordList-a6faf04d.css",
+            "assets/js/Calendar.vue_vue_type_style_index_0_lang-3b34fb01.js",
+            "assets/css/Calendar-4abfb991.css",
+            "assets/js/ListSimply-2915e80f.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/ListSimply-80e596e5.css",
+            "assets/css/index-5b4466ef.css"
+        ])
     }),
     mt = Object.assign({
         "../views/activity/Championship/ChampionshipDetail/index.vue": () =>
@@ -36182,17 +36182,17 @@ const lt = Ro,
             ]),
         "../views/activity/DailySignIn/Record/index.vue": () => l(
             () => import("./index-0cd7ecde.js"), [
-                "assets/js/index-0cd7ecde.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/css/index-56b139e3.css"
-            ]),
+            "assets/js/index-0cd7ecde.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/css/index-56b139e3.css"
+        ]),
         "../views/activity/DailySignIn/Rules/index.vue": () => l(
-        () => import("./index-1fc80e06.js"), [
+            () => import("./index-1fc80e06.js"), [
             "assets/js/index-1fc80e06.js",
             "assets/js/vendor-b2024301.js",
             "assets/js/Rule-38217d84.js",
@@ -36200,7 +36200,7 @@ const lt = Ro,
             "assets/css/index-1c788ebf.css"
         ]),
         "../views/activity/DailyTasks/Record/index.vue": () => l(
-        () => import("./index-7e4e7187.js"), [
+            () => import("./index-7e4e7187.js"), [
             "assets/js/index-7e4e7187.js",
             "assets/js/index-2ab94830.js",
             "assets/js/vendor-b2024301.js",
@@ -36257,15 +36257,15 @@ const lt = Ro,
             ]),
         "../views/activity/PointMall/MyOrders/index.vue": () => l(
             () => import("./index-73b185c0.js"), [
-                "assets/js/index-73b185c0.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/List-1ba401fc.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/List-a4a597aa.css",
-                "assets/css/index-90f2fd33.css"
-            ]),
+            "assets/js/index-73b185c0.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/List-1ba401fc.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/List-a4a597aa.css",
+            "assets/css/index-90f2fd33.css"
+        ]),
         "../views/activity/PointMall/OrderDetail/index.vue": () =>
             l(() => import("./index-ac61cf80.js"), [
                 "assets/js/index-ac61cf80.js",
@@ -36284,41 +36284,41 @@ const lt = Ro,
                 "assets/css/index-b23eea8a.css"
             ]),
         "../views/activity/PointMall/Record/index.vue": () => l(
-        () => import("./index-579de8cd.js"), [
-                "assets/js/index-579de8cd.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/ListSimply-2915e80f.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/ListSimply-80e596e5.css",
-                "assets/css/index-17cd3367.css"
-            ]),
+            () => import("./index-579de8cd.js"), [
+            "assets/js/index-579de8cd.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/ListSimply-2915e80f.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/ListSimply-80e596e5.css",
+            "assets/css/index-17cd3367.css"
+        ]),
         "../views/activity/PointMall/Redeem/index.vue": () => l(
-        () => import("./index-ae2787ab.js"), [
-                "assets/js/index-ae2787ab.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/js/DropDown-f1f7db31.js",
-                "assets/css/DropDown-f83d38a9.css",
-                "assets/css/index-93ea2548.css"
-            ]),
+            () => import("./index-ae2787ab.js"), [
+            "assets/js/index-ae2787ab.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/js/DropDown-f1f7db31.js",
+            "assets/css/DropDown-f83d38a9.css",
+            "assets/css/index-93ea2548.css"
+        ]),
         "../views/activity/PointMall/Rules/index.vue": () => l(
-        () => import("./index-10fbf546.js"), [
-                "assets/js/index-10fbf546.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-b372ed00.css"
-            ]),
+            () => import("./index-10fbf546.js"), [
+            "assets/js/index-10fbf546.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-b372ed00.css"
+        ]),
         "../views/activity/Turntable/Detail/index.vue": () => l(
-        () => import("./index-03be85c1.js"), [
-                "assets/js/index-03be85c1.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/useTurntable.hook-6a755149.js",
-                "assets/js/Rule-38217d84.js",
-                "assets/css/Rule-837a012a.css",
-                "assets/css/index-a92752b1.css"
-            ]),
+            () => import("./index-03be85c1.js"), [
+            "assets/js/index-03be85c1.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/useTurntable.hook-6a755149.js",
+            "assets/js/Rule-38217d84.js",
+            "assets/css/Rule-837a012a.css",
+            "assets/css/index-a92752b1.css"
+        ]),
         "../views/activity/Turntable/Introduce/index.vue": () =>
             l(() => import("./index-6e029c1e.js"), [
                 "assets/js/index-6e029c1e.js",
@@ -36327,26 +36327,26 @@ const lt = Ro,
                 "assets/css/index-252ceb09.css"
             ]),
         "../views/activity/Turntable/Rules/index.vue": () => l(
-        () => import("./index-ae023292.js"), [
-                "assets/js/index-ae023292.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-041f24f6.css"
-            ]),
+            () => import("./index-ae023292.js"), [
+            "assets/js/index-ae023292.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-041f24f6.css"
+        ]),
         "../views/home/AllLotteryGames/4D/index.vue": () => l(
-        () => import("./index-4112b70e.js"), [
-                "assets/js/index-4112b70e.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/use4D.hook-2da49191.js",
-                "assets/js/showResult-c910f7e3.js",
-                "assets/css/showResult-fe726a7c.css",
-                "assets/js/showGame-a0e4d6c3.js",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/css/showGame-5c03736b.css",
-                "assets/css/index-b5b58eca.css"
-            ]),
+            () => import("./index-4112b70e.js"), [
+            "assets/js/index-4112b70e.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/use4D.hook-2da49191.js",
+            "assets/js/showResult-c910f7e3.js",
+            "assets/css/showResult-fe726a7c.css",
+            "assets/js/showGame-a0e4d6c3.js",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/css/showGame-5c03736b.css",
+            "assets/css/index-b5b58eca.css"
+        ]),
         "../views/home/AllLotteryGames/4DLotteryResults/index.vue": () =>
             l(() => import("./index-beb09d1a.js"), [
                 "assets/js/index-beb09d1a.js",
@@ -36360,17 +36360,17 @@ const lt = Ro,
             ]),
         "../views/home/AllLotteryGames/4DOdds/index.vue": () => l(
             () => import("./index-71b3b0d6.js"), [
-                "assets/js/index-71b3b0d6.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/use4D.hook-2da49191.js",
-                "assets/css/index-fc566b42.css"
-            ]),
+            "assets/js/index-71b3b0d6.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/use4D.hook-2da49191.js",
+            "assets/css/index-fc566b42.css"
+        ]),
         "../views/home/AllLotteryGames/4DPlay/index.vue": () => l(
             () => import("./index-da6b73f9.js"), [
-                "assets/js/index-da6b73f9.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-cd9e7c13.css"
-            ]),
+            "assets/js/index-da6b73f9.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-cd9e7c13.css"
+        ]),
         "../views/home/AllLotteryGames/4DmyGame/index.vue": () =>
             l(() => import("./index-c938a9f4.js"), [
                 "assets/js/index-c938a9f4.js",
@@ -36387,23 +36387,23 @@ const lt = Ro,
                 "assets/css/index-2330629c.css"
             ]),
         "../views/home/AllLotteryGames/5D/index.vue": () => l(
-        () => import("./index-0d05c3ce.js"), [
-                "assets/js/index-0d05c3ce.js",
-                "assets/js/audio.vue_vue_type_script_setup_true_lang-b952b8f5.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-79fd6d6a.js",
-                "assets/css/index-d27f4bf1.css",
-                "assets/css/audio-67b53984.css",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/MyGameRecord-71f6d450.js",
-                "assets/js/MayrecordList-50c53296.js",
-                "assets/css/MayrecordList-e6f5bf2b.css",
-                "assets/css/MyGameRecord-904e393a.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-6e18f5ef.css"
-            ]),
+            () => import("./index-0d05c3ce.js"), [
+            "assets/js/index-0d05c3ce.js",
+            "assets/js/audio.vue_vue_type_script_setup_true_lang-b952b8f5.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-79fd6d6a.js",
+            "assets/css/index-d27f4bf1.css",
+            "assets/css/audio-67b53984.css",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/MyGameRecord-71f6d450.js",
+            "assets/js/MayrecordList-50c53296.js",
+            "assets/css/MayrecordList-e6f5bf2b.css",
+            "assets/css/MyGameRecord-904e393a.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-6e18f5ef.css"
+        ]),
         "../views/home/AllLotteryGames/BettingRecord5D/index.vue": () =>
             l(() => import("./index-81414857.js"), [
                 "assets/js/index-81414857.js",
@@ -36442,13 +36442,13 @@ const lt = Ro,
             ]),
         "../views/home/AllLotteryGames/Binguo/index.vue": () => l(
             () => import("./index-260430d9.js"), [
-                "assets/js/index-260430d9.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/bingo-c4f8cc18.js",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-53eef0b3.css"
-            ]),
+            "assets/js/index-260430d9.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/bingo-c4f8cc18.js",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-53eef0b3.css"
+        ]),
         "../views/home/AllLotteryGames/BinguoCount/index.vue": () =>
             l(() => import("./index-1eeb52a2.js"), [
                 "assets/js/index-1eeb52a2.js",
@@ -36481,23 +36481,23 @@ const lt = Ro,
                 "assets/css/index-ae28802a.css"
             ]),
         "../views/home/AllLotteryGames/K3/index.vue": () => l(
-        () => import("./index-d8c19531.js"), [
-                "assets/js/index-d8c19531.js",
-                "assets/js/audio.vue_vue_type_script_setup_true_lang-b952b8f5.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-79fd6d6a.js",
-                "assets/css/index-d27f4bf1.css",
-                "assets/css/audio-67b53984.css",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/MyGameRecord-eb9e86e4.js",
-                "assets/js/MayrecordList-6fd81d36.js",
-                "assets/css/MayrecordList-9f89c8e3.css",
-                "assets/css/MyGameRecord-e76b8114.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-1fd02ab5.css"
-            ]),
+            () => import("./index-d8c19531.js"), [
+            "assets/js/index-d8c19531.js",
+            "assets/js/audio.vue_vue_type_script_setup_true_lang-b952b8f5.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-79fd6d6a.js",
+            "assets/css/index-d27f4bf1.css",
+            "assets/css/audio-67b53984.css",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/MyGameRecord-eb9e86e4.js",
+            "assets/js/MayrecordList-6fd81d36.js",
+            "assets/css/MayrecordList-9f89c8e3.css",
+            "assets/css/MyGameRecord-e76b8114.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-1fd02ab5.css"
+        ]),
         "../views/home/AllLotteryGames/NewVietnam/index.vue": () =>
             l(() => import("./index-1acd3728.js"), [
                 "assets/js/index-1acd3728.js",
@@ -36515,13 +36515,13 @@ const lt = Ro,
                 "assets/css/index-5f44242c.css"
             ]),
         "../views/home/AllLotteryGames/Play/index.vue": () => l(
-        () => import("./index-55bdebcb.js"), [
-                "assets/js/index-55bdebcb.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-9f40e16b.css"
-            ]),
+            () => import("./index-55bdebcb.js"), [
+            "assets/js/index-55bdebcb.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-9f40e16b.css"
+        ]),
         "../views/home/AllLotteryGames/WinGo/index.vue": () => l(
-        () => import("./index-8d63559d.js"), [
+            () => import("./index-8d63559d.js"), [
             "assets/js/index-8d63559d.js",
             "assets/js/audio.vue_vue_type_script_setup_true_lang-b952b8f5.js",
             "assets/js/vendor-b2024301.js",
@@ -36542,24 +36542,24 @@ const lt = Ro,
         ]),
         "../views/home/AllLotteryGames/WinTrx/index.vue": () => l(
             () => import("./index-fde9a0cd.js"), [
-                "assets/js/index-fde9a0cd.js",
-                "assets/js/audio.vue_vue_type_script_setup_true_lang-b952b8f5.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-79fd6d6a.js",
-                "assets/css/index-d27f4bf1.css",
-                "assets/css/audio-67b53984.css",
-                "assets/js/WinningTips-1494da1b.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/css/WinningTips-484650b5.css",
-                "assets/js/MyGameRecord-e8796e1f.js",
-                "assets/js/MayrecordList-ad51e112.js",
-                "assets/css/MayrecordList-cdbbfac0.css",
-                "assets/css/MyGameRecord-c5014eed.css",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/css/index-81b65226.css"
-            ]),
+            "assets/js/index-fde9a0cd.js",
+            "assets/js/audio.vue_vue_type_script_setup_true_lang-b952b8f5.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-79fd6d6a.js",
+            "assets/css/index-d27f4bf1.css",
+            "assets/css/audio-67b53984.css",
+            "assets/js/WinningTips-1494da1b.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/css/WinningTips-484650b5.css",
+            "assets/js/MyGameRecord-e8796e1f.js",
+            "assets/js/MayrecordList-ad51e112.js",
+            "assets/css/MayrecordList-cdbbfac0.css",
+            "assets/css/MyGameRecord-c5014eed.css",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/css/index-81b65226.css"
+        ]),
         "../views/home/AllLotteryGames/WinTrxIframe/index.vue": () =>
             l(() => import("./index-98a7cce9.js"), [
                 "assets/js/index-98a7cce9.js",
@@ -36567,14 +36567,14 @@ const lt = Ro,
                 "assets/css/index-f99375ec.css"
             ]),
         "../views/home/AllLotteryGames/XoSo/index.vue": () => l(
-        () => import("./index-f90224d4.js"), [
-                "assets/js/index-f90224d4.js",
-                "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/NavBar-c40aa6d4.css",
-                "assets/js/xoxs-02deced8.js",
-                "assets/css/index-2d141a65.css"
-            ]),
+            () => import("./index-f90224d4.js"), [
+            "assets/js/index-f90224d4.js",
+            "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/NavBar-c40aa6d4.css",
+            "assets/js/xoxs-02deced8.js",
+            "assets/css/index-2d141a65.css"
+        ]),
         "../views/home/AllLotteryGames/XoSoRecord/index.vue": () =>
             l(() => import("./index-fc0300eb.js"), [
                 "assets/js/index-fc0300eb.js",
@@ -36607,16 +36607,16 @@ const lt = Ro,
             ]),
         "../views/home/Messages/MessageDetail/index.vue": () => l(
             () => import("./index-9ef89818.js"), [
-                "assets/js/index-9ef89818.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-c1184497.css"
-            ]),
+            "assets/js/index-9ef89818.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-c1184497.css"
+        ]),
         "../views/main/About/AboutDetail/index.vue": () => l(() =>
             import("./index-93a86d28.js"), [
-                "assets/js/index-93a86d28.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-22a85476.css"
-            ]),
+            "assets/js/index-93a86d28.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-22a85476.css"
+        ]),
         "../views/main/CustomerService/ServiceCollection/index.vue": () =>
             l(() => import("./index-6b767b21.js"), [
                 "assets/js/index-6b767b21.js",
@@ -36637,20 +36637,20 @@ const lt = Ro,
             ]),
         "../views/main/InvitationBonus/Record/index.vue": () => l(
             () => import("./index-c99f002f.js"), [
-                "assets/js/index-c99f002f.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-efb0d9ab.css"
-            ]),
+            "assets/js/index-c99f002f.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-efb0d9ab.css"
+        ]),
         "../views/main/InvitationBonus/Rule/index.vue": () => l(
-        () => import("./index-f02f286f.js"), [
-                "assets/js/index-f02f286f.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Rule-38217d84.js",
-                "assets/css/Rule-837a012a.css",
-                "assets/css/index-06989e0f.css"
-            ]),
+            () => import("./index-f02f286f.js"), [
+            "assets/js/index-f02f286f.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Rule-38217d84.js",
+            "assets/css/Rule-837a012a.css",
+            "assets/css/index-06989e0f.css"
+        ]),
         "../views/main/Laundry/LaundryRecord/index.vue": () => l(
-        () => import("./index-9ee4ea22.js"), [
+            () => import("./index-9ee4ea22.js"), [
             "assets/js/index-9ee4ea22.js",
             "assets/js/vendor-b2024301.js",
             "assets/js/NavBar.vue_vue_type_script_setup_true_lang-abfb0674.js",
@@ -36663,11 +36663,11 @@ const lt = Ro,
             "assets/css/index-af6d9aa3.css"
         ]),
         "../views/main/Laundry/LaundryRule/index.vue": () => l(
-        () => import("./index-c9f1af1d.js"), [
-                "assets/js/index-c9f1af1d.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-f390dce6.css"
-            ]),
+            () => import("./index-c9f1af1d.js"), [
+            "assets/js/index-c9f1af1d.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-f390dce6.css"
+        ]),
         "../views/main/SettingCenter/BindEmail/index.vue": () =>
             l(() => import("./index-9b9bef78.js"), [
                 "assets/js/index-9b9bef78.js",
@@ -36722,22 +36722,22 @@ const lt = Ro,
             ]),
         "../views/main/SuperJackpot/rule/index.vue": () => l(() =>
             import("./index-daa73ad3.js"), [
-                "assets/js/index-daa73ad3.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/useJackpot.hook-4e2a06b8.js",
-                "assets/css/index-0527c2c0.css"
-            ]),
+            "assets/js/index-daa73ad3.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/useJackpot.hook-4e2a06b8.js",
+            "assets/css/index-0527c2c0.css"
+        ]),
         "../views/main/SuperJackpot/star/index.vue": () => l(() =>
             import("./index-0033ecc3.js"), [
-                "assets/js/index-0033ecc3.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/ListSimply-2915e80f.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/usePullRefresh-e562c54c.js",
-                "assets/css/ListSimply-80e596e5.css",
-                "assets/css/index-1afcf94e.css"
-            ]),
+            "assets/js/index-0033ecc3.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/ListSimply-2915e80f.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/usePullRefresh-e562c54c.js",
+            "assets/css/ListSimply-80e596e5.css",
+            "assets/css/index-1afcf94e.css"
+        ]),
         "../views/promotion/MyCommission/MyCommissionDetail/index.vue": () =>
             l(() => import("./index-599eea4e.js"), [
                 "assets/js/index-599eea4e.js",
@@ -36791,170 +36791,170 @@ const lt = Ro,
             ]),
         "../views/wallet/Withdraw/AddBankCard/index.vue": () => l(
             () => import("./index-0c6eed9c.js"), [
-                "assets/js/index-0c6eed9c.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-287aaca0.js",
-                "assets/js/onMountedOrActivated-6bd0707d.js",
-                "assets/js/useCode.hook-56068ce8.js",
-                "assets/js/PasswordInput-31e16272.js",
-                "assets/css/PasswordInput-39e32c58.css",
-                "assets/css/index-2b499134.css",
-                "assets/js/index-7d233285.js",
-                "assets/css/index-88d5b9bf.css",
-                "assets/js/validate-0bf9ac20.js",
-                "assets/css/index-44df66e6.css"
-            ]),
+            "assets/js/index-0c6eed9c.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-287aaca0.js",
+            "assets/js/onMountedOrActivated-6bd0707d.js",
+            "assets/js/useCode.hook-56068ce8.js",
+            "assets/js/PasswordInput-31e16272.js",
+            "assets/css/PasswordInput-39e32c58.css",
+            "assets/css/index-2b499134.css",
+            "assets/js/index-7d233285.js",
+            "assets/css/index-88d5b9bf.css",
+            "assets/js/validate-0bf9ac20.js",
+            "assets/css/index-44df66e6.css"
+        ]),
         "../views/wallet/Withdraw/AddKbz/index.vue": () => l(() =>
             import("./index-3e57c189.js"), [
-                "assets/js/index-3e57c189.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-287aaca0.js",
-                "assets/js/onMountedOrActivated-6bd0707d.js",
-                "assets/js/useCode.hook-56068ce8.js",
-                "assets/js/PasswordInput-31e16272.js",
-                "assets/css/PasswordInput-39e32c58.css",
-                "assets/css/index-2b499134.css",
-                "assets/css/index-de3b45e0.css"
-            ]),
+            "assets/js/index-3e57c189.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-287aaca0.js",
+            "assets/js/onMountedOrActivated-6bd0707d.js",
+            "assets/js/useCode.hook-56068ce8.js",
+            "assets/js/PasswordInput-31e16272.js",
+            "assets/css/PasswordInput-39e32c58.css",
+            "assets/css/index-2b499134.css",
+            "assets/css/index-de3b45e0.css"
+        ]),
         "../views/wallet/Withdraw/AddPIX/index.vue": () => l(() =>
             import("./index-b6b0a956.js"), [
-                "assets/js/index-b6b0a956.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-287aaca0.js",
-                "assets/js/onMountedOrActivated-6bd0707d.js",
-                "assets/js/useCode.hook-56068ce8.js",
-                "assets/js/PasswordInput-31e16272.js",
-                "assets/css/PasswordInput-39e32c58.css",
-                "assets/css/index-2b499134.css",
-                "assets/js/index-f6068774.js",
-                "assets/css/index-32878a74.css",
-                "assets/js/validate-0bf9ac20.js",
-                "assets/css/index-430551dc.css"
-            ]),
+            "assets/js/index-b6b0a956.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-287aaca0.js",
+            "assets/js/onMountedOrActivated-6bd0707d.js",
+            "assets/js/useCode.hook-56068ce8.js",
+            "assets/js/PasswordInput-31e16272.js",
+            "assets/css/PasswordInput-39e32c58.css",
+            "assets/css/index-2b499134.css",
+            "assets/js/index-f6068774.js",
+            "assets/css/index-32878a74.css",
+            "assets/js/validate-0bf9ac20.js",
+            "assets/css/index-430551dc.css"
+        ]),
         "../views/wallet/Withdraw/AddType4/index.vue": () => l(
-        () => import("./index-1ed589df.js"), [
-                "assets/js/index-1ed589df.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-287aaca0.js",
-                "assets/js/onMountedOrActivated-6bd0707d.js",
-                "assets/js/useCode.hook-56068ce8.js",
-                "assets/js/PasswordInput-31e16272.js",
-                "assets/css/PasswordInput-39e32c58.css",
-                "assets/css/index-2b499134.css",
-                "assets/css/index-1f3d9b8d.css"
-            ]),
+            () => import("./index-1ed589df.js"), [
+            "assets/js/index-1ed589df.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-287aaca0.js",
+            "assets/js/onMountedOrActivated-6bd0707d.js",
+            "assets/js/useCode.hook-56068ce8.js",
+            "assets/js/PasswordInput-31e16272.js",
+            "assets/css/PasswordInput-39e32c58.css",
+            "assets/css/index-2b499134.css",
+            "assets/css/index-1f3d9b8d.css"
+        ]),
         "../views/wallet/Withdraw/AddUSDT/index.vue": () => l(
-        () => import("./index-daa29231.js"), [
-                "assets/js/index-daa29231.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-287aaca0.js",
-                "assets/js/onMountedOrActivated-6bd0707d.js",
-                "assets/js/useCode.hook-56068ce8.js",
-                "assets/js/PasswordInput-31e16272.js",
-                "assets/css/PasswordInput-39e32c58.css",
-                "assets/css/index-2b499134.css",
-                "assets/css/index-cbfc62d7.css"
-            ]),
+            () => import("./index-daa29231.js"), [
+            "assets/js/index-daa29231.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-287aaca0.js",
+            "assets/js/onMountedOrActivated-6bd0707d.js",
+            "assets/js/useCode.hook-56068ce8.js",
+            "assets/js/PasswordInput-31e16272.js",
+            "assets/css/PasswordInput-39e32c58.css",
+            "assets/css/index-2b499134.css",
+            "assets/css/index-cbfc62d7.css"
+        ]),
         "../views/wallet/Withdraw/AddUpi/index.vue": () => l(() =>
             import("./index-19b45c56.js"), [
-                "assets/js/index-19b45c56.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/DropDown-f1f7db31.js",
-                "assets/css/DropDown-f83d38a9.css",
-                "assets/js/index-287aaca0.js",
-                "assets/js/onMountedOrActivated-6bd0707d.js",
-                "assets/js/useCode.hook-56068ce8.js",
-                "assets/js/PasswordInput-31e16272.js",
-                "assets/css/PasswordInput-39e32c58.css",
-                "assets/css/index-2b499134.css",
-                "assets/css/index-d666b0ef.css"
-            ]),
+            "assets/js/index-19b45c56.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/DropDown-f1f7db31.js",
+            "assets/css/DropDown-f83d38a9.css",
+            "assets/js/index-287aaca0.js",
+            "assets/js/onMountedOrActivated-6bd0707d.js",
+            "assets/js/useCode.hook-56068ce8.js",
+            "assets/js/PasswordInput-31e16272.js",
+            "assets/css/PasswordInput-39e32c58.css",
+            "assets/css/index-2b499134.css",
+            "assets/css/index-d666b0ef.css"
+        ]),
         "../views/wallet/Withdraw/AddUpi_1/index.vue": () => l(
-        () => import("./index-baaa7434.js"), [
-                "assets/js/index-baaa7434.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-287aaca0.js",
-                "assets/js/onMountedOrActivated-6bd0707d.js",
-                "assets/js/useCode.hook-56068ce8.js",
-                "assets/js/PasswordInput-31e16272.js",
-                "assets/css/PasswordInput-39e32c58.css",
-                "assets/css/index-2b499134.css",
-                "assets/css/index-0d02308d.css"
-            ]),
+            () => import("./index-baaa7434.js"), [
+            "assets/js/index-baaa7434.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-287aaca0.js",
+            "assets/js/onMountedOrActivated-6bd0707d.js",
+            "assets/js/useCode.hook-56068ce8.js",
+            "assets/js/PasswordInput-31e16272.js",
+            "assets/css/PasswordInput-39e32c58.css",
+            "assets/css/index-2b499134.css",
+            "assets/css/index-0d02308d.css"
+        ]),
         "../views/wallet/Withdraw/AddWave/index.vue": () => l(
-        () => import("./index-d69fd478.js"), [
-                "assets/js/index-d69fd478.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-287aaca0.js",
-                "assets/js/onMountedOrActivated-6bd0707d.js",
-                "assets/js/useCode.hook-56068ce8.js",
-                "assets/js/PasswordInput-31e16272.js",
-                "assets/css/PasswordInput-39e32c58.css",
-                "assets/css/index-2b499134.css",
-                "assets/css/index-7f88fd5b.css"
-            ]),
+            () => import("./index-d69fd478.js"), [
+            "assets/js/index-d69fd478.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-287aaca0.js",
+            "assets/js/onMountedOrActivated-6bd0707d.js",
+            "assets/js/useCode.hook-56068ce8.js",
+            "assets/js/PasswordInput-31e16272.js",
+            "assets/css/PasswordInput-39e32c58.css",
+            "assets/css/index-2b499134.css",
+            "assets/css/index-7f88fd5b.css"
+        ]),
         "../views/wallet/Withdraw/BankCard/index.vue": () => l(
-        () => import("./index-e13012c3.js"), [
-                "assets/js/index-e13012c3.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/AddWithdrawType-e9b23a4b.js",
-                "assets/css/AddWithdrawType-42e054f4.css",
-                "assets/css/index-a41aa833.css"
-            ]),
+            () => import("./index-e13012c3.js"), [
+            "assets/js/index-e13012c3.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/AddWithdrawType-e9b23a4b.js",
+            "assets/css/AddWithdrawType-42e054f4.css",
+            "assets/css/index-a41aa833.css"
+        ]),
         "../views/wallet/Withdraw/C2cDetail/index.vue": () => l(
-        () => import("./index-af6cf007.js"), [
-                "assets/js/index-af6cf007.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-9a6b22d9.css"
-            ]),
+            () => import("./index-af6cf007.js"), [
+            "assets/js/index-af6cf007.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-9a6b22d9.css"
+        ]),
         "../views/wallet/Withdraw/ChooseBank/index.vue": () => l(
-        () => import("./index-7d233285.js"), [
+            () => import("./index-7d233285.js"), [
             "assets/js/index-7d233285.js",
             "assets/js/vendor-b2024301.js",
             "assets/css/index-88d5b9bf.css"
         ]),
         "../views/wallet/Withdraw/PIX/index.vue": () => l(() =>
             import("./index-405b63ef.js"), [
-                "assets/js/index-405b63ef.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/AddWithdrawType-e9b23a4b.js",
-                "assets/css/AddWithdrawType-42e054f4.css",
-                "assets/css/index-65fc27c3.css"
-            ]),
+            "assets/js/index-405b63ef.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/AddWithdrawType-e9b23a4b.js",
+            "assets/css/AddWithdrawType-42e054f4.css",
+            "assets/css/index-65fc27c3.css"
+        ]),
         "../views/wallet/Withdraw/Type4/index.vue": () => l(() =>
             import("./index-3e2e04b0.js"), [
-                "assets/js/index-3e2e04b0.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/css/index-3ed8417f.css"
-            ]),
+            "assets/js/index-3e2e04b0.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/css/index-3ed8417f.css"
+        ]),
         "../views/wallet/Withdraw/USDT/index.vue": () => l(() =>
             import("./index-13dfbf6f.js"), [
-                "assets/js/index-13dfbf6f.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/Dialog-0c0396a9.js",
-                "assets/css/Dialog-81ffd539.css",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/js/AddWithdrawType-e9b23a4b.js",
-                "assets/css/AddWithdrawType-42e054f4.css",
-                "assets/css/index-bf0fb68f.css"
-            ]),
+            "assets/js/index-13dfbf6f.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/Dialog-0c0396a9.js",
+            "assets/css/Dialog-81ffd539.css",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/js/AddWithdrawType-e9b23a4b.js",
+            "assets/css/AddWithdrawType-42e054f4.css",
+            "assets/css/index-bf0fb68f.css"
+        ]),
         "../views/wallet/Withdraw/Upi/index.vue": () => l(() =>
             import("./index-897076fd.js"), [
-                "assets/js/index-897076fd.js",
-                "assets/js/vendor-b2024301.js",
-                "assets/js/index-2ab94830.js",
-                "assets/css/index-99a7cc56.css",
-                "assets/css/index-82585998.css"
-            ]),
+            "assets/js/index-897076fd.js",
+            "assets/js/vendor-b2024301.js",
+            "assets/js/index-2ab94830.js",
+            "assets/css/index-99a7cc56.css",
+            "assets/css/index-82585998.css"
+        ]),
         "../views/wallet/Withdraw/c2cCancelWithdrawal/index.vue": () =>
             l(() => import("./index-a0cb964a.js"), [
                 "assets/js/index-a0cb964a.js",
@@ -37033,14 +37033,14 @@ const tS = [{
 }];
 qe.push(...tS);
 const nS = [{
-        path: "/:pathMatch(.*)",
-        redirect: "/",
-        meta: {
-            title: "NotFound",
-            tabBar: !1,
-            keepAlive: !1
-        }
-    }],
+    path: "/:pathMatch(.*)",
+    redirect: "/",
+    meta: {
+        title: "NotFound",
+        tabBar: !1,
+        keepAlive: !1
+    }
+}],
     Ha = hi({
         history: bi("/"),
         routes: qe.concat(nS),
@@ -37062,7 +37062,7 @@ Ha.beforeEach(async (e, a, t) => {
     ];
     if (Number(localStorage.getItem("isToLogin")) == 1 ||
         c.includes(a.path) && e.path === ia)
-    return localStorage.setItem("isToLogin", "2"), t();
+        return localStorage.setItem("isToLogin", "2"), t();
     if (e.path === ia) return o.token ? t("/") : t();
     if (eS.includes(e.path)) return t();
     if (!o.token) return t({
@@ -37072,316 +37072,316 @@ Ha.beforeEach(async (e, a, t) => {
     t()
 });
 const s = {
-        GetHomeWebSite: "/GetAppDownloadUrl",
-        GetBannerList: "/GetBannerList",
-        GetHotGameList: "/GetHotGameList",
-        GetElectronWithChildGame: "/GetElectronWithChildGame",
-        GetVideWithChildGame: "/GetVideWithChildGame",
-        GetClicksTopGameList: "/GetClicksTopGameList",
-        GetThirdGameList: "/GetThirdGameList",
-        GetThirdGameCategory: "/GetThirdGameCategory",
-        GetSmallGameOrFishList: "/GetSmallGameOrFishList",
-        GetGameCategoryList: "/GetGameCategoryList",
-        GetLotteryCategoryList: "/GetLotteryCategoryList",
-        GetHotLotteryList: "/GetHotLotteryList",
-        GetAllGameList: "/GetAllGameList",
-        GetGameUrl: "/GetGameUrl",
-        GetMessageList: "/GetMessageList",
-        SetOneMessageState: "/SetOneMessageState",
-        SetAllMessageState: "/SetAllMessageState",
-        GetHomeSettings: "/GetHomeSettings",
-        OneKeyMarkAllData: "/OneKeyMarkAllData",
-        IsCanAppDownload: "/IsCanAppDownload",
-        GetDailyProfitRank: "/GetDailyProfitRank",
-        GetSlotGamesList: "/GetSlotGamesList",
-        GetSiteMessageList: "/GetSiteMessageList",
-        GetSiteMessage: "/GetSiteMessage",
-        GetSafeInfo: "/GetSafeInfo",
-        GetWealthState: "/GetWealthState",
-        GetSafeAmount: "/GetSafeAmount",
-        SetSafeBack: "/SetSafeBack",
-        GetSafeUserAmount: "/GetSafeUserAmount",
-        SetSafeInto: "/SetSafeInto",
-        GetSafeList: "/GetSafeList",
-        GetSafeLogList: "/GetSafeLogList",
-        GetActivityList: "/GetActivityList",
-        GetActivityDetails: "/GetActivityDetails",
-        GetDailyTaskList: "/GetTaskList",
-        GetContinuousSignInRecharges: "/GetContinuousSignInRecharges",
-        GetProductList: "/GetProductList",
-        GetBannerTypeList: "/GetBannerTypeList",
-        GetIntegralLogList: "/GetIntegralLogList",
-        GetProductOrderList: "/GetProductOrderList",
-        GetProductOrderDetails: "/GetProductOrderDetails",
-        SetProductOrder: "/SetProductOrder",
-        SetContinuousSinIn: "/SetContinuousSinIn",
-        GetContinuousSinInList: "/GetContinuousSinInList",
-        CancelOrderData: "/CancelOrderData",
-        GetUserAddress: "/GetUserAddress",
-        UpdateUserAddress: "/UpdateUserAddress",
-        GetProductRules: "/GetProductRules",
-        GetPointMallState: "/GetPointMallState",
-        GetPointsLotteryList: "/GetPointsLotteryList",
-        GetPointsLotteryDetails: "/GetPointsLotteryDetails",
-        GetPointsLotteryOrderList: "/GetPointsLotteryOrderList",
-        GetPointLotteryUserAddress: "/GetPointLotteryUserAddress",
-        AddPointsLotteryUserAddress: "/AddPointsLotteryUserAddress",
-        UpdatePointLotteryUserAddress: "/UpdatePointLotteryUserAddress",
-        SetDefaultPointsLotteryUserAddress: "/SetDefaultPointsLotteryUserAddress",
-        DeletePointsLotteryUserAddress: "/DeletePointsLotteryUserAddress",
-        ReceiveAllGrandAward: "/ReceiveAllGrandAward",
-        JoinPointsLottery: "/JoinPointsLottery",
-        GetPrize: "/GetPrize",
-        NeedPopupFirstRecharge: "/NeedPopupFirstRecharge",
-        ReceiveFirstRechargeReward: "/ReceiveFirstRechargeReward",
-        GetFirstRechargeList: "/GetFirstRechargeList",
-        GetActiveSetting: "/GetActiveSetting",
-        GetWeeklyAwardList: "/GetWeeklyAwardList",
-        ReceiveWeeklyAward: "/ReceiveWeeklyAward",
-        GetWeeklyAwardRecordList: "/GetWeeklyAwardRecordList",
-        SaveUserGuidelines: "/SaveUserGuidelines",
-        SaveUserDayRequest: "/SaveUserDayRequest",
-        GetNewbieGiftPackage: "/GetNewbieGiftPackage",
-        ReceiveAward: "/ReceiveAward",
-        GetDailyAwardCount: "/GetDailyAwardCount",
-        GetDailyAwardList: "/GetDailyAwardList",
-        ReceiveDailyAward: "/ReceiveDailyAward",
-        GetDailyAwardRecordList: "/GetDailyAwardRecordList",
-        NewPromotion: "/NewPromotion",
-        PromotionMytem: "/PromotionMytem",
-        PromotionTutorial: "/PromotionTutorial",
-        GetUrlAddress: "/GetUrlAddress",
-        GetPromotionRecord: "/GetPromotionRecord",
-        GetAgentServiceList: "/GetAgentServiceList",
-        GetTotalRebateRules: "/GetTotalRebateRules",
-        GetCommissionDetails: "/GetCommissionDetails",
-        GetTeamDayReport: "/TeamDayReport",
-        GetPartnerRewards: "/GetPartnerRewards",
-        GetPartnerRewardsDeatilList: "/GetPartnerRewardsDeatilList",
-        Login: "/Login",
-        RefreshToken: "/RefreshToken",
-        GetUserInfo: "/GetUserInfo",
-        SmsVerifyCode: "/SmsVerifyCode",
-        Register: "/Register",
-        RegisterState: "/RegisterState",
-        LoginOff: "/LoginOff",
-        ForgetPassword: "/ForgetPassword",
-        ResetPassword: "/ResetPassword",
-        EditUserPhoto: "/EditUserPhoto",
-        EditNickName: "/EditNickName",
-        VerifyPhoneCode: "/VerifyPhoneCode",
-        ResetPhoneNum: "/ResetPhoneNum",
-        captcha: "/Captcha",
-        checkCaptcha: "/Validate",
-        GetLoadedSetting: "/GetLoadedSetting",
-        ReceiveReturnAwards: "/ReceiveReturnAwards",
-        ConversionRedpage: "/ConversionRedpage",
-        GetRedpagePageList: "/GetRedpagePageList",
-        GameStatis: "/GameStatis",
-        GetNewMyEmerdList: "/GetNewMyEmerdList",
-        GetTaskList: "/GetTaskList",
-        SetTaskOrder: "/SetTaskOrder",
-        GetCurrentActivityTasks: "/GetCurrentActivityTasks",
-        GetCurrentActivityLevel1People: "/GetCurrentActivityLevel1People",
-        GetGoogleVerify: "/GetGoogleVerify",
-        GetCustomerServiceTypelist: "/GetCustomerServiceTypelist",
-        GetAgentServiceTypeList: "/GetAgentServiceTypeList",
-        GetCustomerServiceList: "/GetCustomerServiceList",
-        GetIsExistGrandPrizeReward: "/GetIsExistGrandAward",
-        ThirdGameReceiveGrandPrizeReward: "/ReceiveGrandAward",
-        GetThirdGameRewardsRecordPageList: "/GetGrandAwardPageList",
-        GetReWordConfigList: "/GetGrandAwardConfigList",
-        GetThirdGameAwardRecordPageList: "/GetHomeGrandAwardPageList",
-        bindEmail: "/BindEmail",
-        VerifyEmailCode: "/VerifyEmailCode",
-        BindPhone: "/BindPhone",
-        EmailVerifyCode: "/EmailVerifyCode",
-        BindGoogleVerify: "/BindGoogleVerify",
-        ResetGoogleVerify: "/ResetGoogleVerify",
-        CloseGoogleVerify: "/CloseGoogleVerify",
-        RecoverBalance: "/RecoverBalance",
-        GetCustomerServiceGroup: "/GetCustomerServiceGroup",
-        GetProtocols: "/GetProtocols",
-        GetAgreement: "/GetAgreement",
-        GetPlayingGuide: "/GetPlayingGuide",
-        SubmitSuggest: "/SubmitSuggest",
-        GetBalance: "/GetBalance",
-        GetWallet: "/GetWallet",
-        GetAllwallets: "/GetAllwallets",
-        GetUserAmount: "/GetUserAmount",
-        GetRechargeRecord: "/GetRechargeRecord",
-        GetC2CRechargeRecord: "/GetC2CRechargeRecord",
-        GetWithdrawLog: "/GetWithdrawLog",
-        GetTransactions: "/GetTransactions",
-        GetTransactionsTypes: "/GetTransactionsTypes",
-        GetWithdrawalTypes: "/GetWithdrawalTypes",
-        GetBankList: "/GetBankList",
-        getWithdrawals: "/getWithdrawals",
-        NewSetWithdrawal: "/NewSetWithdrawal",
-        SetWithdrawalBankCard: "/SetWithdrawalBankCard",
-        DeleteBankCard: "/DeleteBankCard",
-        SetWithdrawalUsdt: "/SetWithdrawalUsdt",
-        SetWithdrawalWallet: "/SetWithdrawalWallet",
-        SetWithdrawalCpf: "/SetWithdrawalCpf",
-        GetUserRealName: "/GetUserRealName",
-        WinGoGetTypeList: "/GetTypeList",
-        WinGoGetGameIssue: "/GetGameIssue",
-        WinGoGetNoaverageEmerdList: "/GetNoaverageEmerdList",
-        WinGoGetMyEmerdList: "/GetMyEmerdList",
-        WinGoGetEmerdList: "/GetEmerdList",
-        WinGoGameBetting: "/GameBetting",
-        WinGoGetWinTheLotteryResult: "/GetWinTheLotteryResult",
-        GetLastFiveIssueNumberResult: "/GetLastFiveIssueNumberResult",
-        GetRuleByTypeId: "/GetRuleByTypeId",
-        WinTxrGetTRXtypeList: "/GetTRXtypeList",
-        WinTxrGetTRXGameIssue: "/GetTRXGameIssue",
-        WinTxrGetTRXNoaverageEmerdList: "/GetTRXNoaverageEmerdList",
-        WinTxrGetTRXMyEmerdList: "/GetTRXMyEmerdList",
-        WinTxrGetEmerdList: "/GetTRXEmerdList",
-        WinTxrGameTRXBetting: "/GameTRXBetting",
-        GetTrxWinTheLotteryResult: "/GetTrxWinTheLotteryResult",
-        GetTRXRuleByTypeId: "/GetTRXRuleByTypeId",
-        GetXosoGameBaseData: "/GetXosoGameBaseData",
-        GetVietnamAreList: "/GetListGameConfig",
-        GetDayIssueNolist: "/GetIssueNoList",
-        GetXosoOdds: "/GetListXosoOdds",
-        GetXosoResult: "/GetXosoResultPageList",
-        GetXosoUserRecord: "/GetXosoRecordPageList",
-        XosoBetting: "/AddXosoBetting",
-        GetListUserResult: "/GetUserResultList",
-        CancelBetOrder: "/CancelXosoBetOrder",
-        GetXosoAreGamePlay: "/GetXosoAreaPlay",
-        GetXosoAreaPlayOdd: "/GetXosoAreaPlayOdd",
-        GetFXosoIssueNoList: "/GetFXosoIssueNoList",
-        GetFXosoAreaPlay: "/GetFXosoAreaPlay",
-        GetFXosoAreaPlayOdd: "/GetFXosoAreaPlayOdd",
-        GetFXosoResultPageList: "/GetFXosoResultPageList",
-        GetFXosoResult: "/GetFXosoResult",
-        GetFXosoRecordPageList: "/GetFXosoRecordPageList",
-        AddFXosoBetting: "/AddFXosoBetting",
-        GetFXosoUserResult: "/GetFXosoUserResult",
-        WinGetWinsUserAmount: "/GetWinsUserAmount",
-        GetK3TypeList: "/GetK3TypeList",
-        GetGameK3Issue: "/GetGameK3Issue",
-        GetK3OneEmerd: "/GetK3OneEmerd",
-        GetK3OddsList: "/GetK3OddsList",
-        K3GameBetting: "/K3GameBetting",
-        GetK3NoaverageEmerdList: "/GetK3NoaverageEmerdList",
-        GetMyK3EmerdList: "/GetMyK3EmerdList",
-        GetK3TheLotteryResult: "/GetK3TheLotteryResult",
-        GetK3RuleByTypeId: "/GetK3RuleByTypeId",
-        Get5DtypeList: "/Get5DtypeList",
-        GetGame5DIssue: "/GetGame5DIssue",
-        Get5DOneEmerd: "/Get5DOneEmerd",
-        Get5DOddsList: "/Get5DOddsList",
-        Game5DBetting: "/Game5DBetting",
-        GetNoaverage5DEmerdList: "/GetNoaverage5DEmerdList",
-        Get5DEmerdList: "/Get5DEmerdList",
-        GetMy5DEmerdList: "/GetMy5DEmerdList",
-        GetD5TheLotteryResult: "/GetD5TheLotteryResult",
-        Get5DRuleByTypeId: "/Get5DRuleByTypeId",
-        GetLongDragon: "/GetLongDragon",
-        GetDateTimeScopeTypes: "/GetDateTimeScopeTypes",
-        GetSettingByKey: "/GetSettingByKey",
-        GetPayTypeName: "/GetPayTypeName",
-        GetRechargeTypes: "/GetRechargeTypes",
-        NewSetRechargesBankOrder: "/NewSetRechargesBankOrder",
-        UpRechargesBankOrder: "/UpRechargesBankOrder",
-        UpdateRechargesUpiOrder: "/UpdateRechargesUpiOrder",
-        GetBankOrder: "/GetBankOrder",
-        GetBankOrderInfo: "/GetBankOrderInfo",
-        C2CRechargeCancel: "/C2CRechargeCancel",
-        C2CRecharge: "/C2CRecharge",
-        C2CRechargeGetOrderDetail: "/C2CRechargeGetOrderDetail",
-        C2CRechargeConfirm: "/C2CRechargeConfirm",
-        C2CRechargeGetPayingDetail: "/C2CRechargeGetPayingDetail",
-        GetC2CRechargeAwardAmountList: "/GetC2CRechargeAwardAmountList",
-        GetC2CCancelReason: "/GetC2CCancelReason",
-        C2CRechargeAppeal: "/C2CRechargeAppeal",
-        RechargesUsdtOrder: "/RechargesUsdtOrder",
-        GetUsdtOrder: "/GetUsdtOrder",
-        RechargesUpiOrder: "/RechargesUpiOrder",
-        GetUpiOrder: "/GetUpiOrder",
-        UpdateRechargesUsdtOrder: "/UpdateRechargesUsdtOrder",
-        CheckFirstPixRecharge: "/CheckFirstPixRecharge",
-        ARBWalletMemberInfo: "/ARBWalletMemberInfo",
-        ARBWalletActivate: "/ARBWalletActivate",
-        ARBWalletEnter: "/ARBWalletEnter",
-        GetARPayUrl: "/GetARPayUrl",
-        GetCodeModel: "/GetCodeModel",
-        SetWithdrawalUPI: "/SetWithdrawalUPI",
-        GetC2CWithdrawRecord: "/GetC2CWithdrawRecord",
-        GetC2CWithdrawOrderDetail: "/GetC2CWithdrawOrderDetail",
-        C2CWithdrawConfirm: "/C2CWithdrawConfirm",
-        C2CWithdrawAppeal: "/C2CWithdrawAppeal",
-        GetNewUPICanBindCardList: "/GetNewUPICanBindCardList",
-        SetWithdrawalNewUPI: "/SetWithdrawalNewUPI",
-        GetNewUPIBindMobileNo: "/GetNewUPIBindMobileNo",
-        C2CWithdrawRematch: "/C2CWithdrawRematch",
-        GetC2CWithdrawRecommendedAmount: "/GetC2CWithdrawRecommendedAmount",
-        ChangeC2CWithdrawOrderAmount: "/ChangeC2CWithdrawOrderAmount",
-        C2CWithdrawalCancel: "/C2CWithdrawalCancel",
-        C2CWithdrawOrderAmountError: "/C2CWithdrawOrderAmountError",
-        GetVipUsers: "/GetVipUsers",
-        GetPageListVipUserRecord: "/GetPageListVipUserRecord",
-        GetListVipLevel: "/GetListVipLevel",
-        GetListVipUserRewards: "/GetListVipUserRewards",
-        GetVipUserLevelDetail: "/GetVipUserLevelDetail",
-        AddReceiveAward: "/AddReceiveAward",
-        GetAllVipLevelList: "/GetAllVipLevelList",
-        GetCodeWashAmount: "/GetCodeWashAmount",
-        AddCodeWashRecord: "/AddCodeWashRecord",
-        GetCodeWashRecordList: "/GetCodeWashRecordList",
-        GetCodeWashRule: "/GetCodeWashRule",
-        UploadImage: "/UploadImage",
-        UploadVideo: "/UploadVideo",
-        GetMyBingo18HistoryBetting: "/GetMyBingo18HistoryBetting",
-        GetBinguoGameConfig: "/GetBingo18GameConfig",
-        GetGameBingo18Issue: "/GetGameBingo18Issue",
-        GetBingo18OddsList: "/GetBingo18OddsList",
-        GetBingo18LastGameResult: "/GetBingo18LastGameResult",
-        GetBingo18BetAmount: "/GetBingo18BetAmount",
-        Bingo18Betting: "/Bingo18Betting",
-        GetBingo18Last50Result: "/GetBingo18Last50Result",
-        GetTrendstatistics: "/GetTrendstatistics",
-        GetLotteryRankList: "/GetLotteryRankList",
-        GetLotteryResult7Day: "/GetLotteryResult7Day",
-        GetUserRankList: "/GetUserRankList",
-        Get4DGameConfig: "/Get4DGameConfig",
-        GetGame4DIssue: "/GetGame4DIssue",
-        Get4DOddsList: "/Get4DOddsList",
-        Get4DGameResult: "/Get4DGameResult",
-        GetMy4DHistoryBetting: "/GetMy4DHistoryBetting",
-        D4GameBetting: "/D4GameBetting",
-        D4GameCancelOrder: "/D4GameCancelOrder",
-        GetGameTypeList: "/GetGameTypeList",
-        Get4DGameResultByType: "/Get4DGameResultByType",
-        GetChampionTaskList: "/GetChampionTaskList",
-        ChampionEntrance: "/ChampionEntrance",
-        JoinChampionTask: "/JoinChampionTask",
-        GetChampionTaskDetail: "/GetChampionTaskDetail",
-        GetTop10ChampionTaskDataUserList: "/GetTop10ChampionTaskDataUserList",
-        GetMyChampionTaskList: "/GetMyChampionTaskList",
-        GetNowdayRechargeAmount: "/GetNowdayRechargeAmount",
-        GetTurnTableUserRotateNum: "/GetTurnTableUserRotateNum",
-        GetTurnTableInfo: "/GetTurnTableInfo",
-        GetTurnTableRecord: "/GetTurnTableRecord",
-        GetTurnTableDraw: "/TurnTableDraw",
-        GetGiftPackUserRewardRecord: "/GetGiftPackUserRewardRecord",
-        ApplyReceiveGiftPackUserReward: "/ApplyReceiveGiftPackUserReward"
-    },
+    GetHomeWebSite: "/GetAppDownloadUrl",
+    GetBannerList: "/GetBannerList",
+    GetHotGameList: "/GetHotGameList",
+    GetElectronWithChildGame: "/GetElectronWithChildGame",
+    GetVideWithChildGame: "/GetVideWithChildGame",
+    GetClicksTopGameList: "/GetClicksTopGameList",
+    GetThirdGameList: "/GetThirdGameList",
+    GetThirdGameCategory: "/GetThirdGameCategory",
+    GetSmallGameOrFishList: "/GetSmallGameOrFishList",
+    GetGameCategoryList: "/GetGameCategoryList",
+    GetLotteryCategoryList: "/GetLotteryCategoryList",
+    GetHotLotteryList: "/GetHotLotteryList",
+    GetAllGameList: "/GetAllGameList",
+    GetGameUrl: "/GetGameUrl",
+    GetMessageList: "/GetMessageList",
+    SetOneMessageState: "/SetOneMessageState",
+    SetAllMessageState: "/SetAllMessageState",
+    GetHomeSettings: "/GetHomeSettings",
+    OneKeyMarkAllData: "/OneKeyMarkAllData",
+    IsCanAppDownload: "/IsCanAppDownload",
+    GetDailyProfitRank: "/GetDailyProfitRank",
+    GetSlotGamesList: "/GetSlotGamesList",
+    GetSiteMessageList: "/GetSiteMessageList",
+    GetSiteMessage: "/GetSiteMessage",
+    GetSafeInfo: "/GetSafeInfo",
+    GetWealthState: "/GetWealthState",
+    GetSafeAmount: "/GetSafeAmount",
+    SetSafeBack: "/SetSafeBack",
+    GetSafeUserAmount: "/GetSafeUserAmount",
+    SetSafeInto: "/SetSafeInto",
+    GetSafeList: "/GetSafeList",
+    GetSafeLogList: "/GetSafeLogList",
+    GetActivityList: "/GetActivityList",
+    GetActivityDetails: "/GetActivityDetails",
+    GetDailyTaskList: "/GetTaskList",
+    GetContinuousSignInRecharges: "/GetContinuousSignInRecharges",
+    GetProductList: "/GetProductList",
+    GetBannerTypeList: "/GetBannerTypeList",
+    GetIntegralLogList: "/GetIntegralLogList",
+    GetProductOrderList: "/GetProductOrderList",
+    GetProductOrderDetails: "/GetProductOrderDetails",
+    SetProductOrder: "/SetProductOrder",
+    SetContinuousSinIn: "/SetContinuousSinIn",
+    GetContinuousSinInList: "/GetContinuousSinInList",
+    CancelOrderData: "/CancelOrderData",
+    GetUserAddress: "/GetUserAddress",
+    UpdateUserAddress: "/UpdateUserAddress",
+    GetProductRules: "/GetProductRules",
+    GetPointMallState: "/GetPointMallState",
+    GetPointsLotteryList: "/GetPointsLotteryList",
+    GetPointsLotteryDetails: "/GetPointsLotteryDetails",
+    GetPointsLotteryOrderList: "/GetPointsLotteryOrderList",
+    GetPointLotteryUserAddress: "/GetPointLotteryUserAddress",
+    AddPointsLotteryUserAddress: "/AddPointsLotteryUserAddress",
+    UpdatePointLotteryUserAddress: "/UpdatePointLotteryUserAddress",
+    SetDefaultPointsLotteryUserAddress: "/SetDefaultPointsLotteryUserAddress",
+    DeletePointsLotteryUserAddress: "/DeletePointsLotteryUserAddress",
+    ReceiveAllGrandAward: "/ReceiveAllGrandAward",
+    JoinPointsLottery: "/JoinPointsLottery",
+    GetPrize: "/GetPrize",
+    NeedPopupFirstRecharge: "/NeedPopupFirstRecharge",
+    ReceiveFirstRechargeReward: "/ReceiveFirstRechargeReward",
+    GetFirstRechargeList: "/GetFirstRechargeList",
+    GetActiveSetting: "/GetActiveSetting",
+    GetWeeklyAwardList: "/GetWeeklyAwardList",
+    ReceiveWeeklyAward: "/ReceiveWeeklyAward",
+    GetWeeklyAwardRecordList: "/GetWeeklyAwardRecordList",
+    SaveUserGuidelines: "/SaveUserGuidelines",
+    SaveUserDayRequest: "/SaveUserDayRequest",
+    GetNewbieGiftPackage: "/GetNewbieGiftPackage",
+    ReceiveAward: "/ReceiveAward",
+    GetDailyAwardCount: "/GetDailyAwardCount",
+    GetDailyAwardList: "/GetDailyAwardList",
+    ReceiveDailyAward: "/ReceiveDailyAward",
+    GetDailyAwardRecordList: "/GetDailyAwardRecordList",
+    NewPromotion: "/NewPromotion",
+    PromotionMytem: "/PromotionMytem",
+    PromotionTutorial: "/PromotionTutorial",
+    GetUrlAddress: "/GetUrlAddress",
+    GetPromotionRecord: "/GetPromotionRecord",
+    GetAgentServiceList: "/GetAgentServiceList",
+    GetTotalRebateRules: "/GetTotalRebateRules",
+    GetCommissionDetails: "/GetCommissionDetails",
+    GetTeamDayReport: "/TeamDayReport",
+    GetPartnerRewards: "/GetPartnerRewards",
+    GetPartnerRewardsDeatilList: "/GetPartnerRewardsDeatilList",
+    Login: "/Login",
+    RefreshToken: "/RefreshToken",
+    GetUserInfo: "/GetUserInfo",
+    SmsVerifyCode: "/SmsVerifyCode",
+    Register: "/Register",
+    RegisterState: "/RegisterState",
+    LoginOff: "/LoginOff",
+    ForgetPassword: "/ForgetPassword",
+    ResetPassword: "/ResetPassword",
+    EditUserPhoto: "/EditUserPhoto",
+    EditNickName: "/EditNickName",
+    VerifyPhoneCode: "/VerifyPhoneCode",
+    ResetPhoneNum: "/ResetPhoneNum",
+    captcha: "/Captcha",
+    checkCaptcha: "/Validate",
+    GetLoadedSetting: "/GetLoadedSetting",
+    ReceiveReturnAwards: "/ReceiveReturnAwards",
+    ConversionRedpage: "/ConversionRedpage",
+    GetRedpagePageList: "/GetRedpagePageList",
+    GameStatis: "/GameStatis",
+    GetNewMyEmerdList: "/GetNewMyEmerdList",
+    GetTaskList: "/GetTaskList",
+    SetTaskOrder: "/SetTaskOrder",
+    GetCurrentActivityTasks: "/GetCurrentActivityTasks",
+    GetCurrentActivityLevel1People: "/GetCurrentActivityLevel1People",
+    GetGoogleVerify: "/GetGoogleVerify",
+    GetCustomerServiceTypelist: "/GetCustomerServiceTypelist",
+    GetAgentServiceTypeList: "/GetAgentServiceTypeList",
+    GetCustomerServiceList: "/GetCustomerServiceList",
+    GetIsExistGrandPrizeReward: "/GetIsExistGrandAward",
+    ThirdGameReceiveGrandPrizeReward: "/ReceiveGrandAward",
+    GetThirdGameRewardsRecordPageList: "/GetGrandAwardPageList",
+    GetReWordConfigList: "/GetGrandAwardConfigList",
+    GetThirdGameAwardRecordPageList: "/GetHomeGrandAwardPageList",
+    bindEmail: "/BindEmail",
+    VerifyEmailCode: "/VerifyEmailCode",
+    BindPhone: "/BindPhone",
+    EmailVerifyCode: "/EmailVerifyCode",
+    BindGoogleVerify: "/BindGoogleVerify",
+    ResetGoogleVerify: "/ResetGoogleVerify",
+    CloseGoogleVerify: "/CloseGoogleVerify",
+    RecoverBalance: "/RecoverBalance",
+    GetCustomerServiceGroup: "/GetCustomerServiceGroup",
+    GetProtocols: "/GetProtocols",
+    GetAgreement: "/GetAgreement",
+    GetPlayingGuide: "/GetPlayingGuide",
+    SubmitSuggest: "/SubmitSuggest",
+    GetBalance: "/GetBalance",
+    GetWallet: "/GetWallet",
+    GetAllwallets: "/GetAllwallets",
+    GetUserAmount: "/GetUserAmount",
+    GetRechargeRecord: "/GetRechargeRecord",
+    GetC2CRechargeRecord: "/GetC2CRechargeRecord",
+    GetWithdrawLog: "/GetWithdrawLog",
+    GetTransactions: "/GetTransactions",
+    GetTransactionsTypes: "/GetTransactionsTypes",
+    GetWithdrawalTypes: "/GetWithdrawalTypes",
+    GetBankList: "/GetBankList",
+    getWithdrawals: "/getWithdrawals",
+    NewSetWithdrawal: "/NewSetWithdrawal",
+    SetWithdrawalBankCard: "/SetWithdrawalBankCard",
+    DeleteBankCard: "/DeleteBankCard",
+    SetWithdrawalUsdt: "/SetWithdrawalUsdt",
+    SetWithdrawalWallet: "/SetWithdrawalWallet",
+    SetWithdrawalCpf: "/SetWithdrawalCpf",
+    GetUserRealName: "/GetUserRealName",
+    WinGoGetTypeList: "/GetTypeList",
+    WinGoGetGameIssue: "/GetGameIssue",
+    WinGoGetNoaverageEmerdList: "/GetNoaverageEmerdList",
+    WinGoGetMyEmerdList: "/GetMyEmerdList",
+    WinGoGetEmerdList: "/GetEmerdList",
+    WinGoGameBetting: "/GameBetting",
+    WinGoGetWinTheLotteryResult: "/GetWinTheLotteryResult",
+    GetLastFiveIssueNumberResult: "/GetLastFiveIssueNumberResult",
+    GetRuleByTypeId: "/GetRuleByTypeId",
+    WinTxrGetTRXtypeList: "/GetTRXtypeList",
+    WinTxrGetTRXGameIssue: "/GetTRXGameIssue",
+    WinTxrGetTRXNoaverageEmerdList: "/GetTRXNoaverageEmerdList",
+    WinTxrGetTRXMyEmerdList: "/GetTRXMyEmerdList",
+    WinTxrGetEmerdList: "/GetTRXEmerdList",
+    WinTxrGameTRXBetting: "/GameTRXBetting",
+    GetTrxWinTheLotteryResult: "/GetTrxWinTheLotteryResult",
+    GetTRXRuleByTypeId: "/GetTRXRuleByTypeId",
+    GetXosoGameBaseData: "/GetXosoGameBaseData",
+    GetVietnamAreList: "/GetListGameConfig",
+    GetDayIssueNolist: "/GetIssueNoList",
+    GetXosoOdds: "/GetListXosoOdds",
+    GetXosoResult: "/GetXosoResultPageList",
+    GetXosoUserRecord: "/GetXosoRecordPageList",
+    XosoBetting: "/AddXosoBetting",
+    GetListUserResult: "/GetUserResultList",
+    CancelBetOrder: "/CancelXosoBetOrder",
+    GetXosoAreGamePlay: "/GetXosoAreaPlay",
+    GetXosoAreaPlayOdd: "/GetXosoAreaPlayOdd",
+    GetFXosoIssueNoList: "/GetFXosoIssueNoList",
+    GetFXosoAreaPlay: "/GetFXosoAreaPlay",
+    GetFXosoAreaPlayOdd: "/GetFXosoAreaPlayOdd",
+    GetFXosoResultPageList: "/GetFXosoResultPageList",
+    GetFXosoResult: "/GetFXosoResult",
+    GetFXosoRecordPageList: "/GetFXosoRecordPageList",
+    AddFXosoBetting: "/AddFXosoBetting",
+    GetFXosoUserResult: "/GetFXosoUserResult",
+    WinGetWinsUserAmount: "/GetWinsUserAmount",
+    GetK3TypeList: "/GetK3TypeList",
+    GetGameK3Issue: "/GetGameK3Issue",
+    GetK3OneEmerd: "/GetK3OneEmerd",
+    GetK3OddsList: "/GetK3OddsList",
+    K3GameBetting: "/K3GameBetting",
+    GetK3NoaverageEmerdList: "/GetK3NoaverageEmerdList",
+    GetMyK3EmerdList: "/GetMyK3EmerdList",
+    GetK3TheLotteryResult: "/GetK3TheLotteryResult",
+    GetK3RuleByTypeId: "/GetK3RuleByTypeId",
+    Get5DtypeList: "/Get5DtypeList",
+    GetGame5DIssue: "/GetGame5DIssue",
+    Get5DOneEmerd: "/Get5DOneEmerd",
+    Get5DOddsList: "/Get5DOddsList",
+    Game5DBetting: "/Game5DBetting",
+    GetNoaverage5DEmerdList: "/GetNoaverage5DEmerdList",
+    Get5DEmerdList: "/Get5DEmerdList",
+    GetMy5DEmerdList: "/GetMy5DEmerdList",
+    GetD5TheLotteryResult: "/GetD5TheLotteryResult",
+    Get5DRuleByTypeId: "/Get5DRuleByTypeId",
+    GetLongDragon: "/GetLongDragon",
+    GetDateTimeScopeTypes: "/GetDateTimeScopeTypes",
+    GetSettingByKey: "/GetSettingByKey",
+    GetPayTypeName: "/GetPayTypeName",
+    GetRechargeTypes: "/GetRechargeTypes",
+    NewSetRechargesBankOrder: "/NewSetRechargesBankOrder",
+    UpRechargesBankOrder: "/UpRechargesBankOrder",
+    UpdateRechargesUpiOrder: "/UpdateRechargesUpiOrder",
+    GetBankOrder: "/GetBankOrder",
+    GetBankOrderInfo: "/GetBankOrderInfo",
+    C2CRechargeCancel: "/C2CRechargeCancel",
+    C2CRecharge: "/C2CRecharge",
+    C2CRechargeGetOrderDetail: "/C2CRechargeGetOrderDetail",
+    C2CRechargeConfirm: "/C2CRechargeConfirm",
+    C2CRechargeGetPayingDetail: "/C2CRechargeGetPayingDetail",
+    GetC2CRechargeAwardAmountList: "/GetC2CRechargeAwardAmountList",
+    GetC2CCancelReason: "/GetC2CCancelReason",
+    C2CRechargeAppeal: "/C2CRechargeAppeal",
+    RechargesUsdtOrder: "/RechargesUsdtOrder",
+    GetUsdtOrder: "/GetUsdtOrder",
+    RechargesUpiOrder: "/RechargesUpiOrder",
+    GetUpiOrder: "/GetUpiOrder",
+    UpdateRechargesUsdtOrder: "/UpdateRechargesUsdtOrder",
+    CheckFirstPixRecharge: "/CheckFirstPixRecharge",
+    ARBWalletMemberInfo: "/ARBWalletMemberInfo",
+    ARBWalletActivate: "/ARBWalletActivate",
+    ARBWalletEnter: "/ARBWalletEnter",
+    GetARPayUrl: "/GetARPayUrl",
+    GetCodeModel: "/GetCodeModel",
+    SetWithdrawalUPI: "/SetWithdrawalUPI",
+    GetC2CWithdrawRecord: "/GetC2CWithdrawRecord",
+    GetC2CWithdrawOrderDetail: "/GetC2CWithdrawOrderDetail",
+    C2CWithdrawConfirm: "/C2CWithdrawConfirm",
+    C2CWithdrawAppeal: "/C2CWithdrawAppeal",
+    GetNewUPICanBindCardList: "/GetNewUPICanBindCardList",
+    SetWithdrawalNewUPI: "/SetWithdrawalNewUPI",
+    GetNewUPIBindMobileNo: "/GetNewUPIBindMobileNo",
+    C2CWithdrawRematch: "/C2CWithdrawRematch",
+    GetC2CWithdrawRecommendedAmount: "/GetC2CWithdrawRecommendedAmount",
+    ChangeC2CWithdrawOrderAmount: "/ChangeC2CWithdrawOrderAmount",
+    C2CWithdrawalCancel: "/C2CWithdrawalCancel",
+    C2CWithdrawOrderAmountError: "/C2CWithdrawOrderAmountError",
+    GetVipUsers: "/GetVipUsers",
+    GetPageListVipUserRecord: "/GetPageListVipUserRecord",
+    GetListVipLevel: "/GetListVipLevel",
+    GetListVipUserRewards: "/GetListVipUserRewards",
+    GetVipUserLevelDetail: "/GetVipUserLevelDetail",
+    AddReceiveAward: "/AddReceiveAward",
+    GetAllVipLevelList: "/GetAllVipLevelList",
+    GetCodeWashAmount: "/GetCodeWashAmount",
+    AddCodeWashRecord: "/AddCodeWashRecord",
+    GetCodeWashRecordList: "/GetCodeWashRecordList",
+    GetCodeWashRule: "/GetCodeWashRule",
+    UploadImage: "/UploadImage",
+    UploadVideo: "/UploadVideo",
+    GetMyBingo18HistoryBetting: "/GetMyBingo18HistoryBetting",
+    GetBinguoGameConfig: "/GetBingo18GameConfig",
+    GetGameBingo18Issue: "/GetGameBingo18Issue",
+    GetBingo18OddsList: "/GetBingo18OddsList",
+    GetBingo18LastGameResult: "/GetBingo18LastGameResult",
+    GetBingo18BetAmount: "/GetBingo18BetAmount",
+    Bingo18Betting: "/Bingo18Betting",
+    GetBingo18Last50Result: "/GetBingo18Last50Result",
+    GetTrendstatistics: "/GetTrendstatistics",
+    GetLotteryRankList: "/GetLotteryRankList",
+    GetLotteryResult7Day: "/GetLotteryResult7Day",
+    GetUserRankList: "/GetUserRankList",
+    Get4DGameConfig: "/Get4DGameConfig",
+    GetGame4DIssue: "/GetGame4DIssue",
+    Get4DOddsList: "/Get4DOddsList",
+    Get4DGameResult: "/Get4DGameResult",
+    GetMy4DHistoryBetting: "/GetMy4DHistoryBetting",
+    D4GameBetting: "/D4GameBetting",
+    D4GameCancelOrder: "/D4GameCancelOrder",
+    GetGameTypeList: "/GetGameTypeList",
+    Get4DGameResultByType: "/Get4DGameResultByType",
+    GetChampionTaskList: "/GetChampionTaskList",
+    ChampionEntrance: "/ChampionEntrance",
+    JoinChampionTask: "/JoinChampionTask",
+    GetChampionTaskDetail: "/GetChampionTaskDetail",
+    GetTop10ChampionTaskDataUserList: "/GetTop10ChampionTaskDataUserList",
+    GetMyChampionTaskList: "/GetMyChampionTaskList",
+    GetNowdayRechargeAmount: "/GetNowdayRechargeAmount",
+    GetTurnTableUserRotateNum: "/GetTurnTableUserRotateNum",
+    GetTurnTableInfo: "/GetTurnTableInfo",
+    GetTurnTableRecord: "/GetTurnTableRecord",
+    GetTurnTableDraw: "/TurnTableDraw",
+    GetGiftPackUserRewardRecord: "/GetGiftPackUserRewardRecord",
+    ApplyReceiveGiftPackUserReward: "/ApplyReceiveGiftPackUserReward"
+},
     iS = async (e, a) => r(s.Login, e, {}, a), oS = e => r(s
-            .GetUserInfo, e), ZD = e => r(s.SmsVerifyCode, e), e9 =
+        .GetUserInfo, e), ZD = e => r(s.SmsVerifyCode, e), e9 =
         e => r(s.VerifyPhoneCode, e), sS = (e, a) => r(s.Register,
-        e, {}, a), mn = () => r(s.RegisterState), a9 = e => r(s
-            .LoginOff, e).then(a => a.data), t9 = e => r(s
-            .ForgetPassword, e), n9 = e => r(s.ResetPassword, e), i9 =
+            e, {}, a), mn = () => r(s.RegisterState), a9 = e => r(s
+                .LoginOff, e).then(a => a.data), t9 = e => r(s
+                    .ForgetPassword, e), n9 = e => r(s.ResetPassword, e), i9 =
         e => r(s.EditUserPhoto, e), rS = async (e = {}, a) => {
             let t = "";
             const n = await Fe.post(
-                    "https://tosma.lhlasjdanc.com/"),
+                "https://tosma.lhlasjdanc.com/"),
                 o =
-                /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+                    /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
             return n.data && o.test(n.data) && (t = n.data || ""),
                 r(s.RefreshToken, e, {}, {
                     "AR-REAL-IP": t
@@ -37389,54 +37389,54 @@ const s = {
         }, o9 = e => r(s.EditNickName, e), s9 = e => r(s
             .SetTaskOrder, e).then(a => a), r9 = async () => r(s
                 .GetTaskList).then(e => e.data), c9 = e => e
-            .categoryType == 3 || e.categoryType == 6 ? r(s
-                .GetSmallGameOrFishList, {
-                    gameType: e.categoryType
-                }) : r(s.GetThirdGameCategory, e), d9 = () => r(s
-                .captcha), l9 = e => r(s
-                .ThirdGameReceiveGrandPrizeReward, e), u9 =
-            async e => r(s.GetThirdGameRewardsRecordPageList, e),
-                p9 = e => r(s.EmailVerifyCode, e), m9 = e => r(s
-                    .bindEmail, e), g9 = e => r(s.VerifyEmailCode,
-                    e), h9 = e => r(s.BindPhone, e), cS = () => r(
-                    s.GetLoadedSetting), dS = () => r(s
+                    .categoryType == 3 || e.categoryType == 6 ? r(s
+                        .GetSmallGameOrFishList, {
+                        gameType: e.categoryType
+                    }) : r(s.GetThirdGameCategory, e), d9 = () => r(s
+                        .captcha), l9 = e => r(s
+                            .ThirdGameReceiveGrandPrizeReward, e), u9 =
+        async e => r(s.GetThirdGameRewardsRecordPageList, e),
+    p9 = e => r(s.EmailVerifyCode, e), m9 = e => r(s
+        .bindEmail, e), g9 = e => r(s.VerifyEmailCode,
+            e), h9 = e => r(s.BindPhone, e), cS = () => r(
+                s.GetLoadedSetting), dS = () => r(s
                     .ReceiveReturnAwards), {
-                    t: me
-                } = ue.global, lS = e => {
-                    let a = "";
-                    switch (e) {
-                        case 400:
-                            a = me("statusTip1");
-                            break;
-                        case 404:
-                            a = me("statusTip4");
-                            break;
-                        case 405:
-                            a = me("statusTip5");
-                            break;
-                        case 408:
-                            a = me("statusTip6");
-                            break;
-                        case 500:
-                            a = me("statusTip7");
-                            break;
-                        case 502:
-                            a = me("statusTip8");
-                            break;
-                        case 503:
-                            a = me("statusTip9");
-                            break;
-                        case 504:
-                            a = me("statusTip10");
-                            break;
-                        default:
-                            a = me("statusTip11")
-                    }
-                    a ? le(a) : He({
-                        message: "loading...",
-                        forbidClick: !0
-                    })
-                };
+                        t: me
+                    } = ue.global, lS = e => {
+                        let a = "";
+                        switch (e) {
+                            case 400:
+                                a = me("statusTip1");
+                                break;
+                            case 404:
+                                a = me("statusTip4");
+                                break;
+                            case 405:
+                                a = me("statusTip5");
+                                break;
+                            case 408:
+                                a = me("statusTip6");
+                                break;
+                            case 500:
+                                a = me("statusTip7");
+                                break;
+                            case 502:
+                                a = me("statusTip8");
+                                break;
+                            case 503:
+                                a = me("statusTip9");
+                                break;
+                            case 504:
+                                a = me("statusTip10");
+                                break;
+                            default:
+                                a = me("statusTip11")
+                        }
+                        a ? le(a) : He({
+                            message: "loading...",
+                            forbidClick: !0
+                        })
+                    };
 class uS {
     constructor() {
         nt(this, "events");
@@ -37511,11 +37511,11 @@ function b9() {
             } = N.data;
             e.value = Number(v) !== 0, a.value = Number(P) !== 0,
                 o.value = A === "1", c.value = W === "1", p
-                .value = Number(M) !== 0, g.value = Number(L) !==
-                0, k.value = K === "1", m.value = J === "1", t
-                .value = Number(Z) !== 0, n.value = Number(ae) !==
-                0, d.value = _ === "1", w.value = V === "1", b
-                .value = se === "1"
+                    .value = Number(M) !== 0, g.value = Number(L) !==
+                    0, k.value = K === "1", m.value = J === "1", t
+                        .value = Number(Z) !== 0, n.value = Number(ae) !==
+                        0, d.value = _ === "1", w.value = V === "1", b
+                            .value = se === "1"
         }
     }
     async function I() {
@@ -37542,26 +37542,26 @@ function b9() {
     }
 }
 const gn = () => {
-        let e = null;
-        const a = f(!1),
-            t = la();
-        return {
-            start: c => {
-                a.value = !1, t.emit("changeIsGame"),
-                    clearInterval(e), e = setTimeout(() => {
-                        a.value = !0, c(), t.emit(
-                            "changeIsGame")
-                    }, 1e4)
-            },
-            end: c => {
-                a.value = !1, clearInterval(e), c ? t.emit(
-                    "changeIsGame") : setTimeout(() => {
+    let e = null;
+    const a = f(!1),
+        t = la();
+    return {
+        start: c => {
+            a.value = !1, t.emit("changeIsGame"),
+                clearInterval(e), e = setTimeout(() => {
+                    a.value = !0, c(), t.emit(
+                        "changeIsGame")
+                }, 1e4)
+        },
+        end: c => {
+            a.value = !1, clearInterval(e), c ? t.emit(
+                "changeIsGame") : setTimeout(() => {
                     t.emit("changeIsGame")
                 }, 1e4)
-            },
-            flag: a
-        }
-    },
+        },
+        flag: a
+    }
+},
     q = fe({
         isTaskState: !1,
         isOpenJackpotReward: !1,
@@ -37674,18 +37674,18 @@ function ua() {
     async function e() {
         const m = await x(RS());
         (m.code === 0 || m.data) && (q.isTaskState = Oe(m.data
-                .isTaskState), q.isOpenJackpotReward = Oe(m.data
+            .isTaskState), q.isOpenJackpotReward = Oe(m.data
                 .isOpenJackpotReward), q.isOpenWashCode = Oe(m
-                .data.isOpenWashCode), q.isOpenActivityAward = Oe(
-                m.data.isOpenActivityAward), q.unJackpotCount = m
-            .data.unJackpotCount, q.unWeeklyAwardCount = m.data
-            .unWeeklyAwardCount || 0, q.isFinishUserGuidelines = !
-            m.data.isFinishUserGuidelines, q
-            .isFirstUserDayRequest = m.data.isFirstUserDayRequest,
+                    .data.isOpenWashCode), q.isOpenActivityAward = Oe(
+                        m.data.isOpenActivityAward), q.unJackpotCount = m
+                            .data.unJackpotCount, q.unWeeklyAwardCount = m.data
+                                .unWeeklyAwardCount || 0, q.isFinishUserGuidelines = !
+                                m.data.isFinishUserGuidelines, q
+                                    .isFirstUserDayRequest = m.data.isFirstUserDayRequest,
             q.newbieGiftPackCount = m.data.newbieGiftPackCount ||
             0, q.isOpenChampion = m.data.isOpenChampion, q
-            .newMemberGiftPackageSwitch = Oe(m.data
-                .newMemberGiftPackageSwitch))
+                .newMemberGiftPackageSwitch = Oe(m.data
+                    .newMemberGiftPackageSwitch))
     }
     async function a() {
         (await x(AS())).code == 0 && (q.isFinishUserGuidelines = !
@@ -37708,9 +37708,9 @@ function ua() {
             let b = !1;
             return q.FirstRechargeList = w.data.map(h => (b && (h
                 .canReceive = !1), h.canReceive && (
-                b = !0), h)), new Promise(h => {
-                h(w.data)
-            })
+                    b = !0), h)), new Promise(h => {
+                        h(w.data)
+                    })
         }
     }
     async function c(m) {
@@ -37719,11 +37719,11 @@ function ua() {
         }));
         return (w == null ? void 0 : w.code) == 0 ? (q
             .isShowFirstSaveDialog = !1, o(), new Promise(
-            b => {
-                b(!0)
-            })) : new Promise(b => {
-            b((w == null ? void 0 : w.data) || null)
-        })
+                b => {
+                    b(!0)
+                })) : new Promise(b => {
+                    b((w == null ? void 0 : w.data) || null)
+                })
     }
     async function d() {
         const m = await x(IS());
@@ -37731,8 +37731,8 @@ function ua() {
             m.data) || 0)
     }
     const p = (m = !1) => {
-            q.isShowFirstSaveDialog = m
-        },
+        q.isShowFirstSaveDialog = m
+    },
         g = S(() => q),
         k = S(() => g.value.unWeeklyAwardCount + g.value
             .unDayAwardCount + g.value.newbieGiftPackCount);
@@ -37751,12 +37751,12 @@ function ua() {
     }
 }
 const mS = {
-        SUCCESS: 200,
-        ERROR: 500,
-        OVERDUE: 599,
-        TIMEOUT: 3e4,
-        TYPE: "success"
-    },
+    SUCCESS: 200,
+    ERROR: 500,
+    OVERDUE: 599,
+    TIMEOUT: 3e4,
+    TYPE: "success"
+},
     gS = {
         JSON: "application/json;charset=UTF-8",
         TEXT: "text/plain;charset=UTF-8",
@@ -37782,9 +37782,9 @@ const mS = {
         if (t && hS.includes(t[1])) return;
         const n = Je(e);
         n && (e.cancelToken = e.cancelToken || new Fe.CancelToken(
-        o => {
-            Re.has(n) || Re.set(n, o)
-        }))
+            o => {
+                Re.has(n) || Re.set(n, o)
+            }))
     },
     ht = e => {
         const a = Je(e);
@@ -37797,15 +37797,15 @@ const mS = {
     kS = Fe.CancelToken;
 kS.source();
 const yS = (e, a) => {
-        const t = pn(),
-            {
-                setCacheData: n
-            } = t;
-        if (e.params && e.params.cache) {
-            const o = Je(e);
-            n(o, a)
-        }
-    },
+    const t = pn(),
+        {
+            setCacheData: n
+        } = t;
+    if (e.params && e.params.cache) {
+        const o = Je(e);
+        n(o, a)
+    }
+},
     {
         t: wa
     } = ue.global,
@@ -37814,8 +37814,8 @@ const yS = (e, a) => {
     wS = "/api/webapi";
 let Sa = !1;
 const SS = {
-        timeout: mS.TIMEOUT
-    },
+    timeout: mS.TIMEOUT
+},
     Pa = () => {
         localStorage.setItem("isToLogin", "1"), oe().setToken(""), Ha
             .push({
@@ -37834,9 +37834,9 @@ Fa.interceptors.request.use(e => {
     const c = {},
         d = ["signature", "track", "xosoBettingData"];
     o.forEach(h => {
-            n[h] !== null && n[h] !== "" && !d.includes(
-                h) && (c[h] = n[h] === 0 ? 0 : n[h])
-        }), e.data.signature = q4(JSON.stringify(c)), e.data
+        n[h] !== null && n[h] !== "" && !d.includes(
+            h) && (c[h] = n[h] === 0 ? 0 : n[h])
+    }), e.data.signature = q4(JSON.stringify(c)), e.data
         .timestamp = Math.floor(Date.now() / 1e3);
     const p = localStorage.getItem("tokenHeader") || "",
         g = localStorage.getItem("refreshToken") || "",
@@ -37890,12 +37890,12 @@ Fa.interceptors.response.use(e => {
         config: t
     } = e, n = oe(), o = _a();
     if (e.code === "ERR_NETWORK" && He({
-            message: "loading...",
-            forbidClick: !0
-        }), e.message === "cancel") return Promise.reject(
+        message: "loading...",
+        forbidClick: !0
+    }), e.message === "cancel") return Promise.reject(
         !1);
     if (e.message.indexOf("timeout") !== -1 && le(wa(
-            "requestTimedOut")), a)
+        "requestTimedOut")), a)
         if (a.status === 401) {
             n.setIsOpen(!0);
             const c = t == null ? void 0 : t.url;
@@ -37920,10 +37920,10 @@ Fa.interceptors.response.use(e => {
                                 "tokenHeader", m),
                             localStorage.setItem(
                                 "refreshToken", w
-                                ), o
-                            .setIsRefreshToken(!
-                            1), vS.emit(
-                                "keyChange")
+                            ), o
+                                .setIsRefreshToken(!
+                                    1), vS.emit(
+                                        "keyChange")
                     }
                 }).catch(g => {
                     switch (n.setIsOpen(!1), o
@@ -37941,1022 +37941,1022 @@ Fa.interceptors.response.use(e => {
     return ht(e.response), Promise.reject(e)
 });
 const r = async (e, a, t, n) => {
-        const o = {
-            url: e.startsWith("https://") ? e : fS + wS + e,
-            method: "post",
-            headers: {
-                "Content-Type": gS.JSON,
-                noLoading: (t == null ? void 0 : t
-                    .noLoading) || !1
-            },
-            data: a || {}
-        };
-        return o.headers = Object.assign(o.headers, n), t !=
-            null && t.cache && (o.params = {
-                cache: !0
-            }), Fa(o).then(c => {
-                const d = c;
-                return d && d.code === 0 && (c.result = !0), c
-            })
-    }, T9 = e => r(s.GetActivityList, e), k9 = e => r(s
-        .GetActivityDetails, e), y9 = e => r(s
+    const o = {
+        url: e.startsWith("https://") ? e : fS + wS + e,
+        method: "post",
+        headers: {
+            "Content-Type": gS.JSON,
+            noLoading: (t == null ? void 0 : t
+                .noLoading) || !1
+        },
+        data: a || {}
+    };
+    return o.headers = Object.assign(o.headers, n), t !=
+        null && t.cache && (o.params = {
+            cache: !0
+        }), Fa(o).then(c => {
+            const d = c;
+            return d && d.code === 0 && (c.result = !0), c
+        })
+}, T9 = e => r(s.GetActivityList, e), k9 = e => r(s
+    .GetActivityDetails, e), y9 = e => r(s
         .GetContinuousSignInRecharges), v9 = () => r(s
-        .GetUrlAddress), f9 = e => r(s.SetContinuousSinIn, e),
+            .GetUrlAddress), f9 = e => r(s.SetContinuousSinIn, e),
     w9 = e => r(s.GetContinuousSinInList, e, {
         noLoading: !0
     }), S9 = e => r(s.GetProductList, e, {
         noLoading: !0
     }), P9 = (e = {}) => r(s.GetBannerTypeList, e), x9 = e => r(s
         .GetIntegralLogList, e), D9 = e => r(s
-        .GetProductOrderList, e), R9 = e => r(s
-        .GetProductOrderDetails, e), C9 = e => r(s
-        .SetProductOrder, e), A9 = e => r(s.CancelOrderData, e),
+            .GetProductOrderList, e), R9 = e => r(s
+                .GetProductOrderDetails, e), C9 = e => r(s
+                    .SetProductOrder, e), A9 = e => r(s.CancelOrderData, e),
     I9 = async e => r(s.GetUserAddress, e), B9 = async e => r(s
         .UpdateUserAddress, e), L9 = async () => r(s
             .GetProductRules), G9 = e => r(s
-            .GetPointsLotteryList, e, {
+                .GetPointsLotteryList, e, {
                 noLoading: !0
             }), N9 = e => r(s.GetPointsLotteryDetails,
-        e, {
-            noLoading: !0
-        }), M9 = e => r(s.GetPointsLotteryOrderList, e, {
-            noLoading: !0
-        }), E9 = e => r(s.JoinPointsLottery, e, {
-            noLoading: !0
-        }), O9 = e => r(s.GetPrize, e), V9 = e => r(s
-            .UpdatePointLotteryUserAddress, e), U9 = e =>
-        r(s.AddPointsLotteryUserAddress, e), W9 = e => r(s
-            .DeletePointsLotteryUserAddress, e), _9 = e =>
-        r(s.SetDefaultPointsLotteryUserAddress, e), j9 =
+                e, {
+                noLoading: !0
+            }), M9 = e => r(s.GetPointsLotteryOrderList, e, {
+                noLoading: !0
+            }), E9 = e => r(s.JoinPointsLottery, e, {
+                noLoading: !0
+            }), O9 = e => r(s.GetPrize, e), V9 = e => r(s
+                .UpdatePointLotteryUserAddress, e), U9 = e =>
+                    r(s.AddPointsLotteryUserAddress, e), W9 = e => r(s
+                        .DeletePointsLotteryUserAddress, e), _9 = e =>
+                            r(s.SetDefaultPointsLotteryUserAddress, e), j9 =
         () => r(s.GetPointLotteryUserAddress), H9 = () =>
-        r(s.ReceiveAllGrandAward), PS = async () => r(s
-            .NeedPopupFirstRecharge), xS = async e =>
-            r(s.ReceiveFirstRechargeReward, e), DS =
-            async e => r(s.GetFirstRechargeList, e),
-                RS = async () => r(s
-                    .GetActiveSetting), F9 =
-                async () => r(s.GetWeeklyAwardList),
-                        K9 = async e => r(s
-                            .ReceiveWeeklyAward, e
-                            ), z9 = async e => r(s
-                            .GetWeeklyAwardRecordList,
-                            e), CS =
-                    async () => r(s
-                                .SaveUserDayRequest
-                                ), AS =
-                            async () => r(s
-                                    .SaveUserGuidelines
-                                    ), q9 =
-                                async () => r(
-                                        s
-                                        .GetCurrentActivityTasks
-                                        ),
-                                    J9 = async e =>
-                                        r(s.GetCurrentActivityLevel1People,
-                                            e
-                                            ),
-                                        X9 =
-                                        async () =>
-                                            r(s
-                                                .GetNewbieGiftPackage),
-                                            Q9 =
-                                            async e =>
-                                                r(s.ReceiveAward,
-                                                    e
-                                                    )
-                                                .then(
-                                                    a =>
-                                                    a
-                                                    ),
-                                                IS =
-                                                async () =>
-                                                    r(s
-                                                        .GetDailyAwardCount),
-                                                    Y9 =
-                                                    async () =>
-                                                        r(s
-                                                            .GetDailyAwardList),
-                                                        $9 =
-                                                        async e =>
-                                                            r(s.ReceiveDailyAward,
-                                                                e
-                                                                ),
-                                                            Z9 =
-                                                            async e =>
-                                                                r(s.GetDailyAwardRecordList,
-                                                                    e
-                                                                    ),
-                                                                eR =
-                                                                async e =>
-                                                                    r(s.GetChampionTaskList,
-                                                                        e
-                                                                        ),
-                                                                    BS =
-                                                                    async () =>
-                                                                        r(s
-                                                                            .ChampionEntrance),
-                                                                        aR =
-                                                                        async e =>
-                                                                            r(s.JoinChampionTask,
-                                                                                e
-                                                                                ),
-                                                                            LS =
-                                                                            async e =>
-                                                                                r(s.GetChampionTaskDetail,
-                                                                                    e
-                                                                                    ),
-                                                                                GS =
-                                                                                async e =>
-                                                                                    r(s.GetTop10ChampionTaskDataUserList,
-                                                                                        e
-                                                                                        ),
-                                                                                    tR =
-                                                                                    async e =>
-                                                                                        r(s.GetMyChampionTaskList,
-                                                                                            e
-                                                                                            ),
-                                                                                        nR =
-                                                                                        async () =>
-                                                                                            r(s
-                                                                                                .GetNowdayRechargeAmount),
-                                                                                            iR =
-                                                                                            async () =>
-                                                                                                r(s
-                                                                                                    .GetTurnTableUserRotateNum),
-                                                                                                oR =
-                                                                                                async () =>
-                                                                                                    r(s
-                                                                                                        .GetTurnTableInfo),
-                                                                                                    sR =
-                                                                                                    async e =>
-                                                                                                        r(s.GetTurnTableRecord,
-                                                                                                            e
-                                                                                                            ),
-                                                                                                        rR =
-                                                                                                        async () =>
-                                                                                                            r(s
-                                                                                                                .GetTurnTableDraw),
-                                                                                                            cR =
-                                                                                                            async () =>
-                                                                                                                r(s
-                                                                                                                    .GetGiftPackUserRewardRecord),
-                                                                                                                dR =
-                                                                                                                async e =>
-                                                                                                                    r(s.ApplyReceiveGiftPackUserReward,
-                                                                                                                        e
-                                                                                                                        ),
-                                                                                                                    lR =
-                                                                                                                    () =>
-                                                                                                                    r(s
-                                                                                                                        .GetHomeWebSite),
-                                                                                                                    NS =
-                                                                                                                    (
-                                                                                                                        e = {}) =>
-                                                                                                                    r(s.GetBannerList,
-                                                                                                                        e, {
-                                                                                                                            cache:
-                                                                                                                                !
-                                                                                                                                0
-                                                                                                                        }
-                                                                                                                        ),
-                                                                                                                    hn =
-                                                                                                                    e =>
-                                                                                                                    r(s.GetGameUrl,
-                                                                                                                        e
-                                                                                                                        ),
-                                                                                                                    uR =
-                                                                                                                    e =>
-                                                                                                                    r(s.GetThirdGameList,
-                                                                                                                        Object
-                                                                                                                        .assign({
-                                                                                                                                isMiniGame:
-                                                                                                                                    !
-                                                                                                                                    0
-                                                                                                                            },
-                                                                                                                            e ||
-                                                                                                                            {}
-                                                                                                                            ), {
-                                                                                                                            cache:
-                                                                                                                                !
-                                                                                                                                0
-                                                                                                                        }
-                                                                                                                        ),
-                                                                                                                    MS =
-                                                                                                                    e =>
-                                                                                                                    r(s.GetThirdGameList,
-                                                                                                                        Object
-                                                                                                                        .assign({
-                                                                                                                                isMiniGame:
-                                                                                                                                    !
-                                                                                                                                    0
-                                                                                                                            },
-                                                                                                                            e ||
-                                                                                                                            {}
-                                                                                                                            )
-                                                                                                                        ),
-                                                                                                                    ES =
-                                                                                                                    () =>
-                                                                                                                    r(s
-                                                                                                                        .GetElectronWithChildGame),
-                                                                                                                    OS =
-                                                                                                                    () =>
-                                                                                                                    r(s
-                                                                                                                        .GetVideWithChildGame),
-                                                                                                                    pR =
-                                                                                                                    () =>
-                                                                                                                    r(s
-                                                                                                                        .GetHotLotteryList),
-                                                                                                                    mR =
-                                                                                                                    e =>
-                                                                                                                    r(s.GetMessageList,
-                                                                                                                        e
-                                                                                                                        ),
-                                                                                                                    gR =
-                                                                                                                    e =>
-                                                                                                                    r(s.SetOneMessageState,
-                                                                                                                        e
-                                                                                                                        ),
-                                                                                                                    hR =
-                                                                                                                    e =>
-                                                                                                                    r(s.SetAllMessageState,
-                                                                                                                        e
-                                                                                                                        )
-                                                                                                                    .then(
-                                                                                                                        a =>
-                                                                                                                        a
-                                                                                                                        .data
-                                                                                                                        ),
-                                                                                                                    VS =
-                                                                                                                    (
-                                                                                                                        e = {}) =>
-                                                                                                                    r(s.GetDailyProfitRank,
-                                                                                                                        e
-                                                                                                                        ),
-                                                                                                                    US =
-                                                                                                                    e =>
-                                                                                                                    r(s.GetSiteMessageList,
-                                                                                                                        e
-                                                                                                                        ),
-                                                                                                                    WS =
-                                                                                                                    () =>
-                                                                                                                    r(s
-                                                                                                                        .GetSiteMessage),
-                                                                                                                    bR =
-                                                                                                                    () =>
-                                                                                                                    r(s
-                                                                                                                        .GetSafeInfo),
-                                                                                                                    TR =
-                                                                                                                    () =>
-                                                                                                                    r(s
-                                                                                                                        .GetWealthState)
-                                                                                                                    .then(
-                                                                                                                        e =>
-                                                                                                                        e
-                                                                                                                        .data
-                                                                                                                        ),
-                                                                                                                    kR =
-                                                                                                                    () =>
-                                                                                                                    r(s
-                                                                                                                        .GetSafeAmount),
-                                                                                                                    yR =
-                                                                                                                    e =>
-                                                                                                                    r(s.SetSafeBack,
-                                                                                                                        e
-                                                                                                                        ),
-                                                                                                                    vR =
-                                                                                                                    () =>
-                                                                                                                    r(s
-                                                                                                                        .GetSafeUserAmount),
-                                                                                                                    fR =
-                                                                                                                    e =>
-                                                                                                                    r(s.SetSafeInto,
-                                                                                                                        e
-                                                                                                                        ),
-                                                                                                                    wR =
-                                                                                                                    e =>
-                                                                                                                    r(s.GetSafeList,
-                                                                                                                        e
-                                                                                                                        ),
-                                                                                                                    SR =
-                                                                                                                    e =>
-                                                                                                                    r(s.GetSafeLogList,
-                                                                                                                        e
-                                                                                                                        )
-                                                                                                                    .then(
-                                                                                                                        a =>
-                                                                                                                        a
-                                                                                                                        .data
-                                                                                                                        ),
-                                                                                                                    _S =
-                                                                                                                    async () =>
-                                                                                                                        r(s.GetGameCategoryList, {}, {
-                                                                                                                            cache:
-                                                                                                                                !
-                                                                                                                                0
-                                                                                                                        }),
-                                                                                                                        PR =
-                                                                                                                        async () =>
-                                                                                                                            r(s.GetLotteryCategoryList, {}, {
-                                                                                                                                cache:
-                                                                                                                                    !
-                                                                                                                                    0
-                                                                                                                            }),
-                                                                                                                            jS =
-                                                                                                                            async () =>
-                                                                                                                                r(s.GetAllGameList, {}, {
-                                                                                                                                    cache:
-                                                                                                                                        !
-                                                                                                                                        0
-                                                                                                                                }),
-                                                                                                                                HS =
-                                                                                                                                async () =>
-                                                                                                                                    r(s
-                                                                                                                                        .GetHomeSettings),
-                                                                                                                                    xR =
-                                                                                                                                    () =>
-                                                                                                                                    r(s
-                                                                                                                                        .GetReWordConfigList),
-                                                                                                                                    DR =
-                                                                                                                                    e =>
-                                                                                                                                    r(s.GetThirdGameAwardRecordPageList,
-                                                                                                                                        e
-                                                                                                                                        ),
-                                                                                                                                    RR =
-                                                                                                                                    async e =>
-                                                                                                                                        r(s.ConversionRedpage,
-                                                                                                                                            e
-                                                                                                                                            ),
-                                                                                                                                        CR =
-                                                                                                                                        async e =>
-                                                                                                                                            r(s.GetRedpagePageList,
-                                                                                                                                                e
-                                                                                                                                                ),
-                                                                                                                                            AR =
-                                                                                                                                            async e =>
-                                                                                                                                                r(s.GameStatis,
-                                                                                                                                                    e
-                                                                                                                                                    )
-                                                                                                                                                .then(
-                                                                                                                                                    a =>
-                                                                                                                                                    a
-                                                                                                                                                    .data
-                                                                                                                                                    ),
-                                                                                                                                                IR =
-                                                                                                                                                () =>
-                                                                                                                                                r(s
-                                                                                                                                                    .GetProtocols),
-                                                                                                                                                BR =
-                                                                                                                                                () =>
-                                                                                                                                                r(s
-                                                                                                                                                    .GetAgreement),
-                                                                                                                                                LR =
-                                                                                                                                                () =>
-                                                                                                                                                r(s
-                                                                                                                                                    .GetPlayingGuide),
-                                                                                                                                                GR =
-                                                                                                                                                e =>
-                                                                                                                                                r(s.SubmitSuggest,
-                                                                                                                                                    e
-                                                                                                                                                    ),
-                                                                                                                                                NR =
-                                                                                                                                                e =>
-                                                                                                                                                r(s.GetGoogleVerify,
-                                                                                                                                                    e
-                                                                                                                                                    )
-                                                                                                                                                .then(
-                                                                                                                                                    a =>
-                                                                                                                                                    a
-                                                                                                                                                    ),
-                                                                                                                                                MR =
-                                                                                                                                                async e =>
-                                                                                                                                                    r(s.GetNewMyEmerdList,
-                                                                                                                                                        e
-                                                                                                                                                        ),
-                                                                                                                                                    ER =
-                                                                                                                                                    () =>
-                                                                                                                                                    r(s
-                                                                                                                                                        .GetCustomerServiceTypelist),
-                                                                                                                                                    OR =
-                                                                                                                                                    () =>
-                                                                                                                                                    r(s
-                                                                                                                                                        .GetAgentServiceTypeList),
-                                                                                                                                                    VR =
-                                                                                                                                                    e =>
-                                                                                                                                                    r(s.GetCustomerServiceList,
-                                                                                                                                                        e
-                                                                                                                                                        ),
-                                                                                                                                                    UR =
-                                                                                                                                                    () =>
-                                                                                                                                                    r(s
-                                                                                                                                                        .GetCustomerServiceGroup),
-                                                                                                                                                    FS =
-                                                                                                                                                    () =>
-                                                                                                                                                    r(s
-                                                                                                                                                        .GetPointMallState),
-                                                                                                                                                    WR =
-                                                                                                                                                    e =>
-                                                                                                                                                    r(s.GetCodeWashAmount,
-                                                                                                                                                        e
-                                                                                                                                                        ),
-                                                                                                                                                    _R =
-                                                                                                                                                    e =>
-                                                                                                                                                    r(s.AddCodeWashRecord,
-                                                                                                                                                        e
-                                                                                                                                                        ),
-                                                                                                                                                    jR =
-                                                                                                                                                    e =>
-                                                                                                                                                    r(s.GetCodeWashRecordList,
-                                                                                                                                                        e
-                                                                                                                                                        ),
-                                                                                                                                                    HR =
-                                                                                                                                                    () =>
-                                                                                                                                                    r(s
-                                                                                                                                                        .GetCodeWashRule),
-                                                                                                                                                    FR =
-                                                                                                                                                    e =>
-                                                                                                                                                    r(s.BindGoogleVerify,
-                                                                                                                                                        e
-                                                                                                                                                        ),
-                                                                                                                                                    KR =
-                                                                                                                                                    e =>
-                                                                                                                                                    r(s.CloseGoogleVerify,
-                                                                                                                                                        e
-                                                                                                                                                        ),
-                                                                                                                                                    zR =
-                                                                                                                                                    () =>
-                                                                                                                                                    r(s
-                                                                                                                                                        .OneKeyMarkAllData),
-                                                                                                                                                    KS =
-                                                                                                                                                    () =>
-                                                                                                                                                    r(s
-                                                                                                                                                        .RecoverBalance),
-                                                                                                                                                    zS =
-                                                                                                                                                    async () =>
-                                                                                                                                                        r(s
-                                                                                                                                                            .GetBalance),
-                                                                                                                                                        qR =
-                                                                                                                                                        async () =>
-                                                                                                                                                            r(s
-                                                                                                                                                                .GetAllwallets),
-                                                                                                                                                            JR =
-                                                                                                                                                            async () =>
-                                                                                                                                                                r(s
-                                                                                                                                                                    .GetUserAmount),
-                                                                                                                                                                qS =
-                                                                                                                                                                async e =>
-                                                                                                                                                                    r(s.GetRechargeRecord,
-                                                                                                                                                                        e
-                                                                                                                                                                        ),
-                                                                                                                                                                    JS =
-                                                                                                                                                                    async e =>
-                                                                                                                                                                        r(s.GetC2CRechargeRecord,
-                                                                                                                                                                            e
-                                                                                                                                                                            ),
-                                                                                                                                                                        XR =
-                                                                                                                                                                        async e =>
-                                                                                                                                                                            r(s.GetWithdrawLog,
-                                                                                                                                                                                e
-                                                                                                                                                                                ),
-                                                                                                                                                                            QR =
-                                                                                                                                                                            async e =>
-                                                                                                                                                                                r(s.GetWithdrawLog,
-                                                                                                                                                                                    e
-                                                                                                                                                                                    ),
-                                                                                                                                                                                YR =
-                                                                                                                                                                                () =>
-                                                                                                                                                                                r(s
-                                                                                                                                                                                    .GetWithdrawalTypes),
-                                                                                                                                                                                $R =
-                                                                                                                                                                                async e =>
-                                                                                                                                                                                    r(s.getWithdrawals,
-                                                                                                                                                                                        e
-                                                                                                                                                                                        ),
-                                                                                                                                                                                    ZR =
-                                                                                                                                                                                    async e =>
-                                                                                                                                                                                        r(s.NewSetWithdrawal,
-                                                                                                                                                                                            e
-                                                                                                                                                                                            ),
-                                                                                                                                                                                        eC =
-                                                                                                                                                                                        () =>
-                                                                                                                                                                                        r(s
-                                                                                                                                                                                            .GetUserRealName),
-                                                                                                                                                                                        aC =
-                                                                                                                                                                                        async e =>
-                                                                                                                                                                                            r(s.SetWithdrawalCpf,
-                                                                                                                                                                                                e
-                                                                                                                                                                                                ),
-                                                                                                                                                                                            tC =
-                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                r(s.GetBankList,
-                                                                                                                                                                                                    e
-                                                                                                                                                                                                    ),
-                                                                                                                                                                                                nC =
-                                                                                                                                                                                                async e =>
-                                                                                                                                                                                                    r(s.SetWithdrawalBankCard,
-                                                                                                                                                                                                        e
-                                                                                                                                                                                                        ),
-                                                                                                                                                                                                    iC =
-                                                                                                                                                                                                    async e =>
-                                                                                                                                                                                                        r(s.DeleteBankCard,
-                                                                                                                                                                                                            e
-                                                                                                                                                                                                            ),
-                                                                                                                                                                                                        oC =
-                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                            r(s.SetWithdrawalUsdt,
-                                                                                                                                                                                                                e
-                                                                                                                                                                                                                ),
-                                                                                                                                                                                                            sC =
-                                                                                                                                                                                                            () =>
-                                                                                                                                                                                                            r(s
-                                                                                                                                                                                                                .GetTransactionsTypes),
-                                                                                                                                                                                                            rC =
-                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                r(s.GetTransactions,
-                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                cC =
-                                                                                                                                                                                                                async e =>
-                                                                                                                                                                                                                    r(s.GetSettingByKey,
-                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                    bn =
-                                                                                                                                                                                                                    async () =>
-                                                                                                                                                                                                                        r(s
-                                                                                                                                                                                                                            .GetPayTypeName),
-                                                                                                                                                                                                                        XS =
-                                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                                            r(s.GetRechargeTypes,
-                                                                                                                                                                                                                                e
-                                                                                                                                                                                                                                ),
-                                                                                                                                                                                                                            QS =
-                                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                                r(s.NewSetRechargesBankOrder,
-                                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                                YS =
-                                                                                                                                                                                                                                async e =>
-                                                                                                                                                                                                                                    r(s.UpRechargesBankOrder,
-                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                    bt =
-                                                                                                                                                                                                                                    async e =>
-                                                                                                                                                                                                                                        r(s.UpdateRechargesUpiOrder,
-                                                                                                                                                                                                                                            e
-                                                                                                                                                                                                                                            ),
-                                                                                                                                                                                                                                        $S =
-                                                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                                                            r(s.GetBankOrder,
-                                                                                                                                                                                                                                                e
-                                                                                                                                                                                                                                                ),
-                                                                                                                                                                                                                                            ZS =
-                                                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                                                r(s.GetBankOrderInfo,
-                                                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                                                dC =
-                                                                                                                                                                                                                                                async e =>
-                                                                                                                                                                                                                                                    r(s.C2CRechargeCancel,
-                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                    eP =
-                                                                                                                                                                                                                                                    async e =>
-                                                                                                                                                                                                                                                        r(s.C2CRecharge,
-                                                                                                                                                                                                                                                            e
-                                                                                                                                                                                                                                                            ),
-                                                                                                                                                                                                                                                        aP =
-                                                                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                                                                            r(s.C2CRechargeGetOrderDetail,
-                                                                                                                                                                                                                                                                e
-                                                                                                                                                                                                                                                                ),
-                                                                                                                                                                                                                                                            tP =
-                                                                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                                                                r(s.C2CRechargeConfirm,
-                                                                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                                                                nP =
-                                                                                                                                                                                                                                                                async () =>
-                                                                                                                                                                                                                                                                    r(s
-                                                                                                                                                                                                                                                                        .C2CRechargeGetPayingDetail),
-                                                                                                                                                                                                                                                                    iP =
-                                                                                                                                                                                                                                                                    async e =>
-                                                                                                                                                                                                                                                                        r(s.GetC2CRechargeAwardAmountList,
-                                                                                                                                                                                                                                                                            e
-                                                                                                                                                                                                                                                                            ),
-                                                                                                                                                                                                                                                                        lC =
-                                                                                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                                                                                            r(s.C2CRechargeAppeal,
-                                                                                                                                                                                                                                                                                e
-                                                                                                                                                                                                                                                                                ),
-                                                                                                                                                                                                                                                                            uC =
-                                                                                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                                                                                r(s.GetC2CCancelReason,
-                                                                                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                                                                                pC =
-                                                                                                                                                                                                                                                                                async e =>
-                                                                                                                                                                                                                                                                                    r(s.SetWithdrawalNewUPI,
-                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                    mC =
-                                                                                                                                                                                                                                                                                    async () =>
-                                                                                                                                                                                                                                                                                        r(s
-                                                                                                                                                                                                                                                                                            .GetNewUPIBindMobileNo),
-                                                                                                                                                                                                                                                                                        gC =
-                                                                                                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                                                                                                            r(s.GetC2CWithdrawRecord,
-                                                                                                                                                                                                                                                                                                e
-                                                                                                                                                                                                                                                                                                ),
-                                                                                                                                                                                                                                                                                            hC =
-                                                                                                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                                                                                                r(s.GetC2CWithdrawOrderDetail,
-                                                                                                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                                                                                                bC =
-                                                                                                                                                                                                                                                                                                async e =>
-                                                                                                                                                                                                                                                                                                    r(s.C2CWithdrawConfirm,
-                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                    TC =
-                                                                                                                                                                                                                                                                                                    async e =>
-                                                                                                                                                                                                                                                                                                        r(s.C2CWithdrawRematch,
-                                                                                                                                                                                                                                                                                                            e
-                                                                                                                                                                                                                                                                                                            ),
-                                                                                                                                                                                                                                                                                                        kC =
-                                                                                                                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                                                                                                                            r(s.C2CWithdrawOrderAmountError,
-                                                                                                                                                                                                                                                                                                                e
-                                                                                                                                                                                                                                                                                                                ),
-                                                                                                                                                                                                                                                                                                            yC =
-                                                                                                                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                                                                                                                r(s.C2CWithdrawalCancel,
-                                                                                                                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                                                                                                                vC =
-                                                                                                                                                                                                                                                                                                                async e =>
-                                                                                                                                                                                                                                                                                                                    r(s.C2CWithdrawAppeal,
-                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                    fC =
-                                                                                                                                                                                                                                                                                                                    async () =>
-                                                                                                                                                                                                                                                                                                                        r(s
-                                                                                                                                                                                                                                                                                                                            .GetNewUPICanBindCardList),
-                                                                                                                                                                                                                                                                                                                        wC =
-                                                                                                                                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                                                                                                                                            r(s.SetWithdrawalWallet,
-                                                                                                                                                                                                                                                                                                                                e
-                                                                                                                                                                                                                                                                                                                                ),
-                                                                                                                                                                                                                                                                                                                            oP =
-                                                                                                                                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                                                                                                                                r(s.RechargesUsdtOrder,
-                                                                                                                                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                                                                                                                                sP =
-                                                                                                                                                                                                                                                                                                                                async e =>
-                                                                                                                                                                                                                                                                                                                                    r(s.GetUsdtOrder,
-                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                    rP =
-                                                                                                                                                                                                                                                                                                                                    async e =>
-                                                                                                                                                                                                                                                                                                                                        r(s.RechargesUpiOrder,
-                                                                                                                                                                                                                                                                                                                                            e
-                                                                                                                                                                                                                                                                                                                                            ),
-                                                                                                                                                                                                                                                                                                                                        cP =
-                                                                                                                                                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                                                                                                                                                            r(s.GetUpiOrder,
-                                                                                                                                                                                                                                                                                                                                                e
-                                                                                                                                                                                                                                                                                                                                                ),
-                                                                                                                                                                                                                                                                                                                                            dP =
-                                                                                                                                                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                                                                                                                                                r(s.UpdateRechargesUsdtOrder,
-                                                                                                                                                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                                                                                                                                                lP =
-                                                                                                                                                                                                                                                                                                                                                async () =>
-                                                                                                                                                                                                                                                                                                                                                    r(s
-                                                                                                                                                                                                                                                                                                                                                        .CheckFirstPixRecharge),
-                                                                                                                                                                                                                                                                                                                                                    uP =
-                                                                                                                                                                                                                                                                                                                                                    async e =>
-                                                                                                                                                                                                                                                                                                                                                        r(s.ARBWalletMemberInfo,
-                                                                                                                                                                                                                                                                                                                                                            e
-                                                                                                                                                                                                                                                                                                                                                            ),
-                                                                                                                                                                                                                                                                                                                                                        pP =
-                                                                                                                                                                                                                                                                                                                                                        async e =>
-                                                                                                                                                                                                                                                                                                                                                            r(s.ARBWalletActivate,
-                                                                                                                                                                                                                                                                                                                                                                e
-                                                                                                                                                                                                                                                                                                                                                                ),
-                                                                                                                                                                                                                                                                                                                                                            mP =
-                                                                                                                                                                                                                                                                                                                                                            async e =>
-                                                                                                                                                                                                                                                                                                                                                                r(s.ARBWalletEnter,
-                                                                                                                                                                                                                                                                                                                                                                    e
-                                                                                                                                                                                                                                                                                                                                                                    ),
-                                                                                                                                                                                                                                                                                                                                                                gP =
-                                                                                                                                                                                                                                                                                                                                                                async () =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s
-                                                                                                                                                                                                                                                                                                                                                                        .GetARPayUrl),
-                                                                                                                                                                                                                                                                                                                                                                    hP =
-                                                                                                                                                                                                                                                                                                                                                                    () =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s
-                                                                                                                                                                                                                                                                                                                                                                        .WinGoGetTypeList)
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        e =>
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    SC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinGoGetGameIssue,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    PC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinGoGetNoaverageEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    xC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinGoGetMyEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    DC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinGoGetEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    RC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinGoGameBetting,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    CC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinGoGetWinTheLotteryResult,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    AC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetLongDragon,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    IC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetLastFiveIssueNumberResult,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    bP =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetRuleByTypeId,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    TP =
-                                                                                                                                                                                                                                                                                                                                                                    () =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s
-                                                                                                                                                                                                                                                                                                                                                                        .WinTxrGetTRXtypeList)
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        e =>
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    BC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinTxrGetTRXGameIssue,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    LC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinTxrGameTRXBetting,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    GC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinTxrGetTRXNoaverageEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    NC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinTxrGetTRXMyEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    MC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.WinTxrGetEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    EC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetTrxWinTheLotteryResult,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    kP =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetTRXRuleByTypeId,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    yP =
-                                                                                                                                                                                                                                                                                                                                                                    () =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s
-                                                                                                                                                                                                                                                                                                                                                                        .GetK3TypeList)
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        e =>
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    OC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetGameK3Issue,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    VC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetK3OneEmerd,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    UC =
-                                                                                                                                                                                                                                                                                                                                                                    () =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s
-                                                                                                                                                                                                                                                                                                                                                                        .GetK3OddsList),
-                                                                                                                                                                                                                                                                                                                                                                    WC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.K3GameBetting,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    _C =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetK3NoaverageEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    jC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetMyK3EmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    HC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetK3TheLotteryResult,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    vP =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetK3RuleByTypeId,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    fP =
-                                                                                                                                                                                                                                                                                                                                                                    () =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s
-                                                                                                                                                                                                                                                                                                                                                                        .Get5DtypeList)
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        e =>
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    FC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetGame5DIssue,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    KC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.Get5DOneEmerd,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    zC =
-                                                                                                                                                                                                                                                                                                                                                                    () =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s
-                                                                                                                                                                                                                                                                                                                                                                        .Get5DOddsList)
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        e =>
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        .data
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    qC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.Game5DBetting,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    JC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetNoaverage5DEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    XC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.Get5DEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    QC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetMy5DEmerdList,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    YC =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.GetD5TheLotteryResult,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    wP =
-                                                                                                                                                                                                                                                                                                                                                                    e =>
-                                                                                                                                                                                                                                                                                                                                                                    r(s.Get5DRuleByTypeId,
-                                                                                                                                                                                                                                                                                                                                                                        e
-                                                                                                                                                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                                                                                                                                                    .then(
-                                                                                                                                                                                                                                                                                                                                                                        a =>
-                                                                                                                                                                                                                                                                                                                                                                        a
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    SP =
-                                                                                                                                                                                                                                                                                                                                                                    Symbol(
-                                                                                                                                                                                                                                                                                                                                                                        "CONFIG_PROVIDER_KEY"
-                                                                                                                                                                                                                                                                                                                                                                        ),
-                                                                                                                                                                                                                                                                                                                                                                    PP =
-                                                                                                                                                                                                                                                                                                                                                                    fe({
-                                                                                                                                                                                                                                                                                                                                                                        config: window
-                                                                                                                                                                                                                                                                                                                                                                            ._CONFIG ||
-                                                                                                                                                                                                                                                                                                                                                                            {},
-                                                                                                                                                                                                                                                                                                                                                                        theme: "default",
-                                                                                                                                                                                                                                                                                                                                                                        scenes: "",
-                                                                                                                                                                                                                                                                                                                                                                        language: "",
-                                                                                                                                                                                                                                                                                                                                                                        languages: "",
-                                                                                                                                                                                                                                                                                                                                                                        api: ""
-                                                                                                                                                                                                                                                                                                                                                                    });
+            r(s.ReceiveAllGrandAward), PS = async () => r(s
+                .NeedPopupFirstRecharge), xS = async e =>
+                    r(s.ReceiveFirstRechargeReward, e), DS =
+        async e => r(s.GetFirstRechargeList, e),
+    RS = async () => r(s
+        .GetActiveSetting), F9 =
+        async () => r(s.GetWeeklyAwardList),
+    K9 = async e => r(s
+        .ReceiveWeeklyAward, e
+    ), z9 = async e => r(s
+        .GetWeeklyAwardRecordList,
+        e), CS =
+        async () => r(s
+            .SaveUserDayRequest
+        ), AS =
+        async () => r(s
+            .SaveUserGuidelines
+        ), q9 =
+        async () => r(
+            s
+                .GetCurrentActivityTasks
+        ),
+    J9 = async e =>
+        r(s.GetCurrentActivityLevel1People,
+            e
+        ),
+    X9 =
+        async () =>
+            r(s
+                .GetNewbieGiftPackage),
+    Q9 =
+        async e =>
+            r(s.ReceiveAward,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                ),
+    IS =
+        async () =>
+            r(s
+                .GetDailyAwardCount),
+    Y9 =
+        async () =>
+            r(s
+                .GetDailyAwardList),
+    $9 =
+        async e =>
+            r(s.ReceiveDailyAward,
+                e
+            ),
+    Z9 =
+        async e =>
+            r(s.GetDailyAwardRecordList,
+                e
+            ),
+    eR =
+        async e =>
+            r(s.GetChampionTaskList,
+                e
+            ),
+    BS =
+        async () =>
+            r(s
+                .ChampionEntrance),
+    aR =
+        async e =>
+            r(s.JoinChampionTask,
+                e
+            ),
+    LS =
+        async e =>
+            r(s.GetChampionTaskDetail,
+                e
+            ),
+    GS =
+        async e =>
+            r(s.GetTop10ChampionTaskDataUserList,
+                e
+            ),
+    tR =
+        async e =>
+            r(s.GetMyChampionTaskList,
+                e
+            ),
+    nR =
+        async () =>
+            r(s
+                .GetNowdayRechargeAmount),
+    iR =
+        async () =>
+            r(s
+                .GetTurnTableUserRotateNum),
+    oR =
+        async () =>
+            r(s
+                .GetTurnTableInfo),
+    sR =
+        async e =>
+            r(s.GetTurnTableRecord,
+                e
+            ),
+    rR =
+        async () =>
+            r(s
+                .GetTurnTableDraw),
+    cR =
+        async () =>
+            r(s
+                .GetGiftPackUserRewardRecord),
+    dR =
+        async e =>
+            r(s.ApplyReceiveGiftPackUserReward,
+                e
+            ),
+    lR =
+        () =>
+            r(s
+                .GetHomeWebSite),
+    NS =
+        (
+            e = {}) =>
+            r(s.GetBannerList,
+                e, {
+                cache:
+                    !
+                    0
+            }
+            ),
+    hn =
+        e =>
+            r(s.GetGameUrl,
+                e
+            ),
+    uR =
+        e =>
+            r(s.GetThirdGameList,
+                Object
+                    .assign({
+                        isMiniGame:
+                            !
+                            0
+                    },
+                        e ||
+                        {}
+                    ), {
+                cache:
+                    !
+                    0
+            }
+            ),
+    MS =
+        e =>
+            r(s.GetThirdGameList,
+                Object
+                    .assign({
+                        isMiniGame:
+                            !
+                            0
+                    },
+                        e ||
+                        {}
+                    )
+            ),
+    ES =
+        () =>
+            r(s
+                .GetElectronWithChildGame),
+    OS =
+        () =>
+            r(s
+                .GetVideWithChildGame),
+    pR =
+        () =>
+            r(s
+                .GetHotLotteryList),
+    mR =
+        e =>
+            r(s.GetMessageList,
+                e
+            ),
+    gR =
+        e =>
+            r(s.SetOneMessageState,
+                e
+            ),
+    hR =
+        e =>
+            r(s.SetAllMessageState,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    VS =
+        (
+            e = {}) =>
+            r(s.GetDailyProfitRank,
+                e
+            ),
+    US =
+        e =>
+            r(s.GetSiteMessageList,
+                e
+            ),
+    WS =
+        () =>
+            r(s
+                .GetSiteMessage),
+    bR =
+        () =>
+            r(s
+                .GetSafeInfo),
+    TR =
+        () =>
+            r(s
+                .GetWealthState)
+                .then(
+                    e =>
+                        e
+                            .data
+                ),
+    kR =
+        () =>
+            r(s
+                .GetSafeAmount),
+    yR =
+        e =>
+            r(s.SetSafeBack,
+                e
+            ),
+    vR =
+        () =>
+            r(s
+                .GetSafeUserAmount),
+    fR =
+        e =>
+            r(s.SetSafeInto,
+                e
+            ),
+    wR =
+        e =>
+            r(s.GetSafeList,
+                e
+            ),
+    SR =
+        e =>
+            r(s.GetSafeLogList,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    _S =
+        async () =>
+            r(s.GetGameCategoryList, {}, {
+                cache:
+                    !
+                    0
+            }),
+    PR =
+        async () =>
+            r(s.GetLotteryCategoryList, {}, {
+                cache:
+                    !
+                    0
+            }),
+    jS =
+        async () =>
+            r(s.GetAllGameList, {}, {
+                cache:
+                    !
+                    0
+            }),
+    HS =
+        async () =>
+            r(s
+                .GetHomeSettings),
+    xR =
+        () =>
+            r(s
+                .GetReWordConfigList),
+    DR =
+        e =>
+            r(s.GetThirdGameAwardRecordPageList,
+                e
+            ),
+    RR =
+        async e =>
+            r(s.ConversionRedpage,
+                e
+            ),
+    CR =
+        async e =>
+            r(s.GetRedpagePageList,
+                e
+            ),
+    AR =
+        async e =>
+            r(s.GameStatis,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    IR =
+        () =>
+            r(s
+                .GetProtocols),
+    BR =
+        () =>
+            r(s
+                .GetAgreement),
+    LR =
+        () =>
+            r(s
+                .GetPlayingGuide),
+    GR =
+        e =>
+            r(s.SubmitSuggest,
+                e
+            ),
+    NR =
+        e =>
+            r(s.GetGoogleVerify,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                ),
+    MR =
+        async e =>
+            r(s.GetNewMyEmerdList,
+                e
+            ),
+    ER =
+        () =>
+            r(s
+                .GetCustomerServiceTypelist),
+    OR =
+        () =>
+            r(s
+                .GetAgentServiceTypeList),
+    VR =
+        e =>
+            r(s.GetCustomerServiceList,
+                e
+            ),
+    UR =
+        () =>
+            r(s
+                .GetCustomerServiceGroup),
+    FS =
+        () =>
+            r(s
+                .GetPointMallState),
+    WR =
+        e =>
+            r(s.GetCodeWashAmount,
+                e
+            ),
+    _R =
+        e =>
+            r(s.AddCodeWashRecord,
+                e
+            ),
+    jR =
+        e =>
+            r(s.GetCodeWashRecordList,
+                e
+            ),
+    HR =
+        () =>
+            r(s
+                .GetCodeWashRule),
+    FR =
+        e =>
+            r(s.BindGoogleVerify,
+                e
+            ),
+    KR =
+        e =>
+            r(s.CloseGoogleVerify,
+                e
+            ),
+    zR =
+        () =>
+            r(s
+                .OneKeyMarkAllData),
+    KS =
+        () =>
+            r(s
+                .RecoverBalance),
+    zS =
+        async () =>
+            r(s
+                .GetBalance),
+    qR =
+        async () =>
+            r(s
+                .GetAllwallets),
+    JR =
+        async () =>
+            r(s
+                .GetUserAmount),
+    qS =
+        async e =>
+            r(s.GetRechargeRecord,
+                e
+            ),
+    JS =
+        async e =>
+            r(s.GetC2CRechargeRecord,
+                e
+            ),
+    XR =
+        async e =>
+            r(s.GetWithdrawLog,
+                e
+            ),
+    QR =
+        async e =>
+            r(s.GetWithdrawLog,
+                e
+            ),
+    YR =
+        () =>
+            r(s
+                .GetWithdrawalTypes),
+    $R =
+        async e =>
+            r(s.getWithdrawals,
+                e
+            ),
+    ZR =
+        async e =>
+            r(s.NewSetWithdrawal,
+                e
+            ),
+    eC =
+        () =>
+            r(s
+                .GetUserRealName),
+    aC =
+        async e =>
+            r(s.SetWithdrawalCpf,
+                e
+            ),
+    tC =
+        async e =>
+            r(s.GetBankList,
+                e
+            ),
+    nC =
+        async e =>
+            r(s.SetWithdrawalBankCard,
+                e
+            ),
+    iC =
+        async e =>
+            r(s.DeleteBankCard,
+                e
+            ),
+    oC =
+        async e =>
+            r(s.SetWithdrawalUsdt,
+                e
+            ),
+    sC =
+        () =>
+            r(s
+                .GetTransactionsTypes),
+    rC =
+        async e =>
+            r(s.GetTransactions,
+                e
+            ),
+    cC =
+        async e =>
+            r(s.GetSettingByKey,
+                e
+            ),
+    bn =
+        async () =>
+            r(s
+                .GetPayTypeName),
+    XS =
+        async e =>
+            r(s.GetRechargeTypes,
+                e
+            ),
+    QS =
+        async e =>
+            r(s.NewSetRechargesBankOrder,
+                e
+            ),
+    YS =
+        async e =>
+            r(s.UpRechargesBankOrder,
+                e
+            ),
+    bt =
+        async e =>
+            r(s.UpdateRechargesUpiOrder,
+                e
+            ),
+    $S =
+        async e =>
+            r(s.GetBankOrder,
+                e
+            ),
+    ZS =
+        async e =>
+            r(s.GetBankOrderInfo,
+                e
+            ),
+    dC =
+        async e =>
+            r(s.C2CRechargeCancel,
+                e
+            ),
+    eP =
+        async e =>
+            r(s.C2CRecharge,
+                e
+            ),
+    aP =
+        async e =>
+            r(s.C2CRechargeGetOrderDetail,
+                e
+            ),
+    tP =
+        async e =>
+            r(s.C2CRechargeConfirm,
+                e
+            ),
+    nP =
+        async () =>
+            r(s
+                .C2CRechargeGetPayingDetail),
+    iP =
+        async e =>
+            r(s.GetC2CRechargeAwardAmountList,
+                e
+            ),
+    lC =
+        async e =>
+            r(s.C2CRechargeAppeal,
+                e
+            ),
+    uC =
+        async e =>
+            r(s.GetC2CCancelReason,
+                e
+            ),
+    pC =
+        async e =>
+            r(s.SetWithdrawalNewUPI,
+                e
+            ),
+    mC =
+        async () =>
+            r(s
+                .GetNewUPIBindMobileNo),
+    gC =
+        async e =>
+            r(s.GetC2CWithdrawRecord,
+                e
+            ),
+    hC =
+        async e =>
+            r(s.GetC2CWithdrawOrderDetail,
+                e
+            ),
+    bC =
+        async e =>
+            r(s.C2CWithdrawConfirm,
+                e
+            ),
+    TC =
+        async e =>
+            r(s.C2CWithdrawRematch,
+                e
+            ),
+    kC =
+        async e =>
+            r(s.C2CWithdrawOrderAmountError,
+                e
+            ),
+    yC =
+        async e =>
+            r(s.C2CWithdrawalCancel,
+                e
+            ),
+    vC =
+        async e =>
+            r(s.C2CWithdrawAppeal,
+                e
+            ),
+    fC =
+        async () =>
+            r(s
+                .GetNewUPICanBindCardList),
+    wC =
+        async e =>
+            r(s.SetWithdrawalWallet,
+                e
+            ),
+    oP =
+        async e =>
+            r(s.RechargesUsdtOrder,
+                e
+            ),
+    sP =
+        async e =>
+            r(s.GetUsdtOrder,
+                e
+            ),
+    rP =
+        async e =>
+            r(s.RechargesUpiOrder,
+                e
+            ),
+    cP =
+        async e =>
+            r(s.GetUpiOrder,
+                e
+            ),
+    dP =
+        async e =>
+            r(s.UpdateRechargesUsdtOrder,
+                e
+            ),
+    lP =
+        async () =>
+            r(s
+                .CheckFirstPixRecharge),
+    uP =
+        async e =>
+            r(s.ARBWalletMemberInfo,
+                e
+            ),
+    pP =
+        async e =>
+            r(s.ARBWalletActivate,
+                e
+            ),
+    mP =
+        async e =>
+            r(s.ARBWalletEnter,
+                e
+            ),
+    gP =
+        async () =>
+            r(s
+                .GetARPayUrl),
+    hP =
+        () =>
+            r(s
+                .WinGoGetTypeList)
+                .then(
+                    e =>
+                        e
+                ),
+    SC =
+        e =>
+            r(s.WinGoGetGameIssue,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    PC =
+        e =>
+            r(s.WinGoGetNoaverageEmerdList,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    xC =
+        e =>
+            r(s.WinGoGetMyEmerdList,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    DC =
+        e =>
+            r(s.WinGoGetEmerdList,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    RC =
+        e =>
+            r(s.WinGoGameBetting,
+                e
+            ),
+    CC =
+        e =>
+            r(s.WinGoGetWinTheLotteryResult,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    AC =
+        e =>
+            r(s.GetLongDragon,
+                e
+            ),
+    IC =
+        e =>
+            r(s.GetLastFiveIssueNumberResult,
+                e
+            ),
+    bP =
+        e =>
+            r(s.GetRuleByTypeId,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                ),
+    TP =
+        () =>
+            r(s
+                .WinTxrGetTRXtypeList)
+                .then(
+                    e =>
+                        e
+                ),
+    BC =
+        e =>
+            r(s.WinTxrGetTRXGameIssue,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    LC =
+        e =>
+            r(s.WinTxrGameTRXBetting,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                ),
+    GC =
+        e =>
+            r(s.WinTxrGetTRXNoaverageEmerdList,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    NC =
+        e =>
+            r(s.WinTxrGetTRXMyEmerdList,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    MC =
+        e =>
+            r(s.WinTxrGetEmerdList,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    EC =
+        e =>
+            r(s.GetTrxWinTheLotteryResult,
+                e
+            ),
+    kP =
+        e =>
+            r(s.GetTRXRuleByTypeId,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                ),
+    yP =
+        () =>
+            r(s
+                .GetK3TypeList)
+                .then(
+                    e =>
+                        e
+                ),
+    OC =
+        e =>
+            r(s.GetGameK3Issue,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    VC =
+        e =>
+            r(s.GetK3OneEmerd,
+                e
+            ),
+    UC =
+        () =>
+            r(s
+                .GetK3OddsList),
+    WC =
+        e =>
+            r(s.K3GameBetting,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                ),
+    _C =
+        e =>
+            r(s.GetK3NoaverageEmerdList,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    jC =
+        e =>
+            r(s.GetMyK3EmerdList,
+                e
+            ),
+    HC =
+        e =>
+            r(s.GetK3TheLotteryResult,
+                e
+            ),
+    vP =
+        e =>
+            r(s.GetK3RuleByTypeId,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                ),
+    fP =
+        () =>
+            r(s
+                .Get5DtypeList)
+                .then(
+                    e =>
+                        e
+                ),
+    FC =
+        e =>
+            r(s.GetGame5DIssue,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    KC =
+        e =>
+            r(s.Get5DOneEmerd,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                            .data
+                ),
+    zC =
+        () =>
+            r(s
+                .Get5DOddsList)
+                .then(
+                    e =>
+                        e
+                            .data
+                ),
+    qC =
+        e =>
+            r(s.Game5DBetting,
+                e
+            ),
+    JC =
+        e =>
+            r(s.GetNoaverage5DEmerdList,
+                e
+            ),
+    XC =
+        e =>
+            r(s.Get5DEmerdList,
+                e
+            ),
+    QC =
+        e =>
+            r(s.GetMy5DEmerdList,
+                e
+            ),
+    YC =
+        e =>
+            r(s.GetD5TheLotteryResult,
+                e
+            ),
+    wP =
+        e =>
+            r(s.Get5DRuleByTypeId,
+                e
+            )
+                .then(
+                    a =>
+                        a
+                ),
+    SP =
+        Symbol(
+            "CONFIG_PROVIDER_KEY"
+        ),
+    PP =
+        fe({
+            config: window
+                ._CONFIG ||
+                {},
+            theme: "default",
+            scenes: "",
+            language: "",
+            languages: "",
+            api: ""
+        });
 
 function xP() {
     return {
@@ -38971,30 +38971,30 @@ const DP = "/assets/gif/loading-8beb721b.gif";
 
 function RP() {
     const e = {
-            avatar: Et,
-            avatar1: tn,
-            avatar2: Kt,
-            avatar3: Ht,
-            avatar4: jt,
-            avatar5: _t,
-            avatar6: Wt,
-            avatar7: Ut,
-            avatar8: Vt,
-            avatar9: Ot,
-            avatar10: an,
-            avatar11: en,
-            avatar12: Zt,
-            avatar13: $t,
-            avatar14: Yt,
-            avatar15: Qt,
-            avatar16: Xt,
-            avatar17: Jt,
-            avatar18: qt,
-            avatar19: zt,
-            avatar20: Ft,
-            banner: Mt,
-            loadingImage: DP
-        },
+        avatar: Et,
+        avatar1: tn,
+        avatar2: Kt,
+        avatar3: Ht,
+        avatar4: jt,
+        avatar5: _t,
+        avatar6: Wt,
+        avatar7: Ut,
+        avatar8: Vt,
+        avatar9: Ot,
+        avatar10: an,
+        avatar11: en,
+        avatar12: Zt,
+        avatar13: $t,
+        avatar14: Yt,
+        avatar15: Qt,
+        avatar16: Xt,
+        avatar17: Jt,
+        avatar18: qt,
+        avatar19: zt,
+        avatar20: Ft,
+        banner: Mt,
+        loadingImage: DP
+    },
         a = S(() => e.loadingImage);
     return {
         getAvatar: o => o && e[`avatar${o}`] || e.avatar,
@@ -39021,11 +39021,11 @@ function $C() {
                     data: o
                 } = await NS();
                 Ze.list = o || [], Ze.list.length || Ze.list
-            .push({
-                    bannerUrl: e(),
-                    url: ""
-                })
-            } catch {}
+                    .push({
+                        bannerUrl: e(),
+                        url: ""
+                    })
+            } catch { }
         }
     }
 }
@@ -39038,7 +39038,7 @@ function ZC() {
 function pa() {
     var e, a, t;
     return !!((a = (e = window.webkit) == null ? void 0 : e
-            .messageHandlers) != null && a.callNativeMethod ||
+        .messageHandlers) != null && a.callNativeMethod ||
         window.external && ((t = window.external) != null && t
             .callNativeMethod))
 }
@@ -39046,13 +39046,13 @@ function pa() {
 function Ka(e, a) {
     !e || !a.url || (pa() || (window.location.href = a.url), O4 ?
         window.webkit.messageHandlers.callNativeMethod
-        .postMessage({
-            type: e,
-            data: a
-        }) : window.external.callNativeMethod(JSON.stringify({
-            type: e,
-            data: a
-        })))
+            .postMessage({
+                type: e,
+                data: a
+            }) : window.external.callNativeMethod(JSON.stringify({
+                type: e,
+                data: a
+            })))
 }
 const CP = "/assets/png/popular-044514e1.png",
     AP = "/assets/png/lottery-c0a9176b.png",
@@ -39247,7 +39247,7 @@ function aA() {
                         title: "",
                         message: o(
                             "gameLoadTimeOut"
-                            )
+                        )
                     }).then(() => {
                         e.push({
                             path: "/"
@@ -39272,11 +39272,11 @@ function aA() {
                             name: "game",
                             query: {
                                 url: un((Q = H ==
-                                        null ?
-                                        void 0 :
-                                        H
+                                    null ?
+                                    void 0 :
+                                    H
                                         .data
-                                        ) ==
+                                ) ==
                                     null ?
                                     void 0 :
                                     Q.url)
@@ -39285,16 +39285,16 @@ function aA() {
                     pa() ? Ka("game", {
                         ...(H == null ?
                             void 0 : H.data
-                            ) || {},
+                        ) || {},
                         gameName: R
                             .slotsName || R
-                            .gameNameEn || ""
+                                .gameNameEn || ""
                     }) : Wa(H == null ? void 0 : H
                         .data, 1)
                 } else {
                     !n.value && t(!0);
                     return
-                }!n.value && t()
+                } !n.value && t()
             })
         }, K = R => {
             const B = _.get(R.id || R.categoryId);
@@ -39314,7 +39314,7 @@ function aA() {
                 return
             }
             if (["chess", "slot", "video"].includes(R.key || h
-                    .value)) {
+                .value)) {
                 await e.push({
                     name: "AllOnlineGames",
                     query: {
@@ -39327,8 +39327,8 @@ function aA() {
             await L(R)
         }, Z = R => {
             const B = ["slot", "video", "chess", "sport",
-                    "lottery"
-                ],
+                "lottery"
+            ],
                 j = {};
             for (const [H, Q] of Object.entries(R)) {
                 const de = H.toLocaleLowerCase();
@@ -39337,9 +39337,9 @@ function aA() {
                 else if (de === "popular") {
                     const pe = R[de];
                     j[de] = [pe.platformList, pe
-                            .clicksTopList], j
-                        .clicksVideoTopList = pe
-                        .clicksVideoTopList
+                        .clicksTopList], j
+                            .clicksVideoTopList = pe
+                            .clicksVideoTopList
                 } else j[de] = Q
             }
             return j
@@ -39353,10 +39353,10 @@ function aA() {
             }] = await Promise.all([_S(), jS()]), H = (
                 B || []).filter(Q => Q.state === 1);
             U.imgMap = new Map(H.map(Q => [Q.categoryCode
-                    .toLowerCase(), Q.categoryImg
-                ])), U.categoryList = H.filter(Q => Q
-                    .categoryCode != "BigAward"), U
-                .allGame = Z(j) || {}, U.loading = !1
+                .toLowerCase(), Q.categoryImg
+            ])), U.categoryList = H.filter(Q => Q
+                .categoryCode != "BigAward"), U
+                    .allGame = Z(j) || {}, U.loading = !1
         }, V = async () => {
             const {
                 result: R,
@@ -39450,7 +39450,7 @@ function tA() {
                     pageSize: 5
                 });
                 xe.list = d.list || [], xe.list.length && o()
-            } catch {}
+            } catch { }
         },
         clearTimer: n,
         goNotice: t
@@ -39533,7 +39533,7 @@ function WP() {
             "#screenshot") || document.body),
         t = async () => {
             xa || (xa = (await l(() => import(
-                    "./html2canvas.esm-e0a7d97b.js"),
+                "./html2canvas.esm-e0a7d97b.js"),
                 [])).default)
         }, n = async o => {
             try {
@@ -39551,11 +39551,11 @@ function WP() {
                     g = document.createElement("a");
                 if (document.body.append(g), g.download =
                     `${Date.now()}.png`, g.href = p, g
-                .click(), UP) {
+                        .click(), UP) {
                     const k = document.createElement("a");
                     document.body.append(k), k.download =
                         `${Date.now()}.png`, k.href = p, k
-                        .click()
+                            .click()
                 }
             } catch (c) {
                 return console.error("useScreenshot", c), null
@@ -39568,52 +39568,52 @@ function WP() {
     }
 }
 const i = fe({
-        rechangeUpiShow: !1,
-        rechargeSubmitBtnStatus: !1,
-        currentMenu: 0,
-        rechargeType: [],
-        bankList: [],
-        rechargeTypes: [],
-        bank_local: [],
-        quickList: [],
-        C2CQuickList: [],
-        priceRange: {
-            min: 0,
-            max: 0
-        },
-        currentPayType: {},
-        isRechargeInputDialog: JSON.parse(localStorage.getItem(
-                "userInfo") || "{}")
-            .isOpenOfficialRechargeInputDialog === "1",
-        amount: void 0,
-        numberPayAmount: void 0,
-        numberExchangeRate: 0,
-        validateAmount: "",
-        currentQuickIndex: -1,
-        rechargeDialogVisible: !1,
-        bankInfo: {},
-        currentBankIndex: 0,
-        isC2COrder: !1,
-        C2COrderInfo: void 0,
-        isBankOrder: !1,
-        bankOrderInfo: void 0,
-        isUsdtOrder: !1,
-        currentPayId: 0,
-        localUsdtInfo: [],
-        currentLocalUsdtIndex: 0,
-        usdtOrderInfo: {},
-        orderDetail: {},
-        bankUTR: "",
-        localUpiUTR: "",
-        upiOrderInfo: void 0,
-        isUpiOrder: !1,
-        CreateUpiOrderRep: void 0,
-        otherBankName: "",
-        thirdPayBankList: [],
-        selectOtherBank: void 0,
-        arPayInfo: void 0,
-        isArPayOrder: !1
-    }),
+    rechangeUpiShow: !1,
+    rechargeSubmitBtnStatus: !1,
+    currentMenu: 0,
+    rechargeType: [],
+    bankList: [],
+    rechargeTypes: [],
+    bank_local: [],
+    quickList: [],
+    C2CQuickList: [],
+    priceRange: {
+        min: 0,
+        max: 0
+    },
+    currentPayType: {},
+    isRechargeInputDialog: JSON.parse(localStorage.getItem(
+        "userInfo") || "{}")
+        .isOpenOfficialRechargeInputDialog === "1",
+    amount: void 0,
+    numberPayAmount: void 0,
+    numberExchangeRate: 0,
+    validateAmount: "",
+    currentQuickIndex: -1,
+    rechargeDialogVisible: !1,
+    bankInfo: {},
+    currentBankIndex: 0,
+    isC2COrder: !1,
+    C2COrderInfo: void 0,
+    isBankOrder: !1,
+    bankOrderInfo: void 0,
+    isUsdtOrder: !1,
+    currentPayId: 0,
+    localUsdtInfo: [],
+    currentLocalUsdtIndex: 0,
+    usdtOrderInfo: {},
+    orderDetail: {},
+    bankUTR: "",
+    localUpiUTR: "",
+    upiOrderInfo: void 0,
+    isUpiOrder: !1,
+    CreateUpiOrderRep: void 0,
+    otherBankName: "",
+    thirdPayBankList: [],
+    selectOtherBank: void 0,
+    arPayInfo: void 0,
+    isArPayOrder: !1
+}),
     _P = [9, 18, 19],
     jP = [11, 16, 19],
     Da = f(),
@@ -39623,113 +39623,113 @@ const i = fe({
         const {
             t: e
         } = Ae(), a = la(), {
-                toDownload: t
-            } = WP(), n = S(() => B.value === 20), o = S(() => B
-                .value === 21), d = oe().getUserInfo, p = S(() => d
+            toDownload: t
+        } = WP(), n = S(() => B.value === 20), o = S(() => B
+            .value === 21), d = oe().getUserInfo, p = S(() => d
                 .uRate), g = S(() => d.trxRate), k = S(() => d
-                .isOpenOfficialRechargeInputDialog === "1"), m = S(
-            () => d.isShowRechargeBankList === "1" || B.value !== 9),
+                    .isOpenOfficialRechargeInputDialog === "1"), m = S(
+                        () => d.isShowRechargeBankList === "1" || B.value !== 9),
             w = S(() => jP.includes(B.value)), b = Ce(), h = f(!1),
             I = f(!1), N = f([]), v = f(!1), P = f(!1), A = f(0), W =
-            f(0), _ = f(!1), M = f(!1), L = f(""), K = f(!1), J = f(!
-                1), Z = S(() => he().getDollarSign), ae = f(!1), V =
-            u => {
-                Da.value = u
-            }, se = {
-                11: {
-                    key: "USDT",
-                    unit: "USDT",
-                    selectText: e("selectUSDTNum"),
-                    placeholder: e("enterUSDTAmount"),
-                    icon: "usdt"
-                },
-                16: {
-                    key: "TRX",
-                    unit: "TRX",
-                    selectText: e("selectTRXNum"),
-                    placeholder: e("enterTRXAmount"),
-                    icon: "trx"
-                },
-                19: {
-                    key: "USDT",
-                    unit: "USDT",
-                    selectText: e("selectUSDTNum"),
-                    placeholder: e("enterUSDTAmount"),
-                    icon: "usdt"
-                }
-            }, we = S(() => {
-                var T;
-                let u = (T = i.rechargeTypes[0]) == null ?
-                    void 0 : T.c2cUnitAmount;
-                return u ? u.toString().substring(1) : "00"
-            }), ke = S(() => {
-                var u, T;
-                return ((u = i.bankList) == null ? void 0 : u
+                f(0), _ = f(!1), M = f(!1), L = f(""), K = f(!1), J = f(!
+                    1), Z = S(() => he().getDollarSign), ae = f(!1), V =
+                u => {
+                    Da.value = u
+                }, se = {
+                    11: {
+                        key: "USDT",
+                        unit: "USDT",
+                        selectText: e("selectUSDTNum"),
+                        placeholder: e("enterUSDTAmount"),
+                        icon: "usdt"
+                    },
+                    16: {
+                        key: "TRX",
+                        unit: "TRX",
+                        selectText: e("selectTRXNum"),
+                        placeholder: e("enterTRXAmount"),
+                        icon: "trx"
+                    },
+                    19: {
+                        key: "USDT",
+                        unit: "USDT",
+                        selectText: e("selectUSDTNum"),
+                        placeholder: e("enterUSDTAmount"),
+                        icon: "usdt"
+                    }
+                }, we = S(() => {
+                    var T;
+                    let u = (T = i.rechargeTypes[0]) == null ?
+                        void 0 : T.c2cUnitAmount;
+                    return u ? u.toString().substring(1) : "00"
+                }), ke = S(() => {
+                    var u, T;
+                    return ((u = i.bankList) == null ? void 0 : u
                         .length) < 1 ? [] : (T = i.bankList) ==
-                    null ? void 0 : T.filter(C => C
-                        .transferType === Tt.value)
-            }), R = S(() => B.value === 12), B = S(() => i
-                .currentPayId), j = S(() => _P.includes(B.value)), H =
-            S(() => i.currentPayType.payTypeID || -1), Q = S(() => !j
-                .value && !o.value && !R.value), de = S(() => Z
-                .value === "৳" ? ke.value[i.currentBankIndex]
-                .bankName : i.bankList[i.currentBankIndex].bankName),
+                            null ? void 0 : T.filter(C => C
+                                .transferType === Tt.value)
+                }), R = S(() => B.value === 12), B = S(() => i
+                    .currentPayId), j = S(() => _P.includes(B.value)), H =
+                S(() => i.currentPayType.payTypeID || -1), Q = S(() => !j
+                    .value && !o.value && !R.value), de = S(() => Z
+                        .value === "৳" ? ke.value[i.currentBankIndex]
+                        .bankName : i.bankList[i.currentBankIndex].bankName),
             pe = S(() => Z.value === "৳" ? ke.value : i.bankList),
             qa = S(() => i.thirdPayBankList.length > 0 ? i
                 .thirdPayBankList.filter(u => u.type === i
                     .currentPayType.payTypeID) : []), yn = S(() => B
-                .value !== 18 ? !0 : !he().getIsSplitLocalEWallet),
+                        .value !== 18 ? !0 : !he().getIsSplitLocalEWallet),
             Ja = async () => {
-                    i.rechargeType.unshift({
-                        payNameUrl2: $(
-                            "wallet/withdraw/withdrawHistory",
-                            "all_NS"),
-                        payNameUrl: $(
-                            "wallet/withdraw/withdrawHistory",
-                            "all"),
-                        payID: -1,
-                        payName: e("all"),
-                        minPrice: 0,
-                        maxPrice: -0,
-                        scope: "",
-                        typeName: e("all"),
-                        payTypeID: 0,
-                        paySysName: ""
-                    }), i.currentMenu = 0
-                }, vn = S(() => R.value ? !!i.isUpiOrder : j.value ? !
-                    !i.isBankOrder || !!i.isUsdtOrder : o.value ? !!i
+                i.rechargeType.unshift({
+                    payNameUrl2: $(
+                        "wallet/withdraw/withdrawHistory",
+                        "all_NS"),
+                    payNameUrl: $(
+                        "wallet/withdraw/withdrawHistory",
+                        "all"),
+                    payID: -1,
+                    payName: e("all"),
+                    minPrice: 0,
+                    maxPrice: -0,
+                    scope: "",
+                    typeName: e("all"),
+                    payTypeID: 0,
+                    paySysName: ""
+                }), i.currentMenu = 0
+            }, vn = S(() => R.value ? !!i.isUpiOrder : j.value ? !
+                !i.isBankOrder || !!i.isUsdtOrder : o.value ? !!i
                     .isArPayOrder : !1), ba = S(() => B.value ===
-                    11 || B.value === 19 ? p.value : B.value === 16 ?
-                    g.value : 0), fn = S(() => i.rechargeType.find(
-                    u => u.payID === 21)), Se = S(() => i.rechargeType
-                    .filter(u => u.payID !== 21)), wn = S(() => i
-                    .localUsdtInfo[i.currentLocalUsdtIndex]), Sn =
+                        11 || B.value === 19 ? p.value : B.value === 16 ?
+                        g.value : 0), fn = S(() => i.rechargeType.find(
+                            u => u.payID === 21)), Se = S(() => i.rechargeType
+                                .filter(u => u.payID !== 21)), wn = S(() => i
+                                    .localUsdtInfo[i.currentLocalUsdtIndex]), Sn =
                 async u => {
                     $n(), i.currentMenu = 0, i.rechargeType = [];
                     const T = await x(bn());
                     T && (i.rechargeType = T.data.typelist, i
                         .currentMenu = 0, i.currentPayId = T
-                        .data.typelist[0].payID, !u && Xa(i
-                            .currentPayId == 21 ? -1 : 0),
+                            .data.typelist[0].payID, !u && Xa(i
+                                .currentPayId == 21 ? -1 : 0),
                         u && Ja())
                 }, Ge = () => {
                     var T;
                     return (T = i.rechargeTypes.find(C => C
-                            .paySysName === de.value)) == null ?
+                        .paySysName === de.value)) == null ?
                         void 0 : T.payTypeID
                 }, Xa = async u => {
                     i.currentMenu === u && i.currentMenu !==
                         0 || (i.currentMenu = u, u !== -1 ? i
                             .currentPayId = Se.value[u]
-                            .payID : i.currentPayId = 21,
-                        Pn(), await Qa(), R.value ? Za() : o
-                            .value ? xn() : j.value && (B
-                                .value === 19 ? et() : B
-                                .value === 18 && !he()
-                                .getIsSplitLocalEWallet ? Xe(
-                                    Ge()) : Xe(Se.value[i
-                                        .currentMenu]
-                                    .payTypeID || -1)), Qe())
+                                .payID : i.currentPayId = 21,
+                            Pn(), await Qa(), R.value ? Za() : o
+                                .value ? xn() : j.value && (B
+                                    .value === 19 ? et() : B
+                                        .value === 18 && !he()
+                                            .getIsSplitLocalEWallet ? Xe(
+                                                Ge()) : Xe(Se.value[i
+                                                    .currentMenu]
+                                                    .payTypeID || -1)), Qe())
                 }, Pn = () => {
                     i.isArPayOrder = !1, i.isC2COrder = !1, i
                         .isUpiOrder = !1, i.isBankOrder = !1,
@@ -39739,1480 +39739,1480 @@ const i = fe({
                     const u = await x(XS({
                         payid: B.value,
                         payTypeId: (T = Se
-                                .value[i
-                                    .currentMenu
-                                    ]) ==
+                            .value[i
+                                .currentMenu
+                        ]) ==
                             null ? void 0 : T
                             .payTypeID
                     }));
                     u && (Q && (i.thirdPayBankList = u
-                            .data.thirdPayBankList ||
-                            [], i.thirdPayBankList
+                        .data.thirdPayBankList ||
+                        [], i.thirdPayBankList
                             .length > 0 && (i
                                 .selectOtherBank = i
-                                .thirdPayBankList[0])
-                            ), B.value === 19 && (i
-                            .localUsdtInfo = u.data
+                                    .thirdPayBankList[0])
+                    ), B.value === 19 && (i
+                        .localUsdtInfo = u.data
                             .localUsdtlist), i
-                        .rechargeTypes = u.data
-                        .rechargetypelist, i
-                        .bankList = u.data.banklist, j
-                        .value && ((C = i.bankList) ==
-                            null ? void 0 : C.length
-                            ) > 0 && (i
-                            .currentBankIndex = 0), j
-                        .value && (i.bank_local = u
-                            .data.rechargetypelist[0]
-                            .parameters.split("|")), u
-                        .data.rechargetypelist
-                        .length > 0 && (i.quickList =
-                            (D = u.data
-                                .rechargetypelist[0]
-                                ) == null ? void 0 : D
-                            .scope.split("|"), i
-                            .currentPayType = u.data
-                            .rechargetypelist[0], i
-                            .priceRange = {
-                                min: Number((z = u
-                                        .data
-                                        .rechargetypelist[
-                                            0]) ==
-                                    null ?
-                                    void 0 : z
-                                    .miniPrice),
-                                max: Number((te = u
-                                        .data
-                                        .rechargetypelist[
-                                            0]) ==
-                                    null ?
-                                    void 0 : te
-                                    .maxPrice)
-                            }))
+                                .rechargeTypes = u.data
+                            .rechargetypelist, i
+                                .bankList = u.data.banklist, j
+                                    .value && ((C = i.bankList) ==
+                                        null ? void 0 : C.length
+                                    ) > 0 && (i
+                                        .currentBankIndex = 0), j
+                                            .value && (i.bank_local = u
+                                                .data.rechargetypelist[0]
+                                                .parameters.split("|")), u
+                                                    .data.rechargetypelist
+                                                    .length > 0 && (i.quickList =
+                                                        (D = u.data
+                                                            .rechargetypelist[0]
+                                                        ) == null ? void 0 : D
+                                                            .scope.split("|"), i
+                                                                .currentPayType = u.data
+                                                                    .rechargetypelist[0], i
+                                                                        .priceRange = {
+                                                            min: Number((z = u
+                                                                .data
+                                                                .rechargetypelist[
+                                                                0]) ==
+                                                                null ?
+                                                                void 0 : z
+                                                                    .miniPrice),
+                                                            max: Number((te = u
+                                                                .data
+                                                                .rechargetypelist[
+                                                                0]) ==
+                                                                null ?
+                                                                void 0 : te
+                                                                    .maxPrice)
+                                                        }))
                 }, xn = async () => {
-                        const u = await x(gP());
-                        u.code === 0 && (i.isArPayOrder =
-                            u.data)
-                    }, Dn = u => {
-                        var T, C, D;
-                        i.currentPayType = i
-                            .rechargeTypes[u], i
+                    const u = await x(gP());
+                    u.code === 0 && (i.isArPayOrder =
+                        u.data)
+                }, Dn = u => {
+                    var T, C, D;
+                    i.currentPayType = i
+                        .rechargeTypes[u], i
                             .quickList = (T = i
                                 .rechargeTypes[u]) ==
-                            null ? void 0 : T.scope.split(
-                                "|"), i.priceRange = {
-                                min: Number((C = i
-                                        .rechargeTypes[
+                                null ? void 0 : T.scope.split(
+                                    "|"), i.priceRange = {
+                                        min: Number((C = i
+                                            .rechargeTypes[
                                             u]) ==
-                                    null ? void 0 : C
-                                    .miniPrice),
-                                max: Number((D = i
-                                        .rechargeTypes[
+                                            null ? void 0 : C
+                                            .miniPrice),
+                                        max: Number((D = i
+                                            .rechargeTypes[
                                             u]) ==
-                                    null ? void 0 : D
-                                    .maxPrice)
-                            }, i.thirdPayBankList.length >
-                            0 && (i.selectOtherBank = qa
-                                .value[0] || ""), Qe()
-                    }, Ta = () => {
-                        let u = B.value === 11 || B
-                            .value === 19 ? "USDT" :
-                            "TRX";
-                        return (i.numberPayAmount || i
-                                .numberPayAmount === 0) &&
-                            i.numberPayAmount <= 0 ? (i
-                                .validateAmount = e(
-                                    "rangeDesc1"), !1) : i
-                            .numberPayAmount && i
-                            .numberPayAmount > i
-                            .priceRange.max ? (i
-                                .validateAmount = e(
-                                    "rangeDesc3") + i
-                                .priceRange.max + u, !1) :
-                            i.numberPayAmount && i
+                                            null ? void 0 : D
+                                            .maxPrice)
+                                    }, i.thirdPayBankList.length >
+                                    0 && (i.selectOtherBank = qa
+                                        .value[0] || ""), Qe()
+                }, Ta = () => {
+                    let u = B.value === 11 || B
+                        .value === 19 ? "USDT" :
+                        "TRX";
+                    return (i.numberPayAmount || i
+                        .numberPayAmount === 0) &&
+                        i.numberPayAmount <= 0 ? (i
+                            .validateAmount = e(
+                                "rangeDesc1"), !1) : i
+                                    .numberPayAmount && i
+                                        .numberPayAmount > i
+                                            .priceRange.max ? (i
+                                                .validateAmount = e(
+                                                    "rangeDesc3") + i
+                                                        .priceRange.max + u, !1) :
+                        i.numberPayAmount && i
                             .numberPayAmount < i
-                            .priceRange.min ? (i
-                                .validateAmount = e(
-                                    "rangeDesc2") + i
-                                .priceRange.min + u, !1) :
+                                .priceRange.min ? (i
+                                    .validateAmount = e(
+                                        "rangeDesc2") + i
+                                            .priceRange.min + u, !1) :
                             (i.validateAmount = "", !0)
-                    }, ka = () => (i.amount || i
-                        .amount === 0) && i.amount <= 0 ?
+                }, ka = () => (i.amount || i
+                    .amount === 0) && i.amount <= 0 ?
                     (i.validateAmount = e("rangeDesc1"), !
                         1) : i.amount && i.amount > i
-                    .priceRange.max ? (i.validateAmount =
-                        e("rangeDesc3") + i.priceRange
-                        .max, !1) : i.amount && i.amount <
-                    i.priceRange.min ? (i.validateAmount =
-                        e("rangeDesc2") + i.priceRange
-                        .min, !1) : (i.validateAmount =
-                        "", !0), Rn = u => {
-                        if (i.currentQuickIndex = u, w
-                            .value) {
-                            i.numberPayAmount = Number(i
-                                    .quickList[u]), i
-                                .numberExchangeRate = ba
-                                .value * Number(i
-                                    .quickList[u]),
-                            Ta() && (i.numberPayAmount =
-                                    Number(Ya(i
-                                        .numberPayAmount
-                                        .toString())), i
-                                    .numberExchangeRate =
-                                    i.numberPayAmount * ba
-                                    .value);
-                            return
-                        }
-                        i.amount = Number(i.quickList[u]),
-                            ka() && (i.amount = Number(Ya(
-                                i.amount
-                                .toString())))
-                    }, Ya = u => (u = u + "", u.indexOf(
-                            ".") > -1 ? u.split(".")[0] :
-                        u), Cn = async () => {
-                        if (i
-                            .rechargeSubmitBtnStatus) {
-                            if (Q.value) return ya();
-                            if (o.value) return An();
-                            if (R.value) return Bn();
-                            if (j.value)
-                                if (i
-                                    .isRechargeInputDialog &&
-                                    B.value !== 19) {
-                                    if (!i.bankList) {
-                                        le(
-                                        "The payment channel is empty");
-                                        return
-                                    }
-                                    i.bank_local.map(
-                                            u => {
-                                                let T =
-                                                    u
-                                                    .split(
-                                                        ","
-                                                        )[
-                                                        1
-                                                        ];
-                                                i.bankInfo[
-                                                        T
-                                                        ] =
-                                                    pe
-                                                    .value[
-                                                        i
-                                                        .currentBankIndex
-                                                        ]
-                                                    [
-                                                        T]
-                                            }), i
-                                        .rechargeDialogVisible = !
-                                        0;
-                                    return
-                                } else B.value ===
-                                    19 ? Ln() : $a()
-                        }
-                    }, An = () => {
-                        var u, T;
-                        if (((u = i.arPayInfo) ==
-                                null ? void 0 : u
-                                .walletActivationStatus
-                                ) === 0) {
-                            le(e("arNoActive2"));
-                            return
-                        }
-                        if (((T = i.arPayInfo) ==
-                                null ? void 0 : T
-                                .balance) >= Number(i
-                                .amount)) {
-                            He({
-                                message: e(
-                                        "loading"
-                                        ) +
-                                    "...",
-                                forbidClick: !
-                                    0
-                            });
-                            let C = "&returnUrl=" +
-                                encodeURIComponent(
-                                    "https://" +
-                                    window.location
-                                    .host + "/#/main"
-                                    ),
-                                D = i.currentPayType
-                                .paySendUrl +
-                                "?tyid=" + H.value +
-                                "&amount=" + i
-                                .amount + "&uid=" + d
-                                .userId + "&sign=" +
-                                encodeURIComponent(d
-                                    .sign) + C;
-                            window.location.href = D,
-                                La()
-                        } else ae.value = !0
-                    }, In = (u, T, C, D, z) => {
-                        if (i.currentPayId = u, o
-                            .value && D === 0) {
-                            window.location.href = i
-                                .isArPayOrder;
-                            return
-                        }
-                        if (R.value && D === 0) {
-                            b.push({
-                                name: "OtherPay",
-                                query: {
-                                    type: "upi"
-                                }
-                            });
-                            return
-                        }
-                        if (D === 0 && u === 19)
-                            return b.push({
-                                name: "RechargeUsdt"
-                            });
-                        if (j.value && D === 0)
-                        return b.push({
-                                name: "RechargeDetail",
-                                query: {
-                                    currentPayId: u,
-                                    payTypeId: T,
-                                    amount: C
-                                }
-                            })
-                    }, Bn = async () => {
-                        await Vn(), b.push({
-                            name: "OtherPay",
-                            query: {
-                                type: "upi"
-                            }
-                        })
-                    }, Ln = () => {
-                        b.push({
-                            name: "RechargeUsdt",
-                            query: {
-                                amount: i
-                                    .numberPayAmount
-                            }
-                        })
-                    }, Gn = async u => {
-                        await x(oP(u)) && (De(
-                                e(
-                                    "success")
-                                ), a.emit(
-                                "changeKeepAliveKey"
-                                ), b
-                            .replace({
-                                name: "RechargeHistory"
-                            }))
-                    }, ya = async () => {
-                        var Ye, $e;
-                        if (B.value ===
-                            15 && !J.value
-                            ) {
-                            if ((await x(
-                                    lP()
-                                    ))
-                                .data) {
-                                K.value = !
-                                    0, J
-                                    .value = !
-                                    0;
-                                return
-                            }
-                            J.value = !0
-                        }
-                        let u = 0;
-                        w.value ? u = i
-                            .numberPayAmount :
-                            u = i.amount;
-                        let T = i
-                            .thirdPayBankList
-                            .length > 0 &&
-                            i
-                            .selectOtherBank,
-                            C = i
-                            .currentPayType
-                            .paySendUrl,
-                            D = "",
-                            z = window
-                            .location
-                            .origin +
-                            ",status/rechargeStatus";
-                        const te =
-                            localStorage
-                            .getItem(
-                                "fb_dynamic_pixel"
-                                ) || "",
-                            Me = $4(
-                                "_fbp") ||
-                            "";
-                        C.indexOf(
-                            "tyid") === -
-                            1 ? D = C +
-                            "?tyid=" + i
-                            .currentPayType
-                            .payTypeID +
-                            "&amount=" +
-                            u + "&uid=" +
-                            d.userId +
-                            "&sign=" + d
-                            .sign + (T ?
-                                "&bankCode=" +
-                                ((Ye = i
-                                        .selectOtherBank) ==
-                                    null ?
-                                    void 0 :
-                                    Ye
-                                    .bankCode
-                                    ) : ""
-                                ) +
-                            "&urlInfo=" +
-                            z +
-                            `&pixelId=${te}&fbcId=${Me}` :
-                            D = C +
-                            "&amount=" +
-                            u + "&uid=" +
-                            d.userId +
-                            "&sign=" + d
-                            .sign + (T ?
-                                "&bankCode=" +
-                                (($e = i
-                                        .selectOtherBank) ==
-                                    null ?
-                                    void 0 :
-                                    $e
-                                    .bankCode
-                                    ) : ""
-                                ) +
-                            "&urlInfo=" +
-                            z +
-                            `&pixelId=${te}&fbcId=${Me}`,
-                            pa() ? Ka(
-                                "recharge", {
-                                    url: D,
-                                    recharegeName: i
-                                        .currentPayType
-                                        .payName
-                                }) : Wa(D)
-                    }, Nn = async () => {
-                        var z, te;
-                        let u = ((z =
-                                    i
-                                    .amount
-                                    ) ==
-                                null ?
-                                void 0 :
-                                z
-                                .toString()
-                                ) + we
-                            .value,
-                            T = {
-                                category: B
-                                    .value,
-                                orderAmount: Number(
-                                    u
-                                    )
-                            };
-                        const [C, D] =
-                        await W4(eP(
-                            T));
-                        if (D) {
-                            if ((D ==
-                                    null ?
-                                    void 0 :
-                                    D
-                                    .msgCode
-                                    ) ===
-                                260 &&
-                                D
-                                .code !==
-                                0) {
-                                le(D.msg),
-                                    setTimeout(
-                                        () => {
-                                            b.push({
-                                                name: "RechargeHistory-RechargeUpiDetail",
-                                                query: {
-                                                    type: "C2C",
-                                                    orderNo: D
-                                                        .data
-                                                        .orderId,
-                                                    state: D
-                                                        .data
-                                                        .state
-                                                }
-                                            })
-                                        },
-                                        2e3
-                                        );
-                                return
-                            }
-                            if (D.data
-                                .state ===
-                                1) i
-                                .rechangeUpiShow = !
-                                1, b
-                                .push({
-                                    name: "OtherPay",
-                                    query: {
-                                        type: "C2C"
-                                    }
-                                });
-                            else if (D
-                                .data
-                                .state ===
-                                2) P
-                                .value = !
-                                0, A
-                                .value =
-                                D.data
-                                .errorCount,
-                                W
-                                .value =
-                                D.data
-                                .remainingLimitTime;
-                            else {
-                                if (i
-                                    .currentPayType
-                                    .paySendUrl =
-                                    (te =
-                                        D
-                                        .data
-                                        .rechargeChannelInfo
-                                        ) ==
-                                    null ?
-                                    void 0 :
-                                    te
-                                    .paySendUrl,
-                                    i
-                                    .currentPayType =
-                                    D
-                                    .data
-                                    .rechargeChannelInfo,
-                                    !D
-                                    .data
-                                    .suggessList
-                                    .length
-                                    )
-                                    return ya();
-                                i.rechangeUpiShow = !
-                                    0,
-                                    i
-                                    .C2CQuickList =
-                                    D
-                                    .data
-                                    .suggessList
-                            }
-                        }
-                    }, Mn =
-                async () => {
-                            const u =
-                                await x(
-                                    iP({
-                                        amount: i
-                                            .amount
-                                    })
-                                    );
-                            u && (i.C2CQuickList =
-                                u
-                                .data
-                                )
-                        }, $a =
-                        async () => {
-                                if (B
-                                    .value !==
-                                    9
-                                    ) {
-                                    let T =
-                                        i
-                                        .bankInfo[
-                                            i
-                                            .bank_local[
-                                                1
-                                                ]
-                                            .split(
-                                                ","
-                                                )[
-                                                1
-                                                ]
-                                            ];
-                                    if (T &&
-                                        T
-                                        .length &&
-                                        T
-                                        .trim()
-                                        .length <
-                                        7
-                                        ) {
-                                        le({
-                                            message: e(
-                                                "wrongTel"
-                                                ),
-                                            wordBreak: "break-word"
-                                        });
-                                        return
-                                    }
-                                }
-                                if (k
-                                    .value
-                                    ) {
-                                    for (
-                                        let T in
-                                            i
-                                            .bankInfo
-                                        )
-                                        if (!
-                                            i
-                                            .bankInfo[
-                                                T
-                                                ]
-                                            ) {
-                                            le(e(
-                                                "rechargeBankTip"));
-                                            return
-                                        }
-                                }
-                                if (i
-                                    .rechargeDialogVisible = !
-                                    1,
-                                    await at()
-                                    ) {
-                                    let T =
-                                        Se
-                                        .value[
-                                            i
-                                            .currentMenu
-                                            ]
-                                        .payTypeID;
-                                    B.value ===
-                                        18 &&
-                                        (T =
-                                        Ge()),
-                                        b
-                                        .push({
-                                            name: "RechargeDetail",
-                                            query: {
-                                                currentPayId: B
-                                                    .value,
-                                                payTypeId: T,
-                                                amount: i
-                                                    .amount
-                                            }
-                                        })
-                                }
-                            }, En =
-                            async u => {
-                                    const
-                                        T =
-                                        await x(
-                                            aP({
-                                                orderId: u
-                                            })
-                                            );
-                                    T && (i.C2COrderInfo =
-                                        T
-                                        .data
-                                        )
-                                },
-                                On =
-                                async () => {
-                                        var
-                                        T;
-                                        const
-                                            u =
-                                            await x(
-                                                nP()
-                                                );
-                                        u ? u
-                                            .data &&
-                                            ((T = u
-                                                    .data) !=
-                                                null &&
-                                                T
-                                                .orderNo
-                                                ) &&
-                                            (i.isC2COrder = !
-                                                0,
-                                                Ne(u.data
-                                                    .serviceTime,
-                                                    u
-                                                    .data
-                                                    .endTime,
-                                                    () => {
-                                                        i.C2COrderInfo =
-                                                            void 0,
-                                                            i
-                                                            .isC2COrder = !
-                                                            1
-                                                    }
-                                                    ),
-                                                i
-                                                .C2COrderInfo =
-                                                u
-                                                .data
-                                                ) :
-                                            (i.C2COrderInfo =
-                                                void 0,
-                                                i
-                                                .isC2COrder = !
-                                                1
-                                                )
-                                    },
-                                    Xe =
-                                    async u => {
-                                            var
-                                            C;
-                                            const
-                                                T =
-                                                await x(
-                                                    $S({
-                                                        payTypeId: u
-                                                    })
-                                                    );
-                                            T && (i.orderDetail =
-                                                T
-                                                .data,
-                                                T
-                                                .data &&
-                                                ((C = T
-                                                        .data) !=
-                                                    null &&
-                                                    C
-                                                    .orderNumber
-                                                    ) ?
-                                                (i.bankUTR =
-                                                    T
-                                                    .data
-                                                    .refNo,
-                                                    i
-                                                    .isBankOrder = !
-                                                    0,
-                                                    Ne(T.data
-                                                        .serverTime,
-                                                        T
-                                                        .data
-                                                        .addTime1,
-                                                        () => {
-                                                            i.bankOrderInfo =
-                                                                void 0,
-                                                                i
-                                                                .isBankOrder = !
-                                                                1
+                            .priceRange.max ? (i.validateAmount =
+                                e("rangeDesc3") + i.priceRange
+                                    .max, !1) : i.amount && i.amount <
+                                        i.priceRange.min ? (i.validateAmount =
+                                            e("rangeDesc2") + i.priceRange
+                                                .min, !1) : (i.validateAmount =
+                                                    "", !0), Rn = u => {
+                                                        if (i.currentQuickIndex = u, w
+                                                            .value) {
+                                                            i.numberPayAmount = Number(i
+                                                                .quickList[u]), i
+                                                                    .numberExchangeRate = ba
+                                                                        .value * Number(i
+                                                                            .quickList[u]),
+                                                                Ta() && (i.numberPayAmount =
+                                                                    Number(Ya(i
+                                                                        .numberPayAmount
+                                                                        .toString())), i
+                                                                            .numberExchangeRate =
+                                                                    i.numberPayAmount * ba
+                                                                        .value);
+                                                            return
                                                         }
-                                                        ),
-                                                    i
-                                                    .bankOrderInfo =
-                                                    T
-                                                    .data
-                                                    ) :
-                                                (i.bankOrderInfo =
-                                                    void 0,
-                                                    i
-                                                    .isBankOrder = !
-                                                    1
-                                                    )
-                                                )
-                                        },
-                                        Za =
-                                        async () => {
-                                                const
-                                                    u =
-                                                    await x(
-                                                        cP({
-                                                            type: 82
-                                                        })
-                                                        );
-                                                u && (u.data &&
-                                                    u
-                                                    .data
-                                                    .orderNumber ?
-                                                    (i.localUpiUTR =
-                                                        u
-                                                        .data
-                                                        .transferUTR,
-                                                        i
-                                                        .isUpiOrder = !
-                                                        0,
-                                                        Ne(u.data
-                                                            .serverTime,
-                                                            u
-                                                            .data
-                                                            .addTime1,
-                                                            () => {
-                                                                i.upiOrderInfo =
-                                                                    void 0,
-                                                                    i
-                                                                    .isUpiOrder = !
-                                                                    1
-                                                            }
-                                                            ),
-                                                        i
-                                                        .upiOrderInfo =
-                                                        u
-                                                        .data
-                                                        ) :
-                                                    (i.upiOrderInfo =
-                                                        void 0,
-                                                        i
-                                                        .isUpiOrder = !
-                                                        1
-                                                        )
-                                                    )
-                                            },
-                                            Vn =
-                                            async () => {
-                                                    const
-                                                        u =
-                                                        await x(
-                                                            rP({
-                                                                amount: i
-                                                                    .amount
-                                                            })
-                                                            );
-                                                    u && (i.CreateUpiOrderRep =
-                                                        u
-                                                        .data
-                                                        )
-                                                },
-                                                Un =
-                                                async (u,
-                                                        T,
-                                                        C
-                                                        ) => {
-                                                        var
-                                                        D;
-                                                        if (u ===
-                                                            "upi"
-                                                            ) {
-                                                            let z = {
-                                                                type: 1,
-                                                                tranrefId: i
-                                                                    .localUpiUTR,
-                                                                orderNo: T +
-                                                                    ""
-                                                            };
-                                                            await x
-                                                                (bt(
-                                                                    z)) &&
-                                                                (a.emit(
-                                                                        "changeKeepAliveKey"),
-                                                                    b
-                                                                    .replace({
-                                                                        name: "RechargeHistory"
-                                                                    })
-                                                                    )
-                                                        } else
-                                                            await x(
-                                                                tP({
-                                                                    orderId: T,
-                                                                    transactionNo: i
-                                                                        .localUpiUTR,
-                                                                    ossUrls: C
-                                                                })
-                                                                ) &&
-                                                            b
-                                                            .replace({
-                                                                name: "RechargeHistory-RechargeUpiDetail",
-                                                                query: {
-                                                                    orderNo: (
-                                                                            D =
-                                                                            i
-                                                                            .C2COrderInfo
-                                                                            ) ==
-                                                                        null ?
-                                                                        void 0 :
-                                                                        D
-                                                                        .id,
-                                                                    state: 1
-                                                                }
-                                                            })
-                                                    },
-                                                    et =
-                                                    async () => {
-                                                            var
-                                                            T;
-                                                            const
-                                                                u =
-                                                                await x(
-                                                                    sP({
-                                                                        type: 3
-                                                                    })
-                                                                    );
-                                                            u && (u.data &&
-                                                                ((T = u
-                                                                        .data) !=
-                                                                    null &&
-                                                                    T
-                                                                    .orderNumber
-                                                                    ) ?
-                                                                (i.isUsdtOrder = !
-                                                                    0,
-                                                                    i
-                                                                    .isBankOrder = !
-                                                                    1,
-                                                                    Ne(u.data
-                                                                        .serverTime,
-                                                                        u
-                                                                        .data
-                                                                        .addTime1,
-                                                                        () => {
-                                                                            i.usdtOrderInfo =
-                                                                                void 0,
-                                                                                i
-                                                                                .isUsdtOrder = !
-                                                                                1
-                                                                        }
-                                                                        ),
-                                                                    i
-                                                                    .usdtOrderInfo =
-                                                                    u
-                                                                    .data
-                                                                    ) :
-                                                                (i.usdtOrderInfo =
-                                                                    void 0,
-                                                                    i
-                                                                    .isUsdtOrder = !
-                                                                    1,
-                                                                    i
-                                                                    .isBankOrder = !
-                                                                    1
-                                                                    )
-                                                                )
-                                                        },
-                                                        Wn =
-                                                        async u => {
-                                                                await x
-                                                                    (dP(
-                                                                        u)) &&
-                                                                    (De(e(
-                                                                            "success")),
-                                                                        a
-                                                                        .emit(
-                                                                            "changeKeepAliveKey"
-                                                                            ),
-                                                                        b
-                                                                        .replace({
-                                                                            name: "RechargeHistory"
-                                                                        })
-                                                                        )
-                                                            },
-                                                            at =
-                                                            async () => {
-                                                                    let u =
-                                                                        Se
-                                                                        .value[
-                                                                            i
-                                                                            .currentMenu
-                                                                            ]
-                                                                        .payTypeID;
-                                                                    B.value ===
-                                                                        18 &&
-                                                                        (u =
-                                                                        Ge());
-                                                                    let T = {
-                                                                        payTypeId: u,
-                                                                        amount: i
-                                                                            .amount,
-                                                                        bankName: de
-                                                                            .value,
-                                                                        transferType: pe
-                                                                            .value[
-                                                                                i
-                                                                                .currentBankIndex
-                                                                                ]
-                                                                            .transferType,
-                                                                        ...
-                                                                        i
-                                                                        .bankInfo
-                                                                    };
-                                                                    m.value ||
-                                                                        delete T
-                                                                        .bankName;
-                                                                    const
-                                                                        C =
-                                                                        await x(
-                                                                            QS(
-                                                                                T)
-                                                                            );
-                                                                    return C !=
-                                                                        null &&
-                                                                        C
-                                                                        .data ?
-                                                                        (i.orderDetail =
-                                                                            C
-                                                                            .data,
-                                                                            i
-                                                                            .bankUTR =
-                                                                            C
-                                                                            .data
-                                                                            .refNo,
-                                                                            !
-                                                                            0
-                                                                            ) :
-                                                                        !
-                                                                        1
-                                                                },
-                                                                Ne =
-                                                                (u, T,
-                                                                    C
-                                                                    ) => {
-                                                                    clearInterval
-                                                                        (Ve
-                                                                            .value),
-                                                                        Ve
-                                                                        .value =
-                                                                        void 0;
-                                                                    let D =
-                                                                        tt(u,
-                                                                            T
-                                                                            );
-                                                                    Ve.value =
-                                                                        setInterval(
-                                                                            () => {
-                                                                                var
-                                                                                Me;
-                                                                                if (D -=
-                                                                                    1e3,
-                                                                                    D <
-                                                                                    0
-                                                                                    ) {
-                                                                                    clearInterval
-                                                                                        (Ve
-                                                                                            .value),
-                                                                                        C();
-                                                                                    return
-                                                                                }
-                                                                                const
-                                                                                    z =
-                                                                                    Z4(D,
-                                                                                        "mm:ss"
-                                                                                        ),
-                                                                                    te =
-                                                                                    (Me =
-                                                                                        Da
-                                                                                        .value
-                                                                                        ) ==
-                                                                                    null ?
-                                                                                    void 0 :
-                                                                                    Me
-                                                                                    .querySelectorAll(
-                                                                                        "span"
-                                                                                        );
-                                                                                te ==
-                                                                                    null ||
-                                                                                    te
-                                                                                    .forEach(
-                                                                                        (Ye,
-                                                                                            $e) => {
-                                                                                            Ye.innerHTML =
-                                                                                                z[
-                                                                                                    $e]
-                                                                                        }
-                                                                                        )
-                                                                            },
-                                                                            1e3
-                                                                            )
-                                                                },
-                                                                _n =
-                                                                async u => {
-                                                                        const
-                                                                            T =
-                                                                            await x(
-                                                                                ZS({
-                                                                                    rechargeNumber: u
-                                                                                })
-                                                                                );
-                                                                        if (T
-                                                                            .data
-                                                                            .state !==
-                                                                            0
-                                                                            ) {
-                                                                            ki(T.data
-                                                                                    .state ===
-                                                                                    1 ?
-                                                                                    e(
-                                                                                        "orderpay") :
-                                                                                    e(
-                                                                                        "ordercancle")
-                                                                                    ),
-                                                                                sessionStorage
-                                                                                .removeItem(
-                                                                                    "localOrder"
-                                                                                    ),
-                                                                                b
-                                                                                .go(-
-                                                                                    1
-                                                                                    );
+                                                        i.amount = Number(i.quickList[u]),
+                                                            ka() && (i.amount = Number(Ya(
+                                                                i.amount
+                                                                    .toString())))
+                                                    }, Ya = u => (u = u + "", u.indexOf(
+                                                        ".") > -1 ? u.split(".")[0] :
+                                                        u), Cn = async () => {
+                                                            if (i
+                                                                .rechargeSubmitBtnStatus) {
+                                                                if (Q.value) return ya();
+                                                                if (o.value) return An();
+                                                                if (R.value) return Bn();
+                                                                if (j.value)
+                                                                    if (i
+                                                                        .isRechargeInputDialog &&
+                                                                        B.value !== 19) {
+                                                                        if (!i.bankList) {
+                                                                            le(
+                                                                                "The payment channel is empty");
                                                                             return
                                                                         }
-                                                                    },
-                                                                    jn =
-                                                                    async () => {
-                                                                            var
-                                                                            T;
-                                                                            if (he()
-                                                                                .getDollarSign ===
-                                                                                "₹" &&
-                                                                                B
-                                                                                .value ===
-                                                                                9
-                                                                                ) {
-                                                                                let C = {
-                                                                                    type: 1,
-                                                                                    tranrefId: i
-                                                                                        .bankUTR,
-                                                                                    orderNo: (
-                                                                                            T =
-                                                                                            i
-                                                                                            .orderDetail
-                                                                                            ) ==
-                                                                                        null ?
-                                                                                        void 0 :
-                                                                                        T
-                                                                                        .orderNumber
-                                                                                };
-                                                                                const
-                                                                                    D =
-                                                                                    await x(
-                                                                                        bt(
-                                                                                            C)
-                                                                                        );
-                                                                                if (D
-                                                                                    .code ===
-                                                                                    0
-                                                                                    )
-                                                                                    De(e(
-                                                                                        "success"));
-                                                                                else {
-                                                                                    De(D
-                                                                                    .msg);
-                                                                                    return
-                                                                                }
-                                                                            }
-                                                                            a.emit(
-                                                                                    "changeKeepAliveKey"),
-                                                                                b
-                                                                                .replace({
-                                                                                    name: "RechargeHistory"
-                                                                                })
-                                                                        },
-                                                                        Hn =
-                                                                        async u => {
-                                                                                await x
-                                                                                    (YS({
-                                                                                        orderNo: u
-                                                                                    })) &&
-                                                                                    (i.isBankOrder = !
-                                                                                        1,
-                                                                                        h
-                                                                                        .value = !
-                                                                                        1,
-                                                                                        I
-                                                                                        .value = !
-                                                                                        1,
-                                                                                        De(e(
-                                                                                            "cancelSucceed")),
-                                                                                        a
-                                                                                        .emit(
-                                                                                            "changeKeepAliveKey"
-                                                                                            ),
-                                                                                        b
-                                                                                        .back()
-                                                                                        )
-                                                                            },
-                                                                            tt =
-                                                                            (u,
-                                                                                T) => {
-                                                                                let C =
-                                                                                    new Date(
-                                                                                        u
-                                                                                        );
-                                                                                return new Date(
-                                                                                        T
-                                                                                        )
-                                                                                    .getTime() -
-                                                                                    C
-                                                                                    .getTime()
-                                                                            },
-                                                                            Fn =
+                                                                        i.bank_local.map(
+                                                                            u => {
+                                                                                let T =
+                                                                                    u
+                                                                                        .split(
+                                                                                            ","
+                                                                                        )[
+                                                                                    1
+                                                                                    ];
+                                                                                i.bankInfo[
+                                                                                    T
+                                                                                ] =
+                                                                                    pe
+                                                                                        .value[
+                                                                                    i
+                                                                                        .currentBankIndex
+                                                                                    ]
+                                                                                    [
+                                                                                    T]
+                                                                            }), i
+                                                                                .rechargeDialogVisible = !
+                                                                            0;
+                                                                        return
+                                                                    } else B.value ===
+                                                                        19 ? Ln() : $a()
+                                                            }
+                                                        }, An = () => {
+                                                            var u, T;
+                                                            if (((u = i.arPayInfo) ==
+                                                                null ? void 0 : u
+                                                                .walletActivationStatus
+                                                            ) === 0) {
+                                                                le(e("arNoActive2"));
+                                                                return
+                                                            }
+                                                            if (((T = i.arPayInfo) ==
+                                                                null ? void 0 : T
+                                                                .balance) >= Number(i
+                                                                    .amount)) {
+                                                                He({
+                                                                    message: e(
+                                                                        "loading"
+                                                                    ) +
+                                                                        "...",
+                                                                    forbidClick: !
+                                                                        0
+                                                                });
+                                                                let C = "&returnUrl=" +
+                                                                    encodeURIComponent(
+                                                                        "https://" +
+                                                                        window.location
+                                                                            .host + "/#/main"
+                                                                    ),
+                                                                    D = i.currentPayType
+                                                                        .paySendUrl +
+                                                                        "?tyid=" + H.value +
+                                                                        "&amount=" + i
+                                                                            .amount + "&uid=" + d
+                                                                            .userId + "&sign=" +
+                                                                        encodeURIComponent(d
+                                                                            .sign) + C;
+                                                                window.location.href = D,
+                                                                    La()
+                                                            } else ae.value = !0
+                                                        }, In = (u, T, C, D, z) => {
+                                                            if (i.currentPayId = u, o
+                                                                .value && D === 0) {
+                                                                window.location.href = i
+                                                                    .isArPayOrder;
+                                                                return
+                                                            }
+                                                            if (R.value && D === 0) {
+                                                                b.push({
+                                                                    name: "OtherPay",
+                                                                    query: {
+                                                                        type: "upi"
+                                                                    }
+                                                                });
+                                                                return
+                                                            }
+                                                            if (D === 0 && u === 19)
+                                                                return b.push({
+                                                                    name: "RechargeUsdt"
+                                                                });
+                                                            if (j.value && D === 0)
+                                                                return b.push({
+                                                                    name: "RechargeDetail",
+                                                                    query: {
+                                                                        currentPayId: u,
+                                                                        payTypeId: T,
+                                                                        amount: C
+                                                                    }
+                                                                })
+                                                        }, Bn = async () => {
+                                                            await Vn(), b.push({
+                                                                name: "OtherPay",
+                                                                query: {
+                                                                    type: "upi"
+                                                                }
+                                                            })
+                                                        }, Ln = () => {
+                                                            b.push({
+                                                                name: "RechargeUsdt",
+                                                                query: {
+                                                                    amount: i
+                                                                        .numberPayAmount
+                                                                }
+                                                            })
+                                                        }, Gn = async u => {
+                                                            await x(oP(u)) && (De(
+                                                                e(
+                                                                    "success")
+                                                            ), a.emit(
+                                                                "changeKeepAliveKey"
+                                                            ), b
+                                                                .replace({
+                                                                    name: "RechargeHistory"
+                                                                }))
+                                                        }, ya = async () => {
+                                                            var Ye, $e;
+                                                            if (B.value ===
+                                                                15 && !J.value
+                                                            ) {
+                                                                if ((await x(
+                                                                    lP()
+                                                                ))
+                                                                    .data) {
+                                                                    K.value = !
+                                                                        0, J
+                                                                            .value = !
+                                                                        0;
+                                                                    return
+                                                                }
+                                                                J.value = !0
+                                                            }
+                                                            let u = 0;
+                                                            w.value ? u = i
+                                                                .numberPayAmount :
+                                                                u = i.amount;
+                                                            let T = i
+                                                                .thirdPayBankList
+                                                                .length > 0 &&
+                                                                i
+                                                                    .selectOtherBank,
+                                                                C = i
+                                                                    .currentPayType
+                                                                    .paySendUrl,
+                                                                D = "",
+                                                                z = window
+                                                                    .location
+                                                                    .origin +
+                                                                    ",status/rechargeStatus";
+                                                            const te =
+                                                                localStorage
+                                                                    .getItem(
+                                                                        "fb_dynamic_pixel"
+                                                                    ) || "",
+                                                                Me = $4(
+                                                                    "_fbp") ||
+                                                                    "";
+                                                            C.indexOf(
+                                                                "tyid") === -
+                                                                1 ? D = C +
+                                                                "?tyid=" + i
+                                                                    .currentPayType
+                                                                    .payTypeID +
+                                                                "&amount=" +
+                                                                u + "&uid=" +
+                                                                d.userId +
+                                                                "&sign=" + d
+                                                                    .sign + (T ?
+                                                                        "&bankCode=" +
+                                                                        ((Ye = i
+                                                                            .selectOtherBank) ==
+                                                                            null ?
+                                                                            void 0 :
+                                                                            Ye
+                                                                                .bankCode
+                                                                        ) : ""
+                                                                ) +
+                                                                "&urlInfo=" +
+                                                                z +
+                                                                `&pixelId=${te}&fbcId=${Me}` :
+                                                                D = C +
+                                                                "&amount=" +
+                                                                u + "&uid=" +
+                                                                d.userId +
+                                                                "&sign=" + d
+                                                                    .sign + (T ?
+                                                                        "&bankCode=" +
+                                                                        (($e = i
+                                                                            .selectOtherBank) ==
+                                                                            null ?
+                                                                            void 0 :
+                                                                            $e
+                                                                                .bankCode
+                                                                        ) : ""
+                                                                ) +
+                                                                "&urlInfo=" +
+                                                                z +
+                                                                `&pixelId=${te}&fbcId=${Me}`,
+                                                                pa() ? Ka(
+                                                                    "recharge", {
+                                                                    url: D,
+                                                                    recharegeName: i
+                                                                        .currentPayType
+                                                                        .payName
+                                                                }) : Wa(D)
+                                                        }, Nn = async () => {
+                                                            var z, te;
+                                                            let u = ((z =
+                                                                i
+                                                                    .amount
+                                                            ) ==
+                                                                null ?
+                                                                void 0 :
+                                                                z
+                                                                    .toString()
+                                                            ) + we
+                                                                    .value,
+                                                                T = {
+                                                                    category: B
+                                                                        .value,
+                                                                    orderAmount: Number(
+                                                                        u
+                                                                    )
+                                                                };
+                                                            const [C, D] =
+                                                                await W4(eP(
+                                                                    T));
+                                                            if (D) {
+                                                                if ((D ==
+                                                                    null ?
+                                                                    void 0 :
+                                                                    D
+                                                                        .msgCode
+                                                                ) ===
+                                                                    260 &&
+                                                                    D
+                                                                        .code !==
+                                                                    0) {
+                                                                    le(D.msg),
+                                                                        setTimeout(
                                                                             () => {
-                                                                                i.rechargeSubmitBtnStatus = !
-                                                                                    1,
-                                                                                    i
-                                                                                    .amount =
-                                                                                    void 0,
-                                                                                    i
-                                                                                    .numberPayAmount =
-                                                                                    void 0,
-                                                                                    i
-                                                                                    .numberExchangeRate =
-                                                                                    void 0,
-                                                                                    i
-                                                                                    .currentQuickIndex = -
-                                                                                    1,
-                                                                                    i
-                                                                                    .validateAmount =
-                                                                                    ""
+                                                                                b.push({
+                                                                                    name: "RechargeHistory-RechargeUpiDetail",
+                                                                                    query: {
+                                                                                        type: "C2C",
+                                                                                        orderNo: D
+                                                                                            .data
+                                                                                            .orderId,
+                                                                                        state: D
+                                                                                            .data
+                                                                                            .state
+                                                                                    }
+                                                                                })
                                                                             },
-                                                                            Kn =
-                                                                            async () => {
-                                                                                    var
-                                                                                    C;
-                                                                                    let u = {
-                                                                                        pageNo: 1,
-                                                                                        pageSize: 5,
-                                                                                        startDate: "",
-                                                                                        endDate: "",
-                                                                                        state:
-                                                                                            -
-                                                                                            1,
-                                                                                        type:
-                                                                                            -
-                                                                                            1,
-                                                                                        payId: i
-                                                                                            .currentPayId,
-                                                                                        category: i
-                                                                                            .currentPayId
-                                                                                    };
-                                                                                    n.value ?
-                                                                                        (u.type = -
-                                                                                            1,
-                                                                                            delete u
-                                                                                            .payId
-                                                                                            ) :
-                                                                                        (delete u
-                                                                                            .category,
-                                                                                            delete u
-                                                                                            .type,
-                                                                                            u
-                                                                                            .payTypeId =
-                                                                                            ((C = Se.value[
-                                                                                                    i
-                                                                                                    .currentMenu
-                                                                                                    ]) ==
-                                                                                                null ?
-                                                                                                void 0 :
-                                                                                                C
-                                                                                                .payTypeID
-                                                                                                ) ||
-                                                                                            -
-                                                                                            1
-                                                                                            );
-                                                                                    const
-                                                                                        T =
-                                                                                        await x(
-                                                                                            n
-                                                                                            .value ?
-                                                                                            JS(
-                                                                                                u) :
-                                                                                            qS(
-                                                                                                u)
-                                                                                            );
-                                                                                    T && (N.value =
-                                                                                        T
-                                                                                        .data
-                                                                                        .list
-                                                                                        )
-                                                                                },
-                                                                                zn =
-                                                                                (u, T,
-                                                                                    C
-                                                                                    ) => {
-                                                                                    if (T !==
-                                                                                        0 &&
-                                                                                        B
-                                                                                        .value !==
-                                                                                        9 &&
-                                                                                        (u.replace(
-                                                                                                /\D/g,
-                                                                                                ""
-                                                                                                ),
-                                                                                            i
-                                                                                            .bankInfo[
-                                                                                                C
-                                                                                                ] =
-                                                                                            u
-                                                                                            .replace(
-                                                                                                /\D/g,
-                                                                                                ""
-                                                                                                )
-                                                                                            ),
-                                                                                        T ===
-                                                                                        0
-                                                                                        ) {
-                                                                                        let D =
-                                                                                            i
-                                                                                            .bankInfo[
-                                                                                                i
-                                                                                                .bank_local[
-                                                                                                    0
-                                                                                                    ]
-                                                                                                .split(
-                                                                                                    ","
-                                                                                                    )[
-                                                                                                    1
-                                                                                                    ]
-                                                                                                ]
-                                                                                            .replace(
-                                                                                                /\s*/g,
-                                                                                                ""
-                                                                                                );
-                                                                                        i.bankInfo[
-                                                                                                i
-                                                                                                .bank_local[
-                                                                                                    0
-                                                                                                    ]
-                                                                                                .split(
-                                                                                                    ","
-                                                                                                    )[
-                                                                                                    1
-                                                                                                    ]
-                                                                                                ] =
-                                                                                            D
-                                                                                    }
-                                                                                },
-                                                                                qn =
-                                                                                u => {
-                                                                                    if (i
-                                                                                        .currentBankIndex =
-                                                                                        u,
-                                                                                        i
-                                                                                        .currentPayId ===
-                                                                                        18 &&
-                                                                                        i
-                                                                                        .bankList
-                                                                                        .length
-                                                                                        ) {
-                                                                                        let T =
-                                                                                            Z
-                                                                                            .value ===
-                                                                                            "৳" ?
-                                                                                            ke
-                                                                                            .value[
-                                                                                                u
-                                                                                                ]
-                                                                                            .bankName :
-                                                                                            i
-                                                                                            .bankList[
-                                                                                                u
-                                                                                                ]
-                                                                                            .bankName,
-                                                                                            C =
-                                                                                            i
-                                                                                            .rechargeTypes
-                                                                                            .find(
-                                                                                                D =>
-                                                                                                D
-                                                                                                .paySysName ===
-                                                                                                T
-                                                                                                );
-                                                                                        i.bank_local =
-                                                                                            (C ==
-                                                                                                null ?
-                                                                                                void 0 :
-                                                                                                C
-                                                                                                .parameters
-                                                                                                .split(
-                                                                                                    "|"
-                                                                                                    )
-                                                                                                ) ||
-                                                                                            [],
-                                                                                            i
-                                                                                            .bank_local
-                                                                                            .map(
-                                                                                                D => {
-                                                                                                    let z =
-                                                                                                        D
-                                                                                                        .split(
-                                                                                                            ","
-                                                                                                            )[
-                                                                                                            1
-                                                                                                            ];
-                                                                                                    i.bankInfo[
-                                                                                                            z
-                                                                                                            ] =
-                                                                                                        i
-                                                                                                        .bankList[
-                                                                                                            i
-                                                                                                            .currentBankIndex
-                                                                                                            ]
-                                                                                                        [
-                                                                                                            z]
-                                                                                                }
-                                                                                                ),
-                                                                                            i
-                                                                                            .quickList =
-                                                                                            C
-                                                                                            .scope
-                                                                                            .split(
-                                                                                                "|"
-                                                                                                )
-                                                                                    }
-                                                                                    i.currentPayId ===
-                                                                                        18 &&
-                                                                                        Xe(
-                                                                                        Ge())
-                                                                                },
-                                                                                Qe =
-                                                                                () => {
-                                                                                    i.rechargeSubmitBtnStatus = !
-                                                                                        1,
-                                                                                        i
-                                                                                        .amount =
-                                                                                        void 0,
-                                                                                        i
-                                                                                        .numberPayAmount =
-                                                                                        void 0,
-                                                                                        i
-                                                                                        .numberExchangeRate =
-                                                                                        void 0,
-                                                                                        i
-                                                                                        .validateAmount =
-                                                                                        "",
-                                                                                        i
-                                                                                        .currentQuickIndex = -
-                                                                                        1,
-                                                                                        i
-                                                                                        .currentBankIndex =
-                                                                                        0,
-                                                                                        i
-                                                                                        .localUpiUTR =
-                                                                                        "",
-                                                                                        i
-                                                                                        .bankUTR =
-                                                                                        ""
-                                                                                },
-                                                                                Jn =
-                                                                                u => {
-                                                                                    clearTimeout
-                                                                                        (u.target
-                                                                                            .timer
-                                                                                            ),
-                                                                                        u
-                                                                                        .target
-                                                                                        .timer =
-                                                                                        setTimeout(
-                                                                                            () => {
-                                                                                                if (i
-                                                                                                    .validateAmount =
-                                                                                                    "",
-                                                                                                    i
-                                                                                                    .currentQuickIndex = -
-                                                                                                    1,
-                                                                                                    w
-                                                                                                    .value
-                                                                                                    ) {
-                                                                                                    Ta() &&
-                                                                                                        (i.numberExchangeRate =
-                                                                                                            i
-                                                                                                            .numberPayAmount ?
-                                                                                                            i
-                                                                                                            .numberPayAmount *
-                                                                                                            ba
-                                                                                                            .value :
-                                                                                                            0
-                                                                                                            );
-                                                                                                    return
-                                                                                                }
-                                                                                                ka()
-                                                                                            },
-                                                                                            500
-                                                                                            )
-                                                                                },
-                                                                                Xn =
-                                                                                u =>
-                                                                                u >=
-                                                                                1e6 ?
-                                                                                (u /
-                                                                                    1e6)
-                                                                                .toFixed(
-                                                                                    1
-                                                                                    )
-                                                                                .replace(
-                                                                                    /\.0$/,
-                                                                                    ""
-                                                                                    ) +
-                                                                                "M" :
-                                                                                u >=
-                                                                                1e3 ?
-                                                                                (u /
-                                                                                    1e3)
-                                                                                .toFixed(
-                                                                                    1
-                                                                                    )
-                                                                                .replace(
-                                                                                    /\.0$/,
-                                                                                    ""
-                                                                                    ) +
-                                                                                "K" :
-                                                                                u +
-                                                                                "",
-                                                                                Qn =
-                                                                                async () =>
-                                                                                    await navigator
-                                                                                    .clipboard
-                                                                                    .readText(),
-                                                                                    Yn =
-                                                                                    async u => {
-                                                                                            const
-                                                                                                T =
-                                                                                                document
-                                                                                                .getElementById(
-                                                                                                    u
-                                                                                                    );
-                                                                                            await t
-                                                                                                (
-                                                                                                    T)
-                                                                                        },
-                                                                                        $n =
-                                                                                        () => {
-                                                                                            i.isBankOrder = !
-                                                                                                1,
-                                                                                                i
-                                                                                                .isUsdtOrder = !
-                                                                                                1,
-                                                                                                i
-                                                                                                .localUpiUTR =
-                                                                                                "",
-                                                                                                i
-                                                                                                .bankUTR =
-                                                                                                ""
-                                                                                        },
-                                                                                        Zn =
-                                                                                        ({
-                                                                                            selectedOptions: u
-                                                                                        }) => {
-                                                                                            v.value = !
-                                                                                                1,
-                                                                                                i
-                                                                                                .selectOtherBank =
-                                                                                                u[
-                                                                                                    0]
-                                                                                        },
-                                                                                        ei =
-                                                                                        (u,
-                                                                                            T) => {
-                                                                                            let C =
-                                                                                                new Date(
-                                                                                                    u
-                                                                                                    .replace(
-                                                                                                        /-/g,
-                                                                                                        "/"
-                                                                                                        )
-                                                                                                    )
-                                                                                                .getTime(),
-                                                                                                D =
-                                                                                                new Date(
-                                                                                                    T
-                                                                                                    .replace(
-                                                                                                        /-/g,
-                                                                                                        "/"
-                                                                                                        )
-                                                                                                    )
-                                                                                                .getTime();
-                                                                                            C - D <=
-                                                                                                0 &&
-                                                                                                (_.value = !
-                                                                                                    0
-                                                                                                    )
-                                                                                        };
+                                                                            2e3
+                                                                        );
+                                                                    return
+                                                                }
+                                                                if (D.data
+                                                                    .state ===
+                                                                    1) i
+                                                                        .rechangeUpiShow = !
+                                                                        1, b
+                                                                            .push({
+                                                                                name: "OtherPay",
+                                                                                query: {
+                                                                                    type: "C2C"
+                                                                                }
+                                                                            });
+                                                                else if (D
+                                                                    .data
+                                                                    .state ===
+                                                                    2) P
+                                                                        .value = !
+                                                                        0, A
+                                                                            .value =
+                                                                        D.data
+                                                                            .errorCount,
+                                                                        W
+                                                                            .value =
+                                                                        D.data
+                                                                            .remainingLimitTime;
+                                                                else {
+                                                                    if (i
+                                                                        .currentPayType
+                                                                        .paySendUrl =
+                                                                        (te =
+                                                                            D
+                                                                                .data
+                                                                                .rechargeChannelInfo
+                                                                        ) ==
+                                                                            null ?
+                                                                            void 0 :
+                                                                            te
+                                                                                .paySendUrl,
+                                                                        i
+                                                                            .currentPayType =
+                                                                        D
+                                                                            .data
+                                                                            .rechargeChannelInfo,
+                                                                        !D
+                                                                            .data
+                                                                            .suggessList
+                                                                            .length
+                                                                    )
+                                                                        return ya();
+                                                                    i.rechangeUpiShow = !
+                                                                        0,
+                                                                        i
+                                                                            .C2CQuickList =
+                                                                        D
+                                                                            .data
+                                                                            .suggessList
+                                                                }
+                                                            }
+                                                        }, Mn =
+                async () => {
+                    const u =
+                        await x(
+                            iP({
+                                amount: i
+                                    .amount
+                            })
+                        );
+                    u && (i.C2CQuickList =
+                        u
+                            .data
+                    )
+                }, $a =
+                async () => {
+                    if (B
+                        .value !==
+                        9
+                    ) {
+                        let T =
+                            i
+                                .bankInfo[
+                            i
+                                .bank_local[
+                                1
+                            ]
+                                .split(
+                                    ","
+                                )[
+                            1
+                            ]
+                            ];
+                        if (T &&
+                            T
+                                .length &&
+                            T
+                                .trim()
+                                .length <
+                            7
+                        ) {
+                            le({
+                                message: e(
+                                    "wrongTel"
+                                ),
+                                wordBreak: "break-word"
+                            });
+                            return
+                        }
+                    }
+                    if (k
+                        .value
+                    ) {
+                        for (
+                            let T in
+                            i
+                                .bankInfo
+                        )
+                            if (!
+                                i
+                                    .bankInfo[
+                                T
+                                ]
+                            ) {
+                                le(e(
+                                    "rechargeBankTip"));
+                                return
+                            }
+                    }
+                    if (i
+                        .rechargeDialogVisible = !
+                        1,
+                        await at()
+                    ) {
+                        let T =
+                            Se
+                                .value[
+                                i
+                                    .currentMenu
+                            ]
+                                .payTypeID;
+                        B.value ===
+                            18 &&
+                            (T =
+                                Ge()),
+                            b
+                                .push({
+                                    name: "RechargeDetail",
+                                    query: {
+                                        currentPayId: B
+                                            .value,
+                                        payTypeId: T,
+                                        amount: i
+                                            .amount
+                                    }
+                                })
+                    }
+                }, En =
+                async u => {
+                    const
+                        T =
+                            await x(
+                                aP({
+                                    orderId: u
+                                })
+                            );
+                    T && (i.C2COrderInfo =
+                        T
+                            .data
+                    )
+                },
+            On =
+                async () => {
+                    var
+                        T;
+                    const
+                        u =
+                            await x(
+                                nP()
+                            );
+                    u ? u
+                        .data &&
+                        ((T = u
+                            .data) !=
+                            null &&
+                            T
+                                .orderNo
+                        ) &&
+                        (i.isC2COrder = !
+                            0,
+                            Ne(u.data
+                                .serviceTime,
+                                u
+                                    .data
+                                    .endTime,
+                                () => {
+                                    i.C2COrderInfo =
+                                        void 0,
+                                        i
+                                            .isC2COrder = !
+                                        1
+                                }
+                            ),
+                            i
+                                .C2COrderInfo =
+                            u
+                                .data
+                        ) :
+                        (i.C2COrderInfo =
+                            void 0,
+                            i
+                                .isC2COrder = !
+                            1
+                        )
+                },
+            Xe =
+                async u => {
+                    var
+                        C;
+                    const
+                        T =
+                            await x(
+                                $S({
+                                    payTypeId: u
+                                })
+                            );
+                    T && (i.orderDetail =
+                        T
+                            .data,
+                        T
+                            .data &&
+                            ((C = T
+                                .data) !=
+                                null &&
+                                C
+                                    .orderNumber
+                            ) ?
+                            (i.bankUTR =
+                                T
+                                    .data
+                                    .refNo,
+                                i
+                                    .isBankOrder = !
+                                0,
+                                Ne(T.data
+                                    .serverTime,
+                                    T
+                                        .data
+                                        .addTime1,
+                                    () => {
+                                        i.bankOrderInfo =
+                                            void 0,
+                                            i
+                                                .isBankOrder = !
+                                            1
+                                    }
+                                ),
+                                i
+                                    .bankOrderInfo =
+                                T
+                                    .data
+                            ) :
+                            (i.bankOrderInfo =
+                                void 0,
+                                i
+                                    .isBankOrder = !
+                                1
+                            )
+                    )
+                },
+            Za =
+                async () => {
+                    const
+                        u =
+                            await x(
+                                cP({
+                                    type: 82
+                                })
+                            );
+                    u && (u.data &&
+                        u
+                            .data
+                            .orderNumber ?
+                        (i.localUpiUTR =
+                            u
+                                .data
+                                .transferUTR,
+                            i
+                                .isUpiOrder = !
+                            0,
+                            Ne(u.data
+                                .serverTime,
+                                u
+                                    .data
+                                    .addTime1,
+                                () => {
+                                    i.upiOrderInfo =
+                                        void 0,
+                                        i
+                                            .isUpiOrder = !
+                                        1
+                                }
+                            ),
+                            i
+                                .upiOrderInfo =
+                            u
+                                .data
+                        ) :
+                        (i.upiOrderInfo =
+                            void 0,
+                            i
+                                .isUpiOrder = !
+                            1
+                        )
+                    )
+                },
+            Vn =
+                async () => {
+                    const
+                        u =
+                            await x(
+                                rP({
+                                    amount: i
+                                        .amount
+                                })
+                            );
+                    u && (i.CreateUpiOrderRep =
+                        u
+                            .data
+                    )
+                },
+            Un =
+                async (u,
+                    T,
+                    C
+                ) => {
+                    var
+                        D;
+                    if (u ===
+                        "upi"
+                    ) {
+                        let z = {
+                            type: 1,
+                            tranrefId: i
+                                .localUpiUTR,
+                            orderNo: T +
+                                ""
+                        };
+                        await x
+                            (bt(
+                                z)) &&
+                            (a.emit(
+                                "changeKeepAliveKey"),
+                                b
+                                    .replace({
+                                        name: "RechargeHistory"
+                                    })
+                            )
+                    } else
+                        await x(
+                            tP({
+                                orderId: T,
+                                transactionNo: i
+                                    .localUpiUTR,
+                                ossUrls: C
+                            })
+                        ) &&
+                            b
+                                .replace({
+                                    name: "RechargeHistory-RechargeUpiDetail",
+                                    query: {
+                                        orderNo: (
+                                            D =
+                                            i
+                                                .C2COrderInfo
+                                        ) ==
+                                            null ?
+                                            void 0 :
+                                            D
+                                                .id,
+                                        state: 1
+                                    }
+                                })
+                },
+            et =
+                async () => {
+                    var
+                        T;
+                    const
+                        u =
+                            await x(
+                                sP({
+                                    type: 3
+                                })
+                            );
+                    u && (u.data &&
+                        ((T = u
+                            .data) !=
+                            null &&
+                            T
+                                .orderNumber
+                        ) ?
+                        (i.isUsdtOrder = !
+                            0,
+                            i
+                                .isBankOrder = !
+                            1,
+                            Ne(u.data
+                                .serverTime,
+                                u
+                                    .data
+                                    .addTime1,
+                                () => {
+                                    i.usdtOrderInfo =
+                                        void 0,
+                                        i
+                                            .isUsdtOrder = !
+                                        1
+                                }
+                            ),
+                            i
+                                .usdtOrderInfo =
+                            u
+                                .data
+                        ) :
+                        (i.usdtOrderInfo =
+                            void 0,
+                            i
+                                .isUsdtOrder = !
+                            1,
+                            i
+                                .isBankOrder = !
+                            1
+                        )
+                    )
+                },
+            Wn =
+                async u => {
+                    await x
+                        (dP(
+                            u)) &&
+                        (De(e(
+                            "success")),
+                            a
+                                .emit(
+                                    "changeKeepAliveKey"
+                                ),
+                            b
+                                .replace({
+                                    name: "RechargeHistory"
+                                })
+                        )
+                },
+            at =
+                async () => {
+                    let u =
+                        Se
+                            .value[
+                            i
+                                .currentMenu
+                        ]
+                            .payTypeID;
+                    B.value ===
+                        18 &&
+                        (u =
+                            Ge());
+                    let T = {
+                        payTypeId: u,
+                        amount: i
+                            .amount,
+                        bankName: de
+                            .value,
+                        transferType: pe
+                            .value[
+                            i
+                                .currentBankIndex
+                        ]
+                            .transferType,
+                        ...
+                        i
+                            .bankInfo
+                    };
+                    m.value ||
+                        delete T
+                            .bankName;
+                    const
+                        C =
+                            await x(
+                                QS(
+                                    T)
+                            );
+                    return C !=
+                        null &&
+                        C
+                            .data ?
+                        (i.orderDetail =
+                            C
+                                .data,
+                            i
+                                .bankUTR =
+                            C
+                                .data
+                                .refNo,
+                            !
+                            0
+                        ) :
+                        !
+                        1
+                },
+            Ne =
+                (u, T,
+                    C
+                ) => {
+                    clearInterval
+                        (Ve
+                            .value),
+                        Ve
+                            .value =
+                        void 0;
+                    let D =
+                        tt(u,
+                            T
+                        );
+                    Ve.value =
+                        setInterval(
+                            () => {
+                                var
+                                    Me;
+                                if (D -=
+                                    1e3,
+                                    D <
+                                    0
+                                ) {
+                                    clearInterval
+                                        (Ve
+                                            .value),
+                                        C();
+                                    return
+                                }
+                                const
+                                    z =
+                                        Z4(D,
+                                            "mm:ss"
+                                        ),
+                                    te =
+                                        (Me =
+                                            Da
+                                                .value
+                                        ) ==
+                                            null ?
+                                            void 0 :
+                                            Me
+                                                .querySelectorAll(
+                                                    "span"
+                                                );
+                                te ==
+                                    null ||
+                                    te
+                                        .forEach(
+                                            (Ye,
+                                                $e) => {
+                                                Ye.innerHTML =
+                                                    z[
+                                                    $e]
+                                            }
+                                        )
+                            },
+                            1e3
+                        )
+                },
+            _n =
+                async u => {
+                    const
+                        T =
+                            await x(
+                                ZS({
+                                    rechargeNumber: u
+                                })
+                            );
+                    if (T
+                        .data
+                        .state !==
+                        0
+                    ) {
+                        ki(T.data
+                            .state ===
+                            1 ?
+                            e(
+                                "orderpay") :
+                            e(
+                                "ordercancle")
+                        ),
+                            sessionStorage
+                                .removeItem(
+                                    "localOrder"
+                                ),
+                            b
+                                .go(-
+                                    1
+                                );
+                        return
+                    }
+                },
+            jn =
+                async () => {
+                    var
+                        T;
+                    if (he()
+                        .getDollarSign ===
+                        "₹" &&
+                        B
+                            .value ===
+                        9
+                    ) {
+                        let C = {
+                            type: 1,
+                            tranrefId: i
+                                .bankUTR,
+                            orderNo: (
+                                T =
+                                i
+                                    .orderDetail
+                            ) ==
+                                null ?
+                                void 0 :
+                                T
+                                    .orderNumber
+                        };
+                        const
+                            D =
+                                await x(
+                                    bt(
+                                        C)
+                                );
+                        if (D
+                            .code ===
+                            0
+                        )
+                            De(e(
+                                "success"));
+                        else {
+                            De(D
+                                .msg);
+                            return
+                        }
+                    }
+                    a.emit(
+                        "changeKeepAliveKey"),
+                        b
+                            .replace({
+                                name: "RechargeHistory"
+                            })
+                },
+            Hn =
+                async u => {
+                    await x
+                        (YS({
+                            orderNo: u
+                        })) &&
+                        (i.isBankOrder = !
+                            1,
+                            h
+                                .value = !
+                            1,
+                            I
+                                .value = !
+                            1,
+                            De(e(
+                                "cancelSucceed")),
+                            a
+                                .emit(
+                                    "changeKeepAliveKey"
+                                ),
+                            b
+                                .back()
+                        )
+                },
+            tt =
+                (u,
+                    T) => {
+                    let C =
+                        new Date(
+                            u
+                        );
+                    return new Date(
+                        T
+                    )
+                        .getTime() -
+                        C
+                            .getTime()
+                },
+            Fn =
+                () => {
+                    i.rechargeSubmitBtnStatus = !
+                        1,
+                        i
+                            .amount =
+                        void 0,
+                        i
+                            .numberPayAmount =
+                        void 0,
+                        i
+                            .numberExchangeRate =
+                        void 0,
+                        i
+                            .currentQuickIndex = -
+                        1,
+                        i
+                            .validateAmount =
+                        ""
+                },
+            Kn =
+                async () => {
+                    var
+                        C;
+                    let u = {
+                        pageNo: 1,
+                        pageSize: 5,
+                        startDate: "",
+                        endDate: "",
+                        state:
+                            -
+                            1,
+                        type:
+                            -
+                            1,
+                        payId: i
+                            .currentPayId,
+                        category: i
+                            .currentPayId
+                    };
+                    n.value ?
+                        (u.type = -
+                            1,
+                            delete u
+                                .payId
+                        ) :
+                        (delete u
+                            .category,
+                            delete u
+                                .type,
+                            u
+                                .payTypeId =
+                            ((C = Se.value[
+                                i
+                                    .currentMenu
+                            ]) ==
+                                null ?
+                                void 0 :
+                                C
+                                    .payTypeID
+                            ) ||
+                            -
+                            1
+                        );
+                    const
+                        T =
+                            await x(
+                                n
+                                    .value ?
+                                    JS(
+                                        u) :
+                                    qS(
+                                        u)
+                            );
+                    T && (N.value =
+                        T
+                            .data
+                            .list
+                    )
+                },
+            zn =
+                (u, T,
+                    C
+                ) => {
+                    if (T !==
+                        0 &&
+                        B
+                            .value !==
+                        9 &&
+                        (u.replace(
+                            /\D/g,
+                            ""
+                        ),
+                            i
+                                .bankInfo[
+                            C
+                            ] =
+                            u
+                                .replace(
+                                    /\D/g,
+                                    ""
+                                )
+                        ),
+                        T ===
+                        0
+                    ) {
+                        let D =
+                            i
+                                .bankInfo[
+                                i
+                                    .bank_local[
+                                    0
+                                ]
+                                    .split(
+                                        ","
+                                    )[
+                                1
+                                ]
+                            ]
+                                .replace(
+                                    /\s*/g,
+                                    ""
+                                );
+                        i.bankInfo[
+                            i
+                                .bank_local[
+                                0
+                            ]
+                                .split(
+                                    ","
+                                )[
+                            1
+                            ]
+                        ] =
+                            D
+                    }
+                },
+            qn =
+                u => {
+                    if (i
+                        .currentBankIndex =
+                        u,
+                        i
+                            .currentPayId ===
+                        18 &&
+                        i
+                            .bankList
+                            .length
+                    ) {
+                        let T =
+                            Z
+                                .value ===
+                                "৳" ?
+                                ke
+                                    .value[
+                                    u
+                                ]
+                                    .bankName :
+                                i
+                                    .bankList[
+                                    u
+                                ]
+                                    .bankName,
+                            C =
+                                i
+                                    .rechargeTypes
+                                    .find(
+                                        D =>
+                                            D
+                                                .paySysName ===
+                                            T
+                                    );
+                        i.bank_local =
+                            (C ==
+                                null ?
+                                void 0 :
+                                C
+                                    .parameters
+                                    .split(
+                                        "|"
+                                    )
+                            ) ||
+                            [],
+                            i
+                                .bank_local
+                                .map(
+                                    D => {
+                                        let z =
+                                            D
+                                                .split(
+                                                    ","
+                                                )[
+                                            1
+                                            ];
+                                        i.bankInfo[
+                                            z
+                                        ] =
+                                            i
+                                                .bankList[
+                                            i
+                                                .currentBankIndex
+                                            ]
+                                            [
+                                            z]
+                                    }
+                                ),
+                            i
+                                .quickList =
+                            C
+                                .scope
+                                .split(
+                                    "|"
+                                )
+                    }
+                    i.currentPayId ===
+                        18 &&
+                        Xe(
+                            Ge())
+                },
+            Qe =
+                () => {
+                    i.rechargeSubmitBtnStatus = !
+                        1,
+                        i
+                            .amount =
+                        void 0,
+                        i
+                            .numberPayAmount =
+                        void 0,
+                        i
+                            .numberExchangeRate =
+                        void 0,
+                        i
+                            .validateAmount =
+                        "",
+                        i
+                            .currentQuickIndex = -
+                        1,
+                        i
+                            .currentBankIndex =
+                        0,
+                        i
+                            .localUpiUTR =
+                        "",
+                        i
+                            .bankUTR =
+                        ""
+                },
+            Jn =
+                u => {
+                    clearTimeout
+                        (u.target
+                            .timer
+                        ),
+                        u
+                            .target
+                            .timer =
+                        setTimeout(
+                            () => {
+                                if (i
+                                    .validateAmount =
+                                    "",
+                                    i
+                                        .currentQuickIndex = -
+                                    1,
+                                    w
+                                        .value
+                                ) {
+                                    Ta() &&
+                                        (i.numberExchangeRate =
+                                            i
+                                                .numberPayAmount ?
+                                                i
+                                                    .numberPayAmount *
+                                                ba
+                                                    .value :
+                                                0
+                                        );
+                                    return
+                                }
+                                ka()
+                            },
+                            500
+                        )
+                },
+            Xn =
+                u =>
+                    u >=
+                        1e6 ?
+                        (u /
+                            1e6)
+                            .toFixed(
+                                1
+                            )
+                            .replace(
+                                /\.0$/,
+                                ""
+                            ) +
+                        "M" :
+                        u >=
+                            1e3 ?
+                            (u /
+                                1e3)
+                                .toFixed(
+                                    1
+                                )
+                                .replace(
+                                    /\.0$/,
+                                    ""
+                                ) +
+                            "K" :
+                            u +
+                            "",
+            Qn =
+                async () =>
+                    await navigator
+                        .clipboard
+                        .readText(),
+            Yn =
+                async u => {
+                    const
+                        T =
+                            document
+                                .getElementById(
+                                    u
+                                );
+                    await t
+                        (
+                            T)
+                },
+            $n =
+                () => {
+                    i.isBankOrder = !
+                        1,
+                        i
+                            .isUsdtOrder = !
+                        1,
+                        i
+                            .localUpiUTR =
+                        "",
+                        i
+                            .bankUTR =
+                        ""
+                },
+            Zn =
+                ({
+                    selectedOptions: u
+                }) => {
+                    v.value = !
+                        1,
+                        i
+                            .selectOtherBank =
+                        u[
+                        0]
+                },
+            ei =
+                (u,
+                    T) => {
+                    let C =
+                        new Date(
+                            u
+                                .replace(
+                                    /-/g,
+                                    "/"
+                                )
+                        )
+                            .getTime(),
+                        D =
+                            new Date(
+                                T
+                                    .replace(
+                                        /-/g,
+                                        "/"
+                                    )
+                            )
+                                .getTime();
+                    C - D <=
+                        0 &&
+                        (_.value = !
+                            0
+                        )
+                };
         return Be(() => H.value, () => {
             Qe()
         }), Na(() => {
@@ -41385,15 +41385,15 @@ function oA() {
     }
 }
 const Y = fe({
-        prompt: !1,
-        laundry: !1,
-        invite: !1,
-        firstSave: !1,
-        oldUser: !1,
-        rebateAmount: 0,
-        returnAwards: 0,
-        isARPay: !1
-    }),
+    prompt: !1,
+    laundry: !1,
+    invite: !1,
+    firstSave: !1,
+    oldUser: !1,
+    rebateAmount: 0,
+    returnAwards: 0,
+    isARPay: !1
+}),
     Ca = new Map,
     Aa = f(""),
     vt = new AbortController;
@@ -41414,9 +41414,9 @@ function ha() {
         d = v => P => {
             const A = Ca.get(v);
             A && (v === "prompt" && sessionStorage.setItem(
-                    "promptShowCount", "1"), v === "firstSave" &&
-                n.value.isShowFirstSaveDialog ? Y[v] = !0 : Y[
-                v] = !1, ["prompt", "laundry"].includes(v) &&
+                "promptShowCount", "1"), v === "firstSave" &&
+                    n.value.isShowFirstSaveDialog ? Y[v] = !0 : Y[
+                    v] = !1, ["prompt", "laundry"].includes(v) &&
                 sessionStorage.setItem(`pop_${v}`, "1"), A(),
                 P === !0 && vt.abort())
         },
@@ -41440,28 +41440,28 @@ function ha() {
             if (v) {
                 const L = (await x(cS())).data || {};
                 o((L == null ? void 0 : L
-                        .needPopupFirstRecharge) || !1), W = (
+                    .needPopupFirstRecharge) || !1), W = (
                         L == null ? void 0 : L
-                        .isExistGrandAward) || !1, Y
-                    .rebateAmount = (L == null ? void 0 : L
-                        .children_Lv_RebateAmount_Yesterday
-                        ) || 0, Y.returnAwards = (L == null ?
-                        void 0 : L.returnAwards) || 0, Y
-                    .isARPay = L == null ? void 0 : L.isARPay,
+                            .isExistGrandAward) || !1, Y
+                                .rebateAmount = (L == null ? void 0 : L
+                                    .children_Lv_RebateAmount_Yesterday
+                                ) || 0, Y.returnAwards = (L == null ?
+                                    void 0 : L.returnAwards) || 0, Y
+                                        .isARPay = L == null ? void 0 : L.isARPay,
                     e.name == "home" && !P && await N()
             }
             const _ = [];
             !P && v && Aa.value && e.name == "home" && _.push(
-                    c("prompt")), n.value
-                .isShowFirstSaveDialog && _.push(c(
-                    "firstSave")), t.getUserInfo
-                .isPopupCommissionSwitch == "1" && !P && Y
-                .rebateAmount > 0 && _.push(c("invite")), !
-                A && v && W && _.push(c("laundry")), Y
-                .returnAwards > 0 && _.push(c("oldUser")), vi(
-                    _, {
-                        signal: vt.signal
-                    })
+                c("prompt")), n.value
+                    .isShowFirstSaveDialog && _.push(c(
+                        "firstSave")), t.getUserInfo
+                            .isPopupCommissionSwitch == "1" && !P && Y
+                                .rebateAmount > 0 && _.push(c("invite")), !
+                                A && v && W && _.push(c("laundry")), Y
+                                    .returnAwards > 0 && _.push(c("oldUser")), vi(
+                                        _, {
+                                        signal: vt.signal
+                                    })
         };
     async function N() {
         const v = await x(WS());
@@ -41517,8 +41517,8 @@ function sA() {
             }));
             P != null && P.data && (n.value = P == null ?
                 void 0 : P.data, Ia.value = P
-                .serviceNowTime, (A = n.value) != null &&
-                A.vendorId && w(n.value.vendorId))
+                    .serviceNowTime, (A = n.value) != null &&
+                    A.vendorId && w(n.value.vendorId))
         }, m = async v => {
             const P = await x(GS({
                 championId: v
@@ -41533,8 +41533,8 @@ function sA() {
                 isMiniGame: !1
             }));
             P != null && P.data && (c.value = (A =
-                    P == null ? void 0 : P.data
-                    ) == null ? void 0 : A
+                P == null ? void 0 : P.data
+            ) == null ? void 0 : A
                 .gameLists)
         }, {
             start: b,
@@ -41562,7 +41562,7 @@ function sA() {
                     title: "",
                     message: e(
                         "gameLoadTimeOut"
-                        )
+                    )
                 }).then(() => {
                     a.push({
                         path: "/"
@@ -41577,18 +41577,18 @@ function sA() {
             }));
             if (A && !I.value) {
                 if (!I.value && h(!0), [5].includes(v
-                        .vendorId)) return a.push({
-                    name: "game",
-                    query: {
-                        url: un((W = A ==
+                    .vendorId)) return a.push({
+                        name: "game",
+                        query: {
+                            url: un((W = A ==
                                 null ?
                                 void 0 : A
-                                .data) ==
-                            null ?
-                            void 0 : W.url
+                                    .data) ==
+                                null ?
+                                void 0 : W.url
                             )
-                    }
-                });
+                        }
+                    });
                 pa() ? Ka("game", {
                     ...(A == null ? void 0 : A
                         .data) || {},
@@ -41598,7 +41598,7 @@ function sA() {
             } else {
                 !I.value && h(!0);
                 return
-            }!I.value && h()
+            } !I.value && h()
         })
     }
     return {
@@ -41623,10 +41623,10 @@ oa.on((e, a) => {
         "track", e, a);
     try {
         if (!window.android || !window.android.onEvent)
-    return;
+            return;
         a ? window.android.onEvent(e, JSON.stringify(a)) :
             window.android.onEvent(e)
-    } catch {}
+    } catch { }
 });
 
 function ft() {
@@ -41669,9 +41669,9 @@ const Ba = f(),
                     forbidClick: !0
                 });
                 const d = {
-                        returnUrl: "https://" + window.location
-                            .host + "/#/main"
-                    },
+                    returnUrl: "https://" + window.location
+                        .host + "/#/main"
+                },
                     p = await x(mP(d));
                 if ((p == null ? void 0 : p.code) === 0) {
                     let k = (g = p == null ? void 0 : p.data) ==
@@ -41687,13 +41687,13 @@ const Ba = f(),
                     forbidClick: !0
                 });
                 const d = {
-                        returnUrl: "https://" + window.location
-                            .host + "/#/main"
-                    },
+                    returnUrl: "https://" + window.location
+                        .host + "/#/main"
+                },
                     p = await x(pP(d));
                 (p == null ? void 0 : p.code) === 0 && (window
                     .location.href = ((g = p == null ?
-                            void 0 : p.data) == null ?
+                        void 0 : p.data) == null ?
                         void 0 : g.walletActivationPageUrl) +
                     "&memberId=" + p.data.memberId +
                     "&merchantCode=" + p.data.merchantCode +
@@ -41783,7 +41783,7 @@ const Ba = f(),
                     localStorage.removeItem("numberType"),
                     localStorage.removeItem("number"),
                     localStorage.removeItem("email"), localStorage
-                    .removeItem("isToLogin")
+                        .removeItem("isToLogin")
             },
             remember(e = !1) {
                 const a = this.userForm.logintype,
@@ -41803,16 +41803,16 @@ const Ba = f(),
                         .email : (this.userForm.number = k.number,
                             k.numberType && (this.userForm
                                 .numberType = k.numberType)), k
-                        .password && (this.userForm
-                            .rememberpwd = !0, this.userForm
-                            .password = k.password);
+                                    .password && (this.userForm
+                                        .rememberpwd = !0, this.userForm
+                                            .password = k.password);
                     return
                 }
                 const c = this.userForm.numberType,
                     d = this.userForm.number,
                     p = this.userForm.email,
                     g = this.userForm.rememberpwd ? this.userForm
-                    .password : "";
+                        .password : "";
                 localStorage.setItem(t, JSON.stringify({
                     email: p,
                     numberType: c,
@@ -41860,28 +41860,28 @@ const Ba = f(),
                                 "tokenHeader", k),
                             localStorage.setItem(
                                 "refreshToken", m
-                                ), localStorage
-                            .setItem("numberType",
-                                e.numberType),
+                            ), localStorage
+                                .setItem("numberType",
+                                    e.numberType),
                             localStorage.setItem(
                                 "number", e
-                                .number || ""),
+                                    .number || ""),
                             localStorage.setItem(
                                 "email", e
-                                .email || ""),
+                                    .email || ""),
                             localStorage.setItem(
                                 "isToLogin", "1"),
                             await this
-                            .getUserInfo({
-                                signature: g
-                            }), X4("/home");
+                                .getUserInfo({
+                                    signature: g
+                                }), X4("/home");
                         const {
                             setLoading: w
                         } = _a();
                         return w(!1), o({})
                     } [122, 33].includes(d
                         .msgCode) || ca(d), c(
-                        d)
+                            d)
                 })
             },
             async getUserInfo(e) {
@@ -41890,11 +41890,11 @@ const Ba = f(),
                     t = JP(),
                     n = await x(oS(e));
                 n && (a.setUserInfo(n == null ? void 0 : n
-                        .data), t.setAmount((o = n ==
-                            null ? void 0 : n.data) ==
+                    .data), t.setAmount((o = n ==
+                        null ? void 0 : n.data) ==
                         null ? void 0 : o.amount), t
-                    .setUSDTCanAdd(n == null ? void 0 : n
-                        .data))
+                            .setUSDTCanAdd(n == null ? void 0 : n
+                                .data))
             },
             async register(e) {
                 const {
@@ -41909,9 +41909,9 @@ const Ba = f(),
             async getIp() {
                 if (this.ARIP) return;
                 const e = await Fe.post(
-                        "https://tosma.lhlasjdanc.com/"),
+                    "https://tosma.lhlasjdanc.com/"),
                     a =
-                    /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+                        /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
                 e.data && a.test(e.data) && (this.ARIP = e
                     .data || "")
             },
@@ -41920,8 +41920,8 @@ const Ba = f(),
                 const e = setInterval(() => {
                     this.countDown > 0 ? this.countDown--
                         : clearInterval(e), this
-                        .countDown === 0 && clearInterval(
-                            e)
+                            .countDown === 0 && clearInterval(
+                                e)
                 }, 1e3)
             },
             sendEmailCode() {
@@ -41930,7 +41930,7 @@ const Ba = f(),
                     this.countEmailDown > 0 ? this
                         .countEmailDown-- : clearInterval(
                             e), this.countEmailDown ===
-                        0 && clearInterval(e)
+                            0 && clearInterval(e)
                 }, 1e3)
             },
             setRemember(e) {
@@ -41971,17 +41971,17 @@ const Ba = f(),
                     const h = (I = "0") => I === "1";
                     this.isShowSMS = h(a), this
                         .isRegisterState = h(t), this
-                        .isAddBankCardSMS = h(n), this
-                        .isOpenForgetPasswordSMSState = h(o),
+                            .isAddBankCardSMS = h(n), this
+                                .isOpenForgetPasswordSMSState = h(o),
                         this.isOpenForgetPasswordEmailState =
                         h(c), this.isOpenRegisterEmailState =
                         h(d), this.isOpenRegisterSMSState = h(
                             p), this.isOpenCaptcha = h(m),
                         this.isOpenAddWithdrawEmailState = h(
                             g), this
-                        .isOpenAddWithdrawSMSState = h(k),
+                                .isOpenAddWithdrawSMSState = h(k),
                         this.isOpenAddBankCardOpenEmail = h(
-                        w), this.isOpenExternalAccount = h(b)
+                            w), this.isOpenExternalAccount = h(b)
                 }
             }
         }
@@ -42086,8 +42086,8 @@ const Ba = f(),
             SET_HTML_ATTR(e, a) {
                 var t;
                 (t = document.querySelector(
-                "link[rel='icon']")) == null || t.setAttribute(
-                    "href", e), document.title = a
+                    "link[rel='icon']")) == null || t.setAttribute(
+                        "href", e), document.title = a
             },
             setReqData(e) {
                 this.requsetData = e
@@ -42194,38 +42194,38 @@ const Ba = f(),
                     } = e.data;
                     this.ossUrl = J, this.rewardValidityTime =
                         K, this.areaPhoneLenList = n, this
-                        .headLogo = o, this
-                        .isShowAppDownloadUp = c, this
-                        .isShowAppDownloadDown = d, this
-                        .isShowLotteryDragon = p, this
-                        .jackportMaxReswadAmount = g, this
-                        .projectLogo = m, this.projectName =
+                            .headLogo = o, this
+                                .isShowAppDownloadUp = c, this
+                                    .isShowAppDownloadDown = d, this
+                                        .isShowLotteryDragon = p, this
+                                            .jackportMaxReswadAmount = g, this
+                                                .projectLogo = m, this.projectName =
                         k, this.languages = w, this.webIco =
                         b, this.dollarSign = h, this
-                        .upperOrLower = I, this.areacode = ((
+                            .upperOrLower = I, this.areacode = ((
                                 a = n[0]) == null ? void 0 : a
-                            .area) || "", this
-                        .isSplitLocalEWallet = v, this
-                        .isOpenLoginChangeLanguage = P, this
-                        .isShowHotGameWinOdds = M || !1, this
-                        .isShowAppHandCodeWashingSwitch = L,
+                                .area) || "", this
+                                    .isSplitLocalEWallet = v, this
+                                        .isOpenLoginChangeLanguage = P, this
+                                            .isShowHotGameWinOdds = M || !1, this
+                                                .isShowAppHandCodeWashingSwitch = L,
                         this.winRate = {
                             electronicWinRateExternalLink: A,
                             electronicWinRateImgUrl: W,
                             isShowElectronicWinRateExternalLink: _
                         }, this.bigTurntableLink = Z, this
-                        .isOpenTurntable = ae, this
-                        .isPartnerReward = V, sessionStorage
-                        .setItem("dollarSign", h),
+                            .isOpenTurntable = ae, this
+                                .isPartnerReward = V, sessionStorage
+                                    .setItem("dollarSign", h),
                         sessionStorage.setItem(
                             "areaPhoneLenList", JSON
-                            .stringify(n)), localStorage
-                        .getItem("language") || (this
-                            .defaultCurrentLanguage = N
-                            .replace("tha", "th")), (t =
-                            document.querySelector(
-                                "link[rel='icon']")) ==
-                        null || t.setAttribute("href", b),
+                                .stringify(n)), localStorage
+                                    .getItem("language") || (this
+                                        .defaultCurrentLanguage = N
+                                            .replace("tha", "th")), (t =
+                                                document.querySelector(
+                                                    "link[rel='icon']")) ==
+                                            null || t.setAttribute("href", b),
                         document.title = k
                 }
             }
@@ -42284,9 +42284,9 @@ const Ba = f(),
             },
             setUSDTCanAdd(e) {
                 this.isAllowUserAddUSDT = (e == null ? void 0 : e
-                        .isAllowUserAddUSDT) === void 0 ? !0 : (
+                    .isAllowUserAddUSDT) === void 0 ? !0 : (
                         e == null ? void 0 : e.isAllowUserAddUSDT
-                        ) === "1"
+                    ) === "1"
             },
             setTimestampLast(e) {
                 this.timestampLast = e
@@ -42308,23 +42308,23 @@ const Ba = f(),
                     if (he().getIsSplitLocalEWallet) {
                         let a = e.data.typelist.map(t => (t
                             .payID === 18 && t
-                            .paySysName ===
+                                .paySysName ===
                             "KBZPay" && (t
                                 .payNameUrl = $(
                                     "wallet/recharge/detail",
                                     "kbz_icon"), t
-                                .payNameUrl2 = $(
-                                    "wallet/recharge/detail",
-                                    "kbz_icon")), t
-                            .payID === 18 && t
-                            .paySysName ===
-                            "WavePay" && (t
-                                .payNameUrl = $(
-                                    "wallet/recharge/detail",
-                                    "wave_icon"), t
-                                .payNameUrl2 = $(
-                                    "wallet/recharge/detail",
-                                    "wave_icon")), t));
+                                        .payNameUrl2 = $(
+                                            "wallet/recharge/detail",
+                                            "kbz_icon")), t
+                                                .payID === 18 && t
+                                                    .paySysName ===
+                                            "WavePay" && (t
+                                                .payNameUrl = $(
+                                                    "wallet/recharge/detail",
+                                                    "wave_icon"), t
+                                                        .payNameUrl2 = $(
+                                                            "wallet/recharge/detail",
+                                                            "wave_icon")), t));
                         this.setPayTabList(a)
                     }
                     this.setPayTabList(e.data.typelist)
@@ -42515,7 +42515,7 @@ const Ba = f(),
                 e && e.data && (e.data.forEach(a => {
                     this.setData(a)
                 }), this.winGoLock = !0, setTimeout(
-                () => {
+                    () => {
                         this.winGoLock = !1
                     }, ea))
             },
@@ -42525,7 +42525,7 @@ const Ba = f(),
                 e && e.data && (e.data.forEach(a => {
                     this.setData(a)
                 }), this.TrxLock = !0, setTimeout(
-                () => {
+                    () => {
                         this.TrxLock = !1
                     }, ea))
             },
@@ -42535,9 +42535,9 @@ const Ba = f(),
                 e && e.data && (e.data.forEach(a => {
                     this.setData(a)
                 }), this.k3Lock = !0, setTimeout(
-            () => {
-                    this.k3Lock = !1
-                }, ea))
+                    () => {
+                        this.k3Lock = !1
+                    }, ea))
             },
             async get5DData() {
                 if (this.fiveDLock) return;
@@ -42545,7 +42545,7 @@ const Ba = f(),
                 e && e.data && (e.data.forEach(a => {
                     this.setData(a)
                 }), this.fiveDLock = !0, setTimeout(
-                () => {
+                    () => {
                         this.fiveDLock = !1
                     }, ea))
             },
@@ -42599,76 +42599,76 @@ const Ba = f(),
         setup(e) {
             const a = e,
                 t = wi(() => b4(Object.assign({
-                        "../../assets/icons/tabBarIcons/activity.svg": () =>
-                            l(() => import(
-                                "./activity-f1f7cff2.js"
-                                ), [
-                                "assets/js/activity-f1f7cff2.js",
+                    "../../assets/icons/tabBarIcons/activity.svg": () =>
+                        l(() => import(
+                            "./activity-f1f7cff2.js"
+                        ), [
+                            "assets/js/activity-f1f7cff2.js",
+                            "assets/js/vendor-b2024301.js"
+                        ]),
+                    "../../assets/icons/tabBarIcons/activity_active.svg": () =>
+                        l(() => import(
+                            "./activity_active-965b13b1.js"
+                        ), [
+                            "assets/js/activity_active-965b13b1.js",
+                            "assets/js/vendor-b2024301.js"
+                        ]),
+                    "../../assets/icons/tabBarIcons/chat.svg": () =>
+                        l(() => import(
+                            "./chat-682098ef.js"),
+                            ["assets/js/chat-682098ef.js",
                                 "assets/js/vendor-b2024301.js"
                             ]),
-                        "../../assets/icons/tabBarIcons/activity_active.svg": () =>
-                            l(() => import(
-                                "./activity_active-965b13b1.js"
-                                ), [
-                                "assets/js/activity_active-965b13b1.js",
+                    "../../assets/icons/tabBarIcons/home.svg": () =>
+                        l(() => import(
+                            "./home-c735e506.js"),
+                            ["assets/js/home-c735e506.js",
                                 "assets/js/vendor-b2024301.js"
                             ]),
-                        "../../assets/icons/tabBarIcons/chat.svg": () =>
-                            l(() => import(
-                                    "./chat-682098ef.js"),
-                                ["assets/js/chat-682098ef.js",
-                                    "assets/js/vendor-b2024301.js"
-                                ]),
-                        "../../assets/icons/tabBarIcons/home.svg": () =>
-                            l(() => import(
-                                    "./home-c735e506.js"),
-                                ["assets/js/home-c735e506.js",
-                                    "assets/js/vendor-b2024301.js"
-                                ]),
-                        "../../assets/icons/tabBarIcons/home_active.svg": () =>
-                            l(() => import(
-                                "./home_active-563bac69.js"
-                                ), [
-                                "assets/js/home_active-563bac69.js",
+                    "../../assets/icons/tabBarIcons/home_active.svg": () =>
+                        l(() => import(
+                            "./home_active-563bac69.js"
+                        ), [
+                            "assets/js/home_active-563bac69.js",
+                            "assets/js/vendor-b2024301.js"
+                        ]),
+                    "../../assets/icons/tabBarIcons/main.svg": () =>
+                        l(() => import(
+                            "./main-f5127d2b.js"),
+                            ["assets/js/main-f5127d2b.js",
                                 "assets/js/vendor-b2024301.js"
                             ]),
-                        "../../assets/icons/tabBarIcons/main.svg": () =>
-                            l(() => import(
-                                    "./main-f5127d2b.js"),
-                                ["assets/js/main-f5127d2b.js",
-                                    "assets/js/vendor-b2024301.js"
-                                ]),
-                        "../../assets/icons/tabBarIcons/main_active.svg": () =>
-                            l(() => import(
-                                "./main_active-61a8fa71.js"
-                                ), [
-                                "assets/js/main_active-61a8fa71.js",
-                                "assets/js/vendor-b2024301.js"
-                            ]),
-                        "../../assets/icons/tabBarIcons/promotion.svg": () =>
-                            l(() => import(
-                                "./promotion-9633d87b.js"
-                                ), [
-                                "assets/js/promotion-9633d87b.js",
-                                "assets/js/vendor-b2024301.js"
-                            ]),
-                        "../../assets/icons/tabBarIcons/wallet.svg": () =>
-                            l(() => import(
-                                "./wallet-83742cf7.js"
-                                ), [
-                                "assets/js/wallet-83742cf7.js",
-                                "assets/js/vendor-b2024301.js"
-                            ]),
-                        "../../assets/icons/tabBarIcons/wallet_active.svg": () =>
-                            l(() => import(
-                                "./wallet_active-4254e373.js"
-                                ), [
-                                "assets/js/wallet_active-4254e373.js",
-                                "assets/js/vendor-b2024301.js"
-                            ])
-                    }),
+                    "../../assets/icons/tabBarIcons/main_active.svg": () =>
+                        l(() => import(
+                            "./main_active-61a8fa71.js"
+                        ), [
+                            "assets/js/main_active-61a8fa71.js",
+                            "assets/js/vendor-b2024301.js"
+                        ]),
+                    "../../assets/icons/tabBarIcons/promotion.svg": () =>
+                        l(() => import(
+                            "./promotion-9633d87b.js"
+                        ), [
+                            "assets/js/promotion-9633d87b.js",
+                            "assets/js/vendor-b2024301.js"
+                        ]),
+                    "../../assets/icons/tabBarIcons/wallet.svg": () =>
+                        l(() => import(
+                            "./wallet-83742cf7.js"
+                        ), [
+                            "assets/js/wallet-83742cf7.js",
+                            "assets/js/vendor-b2024301.js"
+                        ]),
+                    "../../assets/icons/tabBarIcons/wallet_active.svg": () =>
+                        l(() => import(
+                            "./wallet_active-4254e373.js"
+                        ), [
+                            "assets/js/wallet_active-4254e373.js",
+                            "assets/js/vendor-b2024301.js"
+                        ])
+                }),
                     `../../assets/icons/tabBarIcons/${a.name}.svg`
-                    )),
+                )),
                 n = a.name === "promotion",
                 o = a.name === "wallet";
             return (c, d) => (E(), ee(Ga(G(t)), {
@@ -42712,13 +42712,13 @@ const Ba = f(),
             return (c, d) => (E(), X("div", XP, [(E(), X(Le, null,
                 Dt(o, (p, g) => y("div", {
                     class: ye(["tabbar__container-item",
-                    {
-                        active: p
-                            .name ===
-                            G(
-                                t)
-                            .name
-                    }]),
+                        {
+                            active: p
+                                .name ===
+                                G(
+                                    t)
+                                    .name
+                        }]),
                     key: p + "" + g,
                     onClick: k => n(p
                         .name)
@@ -42726,36 +42726,36 @@ const Ba = f(),
                     .name & p.name !==
                     "promotion" ? (
                     E(), ee(wt, {
-                                key: 0,
-                                name: `${p.name}_active`
-                            }, null,
-                            8, [
-                                "name"]
-                            )) : (E(),
+                        key: 0,
+                        name: `${p.name}_active`
+                    }, null,
+                        8, [
+                        "name"]
+                    )) : (E(),
                         ee(wt, {
-                                key: 1,
-                                name: p
-                                    .name
-                            }, null,
+                            key: 1,
+                            name: p
+                                .name
+                        }, null,
                             8, [
-                                "name"]
-                            )), p
-                    .name ===
-                    "promotion" ? (
+                            "name"]
+                        )), p
+                            .name ===
+                            "promotion" ? (
                     E(), X("div", YP)
-                        ) : ge("", !
+                ) : ge("", !
                     0), y("span",
                         null, O(c.$t(p
-                                .name
-                                )), 1)
+                            .name
+                        )), 1)
                 ], 10, QP)), 64))]))
         }
     });
 const Te = (e, a) => {
-        const t = e.__vccOpts || e;
-        for (const [n, o] of a) t[n] = o;
-        return t
-    },
+    const t = e.__vccOpts || e;
+    for (const [n, o] of a) t[n] = o;
+    return t
+},
     ZP = Te($P, [
         ["__scopeId", "data-v-c4b9aaee"]
     ]);
@@ -42764,7 +42764,7 @@ function ex() {
     const e = oe(),
         a = () => {
             document.visibilityState === "visible" ? e
-            .setvisibility() : e.setvisibility(0)
+                .setvisibility() : e.setvisibility(0)
         };
     Ke(() => {
         document.addEventListener("visibilitychange", a)
@@ -42804,33 +42804,33 @@ const ax = ce({
             var L;
             M.touches ? L = M.touches[0] : L = M, t.value.x =
                 L.clientX, t.value.y = L.clientY, n.value = k
-                .value.offsetLeft, o.value = k.value
-                .offsetTop, m = M.clientX, w = M.clientY
+                    .value.offsetLeft, o.value = k.value
+                        .offsetTop, m = M.clientX, w = M.clientY
         }
 
         function P(M) {
             if (a.value) {
                 var L, K = document.getElementById(
-                        "customerId"),
+                    "customerId"),
                     J = K.clientWidth,
                     Z = K.clientHeight,
                     ae = document.documentElement
-                    .clientHeight,
+                        .clientHeight,
                     V = document.documentElement.clientWidth;
                 M.touches ? L = M.touches[0] : L = M, c
                     .value = L.clientX - t.value.x, d.value =
                     L.clientY - t.value.y, p.value = n.value +
                     c.value, g.value = o.value + d.value, p
-                    .value <= 0 && (p.value = 0), g.value <=
-                    0 && (g.value = 0), p.value >= V - J && (p
-                        .value = V - J), g.value >= ae - Z &&
+                        .value <= 0 && (p.value = 0), g.value <=
+                        0 && (g.value = 0), p.value >= V - J && (p
+                            .value = V - J), g.value >= ae - Z &&
                     (g.value = ae - Z), k.value.style.left = p
-                    .value + "px", k.value.style.top = g
-                    .value + "px", document.addEventListener(
-                        "touchmove",
-                        function() {
-                            M.preventDefault()
-                        }, !1)
+                        .value + "px", k.value.style.top = g
+                            .value + "px", document.addEventListener(
+                                "touchmove",
+                                function () {
+                                    M.preventDefault()
+                                }, !1)
             }
             M.stopPropagation(), M.preventDefault()
         }
@@ -42874,24 +42874,24 @@ const tx = ["src"],
                 class: ye(["start-page", [G(a)]])
             }, [y("div", null, [y("div", {
                 class: ye(["dice", [G(
-                        a
-                        )]])
+                    a
+                )]])
             }, null, 2), y("p", null, O(G(
                 t) || n.$t(
-                "fairAndSafe")), 1), y(
-                "img", {
-                    class: ye(["logo", [G(
+                    "fairAndSafe")), 1), y(
+                        "img", {
+                        class: ye(["logo", [G(
                             a
-                            )]]),
-                    src: G($)(
-                        "home/StartPage",
-                        G(Q4)())
-                }, null, 10, tx)])], 2))
+                        )]]),
+                        src: G($)(
+                            "home/StartPage",
+                            G(Q4)())
+                    }, null, 10, tx)])], 2))
         }
     });
 const ix = Te(nx, [
-        ["__scopeId", "data-v-beab2201"]
-    ]),
+    ["__scopeId", "data-v-beab2201"]
+]),
     ox = {
         key: 0,
         class: "step"
@@ -42935,13 +42935,13 @@ const ix = Te(nx, [
                     let c = "0";
                     return a.numerical == 0 || a.total == 0 ?
                         c = "0" : a.numerical > a.total ? c =
-                        "100" : c = String((a.numerical / a
-                            .total * 100).toFixed(2)), {
-                            background: a.color,
-                            width: `${c}%`,
-                            height: `${a.strokeWidth}px`,
-                            "border-radius": `${a.strokeWidth}px`
-                        }
+                            "100" : c = String((a.numerical / a
+                                .total * 100).toFixed(2)), {
+                        background: a.color,
+                        width: `${c}%`,
+                        height: `${a.strokeWidth}px`,
+                        "border-radius": `${a.strokeWidth}px`
+                    }
                 }),
                 o = S(() => `${a.numerical}/${a.total}`);
             return (c, d) => (E(), X("div", {
@@ -42952,12 +42952,12 @@ const ix = Te(nx, [
                 style: ra(n.value)
             }, null, 4), e.isShowStep ? (E(), X(
                 "div", ox, O(o.value), 1)) : ge(
-                "", !0)], 4))
+                    "", !0)], 4))
         }
     });
 const rx = Te(sx, [
-        ["__scopeId", "data-v-c0491936"]
-    ]),
+    ["__scopeId", "data-v-c0491936"]
+]),
     cx = {
         class: "head"
     },
@@ -43037,7 +43037,7 @@ const rx = Te(sx, [
                 const N = await d(b.id);
                 c = !1, N && (p.value.receiveAmount = b
                     .rewardAmount, p.value
-                    .showReceiveDialog = !0, g())
+                        .showReceiveDialog = !0, g())
             };
             return (b, h) => {
                 const I = Ie("van-dialog"),
@@ -43049,182 +43049,182 @@ const rx = Te(sx, [
                             class: "first_list-item"
                         }, [y("div",
                             cx, [
-                                y("div",
-                                    dx,
-                                    [Si(O(b.$t(
-                                                "firstSave")),
-                                            1
-                                            ),
-                                        y("span",
-                                            null,
-                                            O(v
-                                                .rechargeAmount),
-                                            1
-                                            )
-                                    ]
-                                    ),
-                                y("div",
-                                    lx,
-                                    "+ " +
-                                    O(G(je)
-                                        (v
-                                            .rewardAmount)
-                                        ),
+                            y("div",
+                                dx,
+                                [Si(O(b.$t(
+                                    "firstSave")),
                                     1
-                                    )
-                            ]), y(
+                                ),
+                                y("span",
+                                    null,
+                                    O(v
+                                        .rechargeAmount),
+                                    1
+                                )
+                                ]
+                            ),
+                            y("div",
+                                lx,
+                                "+ " +
+                                O(G(je)
+                                    (v
+                                        .rewardAmount)
+                                ),
+                                1
+                            )
+                        ]), y(
                             "div",
                             ux, O(
                                 b
-                                .$t("firstSaveT",
-                                    [v.rechargeAmount,
+                                    .$t("firstSaveT",
+                                        [v.rechargeAmount,
                                         v
-                                        .rewardAmount
-                                    ]
+                                            .rewardAmount
+                                        ]
                                     )
-                                ),
+                            ),
                             1), y(
-                            "div",
-                            px, [
+                                "div",
+                                px, [
                                 re(rx, {
-                                        "track-color": "#323A7C",
-                                        "stroke-width": 16,
-                                        color: "#61A9FF",
-                                        total: v
-                                            .rechargeAmount,
-                                        numerical: v
-                                            .canReceive ?
-                                            v
+                                    "track-color": "#323A7C",
+                                    "stroke-width": 16,
+                                    color: "#61A9FF",
+                                    total: v
+                                        .rechargeAmount,
+                                    numerical: v
+                                        .canReceive ?
+                                        v
                                             .rechargeAmount :
-                                            0
-                                    },
+                                        0
+                                },
                                     null,
                                     8,
                                     ["total",
                                         "numerical"
                                     ]
-                                    ),
+                                ),
                                 y("div", {
-                                        class: ye(
-                                            ["btn",
-                                                [k(v, e
-                                                    .isRule)]
-                                            ]
-                                            ),
-                                        onClick: A =>
-                                            w(
-                                                v)
-                                    },
+                                    class: ye(
+                                        ["btn",
+                                            [k(v, e
+                                                .isRule)]
+                                        ]
+                                    ),
+                                    onClick: A =>
+                                        w(
+                                            v)
+                                },
                                     O(m(
                                         v)),
                                     11,
                                     mx
-                                    )
+                                )
                             ])]))), 128)), re(I, {
-                    show: n.value,
-                    "onUpdate:show": h[2] || (
-                        h[2] = v => n
-                        .value = v),
-                    "show-confirm-button": !1,
-                    className: "noOverHidden"
-                }, {
-                    default: be(() => [y(
-                        "div", gx,
-                        [ie(y("img", null,
-                                    null,
-                                    512
-                                    ),
-                                [
-                                    [N, G(
-                                            $)
-                                        ("activity/DailyTask",
-                                            "confirmationReceived"
-                                            )
-                                    ]
-                                ]
-                                ),
-                            y("div",
-                                hx,
-                                O(b.$t(
-                                    "awardsReceived")),
-                                1
-                                ),
-                            y("div",
-                                bx,
-                                [ie(y("img", null,
-                                            null,
-                                            512
-                                            ),
-                                        [
-                                            [N, G(
-                                                    $)
-                                                ("activity/DailyTask",
-                                                    "amountIcon"
-                                                    )
-                                            ]
-                                        ]
-                                        ),
-                                    y("span",
-                                        null,
-                                        O(G(je)
-                                            (o
-                                                .value)
-                                            ),
-                                        1
-                                        )
-                                ]
-                                ),
-                            y("div", {
-                                    class: "dialog-btn",
-                                    onClick: h[
-                                            0
-                                            ] ||
-                                        (h[0] =
-                                            v =>
-                                            n
-                                            .value = !
-                                            1
-                                            )
-                                },
-                                O(b.$t(
-                                    "confirm")),
-                                1
-                                ),
-                            y("div", {
-                                    class: "dialog-footer",
-                                    onClick: h[
-                                            1
-                                            ] ||
-                                        (h[1] =
-                                            v =>
-                                            n
-                                            .value = !
-                                            1
-                                            )
-                                },
-                                [ie(y("img", null,
+                                show: n.value,
+                                "onUpdate:show": h[2] || (
+                                    h[2] = v => n
+                                        .value = v),
+                                "show-confirm-button": !1,
+                                className: "noOverHidden"
+                            }, {
+                                default: be(() => [y(
+                                    "div", gx,
+                                    [ie(y("img", null,
                                         null,
                                         512
-                                        ),
-                                    [
-                                        [N, G(
+                                    ),
+                                        [
+                                            [N, G(
                                                 $)
-                                            ("activity/DailyTask",
-                                                "close"
+                                                ("activity/DailyTask",
+                                                    "confirmationReceived"
                                                 )
+                                            ]
                                         ]
-                                    ]
-                                    )]
-                                )
-                        ])]),
-                    _: 1
-                }, 8, ["show"])], 64)
+                                    ),
+                                    y("div",
+                                        hx,
+                                        O(b.$t(
+                                            "awardsReceived")),
+                                        1
+                                    ),
+                                    y("div",
+                                        bx,
+                                        [ie(y("img", null,
+                                            null,
+                                            512
+                                        ),
+                                            [
+                                                [N, G(
+                                                    $)
+                                                    ("activity/DailyTask",
+                                                        "amountIcon"
+                                                    )
+                                                ]
+                                            ]
+                                        ),
+                                        y("span",
+                                            null,
+                                            O(G(je)
+                                                (o
+                                                    .value)
+                                            ),
+                                            1
+                                        )
+                                        ]
+                                    ),
+                                    y("div", {
+                                        class: "dialog-btn",
+                                        onClick: h[
+                                            0
+                                        ] ||
+                                            (h[0] =
+                                                v =>
+                                                    n
+                                                        .value = !
+                                                    1
+                                            )
+                                    },
+                                        O(b.$t(
+                                            "confirm")),
+                                        1
+                                    ),
+                                    y("div", {
+                                        class: "dialog-footer",
+                                        onClick: h[
+                                            1
+                                        ] ||
+                                            (h[1] =
+                                                v =>
+                                                    n
+                                                        .value = !
+                                                    1
+                                            )
+                                    },
+                                        [ie(y("img", null,
+                                            null,
+                                            512
+                                        ),
+                                            [
+                                                [N, G(
+                                                    $)
+                                                    ("activity/DailyTask",
+                                                        "close"
+                                                    )
+                                                ]
+                                            ]
+                                        )]
+                                    )
+                                    ])]),
+                                _: 1
+                            }, 8, ["show"])], 64)
             }
         }
     });
 const kx = Te(Tx, [
-        ["__scopeId", "data-v-95ba14ea"]
-    ]),
+    ["__scopeId", "data-v-95ba14ea"]
+]),
     yx = {
         class: "header"
     },
@@ -43259,8 +43259,8 @@ const kx = Te(Tx, [
                 m = S(() => k.value == g),
                 w = () => {
                     m.value ? (k.value = "", localStorage
-                            .removeItem("firstSave")) : k.value =
-                        g
+                        .removeItem("firstSave")) : k.value =
+                    g
                 },
                 b = () => {
                     n.value = !1, c()
@@ -43272,18 +43272,18 @@ const kx = Te(Tx, [
                 h.includes(t.name) && I()
             });
             const I = () => {
-                    k.value != g && p().then(P => {
-                        if (!P.length) {
-                            n.value = !1, c();
-                            return
-                        }
-                        const A = P.find(W => W
+                k.value != g && p().then(P => {
+                    if (!P.length) {
+                        n.value = !1, c();
+                        return
+                    }
+                    const A = P.find(W => W
                         .isFinshed);
-                        A && (d.value
-                            .isShowFirstSaveDialog = !
-                            1), A || (n.value = !0)
-                    })
-                },
+                    A && (d.value
+                        .isShowFirstSaveDialog = !
+                        1), A || (n.value = !0)
+                })
+            },
                 N = () => {
                     n.value = !1, c(!0), a.push({
                         name: "FirstRecharge"
@@ -43309,40 +43309,40 @@ const kx = Te(Tx, [
                         O(P.$t(
                             "firstDialogH")),
                         1), y(
-                        "div", fx,
-                        O(P.$t(
-                            "firstDialogTip")),
-                        1)])]),
+                            "div", fx,
+                            O(P.$t(
+                                "firstDialogTip")),
+                            1)])]),
                     footer: be(() => [y("div", Sx, [y(
-                            "div", {
-                                class: ye(
-                                    ["active",
-                                    {
-                                        a: m.value
-                                    }]
-                                    ),
-                                onClick: w
-                            }, O(P.$t(
-                                "noTipToday"
-                                )), 3
-                            ), y(
-                            "div", {
-                                class: "btn",
-                                onClick: N
-                            }, O(P.$t(
-                                "activity"
-                                )), 1)
+                        "div", {
+                        class: ye(
+                            ["active",
+                                {
+                                    a: m.value
+                                }]
+                        ),
+                        onClick: w
+                    }, O(P.$t(
+                        "noTipToday"
+                    )), 3
+                    ), y(
+                        "div", {
+                        class: "btn",
+                        onClick: N
+                    }, O(P.$t(
+                        "activity"
+                    )), 1)
                     ])]),
                     default: be(() => [y("div", wx, [
                         re(kx, {
-                                list: G(
-                                        d)
-                                    .FirstRechargeList,
-                                onGorecharge: v
-                            }, null,
+                            list: G(
+                                d)
+                                .FirstRechargeList,
+                            onGorecharge: v
+                        }, null,
                             8, [
-                                "list"]
-                            )
+                            "list"]
+                        )
                     ]), y("div", {
                         class: "close",
                         onClick: b
@@ -43353,8 +43353,8 @@ const kx = Te(Tx, [
         }
     });
 const xx = Te(Px, [
-        ["__scopeId", "data-v-828498a0"]
-    ]),
+    ["__scopeId", "data-v-828498a0"]
+]),
     Dx = {
         class: "dialog-window"
     },
@@ -43434,162 +43434,162 @@ const xx = Te(Px, [
                         .showReceiveDialog,
                     "onUpdate:show": p[1] || (
                         p[1] = m => G(a)
-                        .showReceiveDialog =
-                        m),
+                            .showReceiveDialog =
+                            m),
                     "show-confirm-button": !1,
                     className: "noOverHidden"
                 }, {
                     default: be(() => [y(
                         "div", Dx,
                         [y("div",
-                                Rx,
-                                [ie(y("img", null,
-                                            null,
-                                            512
-                                            ),
-                                        [
-                                            [k, G(
-                                                    $)
-                                                ("activity/DailyTask",
-                                                    "confirmationReceived"
-                                                    )
-                                            ]
-                                        ]
-                                        ),
-                                    y("div",
-                                        Cx,
-                                        O(d.$t(
-                                            "awardsReceived")),
-                                        1
-                                        ),
-                                    y("div",
-                                        Ax,
-                                        [ie(y("img", null,
-                                                    null,
-                                                    512
-                                                    ),
-                                                [
-                                                    [k, G(
-                                                            $)
-                                                        ("activity/DailyTask",
-                                                            "amountIcon"
-                                                            )
-                                                    ]
-                                                ]
-                                                ),
-                                            y("span",
-                                                null,
-                                                O(G(je)
-                                                    (G(a)
-                                                        .receiveAmount
-                                                        )
-                                                    ),
-                                                1
-                                                )
-                                        ]
-                                        ),
-                                    y("div", {
-                                            class: "dialog-btn",
-                                            onClick: p[
-                                                    0
-                                                    ] ||
-                                                (p[0] =
-                                                    m =>
-                                                    G(
-                                                        a)
-                                                    .showReceiveDialog = !
-                                                    1
-                                                    )
-                                        },
-                                        O(d.$t(
-                                            "confirm")),
-                                        1
+                            Rx,
+                            [ie(y("img", null,
+                                null,
+                                512
+                            ),
+                                [
+                                    [k, G(
+                                        $)
+                                        ("activity/DailyTask",
+                                            "confirmationReceived"
                                         )
+                                    ]
                                 ]
-                                )]
-                        )]),
+                            ),
+                            y("div",
+                                Cx,
+                                O(d.$t(
+                                    "awardsReceived")),
+                                1
+                            ),
+                            y("div",
+                                Ax,
+                                [ie(y("img", null,
+                                    null,
+                                    512
+                                ),
+                                    [
+                                        [k, G(
+                                            $)
+                                            ("activity/DailyTask",
+                                                "amountIcon"
+                                            )
+                                        ]
+                                    ]
+                                ),
+                                y("span",
+                                    null,
+                                    O(G(je)
+                                        (G(a)
+                                            .receiveAmount
+                                        )
+                                    ),
+                                    1
+                                )
+                                ]
+                            ),
+                            y("div", {
+                                class: "dialog-btn",
+                                onClick: p[
+                                    0
+                                ] ||
+                                    (p[0] =
+                                        m =>
+                                            G(
+                                                a)
+                                                .showReceiveDialog = !
+                                            1
+                                    )
+                            },
+                                O(d.$t(
+                                    "confirm")),
+                                1
+                            )
+                            ]
+                        )]
+                    )]),
                     _: 1
                 }, 8, ["show"]), re(g, {
                     show: G(t).invite,
                     "onUpdate:show": p[3] || (
                         p[3] = m => G(t)
-                        .invite = m),
+                            .invite = m),
                     "show-confirm-button": !1,
                     className: "noOverHidden"
                 }, {
                     default: be(() => [y(
                         "div", Ix,
                         [y("div",
-                                Bx,
-                                [ie(y("img", null,
-                                            null,
-                                            512
-                                            ),
-                                        [
-                                            [k, G(
-                                                    $)
-                                                ("activity/DailyTask",
-                                                    "confirmationReceived"
-                                                    )
-                                            ]
-                                        ]
-                                        ),
-                                    y("div",
-                                        Lx,
-                                        O(d.$t(
-                                            "inviteTips")),
-                                        1
-                                        ),
-                                    y("p",
-                                        Gx,
-                                        O(d.$t(
-                                            "inviteAmount")),
-                                        1
-                                        ),
-                                    y("div",
-                                        Nx,
-                                        [y("span",
-                                                Mx,
-                                                O(d.$t(
-                                                    "commissionAmount")),
-                                                1
-                                                ),
-                                            y("span",
-                                                null,
-                                                O(G(je)
-                                                    (G(t)
-                                                        .rebateAmount
-                                                        )
-                                                    ),
-                                                1
-                                                )
-                                        ]
-                                        ),
-                                    y("div", {
-                                            class: "dialog-btn",
-                                            onClick: p[
-                                                    2
-                                                    ] ||
-                                                (p[2] =
-                                                    m =>
-                                                    G(
-                                                        n)
-                                                    ()
-                                                    )
-                                        },
-                                        O(d.$t(
-                                            "receive")),
-                                        1
+                            Bx,
+                            [ie(y("img", null,
+                                null,
+                                512
+                            ),
+                                [
+                                    [k, G(
+                                        $)
+                                        ("activity/DailyTask",
+                                            "confirmationReceived"
                                         )
+                                    ]
                                 ]
-                                )]
-                        )]),
+                            ),
+                            y("div",
+                                Lx,
+                                O(d.$t(
+                                    "inviteTips")),
+                                1
+                            ),
+                            y("p",
+                                Gx,
+                                O(d.$t(
+                                    "inviteAmount")),
+                                1
+                            ),
+                            y("div",
+                                Nx,
+                                [y("span",
+                                    Mx,
+                                    O(d.$t(
+                                        "commissionAmount")),
+                                    1
+                                ),
+                                y("span",
+                                    null,
+                                    O(G(je)
+                                        (G(t)
+                                            .rebateAmount
+                                        )
+                                    ),
+                                    1
+                                )
+                                ]
+                            ),
+                            y("div", {
+                                class: "dialog-btn",
+                                onClick: p[
+                                    2
+                                ] ||
+                                    (p[2] =
+                                        m =>
+                                            G(
+                                                n)
+                                                ()
+                                    )
+                            },
+                                O(d.$t(
+                                    "receive")),
+                                1
+                            )
+                            ]
+                        )]
+                    )]),
                     _: 1
                 }, 8, ["show"]), re(g, {
                     show: G(t).oldUser,
                     "onUpdate:show": p[5] || (
                         p[5] = m => G(t)
-                        .oldUser = m),
+                            .oldUser = m),
                     "show-confirm-button": !1,
                     "close-on-click-overlay":
                         !0,
@@ -43598,77 +43598,77 @@ const xx = Te(Px, [
                     default: be(() => [y(
                         "div", Ex,
                         [y("div",
-                                Ox,
-                                [ie(y("img", null,
-                                            null,
-                                            512
-                                            ),
-                                        [
-                                            [k, G(
-                                                    $)
-                                                ("activity/DailyTask",
-                                                    "confirmationReceived"
-                                                    )
-                                            ]
-                                        ]
-                                        ),
-                                    y("p",
-                                        Vx,
-                                        O(d.$t(
-                                            "oldPromptTip")),
-                                        1
-                                        ),
-                                    y("div",
-                                        Ux,
-                                        O(d.$t(
-                                            "oldPrompt")),
-                                        1
-                                        ),
-                                    y("p",
-                                        Wx,
-                                        O(d.$t(
-                                            "oldPromptGift")),
-                                        1
-                                        ),
-                                    y("div",
-                                        _x,
-                                        [y("span",
-                                            null,
-                                            O(G(je)
-                                                (G(t)
-                                                    .returnAwards
-                                                    )
-                                                ),
-                                            1
-                                            )]
-                                        ),
-                                    y("div", {
-                                            class: "dialog-btn",
-                                            onClick: p[
-                                                    4
-                                                    ] ||
-                                                (p[4] =
-                                                    m =>
-                                                    G(
-                                                        c)
-                                                    ()
-                                                    )
-                                        },
-                                        O(d.$t(
-                                            "receive")),
-                                        1
+                            Ox,
+                            [ie(y("img", null,
+                                null,
+                                512
+                            ),
+                                [
+                                    [k, G(
+                                        $)
+                                        ("activity/DailyTask",
+                                            "confirmationReceived"
                                         )
+                                    ]
                                 ]
+                            ),
+                            y("p",
+                                Vx,
+                                O(d.$t(
+                                    "oldPromptTip")),
+                                1
+                            ),
+                            y("div",
+                                Ux,
+                                O(d.$t(
+                                    "oldPrompt")),
+                                1
+                            ),
+                            y("p",
+                                Wx,
+                                O(d.$t(
+                                    "oldPromptGift")),
+                                1
+                            ),
+                            y("div",
+                                _x,
+                                [y("span",
+                                    null,
+                                    O(G(je)
+                                        (G(t)
+                                            .returnAwards
+                                        )
+                                    ),
+                                    1
                                 )]
-                        )]),
+                            ),
+                            y("div", {
+                                class: "dialog-btn",
+                                onClick: p[
+                                    4
+                                ] ||
+                                    (p[4] =
+                                        m =>
+                                            G(
+                                                c)
+                                                ()
+                                    )
+                            },
+                                O(d.$t(
+                                    "receive")),
+                                1
+                            )
+                            ]
+                        )]
+                    )]),
                     _: 1
                 }, 8, ["show"])], 64)
             }
         }
     });
 const Hx = Te(jx, [
-        ["__scopeId", "data-v-a4fd218e"]
-    ]),
+    ["__scopeId", "data-v-a4fd218e"]
+]),
     Fx = ce({
         __name: "App",
         setup(e) {
@@ -43678,37 +43678,37 @@ const Hx = Te(jx, [
             const {
                 openAll: a
             } = ha(), {
-                    useProvide: t
-                } = xP(), n = la(), o = f(!1), c = f(!1), d =
-            ze(), p = KP(), g = he(), {
-                    locale: k
-                } = Ae(), m = oe(), w = f(!1), b = S(() => d.meta
-                    .tabBar), h = S(() => ![
-                    "/wallet/Withdraw/C2cDetail",
-                    "/wallet/RechargeHistory/RechargeUpiDetail",
-                    "/wallet/Withdraw/Upi",
-                    "/wallet/Withdraw/AddUpi",
-                    "/wallet/Withdraw/c2cCancelWithdrawal/index.vue",
-                    "/wallet/otherPay?type=C2C"
-                ].includes(d.path)), I = f(0), N = f(Math.floor(
-                    Math.random() * 1e4)), v = S(() => d.name + N
-                    .value), P = () => {
-                    n.on("changeKeepAliveKey", () => {
-                        N.value = Math.floor(Math
-                        .random() * 1e4)
-                    })
-                };
+                useProvide: t
+            } = xP(), n = la(), o = f(!1), c = f(!1), d =
+                    ze(), p = KP(), g = he(), {
+                        locale: k
+                    } = Ae(), m = oe(), w = f(!1), b = S(() => d.meta
+                        .tabBar), h = S(() => ![
+                            "/wallet/Withdraw/C2cDetail",
+                            "/wallet/RechargeHistory/RechargeUpiDetail",
+                            "/wallet/Withdraw/Upi",
+                            "/wallet/Withdraw/AddUpi",
+                            "/wallet/Withdraw/c2cCancelWithdrawal/index.vue",
+                            "/wallet/otherPay?type=C2C"
+                        ].includes(d.path)), I = f(0), N = f(Math.floor(
+                            Math.random() * 1e4)), v = S(() => d.name + N
+                                .value), P = () => {
+                                    n.on("changeKeepAliveKey", () => {
+                                        N.value = Math.floor(Math
+                                            .random() * 1e4)
+                                    })
+                                };
             sessionStorage.getItem("isload") ? o.value = !1 : (c
-                    .value = !0, sessionStorage.setItem("isload",
-                        c.value.toString()), o.value = !0), g
-                .getHomeSetting(), Be(() => g.getAreacode, V => {
-                    V && p.setNumberType(V.substring(1))
-                }), Be(() => g.getDL, V => {
-                    k.value = V, m.updateLanguage(V), sn(V),
-                        nn(ue.global.t)
-                }), setTimeout(() => {
-                    o.value = !1
-                }, 2e3);
+                .value = !0, sessionStorage.setItem("isload",
+                    c.value.toString()), o.value = !0), g
+                        .getHomeSetting(), Be(() => g.getAreacode, V => {
+                            V && p.setNumberType(V.substring(1))
+                        }), Be(() => g.getDL, V => {
+                            k.value = V, m.updateLanguage(V), sn(V),
+                                nn(ue.global.t)
+                        }), setTimeout(() => {
+                            o.value = !1
+                        }, 2e3);
             const A = f(!1),
                 W = _a();
             W.$subscribe((V, se) => {
@@ -43721,12 +43721,12 @@ const Hx = Te(jx, [
                 K = j4(M, L);
             const J = async () => {
                 const V = [{
-                        title: "vi",
-                        fontStyle: "bahnschrift"
-                    }, {
-                        title: "else",
-                        fontStyle: "'Roboto', 'Inter', sans-serif"
-                    }],
+                    title: "vi",
+                    fontStyle: "bahnschrift"
+                }, {
+                    title: "else",
+                    fontStyle: "'Roboto', 'Inter', sans-serif"
+                }],
                     se = V.findIndex(we => we.title == K);
                 se >= 0 ? _.value = V[se].fontStyle : _
                     .value = V[V.length - 1].fontStyle
@@ -43740,32 +43740,32 @@ const Hx = Te(jx, [
             }, ae = () => {
                 n.off("keyChange"), n.off(
                     "changeKeepAliveKey"), n.off(
-                    "changeIsGame")
+                        "changeIsGame")
             };
             return p.setNumberType(g.getAreacode.substring(1)),
-            J(), t(), Ke(() => {
-                K4() && F4(), a(), ae(), Z(), P()
-            }), ex(), (V, se) => {
-                const we = Ie("LoadingView");
-                return E(), X(Le, null, [re(we, {
+                J(), t(), Ke(() => {
+                    K4() && F4(), a(), ae(), Z(), P()
+                }), ex(), (V, se) => {
+                    const we = Ie("LoadingView");
+                    return E(), X(Le, null, [re(we, {
                         loading: A.value,
                         type: "loading",
                         isGame: w.value
                     }, {
                         default: be(() => [(E(),
-                                ee(G(
+                            ee(G(
                                 xi), {
-                                    key: I
-                                        .value
-                                }, {
-                                    default: be(
-                                        ({
-                                            Component: ke
-                                        }) => [
+                                key: I
+                                    .value
+                            }, {
+                                default: be(
+                                    ({
+                                        Component: ke
+                                    }) => [
                                             (E(),
                                                 ee(Pi, {
-                                                        max: 1
-                                                    },
+                                                    max: 1
+                                                },
                                                     [G(d)
                                                         .meta
                                                         .keepAlive ?
@@ -43775,91 +43775,91 @@ const Hx = Te(jx, [
                                                                 key: v
                                                                     .value
                                                             })
-                                                            ) :
+                                                        ) :
                                                         ge("",
                                                             !
                                                             0
-                                                            )
+                                                        )
                                                     ],
                                                     1024
-                                                    )
-                                                ),
+                                                )
+                                            ),
                                             G(
                                                 d)
-                                            .meta
-                                            .keepAlive ?
-                                            ge("",
-                                                !
-                                                0
+                                                .meta
+                                                .keepAlive ?
+                                                ge("",
+                                                    !
+                                                    0
                                                 ) :
-                                            (E(),
-                                                ee(Ga(
-                                                    ke), {
-                                                    key: 0
-                                                })
+                                                (E(),
+                                                    ee(Ga(
+                                                        ke), {
+                                                        key: 0
+                                                    })
                                                 )
                                         ]
-                                        ),
-                                    _: 1
-                                })), h
-                            .value ? (E(),
-                                ee(ax, {
-                                    key: 0
-                                })) : (
+                                ),
+                                _: 1
+                            })), h
+                                .value ? (E(),
+                                    ee(ax, {
+                                        key: 0
+                                    })) : (
                             E(), ee(G(
                                 Di), {
-                                    key: 1,
-                                    license: "15861567"
-                                })), b
-                            .value ? (E(),
-                                ee(ZP, {
-                                    key: 2
-                                })) : ge(
-                                "", !0)
+                                key: 1,
+                                license: "15861567"
+                            })), b
+                                .value ? (E(),
+                                    ee(ZP, {
+                                        key: 2
+                                    })) : ge(
+                                        "", !0)
                         ]),
                         _: 1
                     }, 8, ["loading", "isGame"]), o
-                    .value ? (E(), ee(ix, {
-                        key: 0
-                    })) : ge("", !0), re(Hx)
-                ], 64)
-            }
+                        .value ? (E(), ee(ix, {
+                            key: 0
+                        })) : ge("", !0), re(Hx)
+                    ], 64)
+                }
         }
     });
 const Kx = {
-        mounted(e, a) {
-            if (typeof a.value[0] != "function" || typeof a.value[
-                1] != "number") throw new Error(
+    mounted(e, a) {
+        if (typeof a.value[0] != "function" || typeof a.value[
+            1] != "number") throw new Error(
                 "v-debounce: value must be an array that includes a function and a number"
-                );
-            let t = null;
-            const n = a.value[0],
-                o = a.value[1];
-            e.__handleClick__ = function() {
-                t && clearTimeout(t), t = setTimeout(() => {
-                    n()
-                }, o || 500)
-            }, e.addEventListener("click", e.__handleClick__)
-        },
-        beforeUnmount(e) {
-            e.removeEventListener("click", e.__handleClick__)
-        }
+            );
+        let t = null;
+        const n = a.value[0],
+            o = a.value[1];
+        e.__handleClick__ = function () {
+            t && clearTimeout(t), t = setTimeout(() => {
+                n()
+            }, o || 500)
+        }, e.addEventListener("click", e.__handleClick__)
     },
+    beforeUnmount(e) {
+        e.removeEventListener("click", e.__handleClick__)
+    }
+},
     zx = {
         mounted(e, a) {
             if (typeof a.value[0] != "function" || typeof a.value[
                 1] != "number") throw new Error(
-                "v-throttle: value must be an array that includes a function and a number"
+                    "v-throttle: value must be an array that includes a function and a number"
                 );
             let t = null;
             const n = a.value[0],
                 o = a.value[1];
-            e.__handleClick__ = function() {
+            e.__handleClick__ = function () {
                 t && clearTimeout(t), e.disabled || (e
                     .disabled = !0, n(), t = setTimeout(
-                () => {
-                        e.disabled = !1
-                    }, o || 500))
+                        () => {
+                            e.disabled = !1
+                        }, o || 500))
             }, e.addEventListener("click", e.__handleClick__)
         },
         beforeUnmount(e) {
@@ -43911,7 +43911,7 @@ const Kx = {
         haspermission: Xx
     },
     Qx = {
-        install: function(e) {
+        install: function (e) {
             Object.keys(St).forEach(a => {
                 e.directive(a, St[a])
             })
@@ -43980,7 +43980,7 @@ const Kx = {
                 }, [y("div", {
                     class: ye(["navbar-fixed",
                         [e.backgroundColor !=
-                            "#f7f8ff" &&
+                            "##F7F7FF" &&
                             "wc"
                         ]
                     ]),
@@ -43992,52 +43992,52 @@ const Kx = {
                     class: "navbar__content-left",
                     onClick: c
                 }, [We(p.$slots,
-                        "left", {},
-                        () => [
-                            e
+                    "left", {},
+                    () => [
+                        e
                             .leftArrow ?
                             (E(),
                                 ee(k, {
                                     key: 0,
                                     name: "arrow-left"
                                 })
-                                ) :
+                            ) :
                             ge("",
                                 !
                                 0
-                                )
-                        ], !0
-                        )]), y(
+                            )
+                    ], !0
+                )]), y(
                     "div", $x, [e
                         .headLogo ?
                         (E(), X("div", {
-                                    key: 0,
-                                    class: "headLogo",
-                                    style: ra({
-                                        backgroundImage: "url(" +
-                                            (e.headerUrl ||
-                                                o
-                                                .value
-                                                ) +
-                                            ")"
-                                    })
-                                },
-                                null,
-                                4
-                                )) :
+                            key: 0,
+                            class: "headLogo",
+                            style: ra({
+                                backgroundImage: "url(" +
+                                    (e.headerUrl ||
+                                        o
+                                            .value
+                                    ) +
+                                    ")"
+                            })
+                        },
+                            null,
+                            4
+                        )) :
                         ge("", !
-                        0), We(p
-                            .$slots,
-                            "center", {},
-                            () => [
-                                y("div",
-                                    Zx,
-                                    O(e
-                                        .title),
-                                    1
+                            0), We(p
+                                .$slots,
+                                "center", {},
+                                () => [
+                                    y("div",
+                                        Zx,
+                                        O(e
+                                            .title),
+                                        1
                                     )
-                            ], !0)
-                    ]), y("div", {
+                                ], !0)
+                ]), y("div", {
                     class: "navbar__content-right",
                     onClick: d
                 }, [We(p.$slots,
@@ -44048,8 +44048,8 @@ const Kx = {
         }
     });
 const aD = Te(eD, [
-        ["__scopeId", "data-v-81ead1cb"]
-    ]),
+    ["__scopeId", "data-v-81ead1cb"]
+]),
     tD = {
         class: "ar-loading-view"
     },
@@ -44093,7 +44093,7 @@ const aD = Te(eD, [
             }), Be(() => a.loading, () => {
                 a.type === "loading" && !a.isGame && (a
                     .loading ? n && n.play() : n && n
-                    .stop())
+                        .stop())
             }), Na(() => {
                 n && n.destroy(), n = null
             }), (o, c) => {
@@ -44101,35 +44101,35 @@ const aD = Te(eD, [
                 return E(), X(Le, null, [ie(y("div", tD, [We(o
                     .$slots,
                     "template", {},
-                () => [ie(y("div", nD,
+                    () => [ie(y("div", nD,
                         [ie(y("div", {
-                                        ref_key: "element",
-                                        ref: t,
-                                        class: "loading-animat"
-                                    },
-                                    null,
-                                    512
-                                    ),
-                                [
-                                    [Ee, !
-                                        o
+                            ref_key: "element",
+                            ref: t,
+                            class: "loading-animat"
+                        },
+                            null,
+                            512
+                        ),
+                            [
+                                [Ee, !
+                                    o
                                         .isGame
-                                    ]
                                 ]
-                                ),
-                            ie(y("div",
-                                    iD,
-                                    sD,
-                                    512
-                                    ),
-                                [
-                                    [Ee, o
-                                        .isGame
-                                    ]
+                            ]
+                        ),
+                        ie(y("div",
+                            iD,
+                            sD,
+                            512
+                        ),
+                            [
+                                [Ee, o
+                                    .isGame
                                 ]
-                                )
+                            ]
+                        )
                         ], 512
-                        ), [
+                    ), [
                         [Ee, o
                             .type ===
                             "loading"
@@ -44137,20 +44137,20 @@ const aD = Te(eD, [
                     ]), ie(y(
                         "div",
                         rD, [
-                            re(d, {
-                                row: 10
-                            }),
-                            re(d, {
-                                title: "",
-                                avatar: "",
-                                row: 5
-                            }),
-                            re(d, {
-                                title: "",
-                                row: 5
-                            })
-                        ], 512
-                        ), [
+                        re(d, {
+                            row: 10
+                        }),
+                        re(d, {
+                            title: "",
+                            avatar: "",
+                            row: 5
+                        }),
+                        re(d, {
+                            title: "",
+                            row: 5
+                        })
+                    ], 512
+                    ), [
                         [Ee, o
                             .type ===
                             "skeleton"
@@ -44221,26 +44221,26 @@ const lD = ["xlink:href"],
                     onClick: t
                 }, [y("span", mD, O(e
                     .selectName), 1), re(
-                    c, {
+                        c, {
                         name: "arrow-down"
                     })])])
             }
         }
     });
 const hD = Te(gD, [
-        ["__scopeId", "data-v-c50d638e"]
-    ]),
+    ["__scopeId", "data-v-c50d638e"]
+]),
     bD = e => {
         e.component("NavBar", aD), e.component("LoadingView", dD), e
             .component("ArSelect", hD), e.component("svg-icon", uD), e
-            .use(Li).use(Gi).use(Ni).use(Mi).use(Ei).use(Oi).use(Vi)
-            .use(Ui).use(Wi).use(_i).use(ji).use(Hi).use(Fi).use(Ki)
-            .use(zi).use(qi).use(Ji).use(Xi).use(Qi).use(Yi).use($i)
-            .use(Zi).use(eo).use(ao).use(to).use(no).use(io).use(oo)
-            .use(so).use(ro).use(co).use(lo).use(uo).use(po).use(mo)
-            .use(go).use(ho).use(ue).use(Qx).use(bo).use(To, {
-                error: Nt
-            }).use(ko);
+                .use(Li).use(Gi).use(Ni).use(Mi).use(Ei).use(Oi).use(Vi)
+                .use(Ui).use(Wi).use(_i).use(ji).use(Hi).use(Fi).use(Ki)
+                .use(zi).use(qi).use(Ji).use(Xi).use(Qi).use(Yi).use($i)
+                .use(Zi).use(eo).use(ao).use(to).use(no).use(io).use(oo)
+                .use(so).use(ro).use(co).use(lo).use(uo).use(po).use(mo)
+                .use(go).use(ho).use(ue).use(Qx).use(bo).use(To, {
+                    error: Nt
+                }).use(ko);
         const a = e.config.globalProperties,
             t = {};
         t.TopHeight = 38, Object.keys(lt.refiter).forEach(n => {
@@ -44258,7 +44258,7 @@ function TD() {
             c !== -1 && (t = t.substring(c + 1));
             var n = t.split("&"),
                 o = {};
-            return n.forEach(function(d) {
+            return n.forEach(function (d) {
                 var p = d.split("=");
                 o[p[0]] = decodeURIComponent(p[1])
             }), o
@@ -44270,8 +44270,8 @@ const aa = TD(),
     kD = {
         "91club": () => {
             const e = {
-                    "356634288423": "749293993830590"
-                },
+                "356634288423": "749293993830590"
+            },
                 a = aa.invitationCode || sessionStorage.getItem(
                     "invitecode"),
                 t = aa.fb_dynamic_pixel || e[a] || "";
@@ -44279,21 +44279,21 @@ const aa = TD(),
                 "fb_dynamic_pixel", t);
             const n = aa.fb_dynamic_pixel || localStorage.getItem(
                 "fb_dynamic_pixel") || e[a];
-            n && (function(o, c, d, p, g, k, m) {
-                o.fbq || (g = o.fbq = function() {
-                        g.callMethod ? g.callMethod
-                            .apply(g, arguments) : g
+            n && (function (o, c, d, p, g, k, m) {
+                o.fbq || (g = o.fbq = function () {
+                    g.callMethod ? g.callMethod
+                        .apply(g, arguments) : g
                             .queue.push(arguments)
-                    }, o._fbq || (o._fbq = g), g
+                }, o._fbq || (o._fbq = g), g
                     .push = g, g.loaded = !0, g
-                    .version = "2.0", g.queue = [],
+                        .version = "2.0", g.queue = [],
                     k = c.createElement(d), k
-                    .async = !0, k.src = p, m = c
-                    .getElementsByTagName(d)[0], m
-                    .parentNode.insertBefore(k, m))
+                        .async = !0, k.src = p, m = c
+                            .getElementsByTagName(d)[0], m
+                                .parentNode.insertBefore(k, m))
             }(window, document, "script",
                 "https://connect.facebook.net/en_US/fbevents.js"
-                ), fbq("init", n), fbq("track",
+            ), fbq("init", n), fbq("track",
                 "PageView"))
         }
     };
