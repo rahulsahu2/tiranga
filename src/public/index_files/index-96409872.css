@@ -1274,7 +1274,7 @@ textarea {
     --van-picker-mask-color: #1e234d;
     --van-text-color: #A6A9AE;
     --van-border-color: #22275b;
-    --van-progress-background: #F7F7FF
+    --van-progress-background: #22275b
 }
 
 .van-picker-column__item--selected,
@@ -1361,7 +1361,6 @@ textarea {
 
 .navbar-fixed[data-v-58c5e826] {
     position: fixed;
-    background-color: #FC7873;
     top: 0;
     left: 50%;
     width: 10rem;
